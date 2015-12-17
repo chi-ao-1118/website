@@ -209,6 +209,7 @@ p.about {
 	width: 40%;
 	padding: 30% 0 0 0;
 	display: inline-block;
+	vertical-align: middle;
 }
 #about_enviromentMap iframe {
 	position: absolute;
@@ -220,22 +221,26 @@ p.about {
 #about_emviromentP {
 	display: inline-block;
 	width: 30%;
+	vertical-align: middle;
 }
 #about_medican3Wrapper {
 	text-align: center;
 }
 #about_medican3P {
 	display: inline-block;
+	vertical-align: middle;
 	width: 30%;
 }
 #about_medican3img {
 	display: inline-block;
+	vertical-align: middle;
 	width: 200px;
 	height: 210px;
 	background-image: url(medican3.jpg);
 	background-size: cover;
 	margin-left: 3em;
 }
+
 /*
 		Works
 					*/
