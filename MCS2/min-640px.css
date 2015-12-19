@@ -77,8 +77,71 @@ ul.head_map a {
 	color: white;
 }
 /*
-		中身		*/
-		
+		中身		
+					*/
+					
+/*アスペクト比を維持しながらレスポンシブにしたい要素用
+	iframeの入れ物に対して、
+		class="flexIframe"
+		と、それ以外の識別子を付与
+	それ以外の識別子のCSSに
+		width:"ほしい幅";
+		padding-top:"width*横の比率/縦の比率"
+	を設定
+	(ここでは、アスペクト比が、"横の比率:縦の比率"で表されているとする)
+	すると、レスポンシブになる。
+	※注意※iframeの埋め込みデータの中にwidthとheightの設定が書き込まれている場合があるので、それは削除しておくこと
+	適時、margin等を設定するとよいかと。	
+*/	
+.flexIframe{
+	position: relative;	
+}
+.flexIframe iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*
+	線で囲んだタイトル用のCSS
+		class="lineBox"の要素のdivの中に、タイトル文字を記入したdivを入れる
+		タイトル文字の記入されたdivにidかclassを付与
+		文字の太さやパディング、マージンの微調整
+*/
+.lineBox{
+	text-align:center;
+	margin:0 auto;
+}
+.lineBox div{
+	color: #000;
+	text-align:center;
+	display:inline-block;
+}
+.lineBox .topTitleWrap{
+	border:solid 0.25em #000000;
+	background-color: rgba(255,255,255,0.5);
+}
+.lineBox .subTitle{
+	border:solid 0.25em #000000;
+	background-color: rgba(255,255,255,0.5);
+}
+	.subTitle{
+		margin:2em auto;
+		padding: 0.5em 1.5em;
+	}
+	.topTitleWrap{
+				padding: 1.5em 1.5em;
+				display:inline-block;
+	}
+	.topTitle {
+		width:6em;
+		font-size: 1.5em;
+		font-weight:600;
+		border-bottom:solid 0.2em #000000;
+	}
 
 /*
 		 TOP画
@@ -87,18 +150,9 @@ ul.head_map a {
 	width: 100%;
 	background-size: cover;
 	padding: 7% 0;
+	text-align:center;
 }
-.topNameBlock {
-	background-color: rgba(255,255,255,0.5);
-	border: 0.4em solid #000;
-	width: 10em;
-	text-align: center;
-	margin: 0 auto;
-}
-.topName {
-	padding: 0.5em;
-	font-size: 1.5em;
-}
+
 #topImg_about {
 	background-image: url(topPic.jpg);
 }
@@ -167,18 +221,11 @@ p.about {
 	width: 60%;
 	margin: 0 auto;
 }
+
 #about_moveMCS {
-	position: relative;
 	width: 68%;
 	padding-top:38.25%;/*0.5625*width%*/
 	margin:2em auto;
-}
-#about_moveMCS iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 }
 .about_office {
 	text-align: center;
@@ -211,13 +258,6 @@ p.about {
 	padding: 30% 0 0 0;
 	display: inline-block;
 	vertical-align: middle;
-}
-#about_enviromentMap iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 }
 #about_emviromentP {
 	display: inline-block;
@@ -349,6 +389,88 @@ p.about {
 #pressrelease_bk{
 	background-color: #FFFA85;
 }
+/*
+
+	  CONTENTS
+					*/
+.contents_type{
+	margin:4em 0 2em 0;
+	
+}
+#hot_contents{
+	
+}
+
+#contents_hotContents{
+	font-weight: 800;
+	font-size: 1.2em;
+	margin:3em auto;
+}
+.hotWrap{
+	text-align:center;
+}
+.contents_hotBox{
+	display:inline-block;
+	text-align:left;
+	width:25%;
+	margin:0 0.5em;
+	vertical-align:top;
+}
+
+.contents_hotDate{
+	font-size: 0.8em;
+}
+.contents_hotBlock{
+	padding-left:1em;
+}
+.contents_hotMove{
+	width: 100%;
+	padding-top:56.25%;/*0.5625*width%*/
+	margin:1em auto;
+}
+.contents_hotTitle{
+	font-size: 1.3em;
+	font-weight: 600;
+}
+.contents_hotP{
+	
+}
+.contents_originalWrap{
+	width:80%;
+	margin:0 auto;
+}
+.contents_originalMovie{
+	width: 24%;
+	padding-top:13.5%;/*0.5625*width%*/
+	display:inline-block;
+	margin:0.2%;
+}
+.contents_film{
+	margin:0 auto;
+}
+.contents_filmWrap{
+	margin:0 auto;
+	width:80%;
+}
+.contents_filmMovie{
+	display:inline-block;
+	width: 30%;
+	padding-top:16.875%;/*0.5625*width%*/
+	margin:1em auto;
+	vertical-align:middle;
+}
+.contents_filmTextWrap{
+	display:inline-block;
+	width:65%;
+	margin-left:1em;
+	vertical-align:middle;
+}
+.contents_filmTitle{
+	font-size: 1.4em;
+}
+.contents_filmP{
+}
+
 
 
 /*
@@ -356,15 +478,6 @@ p.about {
 					*/
 .links_blockWrap{
 	margin-bottom:3em;
-}
-.links_blockTitle{
-	font-size: 1.2em;
-	font-weight: 800;
-	padding: 0.2em 1em;
-	width:5em;
-	margin:2em auto;
-	color: #000;
-	border:solid 0.25em #000000;
 }
 .links_linkBox{
 	margin: 0.5em auto;
