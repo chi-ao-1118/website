@@ -6,7 +6,7 @@
 html, body {
 	height: 100%;
 	margin: 0;
-	line-height:1.7em;
+	line-height: 1.7em;
 }
 li {
 	list-style: none;
@@ -18,7 +18,7 @@ li {
 .head {
 	magin: 0 aute;
 	height: 80px;
-	line-height:normal;
+	line-height: normal;
 }
 .head_btn {
 	height: 45px;
@@ -30,6 +30,7 @@ li {
 #head_mcsLogo {
 	max-height: 100%;
 	width: auto;
+	height:auto;
 }
 .head_btnRight {
 	float: right;
@@ -53,7 +54,9 @@ li {
 	text-align: center;
 	padding: 0;
 	margin: 0;
-	background-color: #DBDBDB;
+	/*background-color: #DBDBDB;*/
+	background-image: url(headMapBack.jpg);
+	background-size: contain;
 }
 ul.head_map {
 	font-size: 1.5em;
@@ -93,8 +96,8 @@ ul.head_map a {
 	※注意※iframeの埋め込みデータの中にwidthとheightの設定が書き込まれている場合があるので、それは削除しておくこと
 	適時、margin等を設定するとよいかと。	
 */	
-.flexIframe{
-	position: relative;	
+.flexIframe {
+	position: relative;
 }
 .flexIframe iframe {
 	position: absolute;
@@ -103,46 +106,49 @@ ul.head_map a {
 	width: 100%;
 	height: 100%;
 }
-
-
 /*
 	線で囲んだタイトル用のCSS
 		class="lineBox"の要素のdivの中に、タイトル文字を記入したdivを入れる
 		タイトル文字の記入されたdivにidかclassを付与
 		文字の太さやパディング、マージンの微調整
 */
-.lineBox{
-	text-align:center;
-	margin:0 auto;
+.lineBox {
+	text-align: center;
+	margin: 0 auto;
 }
-.lineBox div{
+.lineBox div {
 	color: #000;
-	text-align:center;
-	display:inline-block;
+	text-align: center;
+	display: inline-block;
 }
-.lineBox .topTitleWrap{
-	border:solid 0.25em #000000;
+.lineBox .topTitleWrap {
+	border: solid 0.25em #000000;
 	background-color: rgba(255,255,255,0.5);
 }
-.lineBox .subTitle{
-	border:solid 0.25em #000000;
+.lineBox .subTitle {
+	border: solid 0.25em #000000;
 	background-color: rgba(255,255,255,0.5);
 }
-	.subTitle{
-		margin:2em auto;
-		padding: 0.5em 1.5em;
-	}
-	.topTitleWrap{
-				padding: 1.5em 1.5em;
-				display:inline-block;
-	}
-	.topTitle {
-		width:6em;
-		font-size: 1.5em;
-		font-weight:600;
-		border-bottom:solid 0.2em #000000;
-	}
+.subTitle {
+	margin: 2em auto;
+	padding: 0.5em 1.5em;
+}
+.topTitleWrap {
+	padding: 1.5em 1.5em;
+	display: inline-block;
+}
+.topTitle {
+	width: 6em;
+	font-size: 1.5em;
+	font-weight: 600;
+	border-bottom: solid 0.2em #000000;
+}
 
+.date{
+	font-size: 0.8em;
+	color: #000;
+	text-align: left;
+}
 /*
 		 TOP画
 					*/
@@ -150,9 +156,8 @@ ul.head_map a {
 	width: 100%;
 	background-size: cover;
 	padding: 7% 0;
-	text-align:center;
+	text-align: center;
 }
-
 #topImg_about {
 	background-image: url(topPic.jpg);
 }
@@ -178,7 +183,7 @@ ul.head_map a {
 .about_mainWrapper {
 	pading: 0;
 	padding-left: 0;
-	margin: 10em auto;
+	margin: 5em auto;
 	width: 100%;
 }
 .about_titleWrapper {
@@ -221,11 +226,10 @@ p.about {
 	width: 60%;
 	margin: 0 auto;
 }
-
 #about_moveMCS {
 	width: 68%;
-	padding-top:38.25%;/*0.5625*width%*/
-	margin:2em auto;
+	padding-top: 38.25%;/*0.5625*width%*/
+	margin: 2em auto;
 }
 .about_office {
 	text-align: center;
@@ -281,7 +285,6 @@ p.about {
 	background-size: cover;
 	margin-left: 3em;
 }
-
 /*
 		Works
 					*/
@@ -316,188 +319,252 @@ p.about {
 	background-image: url("long-on.png");
 	background-size: contain;
 }
-
 /*
 	  プロジェクト
 		 			*/
-.project_dataBox{
-	margin:3em auto;
-	text-align:center;
+.project_dataBox {
+	margin: 3em auto;
+	text-align: center;
 }
-.project_dataBox img{
-	display:inline-block;
-	vertical-align:middle;
-	width:20%;
-	height:auto;
+.project_dataBox img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+	height: auto;
 }
-.project_txtBox{
-	display:inline-block;
-	vertical-align:middle;
-	text-align:left;
+.project_txtBox {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
 	padding: 0 3em;
-	line-height:1.5em;
-	width:50%;
+	line-height: 1.5em;
+	width: 50%;
 }
-.project_date{
+.project_date {
 	font-size: 0.9em;
-	padding:0.2em 0;
+	padding: 0.2em 0;
 }
-.project_name{
+.project_name {
 	font-size: 1.8em;
-	font-weight:800;
-	padding:0.8em 0.3em;
+	font-weight: 800;
+	padding: 0.8em 0.3em;
 }
-.project_p{
+.project_p {
 }
-.project_line{
-	width:77%;
-	height:0.1em;
-	margin:2em auto;
+.project_line {
+	width: 77%;
+	height: 0.1em;
+	margin: 2em auto;
 	background-color: #000;
 }
-.works_bkBtnWrap{
-	width:8em;
-	margin:3em 0 3em 15%;
+.works_bkBtnWrap {
+	width: 8em;
+	margin: 3em 0 3em 15%;
 }
-.works_bkBtnA{
+.works_bkBtnA {
 	color: #000;
-	text-decoration: none;		
+	text-decoration: none;
 }
-.works_bkBtn{
-	width:100%;
-	height:100%;
+.works_bkBtn {
+	width: 100%;
+	height: 100%;
 }
-.works_bkBtnImg{
-	display:inline-block;
-	width:auto;
-	height:2em;
-	vertical-align:middle;
+.works_bkBtnImg {
+	display: inline-block;
+	width: auto;
+	height: 2em;
+	vertical-align: middle;
 }
-.works_bkTxt{
-	display:inline-block;
-	text-align:right;
-	padding:0 0 0 2em;
-	line-height:0.1em;
-	vertical-align:middle;
+.works_bkTxt {
+	display: inline-block;
+	text-align: right;
+	padding: 0 0 0 2em;
+	line-height: 0.1em;
+	vertical-align: middle;
 }
-#project_bk{	
+#project_bk {
 	background-color: #FF9B91;
 }
-#contents_bk{
+#contents_bk {
 	background-color: #78FF6D;
 }
-#pressrelease_bk{
+#pressrelease_bk {
 	background-color: #FFFA85;
 }
 /*
 
 	  CONTENTS
 					*/
-.contents_type{
-	margin:4em 0 2em 0;
-	
+.contents_type {
+	margin: 4em 0 2em 0;
 }
-#hot_contents{
-	
+#hot_contents {
 }
-
-#contents_hotContents{
+#contents_hotContents {
 	font-weight: 800;
 	font-size: 1.2em;
-	margin:3em auto;
+	margin: 3em auto;
 }
-.hotWrap{
-	text-align:center;
+.hotWrap {
+	text-align: center;
 }
-.contents_hotBox{
-	display:inline-block;
-	text-align:left;
-	width:25%;
-	margin:0 0.5em;
-	vertical-align:top;
+.contents_hotBox {
+	display: inline-block;
+	text-align: left;
+	width: 25%;
+	margin: 0 0.5em;
+	vertical-align: top;
 }
-
-.contents_hotDate{
+.contents_hotDate {
 	font-size: 0.8em;
 }
-.contents_hotBlock{
-	padding-left:1em;
+.contents_hotBlock {
+	padding-left: 1em;
 }
-.contents_hotMove{
+.contents_hotMove {
 	width: 100%;
-	padding-top:56.25%;/*0.5625*width%*/
-	margin:1em auto;
+	padding-top: 56.25%;/*0.5625*width%*/
+	margin: 1em auto;
 }
-.contents_hotTitle{
+.contents_hotTitle {
 	font-size: 1.3em;
 	font-weight: 600;
 }
-.contents_hotP{
-	
+.contents_hotP {
 }
-.contents_originalWrap{
-	width:80%;
-	margin:0 auto;
+.contents_originalWrap {
+	width: 80%;
+	margin: 0 auto;
 }
-.contents_originalMovie{
+.contents_originalMovie {
 	width: 24%;
-	padding-top:13.5%;/*0.5625*width%*/
-	display:inline-block;
-	margin:0.2%;
+	padding-top: 13.5%;/*0.5625*width%*/
+	display: inline-block;
+	margin: 0.2%;
 }
-.contents_film{
-	margin:0 auto;
+.contents_film {
+	margin: 0 auto;
 }
-.contents_filmWrap{
-	margin:0 auto;
-	width:80%;
+.contents_filmWrap {
+	margin: 0 auto;
+	width: 80%;
 }
-.contents_filmMovie{
-	display:inline-block;
+.contents_filmMovie {
+	display: inline-block;
 	width: 30%;
-	padding-top:16.875%;/*0.5625*width%*/
-	margin:1em auto;
-	vertical-align:middle;
+	padding-top: 16.875%;/*0.5625*width%*/
+	margin: 1em auto;
+	vertical-align: middle;
 }
-.contents_filmTextWrap{
-	display:inline-block;
-	width:65%;
-	margin-left:1em;
-	vertical-align:middle;
+.contents_filmTextWrap {
+	display: inline-block;
+	width: 65%;
+	margin-left: 1em;
+	vertical-align: middle;
 }
-.contents_filmTitle{
+.contents_filmTitle {
 	font-size: 1.4em;
 }
-.contents_filmP{
+.contents_filmP {
+}
+/*
+
+ 	 PressRelease
+					*/
+
+.pressrelease_mainWrapper {
+	width: 100%;
+	margin: 2em 0;
+}
+.pre_conSet {
+	text-align: center;
+}
+a.pre_conA{
+	text-decoration: none;
+	color:black;
+}
+.pre_continerBox {
+	width: 25%;
+	margin: 0.5em;
+	padding:0 3%;
+	display: inline-block;
+	border-right:1px solid #B4B4B4;
+}
+.pre_conNoneLine{
+	border:none;
+}
+.pre_continerDate {
+	padding-bottom:0.2em;
+}
+.pre_continerMain {
+	padding: 0 1em;
+}
+.pre_continerImg {
+	background-size: cover;
+	height: 100px;
+}
+#pre_icon1 {
+	background-image: url(topPic.jpg);
+}
+.pre_continerTitle {
+	font-size: 1.2em;
+	font-weight: 800;
+}
+.pre_continerText {
+}
+.pre_conHLine {
+	display: inline-block;
+	width: 1px;
+	height: 218px;
+	background-color: #AFAFAF;
 }
 
-
+/*
+	PressRelease Index
+						*/
+.preIndex_conWrap{
+	width:70%;
+	margin:4em auto;
+}
+.preIndex_conDate{
+	font-size: 0.9em;
+}
+.preIndex_mainImg img{
+	width:100%;
+	height:auto;
+	margin-bottom:1em;
+}
+.preIndex_mainTitle{
+	font-size: 2em;
+	font-weight: 800;
+	margin:0.5em 0;
+}
+.preIndex_mainText{
+}
 
 /*
 		LINKS
 					*/
-.links_blockWrap{
-	margin-bottom:3em;
+.links_blockWrap {
+	margin-bottom: 3em;
 }
-.links_linkBox{
+.links_linkBox {
 	margin: 0.5em auto;
-	text-align:center;
+	text-align: center;
 }
-.links_banner{
-	display:inline-block;
-	width:35%;
-	height:auto;
-	vertical-align:middle;
+.links_banner {
+	display: inline-block;
+	width: 35%;
+	height: auto;
+	vertical-align: middle;
 }
-.links_txt{
-	display:inline-block;
-	width:40%;
-	text-align:left;
-	vertical-align:middle;
-	padding-left:1.5em;
+.links_txt {
+	display: inline-block;
+	width: 40%;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 1.5em;
 }
-	
-					
 /*	
 		フッター
 					*/
