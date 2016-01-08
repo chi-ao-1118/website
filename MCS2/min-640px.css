@@ -285,6 +285,115 @@ p.about {
 	background-size: cover;
 	margin-left: 3em;
 }
+<<<<<<< HEAD
+=======
+
+/*編集中
+モーダルのCSS*/
+#modal-content {
+	width:50%;
+	margin:0;
+	padding:10px 20px;
+	border: 2px solid #aaa ;
+	background:#fff;
+	position:fixed;
+	display:none;
+	z-index:2;
+}
+  
+#modal-overlay {
+z-index:1;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:120%;
+	background-color:rgba(0,0,0,0.75);
+}
+
+.button-link {
+	color:#00f;
+	text-decoration:underline;
+}
+ 
+.button-link:hover {
+	cursor:pointer;
+	color:#f00;
+}
+
+.movie-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.movie-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#about_machinery{
+	width:100px;
+	height:100px;
+	background-image: url(medican3.jpg);
+}
+
+#modal-content {
+	width:50%;
+	margin:0;
+	padding:10px 20px;
+	border: 2px solid #aaa ;
+	background:#fff;
+	position:fixed;
+	display:none;
+	z-index:2;
+}
+  
+#modal-overlay {
+z-index:1;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:120%;
+	background-color:rgba(0,0,0,0.75);
+}
+
+.button-link {
+	color:#00f;
+	text-decoration:underline;
+}
+ 
+.button-link:hover {
+	cursor:pointer;
+	color:#f00;
+}
+
+.movie-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.movie-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+>>>>>>> 4dfc2ebe271394dc34ef3e5f9ae831dd95f2ede1
 /*
 		Works
 					*/
@@ -512,12 +621,7 @@ a.pre_conA{
 }
 .pre_continerText {
 }
-.pre_conHLine {
-	display: inline-block;
-	width: 1px;
-	height: 218px;
-	background-color: #AFAFAF;
-}
+
 
 /*
 	PressRelease Index
