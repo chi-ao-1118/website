@@ -25,7 +25,7 @@ li{
 	height: 80px;
 }
 .head_btn {
-	height: 45px;
+	height: 30px;
 }
 .head_btnLeft {
 	float: left;
@@ -59,6 +59,7 @@ li{
 	text-align: center;
 	padding: 0;
 	margin: 0;
+	height:43.6px;/*ボタンの高さ-ボーダー幅*/
 	background-color: #DBDBDB;
 }
 ul.head_map{
@@ -66,8 +67,9 @@ ul.head_map{
 	display:table;
 	table-layout: fixed;
 	width:100%;		
-	border-bottom: 0.4em solid #525252;
 	margin:0;
+	border-bottom: 6.4px solid #525252;
+
 }
 
 ul.head_map a{
@@ -78,7 +80,10 @@ ul.head_map a{
 	text-decoration: none;
 	font-size: 1.2em;
 }
-
+.head_mapLink{
+	line-height: 43.6px;/*ボタンの高さ-ボーダー幅*/
+	height:100%;
+}
 /*マップボタンの幅と位置を管理*/
 #head_mapThis {
 	background-color: #525252;
@@ -96,10 +101,12 @@ ul.head_map a{
 	color: white;
 	text-align: center;
 	position: relative;
+	display: table; 
+	width: 100%; 
 }
 .top_topMCSWrap {
-	padding: 17%;
-	/*padding:250px 0;*/
+	 display: table-cell;  
+    vertical-align: middle;
 	text-align: center;
 }
 .top_topName {

@@ -21,7 +21,7 @@ li {
 	line-height: normal;
 }
 .head_btn {
-	height: 45px;
+	height: 30px;
 }
 .head_btnLeft {
 	float: left;
@@ -54,25 +54,30 @@ li {
 	text-align: center;
 	padding: 0;
 	margin: 0;
-	/*background-color: #DBDBDB;*/
-	background-image: url(headMapBack.jpg);
-	background-size: contain;
+	height:43.6px;/*ボタンの高さ-ボーダー幅*/
+	background-color: #DBDBDB;
 }
-ul.head_map {
+ul.head_map{
 	font-size: 1.5em;
-	display: table;
+	display:table;
 	table-layout: fixed;
-	width: 100%;
-	border-bottom: 0.4em solid #525252;
-	margin: 0;
+	width:100%;		
+	margin:0;
+	border-bottom: 6.4px solid #525252;
+
 }
-ul.head_map a {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
+
+ul.head_map a{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;	
 	color: #000000;
 	text-decoration: none;
 	font-size: 1.2em;
+}
+.head_mapLink{
+	line-height: 43.6px;/*ボタンの高さ-ボーダー幅*/
+	height:100%;
 }
 /*マップボタンの幅と位置を管理*/
 #head_mapThis {
