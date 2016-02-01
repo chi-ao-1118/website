@@ -7,15 +7,13 @@ html, body {
 	height: 102%;
 	margin: 0;
 }
-
-li{
+li {
 	list-style: none;
 }
-#top_firstView{
-	height:100%;	
-	margin-bottom:8%;
+#top_firstView {
+	height: 100%;
+	margin-bottom: 8%;
 }
-
 /*
 		ヘッダー
 					*/
@@ -32,7 +30,7 @@ li{
 	height: 100%;
 }
 #head_mcsLogo {
-	max-height: 100%;
+	height: 100%;
 	width: auto;
 }
 .head_btnRight {
@@ -49,8 +47,6 @@ li{
 	height: 90%;
 	margin: 0;
 }
-
-
 /*
 	 head_map
 				*/
@@ -59,30 +55,28 @@ li{
 	text-align: center;
 	padding: 0;
 	margin: 0;
-	height:43.6px;/*ボタンの高さ-ボーダー幅*/
+	height: 43.6px;/*ボタンの高さ-ボーダー幅*/
 	background-color: #DBDBDB;
 }
-ul.head_map{
+ul.head_map {
 	font-size: 1.5em;
-	display:table;
+	display: table;
 	table-layout: fixed;
-	width:100%;		
-	margin:0;
+	width: 100%;
+	margin: 0;
 	border-bottom: 6.4px solid #525252;
-
 }
-
-ul.head_map a{
-	display:table-cell;
-	vertical-align:middle;
-	text-align:center;	
+ul.head_map a {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 	color: #000000;
 	text-decoration: none;
 	font-size: 1.2em;
 }
-.head_mapLink{
+.head_mapLink {
 	line-height: 43.6px;/*ボタンの高さ-ボーダー幅*/
-	height:100%;
+	height: 100%;
 }
 /*マップボタンの幅と位置を管理*/
 #head_mapThis {
@@ -91,8 +85,24 @@ ul.head_map a{
 }
 /*
 		中身		*/
-		
-		
+
+.upButton {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+.upButton img {
+	height: 80px;
+	border-radius: 80px;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+}
+.upButton img:hover{
+	background-color: rgba(96,96,96,0.53);
+}
+.upButton:active{
+	bottom:15px;
+}
 
 .top_topWrapper {
 	height: 100%-80px;
@@ -101,12 +111,12 @@ ul.head_map a{
 	color: white;
 	text-align: center;
 	position: relative;
-	display: table; 
-	width: 100%; 
+	display: table;
+	width: 100%;
 }
 .top_topMCSWrap {
-	 display: table-cell;  
-    vertical-align: middle;
+	display: table-cell;
+	vertical-align: middle;
 	text-align: center;
 }
 .top_topName {
@@ -185,8 +195,7 @@ ul.head_map a{
 	 Topページコンテンツ
 						*/
 .top_mainWrapper {
-	padding:0;
-	/*margin:*/
+	padding: 0;/*margin:*/
 }
 .top_mainContainer1 {
 	margin: 3% 0;
