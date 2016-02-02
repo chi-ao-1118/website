@@ -88,7 +88,7 @@ ul.head_map a{
 
 .top_topWrapper {
 	height: 85%;
-	background-image: url("top_top.jpg");
+	background-image: url("img/top_top.jpg");
 	background-size: cover;
 	color: white;
 	text-align: center;
@@ -118,7 +118,7 @@ ul.head_map a{
 #top_topUnder {
 	height: 10%;
 	margin : 0 auto;
-	background-image: url("top_topUnder.png");
+	background-image: url("img/top_topUnder.png");
 	background-size: contain;
 }
 /*

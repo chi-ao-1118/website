@@ -153,21 +153,20 @@ ul.head_map a{
 	color: #000;
 	text-align: left;
 }
-.upButton {
+.page_top {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-}
-.upButton img {
+
 	height: 80px;
 	border-radius: 80px;
 	-webkit-border-radius: 80px;
 	-moz-border-radius: 80px;
 }
-.upButton img:hover{
+.page_top:hover{
 	background-color: rgba(96,96,96,0.53);
 }
-.upButton:active{
+.page_top:active{
 	bottom:15px;
 }
 
@@ -181,22 +180,22 @@ ul.head_map a{
 	text-align: center;
 }
 #topImg_about {
-	background-image: url(topPic.jpg);
+	background-image: url(img/topPic.jpg);
 }
 #topImg_works {
-	background-image: url(topPic.jpg);
+	background-image: url(img/topPic.jpg);
 }
 #topImg_project {
-	background-image: url(topPic.jpg);
+	background-image: url(img/topPic.jpg);
 }
 #topImg_contents {
-	background-image: url(topPic.jpg);
+	background-image: url(img/topPic.jpg);
 }
 #topImg_pressrelease {
-	background-image: url(topPic.jpg);
+	background-image: url(img/topPic.jpg);
 }
 #topImg_links {
-	background-image: url(topPic.jpg);
+	background-image: url(img/topPic.jpg);
 }
 /*
 
@@ -227,7 +226,7 @@ ul.head_map a{
 }
 .about_titleBar {
 	display: inline-block;
-	background-image: url(bar.png);
+	background-image: url(img/bar.png);
 	background-size: contain;
 	height: 10px;
 	margin: 0 1em
@@ -266,11 +265,11 @@ p.about {
 .about_officeItem {
 	padding-top: 100%;/*padding-topの基準はwidth*/
 	width: 100%;
-	background-image: url(officeItem03a.png);
+	background-image: url(img/officeItem03a.png);
 	background-size: cover;
 }
 .about_officeItem:hover {
-	background-image: url(officeItem03b.png);
+	background-image: url(img/officeItem03b.png);
 }
 #about_environmentTop {
 	width: 100%;
@@ -303,7 +302,7 @@ p.about {
 	vertical-align: middle;
 	width: 200px;
 	height: 210px;
-	background-image: url(medican3.jpg);
+	background-image: url(img/medican3.jpg);
 	background-size: cover;
 	margin-left: 3em;
 }
@@ -361,7 +360,7 @@ z-index:1;
 #about_machinery{
 	width:100px;
 	height:100px;
-	background-image: url(medican3.jpg);
+	background-image: url(img/medican3.jpg);
 }
 
 #modal-content {
@@ -431,7 +430,7 @@ z-index:1;
 	display: inline-block;
 	width: 20%;
 	height: 100%;
-	background-image: url("short.png");
+	background-image: url("img/short.png");
 	background-size: contain;
 	color: #EF090D;
 }
@@ -439,11 +438,11 @@ z-index:1;
 	display: inline-block;
 	width: 79%;
 	height: 100%;
-	background-image: url("long.png");
+	background-image: url("img/long.png");
 	background-size: contain;
 }
 .works_btnLong:hover {
-	background-image: url("long-on.png");
+	background-image: url("img/long-on.png");
 	background-size: contain;
 }
 /*
@@ -670,7 +669,7 @@ a.pre_conA{
 	height: 100px;
 }
 #pre_icon1 {
-	background-image: url(topPic.jpg);
+	background-image: url(img/topPic.jpg);
 }
 .pre_continerTitle {
 	font-size: 1.2em;

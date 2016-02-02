@@ -86,27 +86,26 @@ ul.head_map a {
 /*
 		中身		*/
 
-.upButton {
+.page_top {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-}
-.upButton img {
+
 	height: 80px;
 	border-radius: 80px;
 	-webkit-border-radius: 80px;
 	-moz-border-radius: 80px;
 }
-.upButton img:hover{
+.page_top:hover{
 	background-color: rgba(96,96,96,0.53);
 }
-.upButton:active{
+.page_top:active{
 	bottom:15px;
 }
 
 .top_topWrapper {
 	height: 100%-80px;
-	background-image: url("top_top.jpg");
+	background-image: url("img/top_top.jpg");
 	background-size: cover;
 	color: white;
 	text-align: center;
@@ -139,7 +138,7 @@ ul.head_map a {
 #top_topUnder {
 	height: 50px;
 	margin : 0 auto;
-	background-image: url("top_topUnder.png");
+	background-image: url("img/top_topUnder.png");
 	background-size: contain;
 	position: absolute;
 	bottom: 0;
@@ -158,7 +157,7 @@ ul.head_map a {
 
 .top_topWrapper {
 	height: 85%;
-	background-image: url("top_top.jpg");
+	background-image: url("img/top_top.jpg");
 	background-size: cover;
 	color: white;
 	text-align: center;
@@ -188,7 +187,7 @@ ul.head_map a {
 #top_topUnder {
 	height: 300px;
 	margin : 0 auto;
-	background-image: url("top_topUnder.png");
+	background-image: url("img/top_topUnder.png");
 	background-size: contain;
 }
 /*
