@@ -159,7 +159,7 @@ ul.head_map a {
 
 .top_topWrapper {
 	height: 85%;
-	background-image: url("img/top_top.jpg");
+	background-image: url("img/top_top1.jpg");
 	background-size: cover;
 	color: white;
 	text-align: center;
@@ -334,7 +334,7 @@ ul.head_map a {
 #top_mainNowBgc {
 	height: 8em;
 	width: 75%;
-	background-color: #F48070;
+	background-color: #ffa996;
 	top: -5.3em;
 }
 #top_mainNewsBgc {
