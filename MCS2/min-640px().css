@@ -199,8 +199,8 @@ ul.head_map a {
 	padding: 0;/*margin:*/
 }
 .top_mainContainer1 {
-	margin: 3% 0;
-	margin-bottom: -40px;
+	margin: 3% 0 0 0;
+	margin-bottom: -100px;
 	position: relative;
 }
 .top_mainContainer2 {
