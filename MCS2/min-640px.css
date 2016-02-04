@@ -376,28 +376,34 @@ z-index:1;
 	margin: 0 auto;
 	margin-top: 0.5em;
 	width: 100%;
-	height: 200%;
 }
+
 .works_btnWrapper {
 	margin: 0 auto;
-	width: 100%;
-	height: 33%;
 }
-.works_btnShort {
+.works_sBtn{
+	width:20%;
+	height:auto;
+	display: inline-block;
+}
+/*.works_btnShort {
 	display: inline-block;
 	width: 20%;
-	height: 100%;
-	background-image: url("img/short.png");
-	background-size: contain;
-	color: #EF090D;
+	background-image: url("img/works-project-short.jpg");
+	background-size: cover;
+}*/
+.works_lBtn{
+	width:79%;
+	height:auto;
+	display:inline-block;
 }
-.works_btnLong {
+/*.works_btnLong {
 	display: inline-block;
 	width: 79%;
-	height: 100%;
+	height: 100px;
 	background-image: url("img/long.png");
 	background-size: contain;
-}
+}*/
 .works_btnLong:hover {
 	background-image: url("img/long-on.png");
 	background-size: contain;
