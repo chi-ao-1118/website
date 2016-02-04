@@ -281,14 +281,14 @@ p.about {
 }
 #about_enviromentMap {
 	position: relative;
-	width: 40%;
+	width: 70%;
 	padding: 30% 0 0 0;
 	display: inline-block;
 	vertical-align: middle;
 }
 #about_emviromentP {
 	display: inline-block;
-	width: 28%;
+	width: 70%;
 	vertical-align: middle;
 	text-align:left;
 	padding-left:2%;
