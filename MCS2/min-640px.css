@@ -314,7 +314,12 @@ p.about {
 
 /*編集中
 モーダルのCSS*/
-#modal-content {
+.modal_box{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.modal-content {
 	width:50%;
 	margin:0;
 	padding:10px 20px;
