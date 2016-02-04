@@ -332,16 +332,16 @@ ul.head_map a {
 	z-index: 1;
 }
 #top_mainNowBgc {
-	height: 8em;
-	width: 75%;
-	background-color: #ffa996;
-	top: -5.3em;
-}
-#top_mainNewsBgc {
 	height: 9em;
 	width: 75%;
-	background-color: #f7de83;
-	top: -7.1em;
+	background-color: #ffa996;
+	top: -5.5em;
+}
+#top_mainNewsBgc {
+	height: 11em;
+	width: 75%;
+	background-color: #FFCC66;
+	top: -7.5em;
 }
 #top_mainTwitterBgc {
 	height: 515px;
