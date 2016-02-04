@@ -95,6 +95,8 @@ ul.head_map a {
 	border-radius: 80px;
 	-webkit-border-radius: 80px;
 	-moz-border-radius: 80px;
+	
+	z-index:5;
 }
 .page_top:hover{
 	background-color: rgba(96,96,96,0.53);
