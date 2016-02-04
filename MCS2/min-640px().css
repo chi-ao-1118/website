@@ -122,7 +122,8 @@ ul.head_map a {
 }
 .top_topName {
 	margin : auto;
-	width: 12em;
+	width: 15em;
+	padding: 0.5em 0;
 	color: black;
 	border: 0.15em solid black;
 	background-color: rgba(255,255,255,0.7);
@@ -131,7 +132,7 @@ ul.head_map a {
 	font-size: 1em;
 	width: 90%;
 	border-bottom: 0.15em solid black;
-	margin: 0.5em auto;
+	margin: 1em auto;
 }
 .top_topMCS {
 	font-size: 2em;
