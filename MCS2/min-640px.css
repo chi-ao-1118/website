@@ -374,17 +374,24 @@ z-index:1;
 				
 .works_mainWrapper {
 	margin: 0 auto;
-	margin-top: 0.5em;
+	margin-top: 1%;
 	width: 100%;
 }
 
 .works_btnWrapper {
 	margin: 0 auto;
+	font-size: 0;
 }
 .works_sBtn{
 	width:20%;
 	height:auto;
 	display: inline-block;
+}
+.works_sBtnL{
+	padding-right:1%;
+}
+.works_sBtnR{
+	padding-left:1%;
 }
 /*.works_btnShort {
 	display: inline-block;
