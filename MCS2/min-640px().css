@@ -252,12 +252,12 @@ ul.head_map a {
 }
 #top_mainNameContainerNow {
 	font-size: 25px;
-	width: 8em;
+	width: 55%;
 	text-align: left;
 }
 #top_mainNameContainerNews {
 	font-size: 25px;
-	width: 10em;
+	width: 70%;
 	text-align: right;
 }
 #top_mainNameContainerTwitter {
@@ -346,7 +346,7 @@ ul.head_map a {
 #top_mainTwitterBgc {
 	height: 515px;
 	width: 95%;
-	background-color: #b4e587;
+	background-color: #99CC99;
 	top: -490px;
 }
 #top_mainFacebookBgc {
