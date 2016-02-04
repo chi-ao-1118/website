@@ -288,8 +288,10 @@ p.about {
 }
 #about_emviromentP {
 	display: inline-block;
-	width: 30%;
+	width: 28%;
 	vertical-align: middle;
+	text-align:left;
+	padding-left:2%;
 }
 #about_medican3Wrapper {
 	text-align: center;
@@ -297,7 +299,8 @@ p.about {
 #about_medican3P {
 	display: inline-block;
 	vertical-align: middle;
-	width: 30%;
+	width: 30%;	
+	text-align:left;
 }
 #about_medican3img {
 	display: inline-block;
