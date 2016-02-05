@@ -318,6 +318,9 @@ p.about {
 	width: 80%;
 	margin: 0 auto;
 }
+.modal-open{
+	display:inline-block;
+}
 
 .modal-content {
 	width:50%;
