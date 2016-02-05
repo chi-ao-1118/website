@@ -3,6 +3,7 @@ $(function(){
 //モーダルウィンドウを出現させるクリックイベント
 $(".modal-open").click(function(){
 	var modalOpen =$(this);
+	$(".page_top").fadeOut("slow");
 	
 	//キーボード操作などにより、オーバーレイが多重起動を防止
 	modalOpen.blur() ;	//ボタンからフォーカスを外す
