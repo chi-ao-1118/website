@@ -20,6 +20,7 @@ li {
 .head {
 	margin: 0 auto;
 	height: 80px;
+	z-index:3;
 }
 .head_btn {
 	height: 30px;
@@ -134,7 +135,7 @@ ul.head_map a {
 	width:100%;
 	background-image: url("img/top_topUnder.png");
 	background-size: contain;
-	z-index:3;
+	z-index:2;
 }
 
 /*
