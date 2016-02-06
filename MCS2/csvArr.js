@@ -22,8 +22,8 @@ $( function() {
 				insert += '<article class="pre_conSet">'
 			}
 			insert += '<a class="pre_conA" href="pressrelease/'+ csvArr[i][0]+'.html">';
-			if (count % 3 == 0){
-				insert += ' <article class=" pre_conNoneLine">';
+			if (count % 3 == 0 || i == 1){
+				insert += ' <article class=" pre_conNoneLine pre_continerBox">';
 			}else{
 				insert += ' <article class="pre_continerBox">';
 			}
@@ -38,14 +38,10 @@ $( function() {
 		}
 		if(count%3!==0){
 			for(i=count%3;i>=0;i--){
-				insert+= '<article class=" pre_conNoneLine"><div class="pre_continerDate date"></div><div class="pre_continerMain"><div class="pre_continerImg"></div><div class="pre_continerTitle"></div><div class="pre_continerText"></div></div></article>';
+				insert+= '<article class=" pre_conNoneLine pre_continerBox"><div class="pre_continerDate date"></div><div class="pre_continerMain"><div class="pre_continerImg"></div><div class="pre_continerTitle"></div><div class="pre_continerText"></div></div></article>';
 			}
 			insert+='</article><!--.pre_conSetここまで-->';
 		}
-		$( target ).html( insert );
-		if(count%3!==0){
-			$(".pre_continerBox").last().removeAttr("border-right");//ココがうまくいってない
-		}
-		
+		$( target ).html( insert );		
 	});
 } );
