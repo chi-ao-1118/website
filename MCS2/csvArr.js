@@ -28,9 +28,10 @@ $( function() {
 				insert += ' <article class="pre_continerBox">';
 			}
 			insert += '<div class="pre_continerDate date">' + csvArr[i][1] + '</div> <div class="pre_continerMain">';
-			insert += '<div class="pre_continerImg" style="background-image: url(img/'+csvArr[i][2]+'.jpg)"></div>';	
+			insert += '<div class="pre_continerImg" style="background-image: url(img/'+csvArr[i][2]+'.jpg)"></div>';
+			insert += '<div class="pre_continerData"><div class="pre_continerSmartDate date">'+csvArr[i][1]+'</div>';
 			insert += '<div class="pre_continerTitle">'+csvArr[i][3]+'</div>';
-			insert += '<div class="pre_continerText">' + csvArr[i][4] + '</div>';
+			insert += '<div class="pre_continerText">' + csvArr[i][4] + '</div></div>';
 			insert += '</div> </article></a>';
 			if(count % 3 == 0){
 				insert += ' </article><!--.pre_conSetここまで-->';
@@ -38,7 +39,7 @@ $( function() {
 		}
 		if(count%3!==0){
 			for(i=count%3;i>=0;i--){
-				insert+= '<article class=" pre_conNoneLine pre_continerBox"><div class="pre_continerDate date"></div><div class="pre_continerMain"><div class="pre_continerImg"></div><div class="pre_continerTitle"></div><div class="pre_continerText"></div></div></article>';
+				insert+= '<article class=" pre_conNone pre_conNoneLine pre_continerBox"><div class="pre_continerDate date"></div><div class="pre_continerMain"><div class="pre_continerImg"></div><div class="pre_continerTitle"></div><div class="pre_continerText"></div></div></article>';
 			}
 			insert+='</article><!--.pre_conSetここまで-->';
 		}

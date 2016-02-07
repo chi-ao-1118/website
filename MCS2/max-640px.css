@@ -1,40 +1,399 @@
 @charset "UTF-8";
-
 /* ///////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////// */
-
-
-
+html, body {
+	height: 100%;
+	margin: 0;
+	line-height: 1.7em;
+	width:100%;
+}
+li {
+	list-style: none;
+}
+/*
+		ヘッダー
+					*/
+					
 .head {
-	background-color: white;
+	magin: 0 aute;
+	line-height: normal;
+}
+.head_btn {
+}
+.head_btnLeft {
+	margin:0 auto;
+	height: 100%;
+	text-align:center;
+	position:relative;
+}
+#head_mcsLogo {
+	margin-top:1%;
+	width: 20%;
+	height: auto;
+}
+.menuWrap{
+	margin:0 auto;
+	text-align:right;
+}
+.menu{
+	width:10%;
+	height:auto;
+	margin-right:3%;
+	position:absolute;
+	right:3%;
+	bottom:8%;
 }
 
-.top_topWrapper {
+
+
+.head_btnRight {
+	display:none;
 }
 
-.top_topWrapper .main {
+/*
+	 head_map
+				*/
+.head_map {
+	display:none;
 }
 
-.top_mainWrapper {
+
+
+/*
+		 中身
+					*/
+/*
+	線で囲んだタイトル用のCSS
+		class="lineBox"の要素のdivの中に、タイトル文字を記入したdivを入れる
+		タイトル文字の記入されたdivにidかclassを付与
+		文字の太さやパディング、マージンの微調整
+*/
+.lineBox {
+	text-align: center;
+	margin: 0 auto;
+}
+.lineBox div {
+	color: #000;
+	text-align: center;
+	display: inline-block;
+}
+.lineBox .topTitleWrap {
+	border: solid 0.25em #000000;
+	background-color: rgba(255,255,255,0.5);
+}
+.lineBox .subTitle {
+	border: solid 0.25em #000000;
+	background-color: rgba(255,255,255,0.5);
+}
+.subTitle {
+	margin: 2em auto;
+	padding: 0.5em 1.5em;
+}
+.topTitleWrap {
+	padding: 1em 1em;
+	display: inline-block;
+}
+.topTitle {
+	width: 6em;
+	font-size: 1.4em;
+	font-weight: 600;
+	border-bottom: solid 0.2em #000000;
 }
 
+.date{
+	font-size: 0.8em;
+	color: #000;
+	text-align: left;
+}
+
+.page_top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+
+	height: 80px;
+	border-radius: 80px;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	
+	z-index:5;
+}
+
+/*
+		 TOP画
+					*/
+.topImg {
+	width: 100%;
+	background-size: cover;
+	padding: 9% 0;
+	text-align: center;
+}
+#topImg_about {
+	background-image: url(img/about_top.jpg);
+}
+#topImg_works {
+	background-image: url(img/topPic.jpg);
+}
+#topImg_project {
+	background-image: url(img/topPic.jpg);
+}
+#topImg_contents {
+	background-image: url(img/topPic.jpg);
+}
+#topImg_pressrelease {
+	background-image: url(img/topPic.jpg);
+}
+#topImg_links {
+	background-image: url(img/topPic.jpg);
+}
+
+
+/*
+		Works
+			 	  */
+				
+.works_mainWrapper {
+	margin: 0 auto;
+	margin-top: 1.5%;
+	width: 100%;
+}
+
+.works_btnWrapper {
+	margin: 0 auto;
+	font-size: 0;
+}
+.works_sBtn{
+	width:20%;
+	height:auto;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom:1.5%;
+}
+.works_sBtnL{
+	padding-right:1%;
+}
+.works_sBtnR{
+	padding-left:1%;
+}
+.works_lBtn{
+	width:79%;
+	height:auto;
+	display:inline-block;
+	vertical-align: bottom;
+	margin-bottom:1.5%;
+}
+.works_btnLong:hover {
+	background-image: url("img/long-on.png");
+	background-size: contain;
+}
+
+
+.works_bkBtnWrap {
+	width: 8em;
+	margin-left:15%;
+	padding-bottom:2%;
+	padding-top:2%;
+}
+.works_bkBtnA {
+	color: #000;
+	text-decoration: none;
+}
+.works_bkBtn {
+	color: #000;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	
+	width: 100%;
+	height: 100%;
+	
+	border-radius: 5px;
+}
+
+.works_bkBtnImg {
+	display: inline-block;
+	width: auto;
+	height: 2em;
+	vertical-align: middle;
+}
+.works_bkTxt {
+	display: inline-block;
+	text-align: right;
+	padding: 0 0 0 2em;
+	line-height: 0.1em;
+	vertical-align: middle;
+}
+#project_bk {
+	position:relative;
+	background-color: #FF9B91;
+	box-shadow: -6px 0 #ab3c3c;
+}
+#contents_bk {
+	position:relative;
+	background-color: #78FF6D;
+	box-shadow: -6px 0 #2D9B00;
+}
+#pressrelease_bk {
+	position:relative;
+	background-color: #FFFA85;
+	box-shadow: -6px 0 #FFC600;
+}
+
+
+/*
+	  プロジェクト
+		 			*/
+.project_dataBox {
+	margin: 3em auto;
+	text-align: center;
+}
+.project_img {
+	width: 80%;
+	height: auto;
+}
+.project_imgPCR{
+	display:none;
+}
+.project_txtBox {
+	text-align:left;
+	padding: 0 3em;
+	line-height: 1.5em;
+	width: 80%;
+}
+.project_date {
+	font-size: 0.9em;
+	padding: 0.2em 0;
+}
+.project_name {
+	font-size: 1.8em;
+	font-weight: 800;
+	padding: 0.4em 0.3em;
+}
+.project_p {
+}
+.project_line {
+	width: 77%;
+	height: 0.1em;
+	margin: 2em auto;
+	background-color: #000;
+}
+
+
+/*
+
+ 	 PressRelease
+					*/
+
+.pressrelease_mainWrapper {
+	width: 100%;
+	margin: 2em 0;
+}
+.pre_conSet {
+	text-align: left;
+}
+a.pre_conA{
+	color:black;
+}
+.pre_continerData:hover{
+	text-decoration: underline;
+}
+.pre_continerBox {
+	width: 100%;
+	margin: 0.5em 0;
+	display: inline-block;
+	border-bottom:1px solid #B4B4B4;
+}
+.pre_continerDate {
+	display:none;
+}
+.pre_continerMain {
+	padding: 0 1em;
+	margin-bottom:1em;
+}
+.pre_continerImg {
+	vertical-align:middle;
+	background-size: cover;
+	height: 100px;
+	width:33%;
+	display:inline-block;
+}
+#pre_icon1 {
+	background-image: url(img/topPic.jpg);
+}
+.pre_continerData{
+	vertical-align:middle;
+	display:inline-block;
+	width: 60%;	
+	padding-left:3%;
+}
+.pre_continerSmartDate{
+	
+}
+.pre_continerTitle {
+	font-size: 1em;
+	font-weight: 800;
+	
+	width:100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.pre_continerText {
+	width:100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.pre_conNone{
+	display:none;
+}
+
+/*	
+		フッター
+					*/
 .foot {
 	background-color: #000000;
+	color: #ffffff;
+	height: auto;
+	padding: 0.1em 0;
+	text-align: center;
+	z-index: 3;
 }
 
-.footer_Name {
+.foot_smartBox{
+	position:relative;
+	margin-bottom:-3%;
+}
+.foot_smartA{
+	text-decoration: none;
+	color: #fff;
+}
+.foot_smartSNSWrap{
+	position:absolute;
+	right:4%;
+	top:1%;
+}
+.foot_smartSNSA{
+	
 }
 
-.footer_Link {
+.footer_map {
+	display:none;
 }
 
-.footer_Wrapper {
+/**
+		 フォーム
+						**/
+.footer_form {
+	display:none;
 }
 
-.footer_Wrapper form {
-}
+
+
 
 /* CSS Document */
 

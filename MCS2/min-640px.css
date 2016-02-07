@@ -45,6 +45,9 @@ li {
 	height: 90%;
 	margin: 0;
 }
+.menu{
+	display:none;
+}
 /*
 	 head_map
 				*/
@@ -170,6 +173,9 @@ ul.head_map a{
 }
 .page_top:active{
 	bottom:15px;
+}
+.menu{
+	display:none;
 }
 
 /*
@@ -423,44 +429,11 @@ z-index:1;
 	background-image: url("img/long-on.png");
 	background-size: contain;
 }
+
+
 /*
-	  プロジェクト
-		 			*/
-.project_dataBox {
-	margin: 3em auto;
-	text-align: center;
-}
-.project_dataBox img {
-	display: inline-block;
-	vertical-align: middle;
-	width: 20%;
-	height: auto;
-}
-.project_txtBox {
-	display: inline-block;
-	vertical-align: middle;
-	text-align: left;
-	padding: 0 3em;
-	line-height: 1.5em;
-	width: 50%;
-}
-.project_date {
-	font-size: 0.9em;
-	padding: 0.2em 0;
-}
-.project_name {
-	font-size: 1.8em;
-	font-weight: 800;
-	padding: 0.8em 0.3em;
-}
-.project_p {
-}
-.project_line {
-	width: 77%;
-	height: 0.1em;
-	margin: 2em auto;
-	background-color: #000;
-}
+　 共通バックボタン	
+				 	*/
 .works_bkBtnWrap {
 	width: 8em;
 	margin: 3em 0 3em 15%;
@@ -533,6 +506,51 @@ z-index:1;
 	box-shadow: 0px 0 #FFC600;
 	left:-6px;
 }
+
+
+
+/*
+	  プロジェクト
+		 			*/
+.project_dataBox {
+	margin: 3em auto;
+	text-align: center;
+}
+.project_img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+	height: auto;
+}
+project_imgSmartL{
+	display:none;
+}
+.project_txtBox {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0 3em;
+	line-height: 1.5em;
+	width: 50%;
+}
+.project_date {
+	font-size: 0.9em;
+	padding: 0.2em 0;
+}
+.project_name {
+	font-size: 1.8em;
+	font-weight: 800;
+	padding: 0.8em 0.3em;
+}
+.project_p {
+}
+.project_line {
+	width: 77%;
+	height: 0.1em;
+	margin: 2em auto;
+	background-color: #000;
+}
+
 
 /*
 
@@ -651,6 +669,9 @@ a.pre_conA{
 #pre_icon1 {
 	background-image: url(img/topPic.jpg);
 }
+.pre_continerSmartDate{
+	display:none;
+}
 .pre_continerTitle {
 	font-size: 1.2em;
 	font-weight: 800;
@@ -662,7 +683,7 @@ a.pre_conA{
 	width: 100%;
 	position:relative;
 }
-.pre_continerText:before {
+/*.pre_continerText:before {
 	  background:#fff;
       position: absolute;
       content: "....";
@@ -675,7 +696,7 @@ a.pre_conA{
       content: "";
       height: 100%;
       width: 100%;
-}
+}*/
 
 
 /*
@@ -734,6 +755,9 @@ a.pre_conA{
 	padding: 0.1em 0;
 	text-align: center;
 	z-index: 3;
+}
+.foot_smartBox{
+	display:none;
 }
 a.footer {
 	color: #ffffff;
