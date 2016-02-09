@@ -167,6 +167,7 @@ ul.head_map a{
 	-moz-border-radius: 80px;
 	
 	z-index:5;
+	display:none;
 }
 .page_top:hover{
 	background-color: rgba(96,96,96,0.53);

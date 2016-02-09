@@ -109,16 +109,7 @@ li {
 }
 
 .page_top {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-
-	height: 80px;
-	border-radius: 80px;
-	-webkit-border-radius: 80px;
-	-moz-border-radius: 80px;
-	
-	z-index:5;
+	display:none;
 }
 
 /*
