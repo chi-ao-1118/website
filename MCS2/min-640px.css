@@ -4,7 +4,6 @@
 
 /////////////////////////////////////////////////////////////////// */
 html, body {
-	height: 100%;
 	margin: 0;
 	line-height: 1.7em;
 }
@@ -799,7 +798,7 @@ a.footer {
 form.footer {
 	/* フォームをページの中央に置く */
 	margin: 0 auto;
-	width: 40em;
+	width: 30em;
 	/* フォームの範囲がわかるようにする */
 	padding: 1em;
 }
