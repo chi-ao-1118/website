@@ -160,10 +160,11 @@ ul.head_map a{
 	bottom: 20px;
 	right: 20px;
 
-	height: 80px;
-	border-radius: 80px;
-	-webkit-border-radius: 80px;
-	-moz-border-radius: 80px;
+	width:10%;
+	height: auto;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	
 	z-index:5;
 	display:none;
