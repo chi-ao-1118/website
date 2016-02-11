@@ -337,6 +337,12 @@ p.about {
 	background-size: cover;
 	margin-left: 3em;
 }
+#about_medican3img:hover {
+	-webkit-transform: rotate(13deg) scale(1.2);
+	transform: rotate(13deg) scale(1.2);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
 
 /*編集中
 モーダルのCSS*/
