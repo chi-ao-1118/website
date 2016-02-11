@@ -1,9 +1,9 @@
 $(function(){
+	var pageTop = $('.page_top');
 	$(window).on('load resize', function() {
-		var pageTop = $('.page_top');
 		pageTop.hide();
 		$(window).scroll(function () {
-			if($(window).width()>=640){
+			if($(window).width()>640){
 				if ($(this).scrollTop() > 200) {
 					pageTop.fadeIn();
 				} else {
