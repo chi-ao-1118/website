@@ -244,8 +244,11 @@ li {
 	width: 80%;
 	height: auto;
 }
-.project_imgPCR{
+.project_imgPC{
 	display:none;
+}
+.project_imgSmart{
+	text-align:center;
 }
 .project_txtBox {
 	text-align:left;
