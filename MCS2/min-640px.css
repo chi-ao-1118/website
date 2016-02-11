@@ -336,12 +336,16 @@ p.about {
 	background-image: url(img/medican3.jpg);
 	background-size: cover;
 	margin-left: 3em;
+		
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 #about_medican3img:hover {
 	-webkit-transform: rotate(13deg) scale(1.2);
 	transform: rotate(13deg) scale(1.2);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+
 }
 
 /*編集中
