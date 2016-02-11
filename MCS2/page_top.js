@@ -3,8 +3,11 @@ $(function(){
 	$(window).on('load resize', function() {
 		pageTop.hide();
 		$(window).scroll(function () {
-			if($(window).width()>640){
-				if ($(this).scrollTop() > 200) {
+		if ( !window.innerWidth ){
+    		return;
+		}
+		if ( window.innerWidth >640 ){
+  			if ($(this).scrollTop() > 200) {
 					pageTop.fadeIn();
 				} else {
 					pageTop.fadeOut();
