@@ -349,7 +349,7 @@ p.about {
 }
 
 .modal-content {
-	width:50%;
+	width:70%;
 	margin:0;
 	padding:10px 20px;
 	border: 2px solid #aaa ;
@@ -382,7 +382,7 @@ z-index:1;
 
 .movie-wrap {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 80%;
     padding-top: 30px;
     height: 0;
     overflow: hidden;
@@ -402,6 +402,10 @@ z-index:1;
 	background-image: url(img/medican3.jpg);
 }
 
+.modal-img{
+    max-width: 100%;
+    height: auto;
+}
 /*
 		Works
 					*/
