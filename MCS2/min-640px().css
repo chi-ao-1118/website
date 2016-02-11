@@ -6,6 +6,8 @@
 html, body {
 	height: 100%;
 	margin: 0;
+	
+	line-height: 1.7em;
 }
 li {
 	list-style: none;
@@ -119,12 +121,13 @@ ul.head_map a {
 	font-size: 1.1em;
 	width: 90%;
 	border-bottom: 0.15em solid black;
-	padding:0.5em;
+	padding:0.3em 0.5em 0.5em 0.5em;
 	margin: 0.5em auto;
 }
 .top_topMCS {
 	font-size: 2.5em;
 	margin: 0.1em auto;
+	padding-bottom:0.3em;
 }
 
 
@@ -146,12 +149,14 @@ ul.head_map a {
 	bottom: 20px;
 	right: 20px;
 
-	height: 80px;
-	border-radius: 80px;
-	-webkit-border-radius: 80px;
-	-moz-border-radius: 80px;
-	display:none;
+	width:70px;
+	height: auto;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	
 	z-index:5;
+	display:none;
 }
 .page_top:hover{
 	background-color: rgba(96,96,96,0.53);
@@ -361,8 +366,10 @@ ul.head_map a {
 	height: auto;
 	padding: 0.1em 0;
 	text-align: center;
-	position: relative;
 	z-index: 3;
+}
+.foot_smartBox{
+	display:none;
 }
 a.footer {
 	color: #ffffff;
@@ -417,7 +424,7 @@ a.footer {
 form.footer {
 	/* フォームをページの中央に置く */
 	margin: 0 auto;
-	width: 40em;
+	width: 30em;
 	/* フォームの範囲がわかるようにする */
 	padding: 1em;
 }
