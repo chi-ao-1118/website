@@ -699,9 +699,19 @@ a.pre_conA{
 .pre_continerImg {
 	background-size: cover;
 	height: 100px;
+	overflow:hidden;
 }
-#pre_icon1 {
-	background-image: url(img/topPic.jpg);
+.pre_continerImg img{
+	width:auto;
+	height:100%;
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.pre_continerImg:hover img{
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
 }
 .pre_continerSmartDate{
 	display:none;

@@ -371,10 +371,22 @@ a.pre_conA{
 	height: 100px;
 	width:33%;
 	display:inline-block;
+	overflow:hidden;
 }
-#pre_icon1 {
-	background-image: url(img/topPic.jpg);
+.pre_continerImg img{
+	height:100%;
+	width:auto;
+		-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
+
+.pre_continerImg:hover img{
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+}
+
 .pre_continerData{
 	vertical-align:middle;
 	display:inline-block;
