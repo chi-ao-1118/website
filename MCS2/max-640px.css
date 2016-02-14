@@ -417,6 +417,49 @@ a.pre_conA{
 	display:none;
 }
 
+/*
+	PressRelease Index
+						*/
+.preIndex_conWrap{
+	width:80%;
+	margin:4em auto;
+}
+.preIndex_conDate{
+	font-size: 0.9em;
+}
+.preIndex_mainImg img{
+	width:100%;
+	height:auto;
+	margin-bottom:1em;
+}
+.preIndex_mainTitle{
+	font-size: 2em;
+	font-weight: 800;
+	margin:0.5em 0;
+}
+.preIndex_mainText{
+}
+
+/*
+		LINKS
+					*/
+.links_blockWrap {
+	margin-bottom: 3em;
+}
+.links_linkBox {
+	margin: 0.5em auto;
+	text-align: center;
+}
+.links_banner {
+	width: 80%;
+	height: auto;
+}
+.links_txt {
+	width: 80%;
+	text-align:center;
+	margin:0 auto 2em auto;
+}
+
 /*	
 		フッター
 					*/
