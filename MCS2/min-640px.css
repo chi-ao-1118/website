@@ -355,7 +355,7 @@ p.about {
 	width: 80%;
 	margin: 0 auto;
 }
-.modal-open{
+.modal_box .modal-open{
 	display:inline-block;
 }
 
