@@ -30,10 +30,10 @@ $(window).resize(centeringModalSyncer);		//リサイズされたら、センタ�
 
 		// コンテンツ(#modal-content)の幅、高さを取得
 		// jQueryのバージョンによっては、引数[{margin:true}]を指定した時、不具合を起こす
-//		var cw = $( "#modal-content" ).outerWidth( {margin:true} );
-//		var ch = $( "#modal-content" ).outerHeight( {margin:true} );
+		//var cw = $(".modal-content").outerWidth( {margin:true} );
+		//var ch = $(".modal-content").outerHeight( {margin:true} );
 		var cw = $(".modal-content").outerWidth();
 		var ch = $(".modal-content").outerHeight();
-		$(".modal-content").css( {"left":((w-cw)/2)+"px","top":((h-ch)/2)+"px"});		//センタリングを実行する
+		$(".modal-content").css( {"left":((w-cw)/6)+"px","top":((h-ch)/2)+"px"});		//センタリングを実行する
 	}
 } ) ;
