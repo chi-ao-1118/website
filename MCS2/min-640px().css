@@ -234,10 +234,11 @@ a#top_scroll span{
 }
 
 .top_mainWrapper {
+	margin-top:-120px;
 	padding: 0;/*margin:*/
 }
 .top_mainContainer1 {
-	margin: 3% 0 0 0;
+	margin: 2% 0 0 0;
 	margin-bottom: -100px;
 	position: relative;
 }

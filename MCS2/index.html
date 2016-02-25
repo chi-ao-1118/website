@@ -22,7 +22,7 @@
         <ul>
           <li class="head_btnLink"><a href="https://twitter.com/MCS_kutc" target="_blank"><img src="img/twitter.png" alt="Twiter_Link"></a></li>
           <li class="head_btnLink"><a href="https://www.facebook.com/mcs.kutc" target="_blank"><img src="img/facebook.png" alt="Facebook_Link"></a></li>
-          <li class="head_btnLink"><img src="img/search.jpg" width="30" height="30" alt="search"></li>
+          <!--<li class="head_btnLink"><img src="img/search.jpg" width="30" height="30" alt="search"></li>-->
         </ul>
       </div>
     </article>
@@ -60,7 +60,7 @@
 <!--ここまでファーストビュー--> 
 <!--ここから内容-->
 <article class="top_mainWrapper"> 
-  <!--Now-->
+  <!--Now--> 
   <a name="now">
   <article class="top_mainContainer1">
     <div class="top_mainObject1">
@@ -77,8 +77,7 @@
     </div>
     <div id="top_mainNowBgc" class="top_mainBgc"></div>
   </article>
-  </a>
-  <a name="news">
+  </a> <a name="news"> 
   <!--News-->
   <article class="top_mainContainer1">
     <div class="top_mainObject1">
@@ -104,7 +103,7 @@
   </article>
   </a>
   <div id="SNSwrapper"> 
-    <!--Twitter-->
+    <!--Twitter--> 
     <a name="twitter">
     <article class="top_mainContainer2">
       <div class="top_mainObject2">
@@ -123,8 +122,8 @@
       </div>
       <div id="top_mainTwitterBgc" class="top_mainBgc"></div>
     </article>
-    </a>
-    <!--Facebook-->
+    </a> 
+    <!--Facebook--> 
     <a name="facebook">
     <article class="top_mainContainer2">
       <div class="top_mainObject2">
@@ -136,18 +135,25 @@
           </div>
         </div>
         <div class="top_mainContents">
-          <div class="top_mainSNSContens"> <a class="twitter-timeline"  href="https://twitter.com/MCS_kutc" data-widget-id="436499417898565632">@MCS_kutcさんのツイート</a> 
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+          <div class="top_mainSNSContens">
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=928126707236276";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-page" data-href="https://www.facebook.com/mcs.kutc/" data-tabs="timeline" data-width="400" data-height="460" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"> </div>
           </div>
         </div>
       </div>
       <div id="top_mainFacebookBgc" class="top_mainBgc"></div>
     </article>
+    </a>
   </div>
 </article>
-</a>
-
- <img class="page_top" src="img/up.png" alt="upButton">
+ <img class="page_top" src="img/up.png" alt="upButton"> 
 
 <!--ここからフッター-->
 <footer class="foot">
@@ -164,7 +170,6 @@
       </a> <a class="footer" href="index.html#facebook">
       <li class="footer_linkSubSection">Facebook</li>
       </a>
-      </li>
     </ul>
     <ul class="footer_mapBox" id="footer_linkAbout">
       <a class="footer" href="about.html">
@@ -178,7 +183,6 @@
       </a> <a class="footer" href="about.html#medican">
       <li class="footer_linkSubSection">めでぃカンさん</li>
       </a>
-      </li>
     </ul>
     <ul class="footer_mapBox" id="footer_linkWorks">
       <a class="footer" href="works.html">
@@ -190,7 +194,6 @@
       </a> <a class="footer" href="pressrelease.html">
       <li class="footer_linkSubSection">PressRelease</li>
       </a>
-      </li>
     </ul>
     <ul class="footer_mapBox" id="footer_linkLinks">
       <a class="footer" href="links.html">
@@ -221,8 +224,8 @@
   <!--コピーライト-->
   <p><small>© 2015 Media Creative Supporter</small></p>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="page_top.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+<script type="text/javascript" src="page_top.js"></script> 
 <script type="text/javascript" src="top_topUnderHide.js"></script>
 </body>
 </html>
