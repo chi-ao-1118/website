@@ -34,6 +34,6 @@ $(window).resize(centeringModalSyncer);		//リサイズされたら、センタ�
 		//var ch = $(".modal-content").outerHeight( {margin:true} );
 		var cw = $(".modal-content").outerWidth();
 		var ch = $(".modal-content").outerHeight();
-		$(".modal-content").css( {"left":((w-cw)/8)+"px","top":((h-ch)/2)+"px"});		//センタリングを実行する
+		$(".modal-content").css( {"left":((w-cw)/8)+"px","top":((h-ch)/8)+"px"});		//センタリングを実行する
 	}
 } ) ;
