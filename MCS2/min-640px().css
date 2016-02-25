@@ -135,7 +135,7 @@ a#top_scroll{
 	
 	position: relative;
 	top:-100px;
-	left: 50%;
+	left: calc(50% - 24px);
 	z-index: 2;
 	display: inline-block;
 	-webkit-transform: translate(0, -50%);
