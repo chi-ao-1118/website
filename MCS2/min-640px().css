@@ -234,11 +234,10 @@ a#top_scroll span{
 }
 
 .top_mainWrapper {
-	margin-top:-120px;
 	padding: 0;/*margin:*/
 }
 .top_mainContainer1 {
-	margin: 2% 0 0 0;
+	margin: 3% 0 0 0;
 	margin-bottom: -100px;
 	position: relative;
 }
@@ -246,6 +245,7 @@ a#top_scroll span{
 	display: inline-block;
 	margin : 0;
 	width: 37%;
+	z-index:1;
 }
 #SNSwrapper {
 	margin: 0 auto;
