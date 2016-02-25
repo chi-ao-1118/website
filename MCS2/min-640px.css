@@ -369,6 +369,11 @@ p.about {
 	display:none;
 	z-index:2;
 }
+.modal-content p{
+	font-size: 1em;
+	color:#000;
+	line-height:1.3em;
+}
   
 #modal-overlay {
 z-index:1;
@@ -393,10 +398,14 @@ z-index:1;
 
 .movie-wrap {
     position: relative;
-    padding-bottom: 80%;
+    padding-bottom: 40%;
     padding-top: 30px;
     height: 0;
     overflow: hidden;
+}
+.movie-wrap img{
+	width:80%;
+	height:auto;
 }
  
 .movie-wrap iframe {
