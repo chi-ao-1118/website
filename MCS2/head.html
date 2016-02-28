@@ -5,29 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
 <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
-      
-<script src="script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="page_top.js"></script>
-<script type="text/javascript" src="csvArr.js"></script>
-
 <title>MCS</title>
-      
 </head>
 
 <body>
-<!--ここからヘッダー-->
+<!--ここからヘッダー--> 
 <a name="header">
 <header class="head">
   <article class="head_btn">
     <div class="head_btnLeft">
-      <div class="head_btnLink" id="head_logo"><a href="index.html"><img id="head_mcsLogo" src="img/mcs.jpg" alt="mcs_logo"></a></div>
+      <div class="head_btnLink" id="head_logo"><a href="index.html"><img id="head_mcsLogo" src="img/mcs.jpg" alt="mcs_logo"></a>
+        <div class="menuWrap"><img class="menu" src="img/menu.png" alt="menu"></div>
+      </div>
     </div>
     <div class="head_btnRight">
       <ul>
         <li class="head_btnLink"><a href="https://twitter.com/MCS_kutc" target="_blank"><img src="img/twitter.png" alt="Twiter_Link"></a></li>
         <li class="head_btnLink"><a href="https://www.facebook.com/mcs.kutc" target="_blank"><img src="img/facebook.png" alt="Facebook_Link"></a></li>
-          <!--<li class="head_btnLink"><img src="img/search.jpg" width="30" height="30" alt="search"></li>-->
+        <!--<li class="head_btnLink"><img src="img/search.jpg" width="30" height="30" alt="search"></li>-->
       </ul>
     </div>
   </article>
@@ -37,9 +32,9 @@
       <a href="index.html">
       <li class="head_mapLink">TOP</li>
       </a><a href="about.html">
-      <li class="head_mapLink">ABOUT</li>
+      <li class="head_mapLink" id="head_mapThis">ABOUT</li>
       </a><a href="works.html">
-      <li class="head_mapLink" id="head_mapThis">WORKS</li>
+      <li class="head_mapLink">WORKS</li>
       </a><a href="links.html">
       <li class="head_mapLink">LINKS</li>
       </a>
@@ -47,12 +42,40 @@
     </ul>
   </nav>
 </header>
-</a>
+</a> 
+<!--ここからハンバーガーメニュー-->
+<div class="menu_overlay"></div>
+<nav class="hamMenu">
+  <div class="menu_section"><a href="index.html">TOP
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_section"><a href="about.html">ABOUT
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_section"><a href="works.html">WORKS
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_subsection menu_section"><a href="project.html">PROJECT
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_subsection menu_section"><a href="contents.html">CONTENTS
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_subsection menu_section"><a href="pressrelease.html">PRESS RELEASE
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_section"><a href="links.html">LINKS
+    <div class="menu_arrow"></div>
+    </a></div>
+</nav>
 
 <!--ここから本文-->
-    <div id="press"></div>
-
- <img class="page_top" src="img/up.png" alt="upButton">
-
+<div id="press"></div>
+<img class="page_top" src="img/up.png" alt="upButton"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+<script src="modal.js"></script> 
+<script type="text/javascript" src="page_top.js"></script> 
+<script type="text/javascript" src="csvArr.js"></script> 
+<script type="text/javascript" src="menu.js"></script>
 </body>
 </html>

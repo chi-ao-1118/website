@@ -22,7 +22,7 @@
       <ul>
         <li class="head_btnLink"><a href="https://twitter.com/MCS_kutc" target="_blank"><img src="img/twitter.png" alt="Twiter_Link"></a></li>
         <li class="head_btnLink"><a href="https://www.facebook.com/mcs.kutc" target="_blank"><img src="img/facebook.png" alt="Facebook_Link"></a></li>
-          <!--<li class="head_btnLink"><img src="img/search.jpg" width="30" height="30" alt="search"></li>-->
+        <!--<li class="head_btnLink"><img src="img/search.jpg" width="30" height="30" alt="search"></li>-->
       </ul>
     </div>
   </article>
@@ -43,7 +43,31 @@
   </nav>
 </header>
 </a> 
-
+<!--ここからハンバーガーメニュー-->
+<div class="menu_overlay"></div>
+<nav class="hamMenu">
+  <div class="menu_section"><a href="index.html">TOP
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_section"><a href="about.html">ABOUT
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_section"><a href="works.html">WORKS
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_subsection menu_section"><a href="project.html">PROJECT
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_subsection menu_section"><a href="contents.html">CONTENTS
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_subsection menu_section"><a href="pressrelease.html">PRESS RELEASE
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_section"><a href="links.html">LINKS
+    <div class="menu_arrow"></div>
+    </a></div>
+</nav>
 <!--ここからページ内容--> 
 <!--Top画像-->
 <article class="topImg" id="topImg_about">
@@ -131,7 +155,7 @@
   大学内にあるスタジオには、様々な設備が整っており、本格的なスタジオ撮影が行えます。</p>
 <div class="modal_box"> 
   <!-- ここから一つ目のモーダルウィンドウ -->
-  <div class="modal-open"> <img src="img/switcher.jpg" width="80" height="80">
+  <div class="modal-open"> <img src="img/switcher.jpg">
     <div class="modal-content"> 
       <!-- モーダルウィンドウのコンテンツ開始 -->
       <div class="movie-wrap"> <img src="img/switcher.jpg"> </div>
@@ -144,7 +168,7 @@
   <!-- ここまで一つ目のモーダルウィンドウ --> 
   
   <!-- ここから二つ目のモーダルウィンドウ -->
-  <div class="modal-open"> <img src="img/camera.jpg" width="80" height="80">
+  <div class="modal-open"> <img src="img/camera.jpg">
     <div class="modal-content"> 
       <!-- モーダルウィンドウのコンテンツ開始 -->
       <div class="movie-wrap"> <img src="img/camera.jpg"> </div>
@@ -158,7 +182,7 @@
   <!-- ここまで二つ目のモーダルウィンドウ --> 
   
   <!-- ここから三つ目のモーダルウィンドウ -->
-  <div class="modal-open"> <img src="img/illumination.jpg" width="80" height="80">
+  <div class="modal-open"> <img src="img/illumination.jpg">
     <div class="modal-content"> 
       <!-- モーダルウィンドウのコンテンツ開始 -->
       <div class="movie-wrap"> <img src="img/illumination.jpg"> </div>
@@ -167,6 +191,7 @@
       <p><a id="modal-close" class="button-link">閉じる</a></p>
       <!-- モーダルウィンドウのコンテンツ終了 --> 
     </div>
+  </div>
   </div>
 </div>
 <div id="about_enviromentBottom"></div>
@@ -177,12 +202,13 @@
     <div class="about_titleTitle">めでぃカンさん</div>
     <div class="about_titleBar" id="about_section04"></div>
   </div>
-  <div id="about_medican3Wrapper">
+  <div id="about_medican3Wrapper Smart">
+    <div id="about_medican3img"></div>
     <p id="about_medican3P"> MCS公式キャラクター。<br/>
       モチーフはペリカンです。<br/>
       ポスターやチラシ、番組のオープニングなどで登場することがあるかも！？<br/>
       探してみてくださいね！</p>
-    <div id="about_medican3img"></div>
+    <div id="about_medican3img PC"></div>
   </div>
 </article>
 </article>
@@ -263,5 +289,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
 <script src="modal.js"></script> 
 <script type="text/javascript" src="page_top.js"></script>
+<script type="text/javascript" src="menu.js"></script>
 </body>
 </html>

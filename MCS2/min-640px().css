@@ -193,6 +193,7 @@ a#top_scroll span{
 	background-image: url("img/top_topUnder.png");
 	background-size: contain;
 	z-index:2;
+	margin-bottom:-170px;
 }
 
 /*
@@ -219,6 +220,17 @@ a#top_scroll span{
 	bottom:15px;
 }
 
+/*
+	　ハンバーガー
+					*/
+					
+.hamMenu{
+	display:none;
+}
+.menu_overlay{
+	display:none;
+}
+
 
 /*
 	 Topページコンテンツ
@@ -235,11 +247,11 @@ a#top_scroll span{
 
 .top_mainWrapper {
 	padding: 0;/*margin:*/
+	position:relative;
+	z-index:1;/*z-indexを動作させるには、static以外のpositionの設定が必要*/
 }
 .top_mainContainer1 {
-	margin: 3% 0 0 0;
-	margin-bottom: -100px;
-	position: relative;
+	margin: 3% 0 -80px 0;
 }
 .top_mainContainer2 {
 	display: inline-block;
@@ -252,6 +264,7 @@ a#top_scroll span{
 	text-align: center;
 	position: relative;
 	margin-bottom: -400px;
+	z-index:1;
 }
 .top_mainObject1 {
 	margin: 0 auto;
@@ -421,6 +434,7 @@ a#top_scroll span{
 	height: auto;
 	padding: 0.1em 0;
 	text-align: center;
+	position:relative;
 	z-index: 3;
 }
 .foot_smartBox{

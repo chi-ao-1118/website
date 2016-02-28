@@ -10,6 +10,13 @@ html, body {
 li {
 	list-style: none;
 }
+
+.Smart{
+	display:none;
+}
+.PC{
+	inline
+}
 /*
 		ヘッダー
 					*/
@@ -206,6 +213,17 @@ ul.head_map a{
 #topImg_links {
 	background-image: url(img/topPic.jpg);
 }
+
+/*
+	　ハンバーガー
+					*/
+.hamMenu{
+	display:none;
+}
+.menu_overlay{
+	display:none;
+}
+
 /*
 
 	   	ABOUT
@@ -357,6 +375,10 @@ p.about {
 }
 .modal_box .modal-open{
 	display:inline-block;
+}
+.modal-open img{
+	width:80px;
+	height:80px;
 }
 
 .modal-content {
