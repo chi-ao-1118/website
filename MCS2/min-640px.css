@@ -272,10 +272,40 @@ p.about {
 	width: 20%;
 	position:relative;
 }
-.about_officeItem {
+.about_officeItem01 {
 	padding-top: 100%;/*padding-topの基準はwidth*/
 	width: 100%;
-	background-image: url(img/officeItem03a.png);
+	background-image: url(img/production_Department.jpg);
+	background-size: cover;
+	overflow: hidden;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.about_officeItem02 {
+	padding-top: 100%;/*padding-topの基準はwidth*/
+	width: 100%;
+	background-image: url(img/technical_Station.jpg);
+	background-size: cover;
+	overflow: hidden;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.about_officeItem03 {
+	padding-top: 100%;/*padding-topの基準はwidth*/
+	width: 100%;
+	background-image: url(img/DPI.jpg);
 	background-size: cover;
 	overflow: hidden;
 	-moz-transform: scale(1);

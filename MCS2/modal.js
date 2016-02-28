@@ -7,7 +7,7 @@ $(".modal-open").click(function(){
 	
 	//キーボード操作などにより、オーバーレイが多重起動を防止
 	modalOpen.blur() ;	//ボタンからフォーカスを外す
-	if( $( "#modal-overlay" )[0] ) return false ;		//新しくモーダルウィンドウを起動しない機能
+	if($("#modal-overlay")[0] ) return false ;		//新しくモーダルウィンドウを起動しない機能
 	if($("#modal-overlay")[0]) $("#modal-overlay").remove() ;		//現在のモーダルウィンドウを削除して新しく起動
 
 	$("body").append('<div id="modal-overlay"></div>');

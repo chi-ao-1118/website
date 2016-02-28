@@ -178,23 +178,29 @@ li {
 	width: 80%;
 	margin: 0 auto;
 }
-.modal-open{
+.modal_box .modal-open{
 	display:inline-block;
 }
 
 .modal-content {
 	width:80%;
 	margin:0;
-	padding:10px 20px;
+	height:90%;
+	padding:10px 10px;
 	border: 2px solid #aaa ;
 	background:#fff;
 	position:fixed;
 	display:none;
 	z-index:2;
 }
+.modal-content p{
+	font-size: 1em;
+	color:#000;
+	line-height:1.3em;
+}
   
 #modal-overlay {
-z-index:2;
+z-index:1;
 	display:none;
 	position:fixed;
 	top:0;
@@ -216,12 +222,15 @@ z-index:2;
 
 .movie-wrap {
     position: relative;
-	
-    /*padding-bottom: 20%;*/
-    /*padding-top: 50px;*/
-	width:30%;
-	height: auto;
+    padding-bottom:20px;
+    padding-top: 20px; 
+	width:auto;
+    height:50hv;
     overflow: hidden;
+}
+.movie-wrap img{
+	width:80%;
+	height:auto;
 }
  
 .movie-wrap iframe {
@@ -230,6 +239,12 @@ z-index:2;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+
+.modal-img{
+    max-width: 100%;
+    height: auto;
 }
 
 /*
@@ -298,10 +313,40 @@ p.about {
 	width: 20%;
 	position:relative;
 }
-.about_officeItem {
-	padding-top:100%;/*padding-topの基準はwidth*/
-	width: 120px;
-	background-image: url(img/officeItem03a.png);
+.about_officeItem01 {
+	padding-top: 100%;/*padding-topの基準はwidth*/
+	width: 100%;
+	background-image: url(img/production_Department.jpg);
+	background-size: cover;
+	overflow: hidden;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.about_officeItem02 {
+	padding-top: 100%;/*padding-topの基準はwidth*/
+	width: 100%;
+	background-image: url(img/technical_Station.jpg);
+	background-size: cover;
+	overflow: hidden;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.about_officeItem03 {
+	padding-top: 100%;/*padding-topの基準はwidth*/
+	width: 100%;
+	background-image: url(img/DPI.jpg);
 	background-size: cover;
 	overflow: hidden;
 	-moz-transform: scale(1);
