@@ -293,7 +293,6 @@ p.about {
 .about_officeItem {
 	padding-top: 100%;/*padding-topの基準はwidth*/
 	width: 100%;
-	background-image: url(img/officeItem03a.png);
 	background-size: cover;
 	overflow: hidden;
 	-moz-transform: scale(1);
@@ -303,6 +302,17 @@ p.about {
 	
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+}
+#about_officeItem01{
+	background-image: url(img/production_Department.jpg);
+}
+
+#about_officeItem02 {
+	background-image: url(img/technical_Station.jpg);
+}
+
+#about_officeItem03 {
+	background-image: url(img/DPI.jpg);
 }
 .about_officeItem:hover {
 	-moz-transform: scale(1.1);
