@@ -413,6 +413,7 @@ p.about {
 	font-size: 1em;
 	color:#000;
 	line-height:1.3em;
+	text-align:left;
 }
   
 #modal-overlay {
