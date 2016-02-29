@@ -253,14 +253,19 @@ li {
 .modal-content {
 	width:80%;
 	margin:0;
+<<<<<<< Updated upstream
 	
 	height:90%;
+=======
+	height:80%;
+>>>>>>> Stashed changes
 	padding:10px 10px;
 	border: 2px solid #aaa ;
 	background:#fff;
 	position:fixed;
 	display:none;
 	z-index:2;
+	overflow:auto;s
 }
 .modal-content p{
 	font-size: 1em;
