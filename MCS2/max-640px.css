@@ -494,13 +494,14 @@ p.about {
 .modal-content {
 	width:80%;
 	margin:0;
-	height:90%;
+	height:70%;
 	padding:10px 10px;
 	border: 2px solid #aaa ;
 	background:#fff;
 	position:fixed;
 	display:none;
 	z-index:2;
+	overflow:auto;
 }
 .modal-content p{
 	font-size: 1em;
