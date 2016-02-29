@@ -3,13 +3,14 @@
 
 
 /////////////////////////////////////////////////////////////////// */
-html, body {
+html,body{
 	height: 100%;
 	margin: 0;
 		font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
 	
 	line-height: 1.7em;
 }
+
 li {
 	list-style: none;
 }
@@ -23,7 +24,6 @@ li {
 .head {
 	margin: 0 auto;
 	height: 80px;
-	z-index:3;
 }
 .head_btn {
 	height: 30px;
@@ -90,9 +90,7 @@ ul.head_map a {
 	display:none;
 }
 
-/*
-		Top画
-					*/	
+/* 	Top画	*/	
 
 .top_topWrapper {
 	
@@ -367,10 +365,13 @@ a#top_scroll span{
 	border-color: transparent transparent #000000 transparent;
 }
 #top_mainNowContens {
-	height: 3em;
 	width: 80%;
 	margin: 0 auto;
-	background-color: #767676;
+	text-align:center;
+}
+#top_mainNowContens img{
+	width:100%;
+	height:auto;
 }
 #top_mainNewsContens {
 	height: 5em;
@@ -388,10 +389,10 @@ a#top_scroll span{
 	z-index: 1;
 }
 #top_mainNowBgc {
-	height: 9em;
+	height: 13vw;
 	width: 75%;
 	background-color: #ffa996;
-	top: -5.5em;
+	top: -11.5vw;
 }
 #top_mainNewsBgc {
 	height: 11em;
