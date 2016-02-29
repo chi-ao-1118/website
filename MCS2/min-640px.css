@@ -708,6 +708,7 @@ z-index:1;
 	width: 100%;
 	padding-top: 56.25%;/*0.5625*width%*/
 	margin: 1em auto;
+	vertical-align:bottom;
 }
 .contents_hotTitle {
 	font-size: 1.3em;
