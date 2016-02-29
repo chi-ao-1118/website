@@ -393,13 +393,13 @@ p.about {
 }
 
 .modal-content {
-	width:90%;
+	width:80%;
 	height:95vh;
 	border: 2px solid #aaa ;
 	background:#fff;
 	position:fixed;
 	left:0;
-	margin-left:-5%;
+	margin-left:-1%;
 	margin-top:1%;
 	display:none;
 	z-index:3;
@@ -407,7 +407,7 @@ p.about {
 }
 .modal-content p{
 	margin:0 auto;
-	width:80%;
+	width:85%;
 	font-size: 1em;
 	color:#000;
 	line-height:1.3em;
