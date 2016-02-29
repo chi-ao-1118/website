@@ -436,8 +436,8 @@ z-index:1;
     position: relative;
     padding-bottom:20px;
     padding-top: 20px; 
-	width:auto;
-    height:50hv;
+	width:70%;
+    height:auto;
     overflow: hidden;
 }
 .movie-wrap img{
