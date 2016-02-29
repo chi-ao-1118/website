@@ -785,14 +785,23 @@ a.pre_conA{
 	background-size: cover;
 	height: 100px;
 	overflow:hidden;
+	text-align:center;
 }
 .pre_continerImg img{
-	width:auto;
-	height:100%;
+	width:100%;
+	height:auto;
 	-webkit-transform: rotate(0) scale(1);
 	transform: rotate(0) scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+}
+.pre_imgPhoto{
+	position: relative;
+    top: -20%;
+}
+.pre_imgPoster{
+ position: relative;
+    top: -50%;
 }
 .pre_continerImg:hover img{
 	-webkit-transform:scale(1.1);
