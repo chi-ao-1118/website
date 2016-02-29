@@ -260,6 +260,8 @@ ul.head_map a{
 	background-size: contain;
 	height: 10px;
 	margin: 0 1em
+	position:relative;
+	z-index:0;
 }
 #about_section01 {
 	width: 50%;
@@ -408,14 +410,18 @@ p.about {
 	z-index:3;
 	overflow:auto;
 }
-.modal-content p{
-	margin:0 auto;
-	width:85%;
-	font-size: 1em;
-	color:#000;
-	line-height:1.3em;
-	text-align:left;
+.about_modalTitle{
+	margin-top:-1%;
+	font-size: 1.3em;
+	font-weight: 800;
 }
+ .about_modalText{
+	font-size: 0.8em;
+	color:#000;
+	line-height:1.5em;
+	width:75%;
+	margin:0 auto;
+ }
   
 #modal-overlay {
 z-index:1;
