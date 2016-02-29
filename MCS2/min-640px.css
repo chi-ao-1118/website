@@ -239,6 +239,8 @@ ul.head_map a{
 	margin-top: 5em;
 	text-align: center;
 	width: 100%;
+	position:relative;
+	z-index:2;
 }
 .about_titleNum {
 	display: inline-block;
@@ -350,31 +352,31 @@ p.about {
 }
 #about_medican3Wrapper {
 	text-align: center;
+	margin:0 auto;
+	position:relative;
+	z-index:1;
 }
 #about_medican3P {
 	display: inline-block;
 	vertical-align: middle;
 	width: 30%;	
 	text-align:left;
+	margin-left:20%;
 }
-#about_medican3img {
-	display: inline-block;
-	vertical-align: middle;
-	width: 200px;
-	height: 210px;
-	background-image: url(img/medican3.jpg);
-	background-size: cover;
-	margin-left: 3em;
-		
+.about_medican3Img{
+	width:20%;
+	height:auto;
+	vertical-align:middle;
+	padding-left:3em;
+	
 	-webkit-transform: rotate(0) scale(1);
 	transform: rotate(0) scale(1);
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	transition: .3s ease-in-out;	
 }
-#about_medican3img:hover {
-	-webkit-transform: rotate(13deg) scale(1.2);
-	transform: rotate(13deg) scale(1.2);
-
+.about_medican3Img:hover{
+	-webkit-transform: rotate(13deg) scale(1.15);
+	transform: rotate(13deg) scale(1.15);
 }
 
 /*編集中
