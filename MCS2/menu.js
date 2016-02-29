@@ -23,8 +23,11 @@ $(".menu").click(function(){
 $(".menu_overlay").click(function(){
 	$(".menu").data("click", ++num);
     var click = $(this).data("click");
-	$(".hamMenu").hide("slow");
-	$(".menu_overlay").hide("slow");
+		$(".hamMenu").hide();
+		$(".menu_overlay").hide();
+		$(".topImg").show();
+		$(".mainWrapper").show();
+		$(".topLost").show();
 });
 
 $(window).on('load resize', function() {
