@@ -199,6 +199,7 @@ li {
 	color:#000;
 	position:relative;
 	top:0.5em;
+	font-weight: 800;
 }
 .menu_subsection {
 	position:relative;
@@ -207,6 +208,7 @@ li {
 }
 .menu_subsection a{
 		color:#fff;
+		font-weight: 800;
 }
 img.menu_SNS{
 	height:2em;
