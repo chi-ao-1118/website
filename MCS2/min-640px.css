@@ -393,18 +393,21 @@ p.about {
 }
 
 .modal-content {
-	width:80%;
-	margin:0;
-	height:70%;
-	padding:10px 10px;
+	width:90%;
+	height:95vh;
 	border: 2px solid #aaa ;
 	background:#fff;
 	position:fixed;
+	left:0;
+	margin-left:-5%;
+	margin-top:1%;
 	display:none;
-	z-index:2;
+	z-index:3;
 	overflow:auto;
 }
 .modal-content p{
+	margin:0 auto;
+	width:80%;
 	font-size: 1em;
 	color:#000;
 	line-height:1.3em;
@@ -434,15 +437,15 @@ z-index:1;
 .movie-wrap {
 	display:inline-block;
     position: relative;
-    padding-bottom:20px;
     padding-top: 20px; 
-	width:70%;
-    height:auto;
+	width:80%;
+    height:80vh;
     overflow: hidden;
+	margin-bottom:-8%;
 }
 .movie-wrap img{
-	width:80%;
-	height:auto;
+	width:auto;
+	height:80%;
 }
  
 .movie-wrap iframe {
