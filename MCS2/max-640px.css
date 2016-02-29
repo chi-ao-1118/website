@@ -56,8 +56,6 @@ li {
 	bottom:8%;
 }
 
-
-
 .head_btnRight {
 	display:none;
 }
@@ -210,6 +208,15 @@ li {
 .menu_subsection a{
 		color:#fff;
 }
+img.menu_SNS{
+	height:2em;
+	width:auto;
+}
+a.menu_SNS{
+	display:inline-block;
+	padding:2em 0.4em 2em 0.4em;	
+}
+
 .menu_arrow{
 	position:relative;
 	right:-85%;

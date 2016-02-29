@@ -85,6 +85,9 @@ ul.head_map a {
 	background-color: #525252;
 	color: white;
 }
+.menu{
+	display:none;
+}
 
 /*
 		Top画
@@ -245,7 +248,7 @@ a#top_scroll span{
 	border-color: transparent transparent transparent #007bff;
 }
 
-.top_mainWrapper {
+.mainWrapper {
 	padding: 0;/*margin:*/
 	position:relative;
 	z-index:1;/*z-indexを動作させるには、static以外のpositionの設定が必要*/
