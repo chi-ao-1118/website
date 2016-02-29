@@ -415,7 +415,7 @@ p.about {
 	font-size: 1.3em;
 	font-weight: 800;
 }
-<<<<<<< Updated upstream
+
  .about_modalText{
 	font-size: 0.8em;
 	color:#000;
@@ -423,15 +423,12 @@ p.about {
 	width:75%;
 	margin:0 auto;
  }
-=======
-
 .about_modalTitle{
 	margin-top:-3%;
 	font-size: 1.3em;
 	font-weight: 800;
 }
->>>>>>> Stashed changes
-  
+ 
 #modal-overlay {
 z-index:1;
 	display:none;
