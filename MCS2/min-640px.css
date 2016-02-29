@@ -783,7 +783,8 @@ a.pre_conA{
 }
 .pre_continerImg {
 	background-size: cover;
-	height: 100px;
+	height:120px;/*vh非対応用*/
+	height: 20vh;
 	overflow:hidden;
 	text-align:center;
 }
