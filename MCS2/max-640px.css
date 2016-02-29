@@ -609,6 +609,15 @@ z-index:2;
     height: auto;
 }
 
+.modal-content p{
+	margin:0 auto;
+	width:85%;
+	font-size: 1em;
+	color:#000;
+	line-height:1.3em;
+	text-align:left;
+}
+
 /*
 
 	   	ABOUT
@@ -693,15 +702,15 @@ p.about {
 	transition: .3s ease-in-out;
 }
 #about_officeItem01{
-	background-image: url(img/production_Department.jpg);
+	background-image: url(img/modal/production_Department.jpg);
 }
 
 #about_officeItem02 {
-	background-image: url(img/technical_Station.jpg);
+	background-image: url(img/modal/technical_Station.jpg);
 }
 
 #about_officeItem03 {
-	background-image: url(img/DPI.jpg);
+	background-image: url(img/modal/DPI.jpg);
 }
 .about_officeItem:hover {
 	-moz-transform: scale(1.1);

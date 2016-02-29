@@ -630,15 +630,15 @@ p.about {
 	transition: .3s ease-in-out;
 }
 #about_officeItem01{
-	background-image: url(img/production_Department.jpg);
+	background-image: url(img/modal/production_Department.jpg);
 }
 
 #about_officeItem02 {
-	background-image: url(img/technical_Station.jpg);
+	background-image: url(img/modal/technical_Station.jpg);
 }
 
 #about_officeItem03 {
-	background-image: url(img/DPI.jpg);
+	background-image: url(img/modal/DPI.jpg);
 }
 .about_officeItem:hover {
 	-moz-transform: scale(1.1);
@@ -736,6 +736,7 @@ p.about {
 	font-size: 1.3em;
 	font-weight: 800;
 }
+
  .about_modalText{
 	font-size: 0.8em;
 	color:#000;
@@ -743,7 +744,12 @@ p.about {
 	width:75%;
 	margin:0 auto;
  }
-  
+.about_modalTitle{
+	margin-top:-3%;
+	font-size: 1.3em;
+	font-weight: 800;
+}
+ 
 #modal-overlay {
 z-index:1;
 	display:none;
@@ -790,7 +796,7 @@ z-index:1;
 .modal_img01 {
 	padding-top: 100%;/*padding-topの基準はwidth*/
 	width: 100%;
-	background-image: url(img/switcher.jpg);
+	background-image: url(img/modal/switcher.jpg);
 	background-size: cover;
 	overflow: hidden;
 	-moz-transform: scale(1);
@@ -805,7 +811,7 @@ z-index:1;
 .modal_img02 {
 	padding-top: 100%;/*padding-topの基準はwidth*/
 	width: 100%;
-	background-image: url(img/switcher.jpg);
+	background-image: url(img/modal/switcher.jpg);
 	background-size: cover;
 	overflow: hidden;
 	-moz-transform: scale(1);
@@ -820,7 +826,7 @@ z-index:1;
 .modal_img03 {
 	padding-top: 100%;/*padding-topの基準はwidth*/
 	width: 100%;
-	background-image: url(img/switcher.jpg);
+	background-image: url(img/modal/switcher.jpg);
 	background-size: cover;
 	overflow: hidden;
 	-moz-transform: scale(1);
