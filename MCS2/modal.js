@@ -10,7 +10,7 @@ $(".modal-open").click(function(){
 	if($("#modal-overlay")[0] ) return false ;		//新しくモーダルウィンドウを起動しない機能
 	if($("#modal-overlay")[0]) $("#modal-overlay").remove() ;		//現在のモーダルウィンドウを削除して新しく起動
 
-	$("body").append('<div id="modal-overlay"></div>');
+	$(".about_office").append('<div id="modal-overlay"></div>');
 	$("#modal-overlay").fadeIn("slow");			//オーバーレイを出現させる
 	centeringModalSyncer();　　//コンテンツをセンタリングする
 

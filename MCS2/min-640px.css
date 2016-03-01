@@ -378,6 +378,7 @@ a#top_scroll span{
 	display: inline-block;
 	margin : 0;
 	width: 37%;
+	position:relative;
 	z-index:1;
 }
 #SNSwrapper {
@@ -712,6 +713,7 @@ p.about {
 }
 .modal_box .modal-open{
 	display:inline-block;
+	z-index:5;
 }
 .modal-open img{
 	width:80px;
@@ -719,6 +721,8 @@ p.about {
 }
 
 .modal-content {
+	position:fixed;
+	z-index:4;
 	width:80%;
 	height:95vh;
 	border: 2px solid #aaa ;
@@ -727,8 +731,6 @@ p.about {
 	margin-left:-1%;
 	margin-top:1%;
 	display:none;
-	position:fixed;
-	z-index:4;
 	overflow:auto;
 }
 .about_modalTitle{
@@ -753,7 +755,7 @@ p.about {
 #modal-overlay {
 	display:none;
 	position:fixed;
-	z-index:2;
+	z-index:3;
 	top:0;
 	left:0;
 	width:100%;
@@ -778,7 +780,7 @@ p.about {
 	width:80%;
     height:80vh;
     overflow: hidden;
-	margin-bottom:-8%;
+	margin-bottom:-3em;
 }
 .movie-wrap img{
 	width:auto;
@@ -1285,7 +1287,7 @@ a.pre_conA{
 	padding: 0.1em 0;
 	text-align: center;
 	position:relative;
-	z-index: 3;
+	z-index:0;
 }
 .foot_smartBox{
 	display:none;
