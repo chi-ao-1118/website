@@ -149,6 +149,7 @@ ul.head_map a{
 .subTitle {
 	margin: 2em auto;
 	padding: 0.5em 1.5em;
+	font-weight: 800;
 }
 .topTitleWrap {
 	padding: 1.5em 1.5em;
@@ -1276,6 +1277,10 @@ a.pre_conA{
 	text-align: left;
 	vertical-align: middle;
 	padding-left: 1.5em;
+}
+.links_title{
+	width:100%;
+	font-size: 1.2em;
 }
 /*	
 		フッター

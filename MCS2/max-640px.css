@@ -912,6 +912,14 @@ p.about {
 
 	  CONTENTS
 					*/
+.contents_filmTextWrap a , .contents_hotTitle a{
+	text-decoration:underline;
+	color:#000;
+	font-weight: 800;
+}
+.contents_hotTitle a:hover , .contents_filmTextWrap a:hover{
+	text-decoration:underline;
+}
 .contents_type {
 	margin: 4em 0 2em 0;
 }
@@ -1173,6 +1181,10 @@ a.pre_conA{
 	text-align:center;
 	margin:0 auto 2em auto;
 }
+.links_title{
+	width:100%;
+	font-size: 1.2em;
+}
 
 /*	
 		フッター
@@ -1180,7 +1192,7 @@ a.pre_conA{
 .foot {
 	background-color: #000000;
 	color: #ffffff;
-	height: 15vh;
+	height: 6em;
 	padding: 0.1em 0;
 	text-align: center;
 	z-index: 3;
