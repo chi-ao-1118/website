@@ -1098,7 +1098,7 @@ a.pre_conA{
 	transition: .3s ease-in-out;
 }
 
-.pre_continerImg:hover img{
+.pre_continerBox:hover img{
 	-webkit-transform:scale(1.1);
 	transform:scale(1.1);
 }

@@ -751,9 +751,9 @@ p.about {
 }
  
 #modal-overlay {
-z-index:1;
 	display:none;
 	position:fixed;
+	z-index:2;
 	top:0;
 	left:0;
 	width:100%;
@@ -1012,6 +1012,14 @@ z-index:1;
 
 	  CONTENTS
 					*/
+.contents_filmTextWrap a , .contents_hotTitle a{
+	text-decoration:none;
+	color:#000;
+	font-weight: 800;
+}
+.contents_hotTitle a:hover , .contents_filmTextWrap a:hover{
+	text-decoration:underline;
+}
 .contents_type {
 	margin: 4em 0 2em 0;
 }
@@ -1200,7 +1208,7 @@ a.pre_conA{
  position: relative;
     top: -50%;
 }
-.pre_continerImg:hover img{
+.pre_continerBox:hover img{
 	-webkit-transform:scale(1.1);
 	transform:scale(1.1);
 }
