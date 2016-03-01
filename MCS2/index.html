@@ -10,7 +10,7 @@
 
 <body>
 <!--ファーストビュー-->
-<article id="top_firstView"> 
+<article id="top_firstView topLost"> 
   <!--ここからヘッダー--> 
   <a name="header">
   <header class="head">
@@ -46,7 +46,7 @@
   </header>
   </a> 
   <!--ここからハンバーガーメニュー-->
-  <div class="menu_overlay"></div>
+<!--  <div class="menu_overlay"></div>-->
   <nav class="hamMenu">
     <div class="menu_section"><a href="index.html">TOP
       <div class="menu_arrow"></div>
@@ -187,6 +187,13 @@
 
 <!--ここからフッター-->
 <footer class="foot">
+  <article class="foot_smartBox">
+   <a href="index.html" class="foot_smartA">HOME</a>
+    	<div class="foot_smartSNSWrap">
+    		<a href="https://twitter.com/MCS_kutc" class="foot_smartSNSA" ><img src="img/twitter.png" alt="twitter"></a>
+    		<a href="https://www.facebook.com/mcs.kutc" class="foot_smartSNSA"><img src="img/facebook.png" alt="facebook"></a>
+    	</div>
+  </article>
   <article class="footer_map">
     <ul class="footer_mapBox" id="footer_linkTop">
       <a class="footer" href="index.html">
@@ -200,6 +207,7 @@
       </a> <a class="footer" href="index.html#facebook">
       <li class="footer_linkSubSection">Facebook</li>
       </a>
+      </li>
     </ul>
     <ul class="footer_mapBox" id="footer_linkAbout">
       <a class="footer" href="about.html">
@@ -213,6 +221,7 @@
       </a> <a class="footer" href="about.html#medican">
       <li class="footer_linkSubSection">めでぃカンさん</li>
       </a>
+      </li>
     </ul>
     <ul class="footer_mapBox" id="footer_linkWorks">
       <a class="footer" href="works.html">
@@ -224,6 +233,7 @@
       </a> <a class="footer" href="pressrelease.html">
       <li class="footer_linkSubSection">PressRelease</li>
       </a>
+      </li>
     </ul>
     <ul class="footer_mapBox" id="footer_linkLinks">
       <a class="footer" href="links.html">
@@ -232,7 +242,9 @@
     </ul>
   </article>
   
-  <!--ここからフォーム-->
+ <!--ここからフォーム-->
+  <a class="mailForm" href="mailto:mcs.kutc@gmail.com?subject=問い合わせ&amp;body=ご記入ください">お問い合わせメールはこちらへ</a>
+  <!--
   <article class="footer_form">
     <div id="form_contact">CONTACT</div>
     <form  action="" method="post"class="footer">
@@ -250,7 +262,7 @@
       </div>
     </form>
   </article>
-  
+  -->
   <!--コピーライト-->
   <p><small>© 2015 Media Creative Supporter</small></p>
 </footer>

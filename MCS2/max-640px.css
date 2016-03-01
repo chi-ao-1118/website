@@ -192,23 +192,21 @@ li {
 	border-bottom:#727272 solid 1px;
 	line-height:3em;
 	text-align:center;
+	height:10.5vh;
 }
 .menu_section a{
 	display:block;
 	text-decoration:underline;
 	color:#000;
 	position:relative;
-	top:0.5em;
 	font-weight: 800;
 }
 .menu_subsection {
-	position:relative;
 	background-color:#969696;
 	border-bottom:#C7C7C7 solid 1px;
 }
 .menu_subsection a{
 		color:#fff;
-		font-weight: 800;
 }
 img.menu_SNS{
 	height:2em;
@@ -531,8 +529,8 @@ a#top_scroll span{
 	display:inline-block;
 }
 .modal-open img{
-	width:auto;
-	height:12vh;
+	width:20vw;
+	height:auto;
 }
 .modal-content {
 	width:80%;
@@ -1055,7 +1053,7 @@ figure:hover figcaption p {
  	 PressRelease
 					*/
 
-.pressrelease_mainWrapper {
+.pressrelease_mainWrapper{
 	width: 100%;
 	margin: 2em 0;
 }
@@ -1182,7 +1180,7 @@ a.pre_conA{
 .foot {
 	background-color: #000000;
 	color: #ffffff;
-	height: auto;
+	height: 15vh;
 	padding: 0.1em 0;
 	text-align: center;
 	z-index: 3;
@@ -1212,6 +1210,15 @@ a.pre_conA{
 /**
 		 フォーム
 						**/
+.mailForm{
+	position:relative;
+	top:1em;
+	text-decoration:underline;
+	color:#fff;
+}
+.mailForm:hover{
+	font-weight: 800;
+}
 .footer_form {
 	display:none;
 }

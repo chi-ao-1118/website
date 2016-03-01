@@ -3,7 +3,8 @@
 
 
 /////////////////////////////////////////////////////////////////// */
-html{
+html,body{
+	
 	margin: 0;
 	line-height: 1.7em;
 	font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
@@ -1156,7 +1157,7 @@ figure:hover figcaption p {
  	 PressRelease
 					*/
 
-.pressrelease_mainWrapper {
+.pressrelease_mainWrapper{
 	width: 100%;
 	margin: 2em 0;	
 	text-align: center;
@@ -1332,6 +1333,14 @@ a.footer {
 /**
 		 フォーム
 						**/
+.mailForm{
+	text-decoration:underline;
+	color:#fff;
+}
+.mailForm:hover{
+	font-weight: 800;
+}
+
 .footer_form {
 	text-align: center;
 }

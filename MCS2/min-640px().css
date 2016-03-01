@@ -268,7 +268,6 @@ a#top_scroll span{
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
-	margin-bottom: -400px;
 	z-index:1;
 }
 .top_mainObject1 {
@@ -408,12 +407,14 @@ a#top_scroll span{
 	width: 95%;
 	background-color: #99CC99;
 	top: -490px;
+	margin-bottom:-440px;
 }
 #top_mainFacebookBgc {
 	height: 515px;
 	width: 95%;
 	background-color: #d1bada;
 	top: -490px;
+	margin-bottom:-440px;
 }
 /*NEWSボックス*/
 #top_NewsBox {
@@ -490,6 +491,15 @@ a.footer {
 /**
 		 フォーム
 						**/
+.mailForm{
+	text-decoration:underline;
+	color:#fff;
+}
+.mailForm:hover{
+	font-weight: 800;
+}
+
+
 .footer_form {
 	text-align: center;
 }
