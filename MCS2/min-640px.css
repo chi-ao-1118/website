@@ -232,7 +232,7 @@ ul.head_map a{
 	background-image: url(img/topPic.jpg);
 }
 #topImg_links {
-	background-image: url(img/Links_top.jpg);
+	background-image: url(img/links_top.jpg);
 }
 
 
@@ -632,14 +632,23 @@ p.about {
 	transition: .3s ease-in-out;
 }
 #about_officeItem01{
-	background-image: url(img/modal/production_Department.jpg);
+	background-image: url(img/modal/production_Department.png);
+}
+#about_officeItem01:hover{
+	background-image: url(img/modal/production_Department_bright.png);
 }
 
 #about_officeItem02 {
-	background-image: url(img/modal/technical_Station.jpg);
+	background-image: url(img/modal/technical_Station.png);
+}
+#about_officeItem02:hover{
+	background-image: url(img/modal/technical_Station_bright.png);
 }
 
 #about_officeItem03 {
+	background-image: url(img/modal/DPI.png);
+}
+#about_officeItem03:hover {
 	background-image: url(img/modal/DPI.jpg);
 }
 .about_officeItem:hover {
@@ -778,7 +787,7 @@ p.about {
 	display:inline-block;
     position: relative;
     padding-top: 20px; 
-	width:80%;
+	width:auto;
     height:80vh;
     overflow: hidden;
 	margin-bottom:-3em;

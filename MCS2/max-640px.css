@@ -49,11 +49,11 @@ li {
 }
 .menu{
 	width:auto;
-	height:8vh;
+	height:7vh;
 	margin-right:3%;
 	position:absolute;
 	right:3%;
-	bottom:8%;
+	bottom:12%;
 }
 
 .head_btnRight {
@@ -175,7 +175,7 @@ li {
 	background-image: url(img/topPic.jpg);
 }
 #topImg_links {
-	background-image: url(img/topPic.jpg);
+	background-image: url(img/links_top.jpg);
 }
 
 /*
