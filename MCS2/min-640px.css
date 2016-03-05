@@ -652,7 +652,7 @@ p.about {
 	background-image: url(img/modal/DPI.png);
 }
 #about_officeItem03:hover {
-	background-image: url(img/modal/DPI.jpg);
+	background-image: url(img/modal/DPI_bright.png);
 }
 .about_officeItem:hover {
 	-moz-transform: scale(1.1);
