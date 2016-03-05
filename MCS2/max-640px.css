@@ -700,11 +700,11 @@ p.about {
 	transition: .3s ease-in-out;
 }
 #about_officeItem01{
-	background-image: url(img/modal/production_Department.jpg);
+	background-image: url(img/modal/production_Department.png);
 }
 
 #about_officeItem02 {
-	background-image: url(img/modal/technical_Station.jpg);
+	background-image: url(img/modal/technical_Station.png);
 }
 
 #about_officeItem03 {
