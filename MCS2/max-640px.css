@@ -378,6 +378,8 @@ a#top_scroll span{
 }
 .top_mainContainer1 {
 	margin: 3% 0 -80px 0;
+	position:relative;
+	z-index:1;
 }
 .top_mainContainer2 {
 	display: inline-block;
@@ -1195,6 +1197,7 @@ a.pre_conA{
 	height: 6em;
 	padding: 0.1em 0;
 	text-align: center;
+	position:relative;
 	z-index: 3;
 }
 
