@@ -163,16 +163,16 @@ li {
 	background-image: url(img/about_top.jpg);
 }
 #topImg_works {
-	background-image: url(img/topPic.jpg);
+	background-image: url(img/works_top.jpg);
 }
 #topImg_project {
-	background-image: url(img/topPic.jpg);
+	background-image: url(img/works_top.jpg);
 }
 #topImg_contents {
-	background-image: url(img/topPic.jpg);
+	background-image: url(img/works_top.jpg);
 }
 #topImg_pressrelease {
-	background-image: url(img/topPic.jpg);
+	background-image: url(img/works_top.jpg);
 }
 #topImg_links {
 	background-image: url(img/links_top.jpg);
@@ -256,7 +256,7 @@ a.menu_SNS{
 	
    	height: 92vh ;
 
-	background-image: url("img/top_top1.jpg");
+	background-image: url("img/top_top_smart.jpg");
 	background-size: cover;
 	color: white;
 	text-align: center;
@@ -782,6 +782,7 @@ p.about {
 .works_mainWrapper {
 	margin: 0 auto;
 	margin-top: 1.5%;
+	margin-bottom:-2em;
 	width: 100%;
 }
 
@@ -886,7 +887,8 @@ p.about {
 }
 .project_txtBox {
 	text-align:left;
-	padding: 0 3em;
+	position:relative;
+	left:10%;
 	line-height: 1.5em;
 	width: 80%;
 }
@@ -898,8 +900,10 @@ p.about {
 	font-size: 1.8em;
 	font-weight: 800;
 	padding: 0.4em 0.3em;
+	line-height:1.0em;
 }
 .project_p {
+	width:100%;
 }
 .project_line {
 	width: 77%;
@@ -1065,7 +1069,7 @@ figure:hover figcaption p {
 
 .pressrelease_mainWrapper{
 	width: 100%;
-	margin: 2em 0;
+	margin-top: 2em;
 }
 .pre_conSet {
 	text-align: left;
@@ -1200,6 +1204,8 @@ a.pre_conA{
 	text-align: center;
 	position:relative;
 	z-index: 3;
+	
+	margin-top:2em;
 }
 
 .foot_smartBox{
