@@ -160,22 +160,22 @@ li {
 	text-align: center;
 }
 #topImg_about {
-	background-image: url(img/about_top.jpg);
+	background-image: url(img/about_top_smart.jpg);
 }
 #topImg_works {
-	background-image: url(img/works_top.jpg);
+	background-image: url(img/works_top_smart.jpg);
 }
 #topImg_project {
-	background-image: url(img/works_top.jpg);
+	background-image: url(img/works_top_smart.jpg);
 }
 #topImg_contents {
-	background-image: url(img/works_top.jpg);
+	background-image: url(img/works_top_smart.jpg);
 }
 #topImg_pressrelease {
-	background-image: url(img/works_top.jpg);
+	background-image: url(img/works_top_smart.jpg);
 }
 #topImg_links {
-	background-image: url(img/links_top.jpg);
+	background-image: url(img/links_top_smart.jpg);
 }
 
 /*
