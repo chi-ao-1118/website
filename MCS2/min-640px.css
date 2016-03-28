@@ -759,12 +759,6 @@ p.about {
 	width:75%;
 	margin:0 auto;
  }
-.about_modalTitle{
-	margin-top:-3%;
-	font-size: 1.3em;
-	font-weight: 800;
-}
- 
 #modal-overlay {
 	z-index:1;
 	display:none;
@@ -794,7 +788,7 @@ p.about {
 	width:auto;
     height:80vh;
     overflow: hidden;
-	margin-bottom:-3em;
+	margin-bottom:-5em;
 }
 .movie-wrap img{
 	width:auto;
@@ -1277,11 +1271,116 @@ a.pre_conA{
 }
 
 /*
-		LINKS
+	    Recruit
 					*/
-.links_blockWrap {
+.recruit_QandA{
+	width:60%;
+	margin:0 auto;
+	margin-bottom:1em;
+}
+.recruit_Question{
+	padding-left:1em;
+	font-size: 1.3em;
+	font-weight: 800;
+}
+.recruit_Answer{
+	padding-left:5em;
+	
+	margin:0 auto;
+}
+#recruit_section01 {
+	width: 63%;
+}
+#recruit_section02 {
+	width: 61%;
+}
+#recruit_section03 {
+	width: 69%;
+}
+#recruit_section04 {
+	width: 60%;
+}
+#recruit_modal1{
+	background-image: url(img/modal/leaders1.png);
+}
+#recruit_modal1:hover{
+	background-image: url(img/modal/leaders1.png);/**/
+}
+#recruit_modal2{
+	background-image: url(img/modal/leaders2.png);
+}
+#recruit_modal2:hover{
+	background-image: url(img/modal/leaders2.png);/**/
+}
+#recruit_modal3{
+	background-image: url(img/modal/leaders3.png);
+}
+#recruit_modal3:hover{
+	background-image: url(img/modal/leaders3.png);/**/
+}
+#recruit_modal4{
+	background-image: url(img/modal/leaders4.png);
+}
+#recruit_modal4:hover{
+	background-image: url(img/modal/leaders4.png);/**/
+}
+#recruit_modal5{
+	background-image: url(img/modal/leaders5.png);
+}
+#recruit_modal5:hover{
+	background-image: url(img/modal/leaders5.png);/**/
+}
+#recruit_modal6{
+	background-image: url(img/modal/leaders6.png);
+}
+#recruit_modal6:hover{
+	background-image: url(img/modal/leaders6.png);/**/
+}
+#recruit_modal7{
+	background-image: url(img/modal/leaders7.png);
+}
+#recruit_modal7:hover{
+	background-image: url(img/modal/leaders7.png);/**/
+}
+#recruit_modal8{
+	background-image: url(img/modal/leaders8.png);
+}
+#recruit_modal8:hover{
+	background-image: url(img/modal/leaders8.png);/**/
+}
+.recruit_movieWrap{
+	display:inline-block;
+	width:20%;
+	height:auto;
+	vertical-align:middle;
+}
+
+.recruit_movieWrap img{	
+	width:100%;
+    height:auto;
+}
+
+.recruit_modalTitle{
+	vertical-align:middle;
+	font-size: 1.3em;
+	font-weight: 800;
+	width:70%;
+}
+.recruit_modalTitle span{
+	font-size:1em;
+	padding-left:2em;
+}
+
+ .recruit_modalText{
+	font-size: 0.8em;
+	line-height:1.5em;
 	margin-bottom: 3em;
 }
+
+
+/*
+		LINKS
+					*/
 .links_linkBox {
 	margin: 0.5em auto;
 	text-align: center;
