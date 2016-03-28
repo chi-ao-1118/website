@@ -1349,8 +1349,21 @@ a.pre_conA{
 	background-image: url(img/modal/leaders8.png);/**/
 }
 
+.recruit_modalContent {
+	position:fixed;
+	z-index:4;
+	width:60%;
+	height:80vh;
+	border: 2px solid #aaa;
+	background:#fff;
+	left:0;
+	margin-top:1%;
+	display:none;
+	overflow:auto;
+	text-align:center;
+}
 
-.modal-content img{	
+.recruit_modalContent img{	
 
 	padding-top:1em;
 	
@@ -1363,25 +1376,32 @@ a.pre_conA{
 .recruit_modalTitle{
 	
 	padding-top:1em;
+	padding-left:1em;
 	
 	display:inline-block;
 	vertical-align:middle;
 	font-size: 1.3em;
 	font-weight: 800;
-	width:30%;
+	width:10em;
+	text-align:left;
 }
 .recruit_modalTitle span{
 	font-size: 1.6em;
-	padding-left:2em;
+	padding-left:1em;
 }
 
  .recruit_modalText{
 	font-size: 1em;
 	line-height:1.5em;
 	margin:1em auto 2em auto;
-	width:50%;
+	width:60%;
 }
 
+#recruit_schedule {
+	width: 68%;
+	padding-top: 50%;
+	margin: 2em auto;
+}
 
 /*
 		LINKS
