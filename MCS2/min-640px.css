@@ -1378,11 +1378,12 @@ a.pre_conA{
 	padding-top:1em;
 	padding-left:1em;
 	
+	line-height:2em;
 	display:inline-block;
 	vertical-align:middle;
 	font-size: 1.3em;
 	font-weight: 800;
-	width:10em;
+	width:12em;
 	text-align:left;
 }
 .recruit_modalTitle span{
