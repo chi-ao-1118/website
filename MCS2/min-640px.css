@@ -1348,33 +1348,38 @@ a.pre_conA{
 #recruit_modal8:hover{
 	background-image: url(img/modal/leaders8.png);/**/
 }
-.recruit_movieWrap{
-	display:inline-block;
-	width:20%;
-	height:auto;
-	vertical-align:middle;
-}
 
-.recruit_movieWrap img{	
-	width:100%;
+
+.modal-content img{	
+
+	padding-top:1em;
+	
+	width:20%;
     height:auto;
+	vertical-align:middle;
+	
 }
 
 .recruit_modalTitle{
+	
+	padding-top:1em;
+	
+	display:inline-block;
 	vertical-align:middle;
 	font-size: 1.3em;
 	font-weight: 800;
-	width:70%;
+	width:30%;
 }
 .recruit_modalTitle span{
-	font-size:1em;
+	font-size: 1.6em;
 	padding-left:2em;
 }
 
  .recruit_modalText{
-	font-size: 0.8em;
+	font-size: 1em;
 	line-height:1.5em;
-	margin-bottom: 3em;
+	margin:1em auto 2em auto;
+	width:50%;
 }
 
 
