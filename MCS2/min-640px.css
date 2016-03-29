@@ -1273,6 +1273,18 @@ a.pre_conA{
 /*
 	    Recruit
 					*/
+#recruit_section01 {
+	width: 63%;
+}
+#recruit_section02 {
+	width: 61%;
+}
+#recruit_section03 {
+	width: 69%;
+}
+#recruit_section04 {
+	width: 60%;
+}
 .recruit_QandA{
 	width:60%;
 	margin:0 auto;
@@ -1288,18 +1300,20 @@ a.pre_conA{
 	
 	margin:0 auto;
 }
-#recruit_section01 {
-	width: 63%;
+.recruit_rateText{
+	/*width:50%;
+	display:inline-block;*/
 }
-#recruit_section02 {
-	width: 61%;
+
+#recruit_graph {
+margin: 2em auto;
+	width: 300.5px;
+	padding-top: 371px;
+/*	width: 35%;
+	padding-top: 30%;
+	display:inline-block;*/
 }
-#recruit_section03 {
-	width: 69%;
-}
-#recruit_section04 {
-	width: 60%;
-}
+
 #recruit_modal1{
 	background-image: url(img/modal/leaders1.png);
 }
@@ -1403,6 +1417,7 @@ a.pre_conA{
 	padding-top: 50%;
 	margin: 2em auto;
 }
+
 
 /*
 		LINKS
