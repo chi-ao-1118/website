@@ -1317,50 +1317,26 @@ margin: 2em auto;
 #recruit_modal1{
 	background-image: url(img/modal/leaders1.png);
 }
-#recruit_modal1:hover{
-	background-image: url(img/modal/leaders1.png);/**/
-}
 #recruit_modal2{
 	background-image: url(img/modal/leaders2.png);
-}
-#recruit_modal2:hover{
-	background-image: url(img/modal/leaders2.png);/**/
 }
 #recruit_modal3{
 	background-image: url(img/modal/leaders3.png);
 }
-#recruit_modal3:hover{
-	background-image: url(img/modal/leaders3.png);/**/
-}
 #recruit_modal4{
 	background-image: url(img/modal/leaders4.png);
-}
-#recruit_modal4:hover{
-	background-image: url(img/modal/leaders4.png);/**/
 }
 #recruit_modal5{
 	background-image: url(img/modal/leaders5.png);
 }
-#recruit_modal5:hover{
-	background-image: url(img/modal/leaders5.png);/**/
-}
 #recruit_modal6{
 	background-image: url(img/modal/leaders6.png);
-}
-#recruit_modal6:hover{
-	background-image: url(img/modal/leaders6.png);/**/
 }
 #recruit_modal7{
 	background-image: url(img/modal/leaders7.png);
 }
-#recruit_modal7:hover{
-	background-image: url(img/modal/leaders7.png);/**/
-}
 #recruit_modal8{
 	background-image: url(img/modal/leaders8.png);
-}
-#recruit_modal8:hover{
-	background-image: url(img/modal/leaders8.png);/**/
 }
 
 .recruit_modalContent {
