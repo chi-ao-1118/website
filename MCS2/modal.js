@@ -24,7 +24,7 @@ $(".modal-open").click(function(){
 
 
 $(window).resize(centeringModalSyncer);		//リサイズされたら、センタリングをする関数[centeringModalSyncer()]を実行する
-		function centeringModalSyncer() {		//センタリングを実行する関数
+	function centeringModalSyncer() {		//センタリングを実行する関数
 		var w = $(window).width() ;
 		var h = $(window).height() ;		//画面(ウィンドウ)の幅、高さを取得
 

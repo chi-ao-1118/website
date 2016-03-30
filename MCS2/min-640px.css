@@ -1390,7 +1390,7 @@ margin: 2em auto;
 .recruit_modalTitle{
 	
 	padding-top:1em;
-	padding-left:1em;
+	padding-left:3em;
 	
 	line-height:2em;
 	display:inline-block;
@@ -1410,6 +1410,7 @@ margin: 2em auto;
 	line-height:1.5em;
 	margin:1em auto 2em auto;
 	width:60%;
+	text-align:left;
 }
 
 #recruit_schedule {
