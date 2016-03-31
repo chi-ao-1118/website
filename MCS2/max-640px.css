@@ -1176,7 +1176,7 @@ a.pre_conA{
 	    Recruit
 					*/
 .recruit_QandA{
-	width:60%;
+	width:80%;
 	margin:0 auto;
 	margin-bottom:1em;
 }
@@ -1186,9 +1186,23 @@ a.pre_conA{
 	font-weight: 800;
 }
 .recruit_Answer{
-	padding-left:5em;
+	padding-left:2em;
 	
 	margin:0 auto;
+}
+.recruit_rateText{
+	/*width:50%;
+	display:inline-block;*/
+}
+
+#recruit_graph {
+	margin: 0 auto;
+	width: 300.5px;
+	padding-top: 371px;
+	margin-bottom:-180px;
+/*	width: 35%;
+	padding-top: 30%;
+	display:inline-block;*/
 }
 #recruit_section01 {
 	width: 30%;
