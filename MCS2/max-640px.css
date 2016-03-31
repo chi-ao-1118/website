@@ -174,9 +174,13 @@ li {
 #topImg_pressrelease {
 	background-image: url(img/works_top_smart.jpg);
 }
+#topImg_recruit{
+	background-image: url(img/recruit_top_smart.png);
+}
 #topImg_links {
 	background-image: url(img/links_top_smart.jpg);
 }
+
 
 /*
 	　ハンバーガー
@@ -193,7 +197,7 @@ li {
 	border-bottom:#727272 solid 1px;
 	line-height:3em;
 	text-align:center;
-	height:10.5vh;
+	height:10vh;
 }
 .menu_section a{
 	display:block;
@@ -837,6 +841,14 @@ p.about {
 	height: 100%;
 	
 	border-radius: 5px;
+	
+	position:relative;
+}
+.works_bkBtn:hover{
+	left : -2px;
+}
+.works_bkBtn:active{
+	left : -6px;
 }
 
 .works_bkBtnImg {
@@ -854,19 +866,43 @@ p.about {
 }
 #project_bk {
 	background-color: #FF9B91;
-	box-shadow: -6px 0 #ab3c3c;
+	box-shadow: -6px 0 #ab3c3c;		
+}
+#project_bk:hover{
+	box-shadow: -4px 0 #ab3c3c;
+}
+#project_bk:active{
+	box-shadow: 0px 0 #ab3c3c;
 }
 #contents_bk {
 	background-color: #78FF6D;
 	box-shadow: -6px 0 #2D9B00;
 }
+#contents_bk:hover{
+	box-shadow: -4px 0 #2D9B00;
+}
+#contents_bk:active{
+	box-shadow: 0px 0 #2D9B00;
+}
 #pressrelease_bk {
 	background-color: #FFFA85;
 	box-shadow: -6px 0 #FFC600;
 }
+#pressrelease_bk:hover{
+	box-shadow: -4px 0 #FFC600;
+}
+#pressrelease_bk:active{
+	box-shadow: 0px 0 #FFC600;
+}
 #recruit_bk {
-	background-color: #00F3FF;
-	box-shadow: -6px 0 #218681;		
+	background-color: #bbf9ff;
+	box-shadow: -6px 0 #5eabb2;		
+}
+#recruit_bk:hover{
+	box-shadow: -4px 0 #5eabb2;
+}
+#recruit_bk:active{
+	box-shadow: 0px 0 #5eabb2;
 }
 
 
@@ -1289,14 +1325,14 @@ a.pre_conA{
 }
 
 .recruit_modalTitle{
-	
+	display:block;
+	margin:0 auto;
 	padding-top:1em;
-	padding-left:1em;
-	
+		
 	line-height:2em;
 	font-size: 1.3em;
 	font-weight: 800;
-	width:10em;
+	width:11em;
 	text-align:left;
 }
 .recruit_modalTitle span{
@@ -1309,6 +1345,7 @@ a.pre_conA{
 	line-height:1.5em;
 	margin:1em auto 2em auto;
 	width:80%;
+	text-align:left;
 }
 
 #recruit_schedule {

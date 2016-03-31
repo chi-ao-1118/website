@@ -47,8 +47,7 @@
     </ul>
   </article>
 </header>
-</a> 
-<!--ここからハンバーガーメニュー-->
+</a><!--ここからハンバーガーメニュー--> 
 <!--  <div class="menu_overlay"></div>-->
 <nav class="hamMenu">
   <div class="menu_section"><a href="index.html">TOP
@@ -58,6 +57,9 @@
     <div class="menu_arrow"></div>
     </a></div>
   <div class="menu_section"><a href="works.html">WORKS
+    <div class="menu_arrow"></div>
+    </a></div>
+  <div class="menu_subsection menu_section"><a href="recruit.html">RECRUIT
     <div class="menu_arrow"></div>
     </a></div>
   <div class="menu_subsection menu_section"><a href="project.html">PROJECT
@@ -72,6 +74,9 @@
   <div class="menu_section"><a href="links.html">LINKS
     <div class="menu_arrow"></div>
     </a></div>
+  
+  <!--<div class="menu_section"><a class="menu_SNS"href="links.html"><img class="menu_SNS" src="img/twitter.png" alt="twitter"></a>
+     <a class="menu_SNS"href=""><img  class="menu_SNS" src="img/facebook.png" alt="facebook"></a></div>--> 
 </nav>
 <!--ここからページ内容--> 
 <!--Top画像-->
@@ -135,10 +140,11 @@
       <li class="footer_linkSubSection">めでぃカンさん</li>
       </a>
       </li>
-    </ul>
-    <ul class="footer_mapBox" id="footer_linkWorks">
+    </ul>    <ul class="footer_mapBox" id="footer_linkWorks">
       <a class="footer" href="works.html">
       <li class="footer_linkMain">WORKS</li>
+      </a> <a class="footer" href="recruit.html">
+      <li class="footer_linkSubSection">Recruit</li>
       </a> <a class="footer" href="project.html">
       <li class="footer_linkSubSection">Project</li>
       </a> <a class="footer" href="contents.html">
@@ -146,7 +152,6 @@
       </a> <a class="footer" href="pressrelease.html">
       <li class="footer_linkSubSection">PressRelease</li>
       </a>
-      </li>
     </ul>
     <ul class="footer_mapBox" id="footer_linkLinks">
       <a class="footer" href="links.html">
@@ -155,27 +160,25 @@
     </ul>
   </article>
   
- <!--ここからフォーム-->
-  <a class="mailForm" href="mailto:mcs.kutc@gmail.com?subject=問い合わせ&amp;body=ご記入ください">お問い合わせメールはこちらへ</a>
-  <!--
+ <!--ここからフォーム--> 
+  <a class="mailForm Smart" href="mailto:mcs.kutc@gmail.com?subject=問い合わせ&amp;body=ご記入ください">お問い合わせメールはこちらへ</a>
   <article class="footer_form">
     <div id="form_contact">CONTACT</div>
-    <form  action="" method="post"class="footer">
+    <form  action="mail.php" method="post"class="footer">
       <div class="form_name">
-        <input class="footer" type="text" name="name" size="50" maxlength="50" placeholder="NAME" required>
+        <input class="footer" type="text" name="お名前" size="50" maxlength="50" placeholder="NAME" required>
       </div>
       <div class="form_mail">
-        <input class="footer"  type="email" title="example@example.comのような形式で入力してください" name="email2" placeholder="E-MAIL" required />
+        <input class="footer"  type="email" title="example@example.comのような形式で入力してください" name="Email" placeholder="E-MAIL" required />
       </div>
       <div class="form_message">
-        <textarea class="footer"  name="message" cols="60" rows="5" wrap="hard" placeholder="MESSAGE" required></textarea>
+        <textarea class="footer"  name="お問い合わせ内容" cols="60" rows="5" wrap="hard" placeholder="MESSAGE" required></textarea>
       </div>
       <div class="form_send">
-        <input id="footer_submitBtn" type="submit" name="button1" value="SEND">
+        <input id="footer_submitBtn" type="submit" value="SEND">
       </div>
     </form>
   </article>
-  -->
   <!--コピーライト-->
   <p><small>© 2015 Media Creative Supporter</small></p>
 </footer>

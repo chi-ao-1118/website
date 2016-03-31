@@ -234,6 +234,9 @@ ul.head_map a{
 #topImg_pressrelease {
 	background-image: url(img/works_top.jpg);
 }
+#topImg_recruit{
+	background-image: url(img/recruit_top.png);
+}
 #topImg_links {
 	background-image: url(img/links_top.jpg);
 }
@@ -972,14 +975,14 @@ p.about {
 	box-shadow: 0px 0 #FFC600;
 }
 #recruit_bk {
-	background-color: #00F3FF;
-	box-shadow: -6px 0 #218681;		
+	background-color: #bbf9ff;
+	box-shadow: -6px 0 #5eabb2;		
 }
 #recruit_bk:hover{
-	box-shadow: -4px 0 #218681;
+	box-shadow: -4px 0 #5eabb2;
 }
 #recruit_bk:active{
-	box-shadow: 0px 0 #218681;
+	box-shadow: 0px 0 #5eabb2;
 }
 
 
