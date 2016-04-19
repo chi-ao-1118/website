@@ -1019,6 +1019,10 @@ p.about {
 	font-weight: 800;
 	padding: 0.8em 0.3em;
 }
+.project_name a{
+	text-decoration:none;
+	color:#000;
+}
 .project_p {
 }
 .project_line {
