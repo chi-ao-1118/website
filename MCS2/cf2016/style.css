@@ -75,7 +75,7 @@ a{
 	width:25em;
 	border:solid 1px #fff;
 	font-size: 1.2em;
-	margin-bottom:2em;
+	margin-bottom:8em;
 }
 #detail span{
 	font-size: 2em;
@@ -226,8 +226,8 @@ a{
  -webkit-animation-duration:0.3s;
  -ms-animation-duration:0.3s;
  animation-duration:0.3s;
- -webkit-animation-name: splat;
- animation-name: splat;
+ -webkit-animation-name: slideInLeft;
+ animation-name: slideInLeft;
  visibility: visible !important;
 }
 @-webkit-keyframes slideInLeft {
