@@ -23,7 +23,7 @@ a {
 	width: 100%;
 	position: relative;
 	height: 100vh;
-	margin-bottom: 18em;
+	margin-bottom: 0em;
 }
 .first img {
 	height: auto;
@@ -58,7 +58,7 @@ a {
 #cautionWrap {
 	background-image: url(img/texture_smart.png);
 	-webkit-background-size: auto 100%;
-	background-size: auto 90%;
+	background-size: auto 80%;
 }
 #caution {
 }
@@ -82,16 +82,20 @@ a {
 	border-image: url("img/border.png") 15 round;
 	border-style: solid;
 	border-width: 10px;
-	width: 23em;
+	width: 21em;
 	margin: 0 auto;
-	margin-bottom: 8em;
+	margin-bottom: 0em;
 }
 #detail span {
 	font-size: 2em;
 	line-height: 3em;
 }
-/*desine*/
+#caution p{
+	width:80%;
+	margin:0 auto;
+}
 
+/*desine*/
 #mad1 {
 	position: relative;
 	zindex: -4;
@@ -117,6 +121,7 @@ a {
 	left: -3em;
 	cursor: pointer;
 	text-align: left;
+	z-index:2;
 }
 #toTop img {
 	width: 12em;
