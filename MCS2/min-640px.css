@@ -1130,10 +1130,13 @@ figcaption p {
 	color:#fff;
 }
 figcaption h3 {
-	top: 18%;
+	top:5%;
+	line-height: 1.2em;
 }
 figcaption p {
 	top: 50%;
+	font-size: 0.9em;
+	line-height: 1em;
 }
 figure:hover figcaption {
 	opacity: 1;

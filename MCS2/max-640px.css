@@ -1048,16 +1048,19 @@ figcaption h3,
 figcaption p {
 	position: absolute;
 	left: -100%;
-	width: 80%;
+	width: 90%;
 	-webkit-transition: .3s;
 	transition: .3s;
 	color:#fff;
 }
 figcaption h3 {
-	top: 10%;
+	top: 5%;
+	line-height: 1.1em;
 }
 figcaption p {
-	top: 50%;
+	top: 53%;
+	font-size: 0.8em;
+	line-height: 1em;
 }
 figure:hover figcaption {
 	opacity: 1;
