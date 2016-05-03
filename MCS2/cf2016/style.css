@@ -113,8 +113,8 @@ a {
 	margin-top: -10em
 }
 #toTop {
-	position: absolute;
-	bottom: -500vh;
+	position: fixed;
+	bottom: 0em;
 	left: -3em;
 	cursor: pointer;
 	text-align: left;

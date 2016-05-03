@@ -1,10 +1,7 @@
 // JavaScript Document
 
-$('.animation').css('visibility','hidden');
-$('.animation2').css('visibility','hidden');
-$('.animation3').css('visibility','hidden');
-$('.animation4').css('visibility','hidden');
-$('.animation5').css('visibility','hidden');
+$('.animation,.animation2,.animation3,.animation4,#toTop').css('visibility','hidden');
+
 $(window).scroll(function(){
 	var windowHeight = $(window).height(),
 	topWindow = $(window).scrollTop();
@@ -13,7 +10,9 @@ $(window).scroll(function(){
   		var targetPosition = $(this).offset().top;
   		if(topWindow > targetPosition - windowHeight + 300){
    			$(this).addClass("fadeInDown");
-  		}
+  		}else{
+			$(this).removeClass("fadeInDown").css('visibility','hidden');
+		}
  	});
  
  	$('.animation2').each(function(){
@@ -23,7 +22,9 @@ $(window).scroll(function(){
 	  		setTimeout(function(){
          		mad.addClass("splat");
     		},1200);
-  		}
+  		}else{
+			$(this).removeClass("splat").css('visibility','hidden');
+		}
  	});
  
    $('.animation3').each(function(){
@@ -33,6 +34,8 @@ $(window).scroll(function(){
 		   setTimeout(function(){
 			   mad.addClass("splat");
 			},100);
+		}else{
+			$(this).removeClass("splat").css('visibility','hidden');
 		}
    });
  
@@ -43,6 +46,8 @@ $(window).scroll(function(){
 		   setTimeout(function(){
 			   mad.addClass("fadeBlur");
 			},500);
+		}else{
+			$(this).removeClass("fadeBlur").css('visibility','hidden');
 		}
    });
    
@@ -50,10 +55,12 @@ $(window).scroll(function(){
   	var documentHeight = $(document).height();
 	var scrollPosition = windowHeight + topWindow;
 		
-   $('.animation5').each(function(){
+   $('#toTop').each(function(){
 		if ((documentHeight - scrollPosition) < 100) {
    			$(this).addClass("slideInLeft");
-  		}
+  		}else{
+			$(this).removeClass("slideInLeft").css('visibility','hidden');
+		}
  	});
- 
+	 
 });
