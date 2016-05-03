@@ -35,13 +35,13 @@ a {
 	z-index: 2;
 	margin: 10em auto;
 	height: 100%;
-	width: 100%;
 	display: table;
 }
 #historyWrap {
 	background-image: url(img/bgi.png);
 	-webkit-background-size: cover;
 	background-size: cover;
+	width:100%;
 }
 #history {
 }
@@ -57,8 +57,8 @@ a {
 }
 #cautionWrap {
 	background-image: url(img/texture_smart.png);
-	-webkit-background-size: auto 100%;
-	background-size: auto 80%;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 #caution {
 }
@@ -73,8 +73,9 @@ a {
 }
 #detailWrap {
 	background-image: url(img/texture_smart.png);
-	-webkit-background-size: auto 100%;
-	background-size: auto 90%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	
 }
 #detail {
 	padding-bottom: 2.5em;
@@ -99,7 +100,7 @@ a {
 #mad1 {
 	position: relative;
 	zindex: -4;
-	top: -14em;
+	top: -13em;
 	left: 30vw;
 	width: 40%;
 	height: auto;
@@ -126,10 +127,7 @@ a {
 #toTop img {
 	width: 12em;
 }
-.animation1 {
-}
-.animation2 {
-}
+
 .fadeInDown {
 	-webkit-animation-fill-mode: both;
 	-ms-animation-fill-mode: both;
