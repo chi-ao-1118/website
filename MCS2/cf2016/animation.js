@@ -8,7 +8,7 @@ $(window).scroll(function(){
  	
 	$('.animation').each(function(){
   		var targetPosition = $(this).offset().top;
-  		if(topWindow > targetPosition - windowHeight + 300){
+  		if(topWindow > targetPosition - windowHeight + 200){
    			$(this).addClass("fadeInDown");
   		}else{
 			$(this).removeClass("fadeInDown").css('visibility','hidden');

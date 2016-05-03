@@ -1,0 +1,421 @@
+/* CSS Document */
+
+/* CSS Document */
+
+html, body {
+	background-color: #000;
+	color: #fff;
+	text-height: 1.4em;
+	font-size: 1em;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+	position: relative;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+/**first*/
+.first {
+	width: 100%;
+	position: relative;
+	height: 100vh;
+	margin-bottom: 18em;
+}
+.first img {
+	height: auto;
+	width: 100%;
+}
+/*section*/
+.container {
+	position: relative;
+	z-index: 2;
+	margin: 10em auto;
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+#historyWrap {
+	background-image: url(img/bgi.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#history {
+}
+#history span.big {
+	font-size: 1.3em;
+}
+#history span.indent {
+	padding-left: 0em;
+}
+#history img {
+	height: 2em;
+	width: auto;
+}
+#cautionWrap {
+	background-image: url(img/texture_smart.png);
+	-webkit-background-size: auto 100%;
+	background-size: auto 90%;
+}
+#caution {
+}
+#caution img {
+	margin-bottom: 0.8em;
+	height: 3em;
+}
+#caution span {
+	color: #A40002;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+#detailWrap {
+	background-image: url(img/texture_smart.png);
+	-webkit-background-size: auto 100%;
+	background-size: auto 90%;
+}
+#detail {
+	padding-bottom: 2.5em;
+	border: solid 1px #fff;
+	border-image: url("img/border.png") 15 round;
+	border-style: solid;
+	border-width: 10px;
+	width: 23em;
+	margin: 0 auto;
+	margin-bottom: 8em;
+}
+#detail span {
+	font-size: 2em;
+	line-height: 3em;
+}
+/*desine*/
+
+#mad1 {
+	position: relative;
+	zindex: -4;
+	top: -14em;
+	left: 30vw;
+	width: 40%;
+	height: auto;
+	margin-bottom: -30em;
+}
+#mad2 {
+	position: relative;
+	zindex: -4;
+	top: 8em;
+	top: 30vh;
+	left: -12em;
+	width: 18em;
+	height: auto;
+	margin-top: -10em
+}
+#toTop {
+	position: fixed;
+	bottom: 0em;
+	left: -3em;
+	cursor: pointer;
+	text-align: left;
+}
+#toTop img {
+	width: 12em;
+}
+.animation1 {
+}
+.animation2 {
+}
+.fadeInDown {
+	-webkit-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% {
+opacity: 0;
+-webkit-transform: translateY(-20px);
+}
+ 100% {
+opacity: 1;
+-webkit-transform: translateY(0);
+}
+}
+@keyframes fadeInDown {
+ 0% {
+opacity: 0;
+-webkit-transform: translateY(-20px);
+-ms-transform: translateY(-20px);
+transform: translateY(-20px);
+}
+ 100% {
+opacity: 1;
+-webkit-transform: translateY(0);
+-ms-transform: translateY(0);
+transform: translateY(0);
+}
+}
+/*splat*/
+.splat {
+	-webkit-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 0.1s;
+	-ms-animation-duration: 0.1s;
+	animation-duration: 0.1s;
+	-webkit-animation-name: splat;
+	animation-name: splat;
+	visibility: visible !important;
+}
+@-webkit-keyframes splat {
+ from {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
+ @keyframes splat {
+ from {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
+/*fadeBlur*/
+.fadeBlur {
+	-webkit-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-name: fadeBlur;
+	animation-name: fadeBlur;
+	visibility: visible !important;
+}
+@-webkit-keyframes fadeBlur {
+ from {
+ opacity: 0;
+ -webkit-filter: blur(10px);
+ -ms-filter: blur(10px);
+ filter: blur(10px);
+}
+ 100% {
+ opacity: 1;
+ -webkit-filter: blur(5px);
+ -ms-filter: blur(5px);
+ filter: blur(5px);
+}
+}
+ @keyframes fadeBlur {
+ from {
+ opacity: 0;
+ -webkit-filter: blur(10px);
+ -ms-filter: blur(10px);
+ filter: blur(10px);
+}
+ 100% {
+ opacity: 1;
+ -webkit-filter: blur(px);
+ -ms-filter: blur(0px);
+ filter: blur(0px);
+}
+}
+/*slideInLeft*/
+.slideInLeft {
+	-webkit-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 0.8s;
+	-ms-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-name: slideInLeft;
+	animation-name: slideInLeft;
+	visibility: visible !important;
+}
+ @-webkit-keyframes slideInLeft {
+ from {
+ left:-20em;
+}
+ 100% {
+ left:-3em;
+}
+}
+ @keyframes slideInLeft {
+ from {
+ left:-20em;
+}
+ 100% {
+ left:-3em;
+}
+}
+/*Scroll*/
+a#top_scroll {
+	cursor: default;
+	padding-top: 60px;
+	position: relative;
+	top: -10px;
+	z-index: 2;
+	display: inline-block;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	text-decoration: none;
+	color: #fff;
+}
+a#top_scroll span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: sdb 1.5s infinite;
+	animation: sdb 1.5s infinite;
+	box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+ 0% {
+ -webkit-transform: rotate(-45deg) translate(0, 0);
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+}
+ 100% {
+ -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+ opacity: 0;
+}
+}
+@keyframes sdb {
+ 0% {
+ transform: rotate(-45deg) translate(0, 0);
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+}
+ 100% {
+ transform: rotate(-45deg) translate(-20px, 20px);
+ opacity: 0;
+}
+}
+
+
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+ 10% {
+ -webkit-transform: translateX(3px) rotate(2deg);
+ transform: translateX(3px) rotate(2deg);
+}
+ 20% {
+ -webkit-transform: translateX(-3px) rotate(-2deg);
+ transform: translateX(-3px) rotate(-2deg);
+}
+ 30% {
+ -webkit-transform: translateX(3px) rotate(2deg);
+ transform: translateX(3px) rotate(2deg);
+}
+ 40% {
+ -webkit-transform: translateX(-3px) rotate(-2deg);
+ transform: translateX(-3px) rotate(-2deg);
+}
+ 50% {
+ -webkit-transform: translateX(2px) rotate(1deg);
+ transform: translateX(2px) rotate(1deg);
+}
+ 60% {
+ -webkit-transform: translateX(-2px) rotate(-1deg);
+ transform: translateX(-2px) rotate(-1deg);
+}
+ 70% {
+ -webkit-transform: translateX(2px) rotate(1deg);
+ transform: translateX(2px) rotate(1deg);
+}
+ 80% {
+ -webkit-transform: translateX(-2px) rotate(-1deg);
+ transform: translateX(-2px) rotate(-1deg);
+}
+ 90% {
+ -webkit-transform: translateX(1px) rotate(0);
+ transform: translateX(1px) rotate(0);
+}
+ 100% {
+ -webkit-transform: translateX(-1px) rotate(0);
+ transform: translateX(-1px) rotate(0);
+}
+}
+ @keyframes hvr-buzz-out {
+ 10% {
+ -webkit-transform: translateX(3px) rotate(2deg);
+ transform: translateX(3px) rotate(2deg);
+}
+ 20% {
+ -webkit-transform: translateX(-3px) rotate(-2deg);
+ transform: translateX(-3px) rotate(-2deg);
+}
+ 30% {
+ -webkit-transform: translateX(3px) rotate(2deg);
+ transform: translateX(3px) rotate(2deg);
+}
+ 40% {
+ -webkit-transform: translateX(-3px) rotate(-2deg);
+ transform: translateX(-3px) rotate(-2deg);
+}
+ 50% {
+ -webkit-transform: translateX(2px) rotate(1deg);
+ transform: translateX(2px) rotate(1deg);
+}
+ 60% {
+ -webkit-transform: translateX(-2px) rotate(-1deg);
+ transform: translateX(-2px) rotate(-1deg);
+}
+ 70% {
+ -webkit-transform: translateX(2px) rotate(1deg);
+ transform: translateX(2px) rotate(1deg);
+}
+ 80% {
+ -webkit-transform: translateX(-2px) rotate(-1deg);
+ transform: translateX(-2px) rotate(-1deg);
+}
+ 90% {
+ -webkit-transform: translateX(1px) rotate(0);
+ transform: translateX(1px) rotate(0);
+}
+ 100% {
+ -webkit-transform: translateX(-1px) rotate(0);
+ transform: translateX(-1px) rotate(0);
+}
+}
+.hvr-buzz-out {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+
+	-webkit-animation-name: hvr-buzz-out;
+	animation-name: hvr-buzz-out;
+	-webkit-animation-duration: 0.75s;
+	animation-duration: 0.75s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
