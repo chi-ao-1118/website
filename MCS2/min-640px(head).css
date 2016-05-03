@@ -92,7 +92,6 @@ ul.head_map a{
 	background-size: cover;
 	color: white;
 	text-align: center;
-	position: relative;
 }
 .top_topMCSWrap {
 	height: 90%;
@@ -102,8 +101,8 @@ ul.head_map a{
 	width: 12em;
 	color: black;
 	border: 0.15em solid black;
-	margin: 0 auto;
 	background-color: rgba(255,255,255,0.7);
+	margin: 0 auto;
 }
 .top_topKansai {
 	font-size: 1em;

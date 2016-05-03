@@ -22,14 +22,14 @@ $(window).scroll(function(){
   		if(topWindow > targetPosition - windowHeight + 300){
 	  		setTimeout(function(){
          		mad.addClass("splat");
-    		},1000);
+    		},1200);
   		}
  	});
  
    $('.animation3').each(function(){
 	   var mad = $(this);
 	   var targetPosition = $(this).offset().top;
-	   if(topWindow > targetPosition - windowHeight + 600){
+	   if(topWindow > targetPosition - windowHeight + 200){
 		   setTimeout(function(){
 			   mad.addClass("splat");
 			},100);
@@ -51,7 +51,7 @@ $(window).scroll(function(){
 	var scrollPosition = windowHeight + topWindow;
 		
    $('.animation5').each(function(){
-		if ((documentHeight - scrollPosition) < 10) {
+		if ((documentHeight - scrollPosition) < 100) {
    			$(this).addClass("slideInLeft");
   		}
  	});
