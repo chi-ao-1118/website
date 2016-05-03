@@ -1075,6 +1075,22 @@ figure:hover figcaption p {
 	-webkit-transition-delay: .5s;
 	transition-delay: .5s;
 }
+.addedFig figcaption {
+	opacity: 1;
+}
+.addedFig figcaption h3,
+.addedFig figcaption p {
+	left: 8%;
+	animation-iteration-count: infinite;
+}
+.addedFig figcaption h3 {
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+}
+.addedFig figcaption p {
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s;
+}
 
 .contents_film {
 	margin: 0 auto;
