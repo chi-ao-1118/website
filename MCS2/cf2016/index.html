@@ -13,10 +13,18 @@
 <title>写ル、憑ル、ウツル。</title>
 <link rel="stylesheet" media="(max-aspect-ratio: 800/520)" href="style_smart.css">
 <link rel="stylesheet" media="(min-aspect-ratio: 800/520)" href="style.css">
+
 </head>
 <body>
-<div class="first"> <img src="img/first.png" alt="utsuru"><br/>
-  <a id="top_scroll" href=""><span></span>Scroll</a> </div>
+<article class="loader_bg">
+  <div class="loader">
+    <img src="img/load_utsuru.gif" width="80" height="80" alt="Now Loading..." />
+    <p>Now Loading...</p>
+  </div>
+</article>
+<article class="mainContents">
+<article class="first"> <img src="img/first.png" alt="utsuru"><br/>
+  <div id="top_scroll" href=""><span></span>Scroll</div> </article>
 
 <section class="container" id="historyWrap">   <img src="img/mad1.png" alt="mad" class="animation2" id="mad1">
   <div class="container animation" id="history"><span class="big"><a href="../index.html">MCS</a></span>史上最高の<img src="img/fear.png" alt="kyoufu">が　　　　　　 <br/>
@@ -40,9 +48,13 @@
     10:00より整理券配布(なくなり次第終了)<br/>
   </div>
 </section>
-<div id="toTop" class="hvr-buzz-out animation5"><img src="img/toTop.png" alt="ページトップへ"></div>
+<div id="toTop" class="animation5"><img src="img/toTop.png" alt="ページトップへ"></div>
+</article>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
 <script type="text/javascript" src="toTop.js"></script> 
 <script type="text/javascript" src="animation.js"></script>
+<script type="text/javascript" src="load.js"></script>
 </body>
 </html>

@@ -57,9 +57,9 @@ $(window).scroll(function(){
 		
    $('#toTop').each(function(){
 		if ((documentHeight - scrollPosition) < 100) {
-   			$(this).addClass("slideInLeft");
+   			$(this).addClass("toTopAnime");
   		}else{
-			$(this).removeClass("slideInLeft").css('visibility','hidden');
+			$(this).removeClass("toTopAnime").css('visibility','hidden');
 		}
  	});
 	 
