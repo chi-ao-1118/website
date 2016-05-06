@@ -213,6 +213,14 @@ li {
 .menu_subsection a{
 		color:#fff;
 }
+.menu_utsuru{
+	background-color:#000;
+	border-bottom:#4c2020 solid 1px;
+	font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+}
+.menu_utsuru a{
+		color:#e00;
+}
 img.menu_SNS{
 	height:2em;
 	width:auto;
@@ -236,6 +244,10 @@ a.menu_SNS{
 .menu_subsection .menu_arrow{
 	border-top: 2px solid #fff;
 	border-right: 2px solid #fff;
+}
+.menu_utsuru .menu_arrow{
+	border-top: 2px solid #e00;
+	border-right: 2px solid #e00;
 }
 
 .menu_overlay{
