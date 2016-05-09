@@ -56,11 +56,20 @@ $(window).scroll(function(){
 	var scrollPosition = windowHeight + topWindow;
 		
    $('#toTop').each(function(){
+	   var toTop = $(this);
 		if ((documentHeight - scrollPosition) < 100) {
-   			$(this).addClass("toTopAnime");
+			 setTimeout(function(){
+				 toTop.addClass("toTopAnime");
+			},1000);
   		}else{
-			$(this).removeClass("toTopAnime").css('visibility','hidden');
+			toTop.removeClass("toTopAnime").css('visibility','hidden');
 		}
  	});
+	
+	$('#toTop').click(function () {
+		setTimeout(function(){
+			$(this).removeClass("toTopAnime").css('visibility','hidden');
+		},1100);
+	});
 	 
 });
