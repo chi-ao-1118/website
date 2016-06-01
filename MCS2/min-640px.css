@@ -1228,6 +1228,9 @@ a.pre_conA{
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
+.pre_img{
+	position: relative;
+}
 .pre_imgPhoto{
 	position: relative;
     top: -20%;
