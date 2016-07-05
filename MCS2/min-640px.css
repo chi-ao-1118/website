@@ -237,6 +237,10 @@ ul.head_map a{
 #topImg_recruit{
 	background-image: url(img/recruit_top.png);
 }
+#topImg_vs{
+	background-image: url(img/vs_top.png);
+}
+
 #topImg_links {
 	background-image: url(img/links_top.jpg);
 }
@@ -1408,7 +1412,29 @@ a.pre_conA{
 	margin: 2em auto;
 }
 
+/*
+		VSコン物
 
+					*/
+
+#vsMovie{
+	width:85%;	
+	margin:0 auto;
+}
+.vsName{
+	margin-bottom:0;
+	padding-bottom:0;
+	text-align:center;
+	font-weight: 800;
+}
+#vsIframe{
+	width:85%;
+	height:1100px;
+	/*height:100vh;*/
+}
+#vsIframeWrap{
+	text-align:center;
+}
 /*
 		LINKS
 					*/
