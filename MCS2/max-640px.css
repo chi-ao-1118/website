@@ -177,11 +177,12 @@ li {
 #topImg_recruit{
 	background-image: url(img/recruit_top_smart.png);
 }
+#topImg_vs{
+	background-image: url(img/vs_top.png);
+}
 #topImg_links {
 	background-image: url(img/links_top_smart.jpg);
 }
-
-
 /*
 	　ハンバーガー
 					*/
@@ -468,12 +469,16 @@ a#top_scroll span{
 	border-color: transparent transparent #000000 transparent;
 }
 #top_mainNowContens {
-	height: 3em;
-	width: 90%;
+	height: 20vh;
+	width: 100%;
 	margin: 0 auto;
+	text-align:center;
 }
 #top_mainNowContens img{
-	width:100%;
+	height:auto;
+	width:80%;
+	position:relative;
+	top:-0.5em;
 }
 #top_mainNewsContens {
 	height: 5em;
@@ -489,10 +494,11 @@ a#top_scroll span{
 	z-index: 1;
 }
 #top_mainNowBgc {
-	height: 7em;
+	height: calc(80vw * 282 / 904 * 1.2);
 	width: 90%;
 	background-color: #ffa996;
-	top: -5.5em;
+	top:-8.1em;
+	margin-bottom:calc(-80vw * 282 / 904 * 1.2);
 }
 #top_mainNewsBgc {
 	height: 10em;
@@ -1377,6 +1383,30 @@ a.pre_conA{
 	margin: 2em auto;
 }
 
+/*
+		VSコン物
+
+					*/
+
+#vsMovie{
+	width:85%;	
+	margin:0 auto;
+}
+.vsName{
+	margin-bottom:0;
+	padding-bottom:0;
+	text-align:center;
+	font-weight: 800;
+}
+#vsIframe{
+	width:85%;
+	height:1100px;
+	/*height:100vh;*/
+	zoom:0.2;
+}
+#vsIframeWrap{
+	text-align:center;
+}
 
 /*
 		LINKS

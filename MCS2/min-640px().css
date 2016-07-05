@@ -367,16 +367,19 @@ a#top_scroll span{
 	border-color: transparent transparent #000000 transparent;
 }
 #top_mainNowContens {
+	height:auto;
 	width: 80%;
 	margin: 0 auto;
 	text-align:center;
+	position:relative;
+	top:-0.5em;
 }
 #top_mainNowContens img{
 	width:100%;
 	height:auto;
 }
 #top_mainNewsContens {
-	height: 5em;
+	height: 7em;
 	width: 80%;
 	margin: 0 auto;
 	background-color: #ffffff;
@@ -391,16 +394,19 @@ a#top_scroll span{
 	z-index: 1;
 }
 #top_mainNowBgc {
-	height: 13vw;
+	/*height: 13vw;*/
+	height:calc(80vw * 282 / 904 *1);
 	width: 75%;
 	background-color: #ffa996;
-	top: -11.5vw;
+	/*top: -11.5vw;*/
+	top:calc(-80vw * 282 / 904 *0.9);
+	margin-bottom:calc(-80vw * 282 / 904 *0.9);
 }
 #top_mainNewsBgc {
-	height: 11em;
+	height: 12em;
 	width: 75%;
 	background-color: #FFCC66;
-	top: -7.5em;
+	top: -9em;
 }
 #top_mainTwitterBgc {
 	height: 515px;
