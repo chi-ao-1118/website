@@ -225,7 +225,7 @@ ul.head_map a{
 #topImg_works {
 	background-image: url(img/works_top.jpg);
 }
-#topImg_project {
+#topImg_events {
 	background-image: url(img/works_top.jpg);
 }
 #topImg_contents {
@@ -948,14 +948,14 @@ p.about {
 	line-height: 0.1em;
 	vertical-align: middle;
 }
-#project_bk {
+#events_bk {
 	background-color: #FF9B91;
 	box-shadow: -6px 0 #ab3c3c;		
 }
-#project_bk:hover{
+#events_bk:hover{
 	box-shadow: -4px 0 #ab3c3c;
 }
-#project_bk:active{
+#events_bk:active{
 	box-shadow: 0px 0 #ab3c3c;
 }
 #contents_bk {
@@ -991,22 +991,22 @@ p.about {
 
 
 /*
-	  プロジェクト
+	  EVENTS
 		 			*/
-.project_dataBox {
+.events_dataBox {
 	margin: 3em auto;
 	text-align: center;
 }
-.project_img {
+.events_img {
 	display: inline-block;
 	vertical-align: middle;
 	width: 20%;
 	height: auto;
 }
-.project_imgSmart{
+.events_imgSmart{
 	display:none;
 }
-.project_txtBox {
+.events_txtBox {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: left;
@@ -1014,22 +1014,22 @@ p.about {
 	line-height: 1.5em;
 	width: 50%;
 }
-.project_date {
+.events_date {
 	font-size: 0.9em;
 	padding: 0.2em 0;
 }
-.project_name {
+.events_name {
 	font-size: 1.8em;
 	font-weight: 800;
 	padding: 0.8em 0.3em;
 }
-.project_name a{
+.events_name a{
 	text-decoration:none;
 	color:#000;
 }
-.project_p {
+.events_p {
 }
-.project_line {
+.events_line {
 	width: 77%;
 	height: 0.1em;
 	margin: 2em auto;
