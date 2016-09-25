@@ -1170,52 +1170,52 @@ a.pre_conA {
 	width: 30%;
 }
 #recruit_modal1 {
-	background-image: url(img/modal/leaders1.png);
+	background-image: url(img/modal/leaders1.jpg);
 }
 #recruit_modal1:hover {
-	background-image: url(img/modal/leaders1.png);/**/
+	background-image: url(img/modal/leaders1.jpg);/**/
 }
 #recruit_modal2 {
-	background-image: url(img/modal/leaders2.png);
+	background-image: url(img/modal/leaders2.jpg);
 }
 #recruit_modal2:hover {
-	background-image: url(img/modal/leaders2.png);/**/
+	background-image: url(img/modal/leaders2.jpg);/**/
 }
 #recruit_modal3 {
-	background-image: url(img/modal/leaders3.png);
+	background-image: url(img/modal/leaders3.jpg);
 }
 #recruit_modal3:hover {
-	background-image: url(img/modal/leaders3.png);/**/
+	background-image: url(img/modal/leaders3.jpg);/**/
 }
 #recruit_modal4 {
-	background-image: url(img/modal/leaders4.png);
+	background-image: url(img/modal/leaders4.jpg);
 }
 #recruit_modal4:hover {
-	background-image: url(img/modal/leaders4.png);/**/
+	background-image: url(img/modal/leaders4.jpg);/**/
 }
 #recruit_modal5 {
-	background-image: url(img/modal/leaders5.png);
+	background-image: url(img/modal/leaders5.jpg);
 }
 #recruit_modal5:hover {
-	background-image: url(img/modal/leaders5.png);/**/
+	background-image: url(img/modal/leaders5.jpg);/**/
 }
 #recruit_modal6 {
-	background-image: url(img/modal/leaders6.png);
+	background-image: url(img/modal/leaders6.jpg);
 }
 #recruit_modal6:hover {
-	background-image: url(img/modal/leaders6.png);/**/
+	background-image: url(img/modal/leaders6.jpg);/**/
 }
 #recruit_modal7 {
-	background-image: url(img/modal/leaders7.png);
+	background-image: url(img/modal/leaders7.jpg);
 }
 #recruit_modal7:hover {
-	background-image: url(img/modal/leaders7.png);/**/
+	background-image: url(img/modal/leaders7.jpg);/**/
 }
 #recruit_modal8 {
-	background-image: url(img/modal/leaders8.png);
+	background-image: url(img/modal/leaders8.jpg);
 }
 #recruit_modal8:hover {
-	background-image: url(img/modal/leaders8.png);/**/
+	background-image: url(img/modal/leaders8.jpg);/**/
 }
 .recruit_modalContent {
 	position: fixed;
