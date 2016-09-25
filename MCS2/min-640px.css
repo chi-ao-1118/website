@@ -616,22 +616,22 @@ p.about {
 	transition: .3s ease-in-out;
 }
 #about_officeItem01 {
-	background-image: url(img/modal/production_Department.png);
+	background-image: url(img/modal/production_Department.jpg);
 }
 #about_officeItem01:hover {
-	background-image: url(img/modal/production_Department_bright.png);
+	background-image: url(img/modal/production_Department_bright.jpg);
 }
 #about_officeItem02 {
-	background-image: url(img/modal/technical_Station.png);
+	background-image: url(img/modal/technical_Station.jpg);
 }
 #about_officeItem02:hover {
-	background-image: url(img/modal/technical_Station_bright.png);
+	background-image: url(img/modal/technical_Station_bright.jpg);
 }
 #about_officeItem03 {
-	background-image: url(img/modal/DPI.png);
+	background-image: url(img/modal/DPI.jpg);
 }
 #about_officeItem03:hover {
-	background-image: url(img/modal/DPI_bright.png);
+	background-image: url(img/modal/DPI_bright.jpg);
 }
 .about_officeItem:hover {
 	-moz-transform: scale(1.1);
