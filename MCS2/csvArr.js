@@ -15,7 +15,7 @@ $( function() {
 		
 		var count = 0;
 		// 挿入するHTMLを作成
-		insert += '<article class="pressrelease_mainWrapper">';
+		insert += '<article class="pressrelease_mainWrap">';
 		for (i = csvArr.length-1; i >= 1 ; i--) {
 			count++;
 			if(count % 3 == 1){

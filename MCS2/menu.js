@@ -9,14 +9,14 @@ $(".menu").click(function(){
 		$(".hamMenu").show();
 		$(".menu_overlay").show();
 		$(".topImg").hide();
-		$(".mainWrapper").hide();
+		$(".mainWrap").hide();
 		$(".topLost").hide();
 		$("#top_firstView").attr('id', "none");
 	}else{
 		$(".hamMenu").hide();
 		$(".menu_overlay").hide();
 		$(".topImg").show();
-		$(".mainWrapper").show();
+		$(".mainWrap").show();
 		$(".topLost").show();
 		$("#none").attr('id',"top_firstView");
 	}
@@ -28,7 +28,7 @@ $(".menu_overlay").click(function(){
 		$(".hamMenu").hide();
 		$(".menu_overlay").hide();
 		$(".topImg").show();
-		$(".mainWrapper").show();
+		$(".mainWrap").show();
 		$(".topLost").show();
 });*/
 
@@ -40,7 +40,7 @@ $(window).on('load resize', function() {
 		$(".hamMenu").hide();
 		$(".menu_overlay").hide();
 		$(".topImg").show();
-		$(".mainWrapper").show();
+		$(".mainWrap").show();
 		$(".topLost").show();
 	}
 });
