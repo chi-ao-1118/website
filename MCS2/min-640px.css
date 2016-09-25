@@ -567,10 +567,11 @@ a#top_scroll span {
 	background-image: url(img/bar.png);
 	background-size: contain;
 	height: 10px;
- margin: 0 1em  position:relative;
+	margin: 0 1em ;
+	position:relative;
 	z-index: 0;
 }
-#about__sec01 {
+#about_sec01 {
 	width: 50%;
 }
 #about_sec02 {
