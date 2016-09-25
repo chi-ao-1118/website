@@ -1149,9 +1149,11 @@ a.pre_conA {
 }
 #recruit_graph {
 	margin: 0 auto;
-	width: 300.5px;
+	width: 370.5px;
 	padding-top: 371px;
-	margin-bottom: -180px;/*	width: 35%;
+	margin-bottom: -150px;
+	margin-left:-50px;
+	/*	width: 35%;
 	padding-top: 30%;
 	display:inline-block;*/
 }
