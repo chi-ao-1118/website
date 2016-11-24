@@ -1355,6 +1355,63 @@ a.pre_conA {
 #vsIframeWrap {
 	text-align: center;
 }
+
+/*
+		FreePaper
+					*/
+.frpWrap{
+	text-align: center;
+}
+
+.frpYear_PC{
+	padding-top: 0.5vh;
+	display: inline-block;
+	border-color: #000000;
+	border-style:solid;
+	font-weight: 600;
+	width:10vh;
+	height: 2.5vh;
+	font-size:1.5em;
+}
+.frpYear_phone{
+	display:none;
+}
+
+.frpBox_PC{
+	display:inline-block;
+	width:85%;
+	height:95vh;
+	background-color: #F5F5F5;
+	border-style: solid;
+	border-color:#DCDCDC;
+	border-radius:10px;
+	margin:2vh;
+	text-align: center;
+}
+
+.frpBox_phone{
+	display:none;
+}
+
+.frpTitle_PC{
+	margin:2vh;
+	font-size:2em;
+	font-weight: 600;
+	text-decoration: underline;
+}
+.frpTitle_phone{
+	display:none;
+}
+.frpContentsPC{
+	font-weight:300;
+	
+}
+#frpIframe {
+	width: 85%;
+	height: 1100px;/*height:100vh;*/
+}
+
+
 /*
 		LINKS
 					*/
