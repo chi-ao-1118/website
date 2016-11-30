@@ -1297,6 +1297,7 @@ a.pre_conA {
 
 .frpYear_phone{
 	padding-top: 0.1vh;
+	padding-bottom: 0.9vh;
 	display: inline-block;
 	border-color: #000000;
 	border-style:solid;
@@ -1312,7 +1313,7 @@ a.pre_conA {
 .frpBox_phone{
 	display:inline-block;
 	width:85%;
-	height:12vh;
+	height:20vh;
 	background-color: #F5F5F5;
 	border-style: solid;
 	border-color:#DCDCDC;
