@@ -172,6 +172,10 @@ li {
 #topImg_vs {
 	background-image: url(img/vs_top.jpg);
 }
+#topImg_fresh2016{
+	background-image: url(img/fresh2016.jpg);
+	max-width: 100%;
+}
 #topImg_links {
 	background-image: url(img/links_top_smart.jpg);
 }
@@ -1126,6 +1130,115 @@ a.pre_conA {
 }
 .preIndex_mainText {
 }
+
+/*
+		Freshman_recoding
+					*/
+@media screen and (max-width: 768px) and (min-width: 480px) {
+	iframe.twitter-tweet-rendered {
+		width: 430px !important;
+	}
+}
+ 
+@media screen and (max-width: 480px) {
+	iframe.twitter-tweet-rendered {
+		width: 255px !important;
+	}
+}
+#fresh_Wrap{
+	font-size: 1.2em;
+	margin-top: 0.1em;
+	text-align: center;
+}
+.fresh_Box_S {
+	text-align: center;
+	min-width: 320px;
+	height:12em;
+	left: 20vw;
+}
+.fresh_Box_M {
+	text-align: center;
+	height: 37em;
+	min-width: 320px;
+	left: 20vw;
+}
+.fresh_Box_L {
+	text-align: center;
+	height: 85em;
+	min-width: 320px;
+	left: 20vw;
+	margin-bottom: 0.25em;
+}
+.fresh_titleWrap {
+	margin: 2em auto;
+	margin-top: 2.5em;
+	margin-bottom: 0.05em;
+	text-align: center;
+	width: 40%;
+	position: relative;
+	z-index: 2;
+	font-size: 0.80em;
+	font-weight: 500;
+	border-bottom: solid;
+	border-bottom-width:2px;
+	border-color: #000000;
+	padding-bottom: 0.25em;
+}
+.fresh_mainImg img {
+	width: 60%;
+	height: auto;
+	margin-top: 1em;
+}
+.fresh_Text1 {
+	display: inline-box;
+	overflow: visible;
+	text-align: left;
+	height: 26em;/*line-heignt*行数*/
+	width: 70%;
+	font-size: 0.6em;
+	position: relative;
+	margin-top: 0.5em;
+	left: 20vw;
+}
+.fresh_Text2 {
+	display: inline-box;
+	overflow: visible;
+	text-align: left;
+	height: 6em;/*line-heignt*行数*/
+	width: 60%;
+	font-size: 0.6em;
+	position: relative;
+	margin-top: 0.5em;
+	left: 20vw;
+}
+.fresh_Text3 {
+	display: inline-box;
+	overflow: visible;
+	text-align: left;
+	height: 20em;/*line-heignt*行数*/
+	width: 60%;
+	font-size: 0.6em;
+	position: relative;
+	margin-top: 0.5em;
+	left: 20vw;
+}
+
+.fresh_contents{
+	text-align: left;
+}
+.fresh_twiBox{
+	display: inline-box;
+	text-align: center;
+	margin: 0,auto;
+}
+.fresh_twitter{
+	border-radius:10px;
+	background-color: #34A0F4;
+	min-width: 100%;
+	padding-top:1em;
+	padding-bottom:1em;
+	margin: 0,0;
+	}
 
 /*
 	    Recruit

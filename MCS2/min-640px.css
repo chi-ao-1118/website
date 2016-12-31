@@ -229,6 +229,10 @@ ul.head_map a {
 #topImg_vs {
 	background-image: url(img/vs_top.jpg);
 }
+#topImg_fresh2016{
+	background-image: url(img/fresh2016.jpg);
+	max-width: 100%;
+}
 #topImg_links {
 	background-image: url(img/links_top.jpg);
 }
@@ -1223,6 +1227,108 @@ a.pre_conA {
 .preIndex_mainText {
 	text-align: left;
 }
+
+/*
+		Freshman_recoding
+					*/
+#fresh_Wrap{
+	font-size: 1.2em;
+	margin-top: 0.1em;
+	text-align: center;
+}
+.fresh_Box_S {
+	text-align: center;
+	height: 18em;
+	max-width: 1200px;
+	left: 20vw;
+}
+.fresh_Box_M {
+	text-align: center;
+	height: 35em;
+	max-width: 1200px;
+	left: 20vw;
+}
+.fresh_Box_L {
+	text-align: center;
+	font-size: 1.0em;
+	max-width: 1200px;
+	left: 20vw;
+	margin-bottom: 0.5em;
+}
+.fresh_titleWrap {
+	margin: 0em, auto;
+	margin-top:0.5em;
+	text-align: center;
+	width: 40%;
+	position: relative;
+	z-index: 2;
+	font-size: 1.15em;
+	font-weight: 500;
+	border-bottom: solid;
+	border-bottom-width:2px;
+	border-color: #000000;
+	max-width: 1200px;
+	left:30vw;
+	padding-bottom: 0.5em;
+}
+.fresh_mainImg img {
+	width: 60%;
+	height: auto;
+	margin-top: 0em;
+}
+.fresh_Text1 {
+	display: inline-box;
+	overflow: visible;
+	text-align: left;
+	height: 10em;/*line-heignt*行数*/
+	width: 70%;
+	font-size: 1.0em;
+	position: relative;
+	margin-top: 0.25em;
+	left: 20vw;
+}
+.fresh_Text2 {
+	display: inline-box;
+	overflow: visible;
+	text-align: left;
+	height: 9em;/*line-heignt*行数*/
+	width: 60%;
+	font-size: 1.0em;
+	position: relative;
+	margin-top: 0.25em;
+	left: 20vw;
+}
+.fresh_Text3 {
+	display: inline-box;
+	overflow: visible;
+	text-align: left;
+	height: 85em;/*line-heignt*行数*/
+	width: 60%;
+	font-size: 1.0em;
+	position: relative;
+	margin-top: 1em;
+	margin-bottom:0.25em;
+	left: 20vw;
+}
+
+.fresh_contents{
+	text-align: left;
+}
+.fresh_twiBox{
+	display: inline-block;
+	text-align: center;
+	margin: 0,auto;
+}
+.fresh_twitter{
+	border-radius:10px;
+	background-color: #34A0F4;
+	width: 100%;
+	margin: 0,auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	}
 
 /*
 	    Recruit
