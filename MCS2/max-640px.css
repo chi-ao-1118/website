@@ -1244,6 +1244,149 @@ a.pre_conA {
 /*
 	    Recruit
 					*/
+.recruitWrap{
+	text-align: center;
+	width: 100%;
+	height:100%;
+}
+.recruitTitleWrap{
+	text-align: center;
+	width: 80px;
+	font-size: 1.0em;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 5vw;
+	border-bottom: solid;
+	border-width: 3px;
+	font-weight: 600;
+}
+.recruitTitleWrap_L{
+	text-align: left;
+	width: 220px;
+	font-size: 1.0em;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 5vw;
+	border-bottom: solid;
+	border-width: 3px;
+	font-weight: 600;
+}
+.recruitTitle{
+	text-align: left;
+}
+.recruitBox{
+	text-align: center;
+	width: 100%;
+	height: 10%;
+	margin-top: 20px;
+}
+#RB1{
+	background-color: #F56262;
+}
+#RB2{
+	background-color: #1E9CBB;
+}
+#RB3{
+	background-color: #FFE237;
+}
+.RBtitle{
+	color:#ffffff;
+	font-size:1.5em;
+	width:100%;
+	height:100%;
+	font-weight: 500;
+
+}
+.RBtxt{
+	color:#000000;
+	font-size: 0.6em;
+	text-align: left;
+	overflow: visible;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+}
+.RBbtn{
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: #BB1E1E;
+	color: #ffffff;
+	font-size: 0.5em;
+	border: solid;
+	border-color:#910303;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	text-decoration: none;
+}
+.RBbtn:hover{
+	color:#BB1E1E;
+	background-color: #ffffff;
+}
+.Rschedule{
+	display: inline-block;
+	width: 85%;
+	height: 60%;
+	background-color: #fff;
+	border: solid;
+	margin-top: 30px;
+}
+input {
+  display: none;
+}
+label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 0.5em;
+  border: solid;
+  border-color:#910303;
+  border-radius: 10px;
+  background-color: #BB1E1E;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+label:hover {
+ color:#BB1E1E;
+ background-color: #ffffff;
+}
+.panel {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  height: 0;
+  overflow: hidden;
+  background: #F5F0CF;
+  margin-top: 30px;
+  padding: 0;
+  border-radius: 5px;
+  display:inline-block;
+  width: 100%;
+  text-align: center;
+}
+input:checked + .panel {
+  height: auto;
+  padding: 15px;
+}
+.leader_photo{
+	display: none;
+}
+#leader_message{
+	display:none;
+}
+.leader_photo_smart{
+	display: inline-block;
+	text-align: center;
+	width:250px;
+}
+#leader_message_smart{
+	display:inline-block;
+	text-align: left;
+	width:70%;
+}
+.recruit_td{
+	display:none;
+	
+}
+/*旧*/
 .recruit_QandA {
 	width: 80%;
 	margin: 0 auto;

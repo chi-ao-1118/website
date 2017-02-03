@@ -1333,6 +1333,151 @@ a.pre_conA {
 /*
 	    Recruit
 					*/
+.recruitWrap{
+	text-align: center;
+	width: 100%;
+	height:100%;
+}
+.recruitTitleWrap{
+	text-align: center;
+	width: 130px;
+	font-size: 1.3em;
+	margin-bottom: 10px;
+	margin-left: 5vw;
+	border-bottom: solid;
+	border-width: 3px;
+	font-weight: 600;
+}
+.recruitTitleWrap_L{
+	text-align: left;
+	width: 300px;
+	font-size: 1.3em;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 5vw;
+	border-bottom: solid;
+	border-width: 3px;
+	font-weight: 600;
+}
+.recruitTitle{
+	text-align: left;
+}
+.recruitBox{
+	text-align: center;
+	width: 100%;
+	height: 33%;
+	margin-top: 40px;
+}
+#RB1{
+	background-color: #F56262;
+}
+#RB2{
+	background-color: #1E9CBB;
+}
+#RB3{
+	background-color: #FFE237;
+}
+.RBtitle{
+	color:#ffffff;
+	font-size:2.5em;
+	width:100%;
+	height:100%;
+	font-weight: 500;
+
+}
+.RBtxt{
+	color:#000000;
+	font-size: 0.4em;
+	text-align: left;
+	overflow: visible;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+}
+
+.Rschedule{
+	display: inline-block;
+	width: 85%;
+	height: 60%;
+	background-color: #fff;
+	border: solid;
+	margin-top: 30px;
+}
+.RBbtn{
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: #BB1E1E;
+	color: #FFFFFF;
+	font-size: 0.5em;
+	border: solid;
+	border-color:#910303;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	text-decoration: none;
+}
+.RBbtn:hover{
+	color:#BB1E1E;
+	background-color: #ffffff;
+}
+input {
+  display: none;
+}
+label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 0.5em;
+  border: solid;
+  border-color:#910303;
+  border-radius: 10px;
+  background-color: #BB1E1E;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+label:hover {
+ color:#BB1E1E;
+ background-color: #ffffff;
+}
+.panel {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  height: 0;
+  overflow: hidden;
+  background: #F5F0CF;
+  margin-top: 30px;
+  padding: 0;
+  border-radius: 5px;
+  display:inline-block;
+  width: 100%;
+  text-align: center;
+}
+input:checked + .panel {
+  height: auto;
+  padding: 15px;
+}
+.leader_photo{
+	display: inline-block;
+	width:350px;
+}
+#leader_message{
+	display:inline-block;
+	overflow: visible;
+	text-align: left;
+	width:80%;
+	margin: 5px;
+}
+.leader_photo_smart{
+	display: none;
+}
+#leader_message_smart{
+	display:none;
+}
+.recruit_td{
+	width: 50%;
+	height: 100%;
+}
+/*旧*/
+
 #recruit_sec01 {
 	width: 63%;
 }
