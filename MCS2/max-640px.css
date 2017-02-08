@@ -1251,7 +1251,8 @@ a.pre_conA {
 }
 .recruitTitleWrap{
 	text-align: center;
-	width: 80px;
+	width: 20%;
+	min-width: 100px;
 	font-size: 1.0em;
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -1262,7 +1263,8 @@ a.pre_conA {
 }
 .recruitTitleWrap_L{
 	text-align: left;
-	width: 220px;
+	width:75%;
+	max-width: 240px;
 	font-size: 1.0em;
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -1278,7 +1280,6 @@ a.pre_conA {
 	text-align: center;
 	width: 100%;
 	height: 10%;
-	margin-top: 20px;
 }
 #RB1{
 	background-color: #F56262;
@@ -1287,7 +1288,7 @@ a.pre_conA {
 	background-color: #1E9CBB;
 }
 #RB3{
-	background-color: #FFE237;
+	background-color: #FFCC00;
 }
 .RBtitle{
 	color:#ffffff;
@@ -1295,16 +1296,15 @@ a.pre_conA {
 	width:100%;
 	height:100%;
 	font-weight: 500;
-
+    max-height: 60%;
 }
 .RBtxt{
 	color:#000000;
 	font-size: 0.6em;
 	text-align: left;
 	overflow: visible;
-	padding-left: 50px;
-	padding-right: 50px;
-	
+	padding-left: 15%;
+	max-width: 70%;
 }
 .RBbtn{
 	display: inline-block;
@@ -1335,7 +1335,7 @@ input {
 }
 label {
   cursor: pointer;
-  display: inline-block;
+  display: none;
   padding: 10px 15px;
   font-size: 0.5em;
   border: solid;
@@ -1349,22 +1349,111 @@ label:hover {
  color:#BB1E1E;
  background-color: #ffffff;
 }
+label #changer1{
+  display:none;
+  cursor: pointer;
+  display: inline-block;
+  width: 35%;
+  max-width: 250px;
+  padding: 10px 15px;
+  font-size: 0.5em;
+  border: solid;
+  border-color:#910303;
+  border-radius: 10px;
+  background-color: #BB1E1E;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+label #changer2{
+  display:none;
+  cursor: pointer;
+  display: inline-block;
+  width: 35%;
+  max-width: 250px;
+  padding: 10px 15px;
+  font-size: 0.5em;
+  border: solid;
+  border-color:#910303;
+  border-radius: 10px;
+  background-color: #BB1E1E;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.change{
+	display:inline-block;
+}
+.change:hover{
+ color:#BB1E1E;
+ background-color: #ffffff;
+}
+.change:after{
+	content:"　　詳しく見る　　>　";
+}
+.changed{
+  display:none;
+}
+.changed:hover{
+ color:#BB1E1E;
+ background-color: #ffffff;
+}
+.changed:after{
+	content: "　　　　戻す　　　　";
+}
+.changer1{
+  display:none;
+  width: 35%;
+  max-width: 250px;
+  padding: 10px 15px;
+  font-size: 0.5em;
+  border: solid;
+  border-color:#910303;
+  border-radius: 10px;
+  background-color: #BB1E1E;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.changer1:hover{
+ color:#BB1E1E;
+ background-color: #ffffff;
+}
+.changer1:after{
+	content:"　詳しく見る   >";
+}
+.changer2{
+  display:none;
+  width: 35%;
+  max-width: 250px;
+  padding: 10px 15px;
+  font-size: 0.5em;
+  border: solid;
+  border-color:#910303;
+  border-radius: 10px;
+  background-color: #BB1E1E;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.changer2:hover{
+ color:#BB1E1E;
+ background-color: #ffffff;
+}
+.changer2:after{
+	content:"　詳しく見る   >";
+}
 .panel {
   -webkit-transition: .3s ease;
   transition: .3s ease;
   height: 0;
   overflow: hidden;
-  background: #F5F0CF;
-  margin-top: 30px;
+  background: #FFCC00;
   padding: 0;
-  border-radius: 5px;
+  margin-top: 0px;
   display:inline-block;
   width: 100%;
   text-align: center;
 }
 input:checked + .panel {
   height: auto;
-  padding: 15px;
+  padding-bottom: 20px;
 }
 .leader_photo{
 	display: none;
@@ -1375,12 +1464,20 @@ input:checked + .panel {
 .leader_photo_smart{
 	display: inline-block;
 	text-align: center;
-	width:250px;
+	width:60%;
 }
 #leader_message_smart{
 	display:inline-block;
 	text-align: left;
-	width:70%;
+	width:90%;
+	max-width: 80%;
+	background-color: #ffffff;
+	font-weight: 600;
+	padding:10px;
+	border: 4px solid #ff6600;
+	border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .recruit_td{
 	display:none;
