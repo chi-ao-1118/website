@@ -4,6 +4,15 @@ $(function(){
     $("#ch").hide();
      
     var flg = "modoru";
+    $("label").mouseover(
+    	function(){
+    		$(this).css("color","#bb1e1e");
+    		$(this).css("background-color","#ffffff");
+    }).mouseout(function(){
+    	$(this).css("color","");
+    	$(this).css("background-color","");
+    	
+    });
      
     $("#changer").click(function(){
                                     

@@ -1360,6 +1360,10 @@ label:hover {
 	color:#ffffff;
 	margin-bottom: 30px;
 }
+#hover:hover{
+	background-color: #ffffff;
+	color: #bb1e1e;
+}
 .panel {
   -webkit-transition: .3s ease;
   transition: .3s ease;
