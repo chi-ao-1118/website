@@ -1,17 +1,33 @@
 $(function(){
 	$(document).ready(function(){
-		$('label').hide('#changer2')
-		$('#changer1').show('.change');
-	})
-	$('#changer1').click(function(){
-		$('#changer1').hide('.change');
-		$('#changer2').show('.changed');
-		$('.changed').css("display","inline-block");
-	});
-	$('#changer2').click(function(){
-		$('#changer2').hide('.changed');
-		$('#changer1').show('.change');
-	}); 
+     
+    $("#ch").hide();
+     
+    var flg = "modoru";
+     
+    $("#changer").click(function(){
+                                    
+        $("#ch").slideToggle();
+         
+        if(flg == "modoru"){
+            $(this).text("戻る");
+            flg = "miru";
+        }else{
+            $(this).text("　詳しく見る　＞　");
+            flg = "modoru";
+        }
+    });
+});
+
+/*	$("label").click(function(){
+		$("label").each(function(){
+			var ch = $(this).html();
+			(this).html(
+				ch.replace('　詳しく見る　＞　','戻る')
+				);
+		});
+		$("label:after").css("display","none");
+	});*/
 });
 
 

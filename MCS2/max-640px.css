@@ -1308,6 +1308,7 @@ a.pre_conA {
 }
 .RBbtn{
 	display: inline-block;
+	width: 20%;
 	padding: 10px 15px;
 	background-color: #BB1E1E;
 	color: #ffffff;
@@ -1335,7 +1336,7 @@ input {
 }
 label {
   cursor: pointer;
-  display: none;
+  display: inline-block;
   padding: 10px 15px;
   font-size: 0.5em;
   border: solid;
@@ -1349,95 +1350,15 @@ label:hover {
  color:#BB1E1E;
  background-color: #ffffff;
 }
-label #changer1{
-  display:none;
-  cursor: pointer;
-  display: inline-block;
-  width: 35%;
-  max-width: 250px;
-  padding: 10px 15px;
-  font-size: 0.5em;
-  border: solid;
-  border-color:#910303;
-  border-radius: 10px;
-  background-color: #BB1E1E;
-  color: #FFFFFF;
-  margin-bottom: 30px;
-}
-label #changer2{
-  display:none;
-  cursor: pointer;
-  display: inline-block;
-  width: 35%;
-  max-width: 250px;
-  padding: 10px 15px;
-  font-size: 0.5em;
-  border: solid;
-  border-color:#910303;
-  border-radius: 10px;
-  background-color: #BB1E1E;
-  color: #FFFFFF;
-  margin-bottom: 30px;
-}
-.change{
-	display:inline-block;
-}
-.change:hover{
- color:#BB1E1E;
- background-color: #ffffff;
-}
-.change:after{
-	content:"　　詳しく見る　　>　";
-}
-.changed{
-  display:none;
-}
-.changed:hover{
- color:#BB1E1E;
- background-color: #ffffff;
-}
-.changed:after{
-	content: "　　　　戻す　　　　";
-}
-.changer1{
-  display:none;
-  width: 35%;
-  max-width: 250px;
-  padding: 10px 15px;
-  font-size: 0.5em;
-  border: solid;
-  border-color:#910303;
-  border-radius: 10px;
-  background-color: #BB1E1E;
-  color: #FFFFFF;
-  margin-bottom: 30px;
-}
-.changer1:hover{
- color:#BB1E1E;
- background-color: #ffffff;
-}
-.changer1:after{
-	content:"　詳しく見る   >";
-}
-.changer2{
-  display:none;
-  width: 35%;
-  max-width: 250px;
-  padding: 10px 15px;
-  font-size: 0.5em;
-  border: solid;
-  border-color:#910303;
-  border-radius: 10px;
-  background-color: #BB1E1E;
-  color: #FFFFFF;
-  margin-bottom: 30px;
-}
-.changer2:hover{
- color:#BB1E1E;
- background-color: #ffffff;
-}
-.changer2:after{
-	content:"　詳しく見る   >";
+#changer{
+	width:20%;
+	padding: 10px 15px;
+	font-size: 0.5em;
+	border: 2px solid #910303;
+	border-radius: 10px;
+	background-color: #bb1e1e;
+	color:#ffffff;
+	margin-bottom: 30px;
 }
 .panel {
   -webkit-transition: .3s ease;
@@ -1465,6 +1386,8 @@ input:checked + .panel {
 	display: inline-block;
 	text-align: center;
 	width:60%;
+	border:6px solid #ff6600;
+	border-radius: 15px;
 }
 #leader_message_smart{
 	display:inline-block;
