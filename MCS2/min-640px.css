@@ -1544,7 +1544,8 @@ input:text +.ato{
 	font-size: 1.0em;
 	font-weight: 800;
 	margin-left: 15%;
-	width: 30%;
+	min-width: 100%;
+	overflow: visible
 	text-align: left;
 }
 .Answers{
