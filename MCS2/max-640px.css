@@ -1329,7 +1329,8 @@ a.pre_conA {
 	height: 60%;
 	background-color: #000000;
 	color:#ffffff;
-	font-size: 3em;
+	font-size: 2.0em;
+	overflow: visible;
 	border: solid;
 	margin-top: 30px;
 }
@@ -1410,7 +1411,30 @@ input:checked + .panel {
 }
 .recruit_td{
 	display:none;
-	
+}
+#FAQ{
+	text-align: left;
+}
+.QandA{
+	text-align: left;
+	width: 100%;
+}
+.Questions{
+	text-align: left;
+	font-size: 0.8em;
+	font-weight: 800;
+	margin-left: 15%;
+	width: 100%;
+	max-width: 70%;
+	text-align: left;
+}
+.Answers{
+	text-align: left;
+	font-size: 0.8em;
+	font-weight: 500;
+	margin-left: 20%;
+	max-width: 65%;
+	overflow: visible;
 }
 /*旧*/
 .recruit_QandA {

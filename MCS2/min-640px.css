@@ -1532,6 +1532,29 @@ input:text +.ato{
 	width: 50%;
 	height: 100%;
 }
+#FAQ{
+	text-align: left;
+}
+.QandA{
+	text-align: left;
+	width: 100%;
+}
+.Questions{
+	text-align: left;
+	font-size: 1.0em;
+	font-weight: 800;
+	margin-left: 15%;
+	width: 30%;
+	text-align: left;
+}
+.Answers{
+	text-align: left;
+	font-size: 1.0em;
+	font-weight: 500;
+	margin-left: 20%;
+	max-width: 65%;
+	overflow: visible;
+}
 /*旧*/
 
 #recruit_sec01 {
