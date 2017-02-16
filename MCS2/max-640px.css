@@ -1326,12 +1326,16 @@ a.pre_conA {
 	display: inline-block;
 	width: 85%;
 	height: 60%;
+	text-align: center;
 	background-color: #000000;
 	color:#ffffff;
 	font-size: 2.0em;
 	overflow: visible;
 	border: solid;
 	margin-top: 30px;
+}
+.scheduleWrap{
+	text-align: center;
 }
 input {
   display: none;

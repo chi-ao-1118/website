@@ -1401,6 +1401,7 @@ a.pre_conA {
 
 .Rschedule{
 	display: inline-block;
+	text-align: center;
 	width: 85%;
 	height: 100%;
 	background-color: #000000;
@@ -1408,6 +1409,9 @@ a.pre_conA {
 	font-size: 3em;
 	border-style: solid;
 	margin-top: 30px;
+}
+.scheduleWrap{
+	text-align: center;
 }
 .RBbtn{
 	display: inline-block;
@@ -1535,7 +1539,7 @@ input:text +.ato{
 	margin-bottom: 3%;
 }
 #adjust-mgn2{
-	margin-bottom: 2%;
+	margin-bottom: 0%;
 }
 #adjust-mgn3{
 	margin-top: 0%;
