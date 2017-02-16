@@ -1254,7 +1254,6 @@ a.pre_conA {
 	width: 20%;
 	min-width: 100px;
 	font-size: 1.0em;
-	margin-top: 30px;
 	margin-bottom: 10px;
 	margin-left: 5vw;
 	border-bottom: solid;
@@ -1411,6 +1410,15 @@ input:checked + .panel {
 }
 .recruit_td{
 	display:none;
+}
+#adjust-mgn{
+	margin-bottom:0;
+}
+#adjust-mgn2{
+	margin-bottom: 10%;
+}
+#adjust-mgn3{
+	margin-top: 10%;
 }
 #FAQ{
 	text-align: left;

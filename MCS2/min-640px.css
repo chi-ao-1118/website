@@ -1532,6 +1532,15 @@ input:text +.ato{
 	width: 50%;
 	height: 100%;
 }
+#adjust-mgn{
+	margin-bottom: 3%;
+}
+#adjust-mgn2{
+	margin-bottom: 2%;
+}
+#adjust-mgn3{
+	margin-top: 0%;
+}
 #FAQ{
 	text-align: left;
 }
@@ -1544,8 +1553,8 @@ input:text +.ato{
 	font-size: 1.0em;
 	font-weight: 800;
 	margin-left: 15%;
-	min-width: 100%;
-	overflow: visible
+	min-width: 75%;
+	overflow: visible;
 	text-align: left;
 }
 .Answers{
