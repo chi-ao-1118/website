@@ -1448,6 +1448,14 @@ input:checked + .panel {
 	max-width: 65%;
 	overflow: visible;
 }
+.Questions span{
+	font-size: 1.3em;
+	padding-right: 0.3em;
+}
+.Answers span{
+	font-size: 1.3em;
+	padding-right: 0.3em;
+}
 /*旧*/
 .recruit_QandA {
 	width: 80%;
