@@ -1556,11 +1556,7 @@ input:text +.ato{
 	font-size: 1.0em;
 	font-weight: 800;
 	margin-left: 15%;
-<<<<<<< HEAD
-	min-width: 75%;
-=======
 	min-width: 100%;
->>>>>>> 1a7a8f99adb16fae02878f9b815b7b918a898dc8
 	overflow: visible;
 	text-align: left;
 }
@@ -1571,6 +1567,12 @@ input:text +.ato{
 	margin-left: 20%;
 	max-width: 65%;
 	overflow: visible;
+}
+.Questions span{
+	font-size: 1.3em;
+}
+.Answers span{
+	font-size: 1.3em;
 }
 /*旧*/
 
