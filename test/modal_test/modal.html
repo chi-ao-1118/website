@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/remodal.css">
+  <link rel="stylesheet" href="css/remodal-default-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Modal</title>
+</head>
+<body>
+
+<article class="modal_Wrap">
+  <a href="#modal_production" class="thumnail">
+<figure>
+    <img src="img/modal/production_Department.jpg" height="200" width="200" alt="制作局">
+    <figcaption>制作局</figcaption>
+</figure>
+</a>
+
+  <a href="#modal_technical" class="thumnail">
+<figure>
+    <img src="img/modal/technical_Station.jpg" height="200" width="200" alt="技術局">
+    <figcaption>技術局</figcaption>
+</figure>
+</a>
+
+  <a href="#modal_DPI" class="thumnail">
+<figure>
+    <img src="img/modal/DPI.jpg" height="200" width="200" alt="広報局">
+    <figcaption>広報局</figcaption>
+</figure>
+</a>
+</article>
+
+<div class="remodal" data-remodal-id="modal_production">
+	<button data-remodal-action="close" class="remodal-close"></button>
+  <img src="img/modal/production_Department_2.jpg">
+	<h1>制作局</h1>
+	<p>映像コンテンツやイベントの企画・構成、台本の作成を担当し、撮影や収録の現場、編集作業では指揮をとります。</p>
+	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+</div>
+
+<div class="remodal" data-remodal-id="modal_technical">
+	<button data-remodal-action="close" class="remodal-close"></button>
+  <img src="img/modal/technical_Station_2.jpg">
+	<h1>技術局</h1>
+	<p>実際にテレビ局にあるものと同じ音響・照明・カメラ等の機材を用い、撮影を担当する他、撮影した映像の編集も担当します。また 、衣装やセットにあたる小道具や大道具の準備も技術局の仕事です。</p>
+	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+</div>
+
+<div class="remodal" data-remodal-id="modal_DPI">
+	<button data-remodal-action="close" class="remodal-close"></button>
+  <img src="img/modal/DPI_2.jpg">
+	<h1>広報局</h1>
+	<p>MCSを認知してもらうため、広報活動を行います。HTMLやCSSを使ってのwebサイト制作や、IllustratorやPhotoshopを使ってのビラ、ポスター制作などを担当する他、オープンキャンパスなどのイベント時は、受付や誘導、ビラ配りなどを担当します。近年では、フリーペーパーの制作にも取り組んでいます。</p>
+	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/remodal.min.js"></script>
+</body>
+</html>
