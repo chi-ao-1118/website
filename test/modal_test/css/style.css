@@ -9,8 +9,14 @@ article.modal_Wrap{
 a.thumnail {
     display: inline-block;
     overflow: hidden;
-    width: 20%;
     margin: 1%;
+    width:20%;
+}
+
+@media (max-width:640px){
+  a.thumnail{
+    width:80%;
+  }
 }
 
 img {
