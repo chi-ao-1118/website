@@ -52,8 +52,8 @@ figcaption {
     right: 0;
     bottom: 0;
     margin: auto;
-    padding-top: calc(50% - 17px);
-    padding-top: calc(50% - 1.7rem);
+    padding-top: calc(50% - 1em);
+    padding-top: calc(50% - 1rem);
 }
 
 a:hover>figure img {
