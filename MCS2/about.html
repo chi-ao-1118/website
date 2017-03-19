@@ -164,6 +164,7 @@
     	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
     </div><!-- モーダルウィンドウのコンテンツ終了 -->
   </article>
+  
   <article class="about_secWrap"> <a name="emviroment"></a>
     <div class="about_titleWrap">
       <div class="about_titleNum">03</div>
@@ -176,50 +177,53 @@
       </div>
       <p id="about_emviromentP">主に関西大学高槻キャンパスで活動しています。<br/>
         大学内にあるスタジオには、様々な設備が整っており、本格的なスタジオ撮影が行えます。</p>
-      <div class="modal_box">
-        <!-- ここから一つ目のモーダルウィンドウ -->
-        <div class="modal-open"> <img src="img/modal/switcher.jpg">
-          <div class="modal-content">
-            <div class="about_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-              <div class="movie-wrap"> <img src="img/modal/switcher.jpg"> </div>
-              <p class="about_modalTitle">スイッチャー</p>
-              <p class="about_modalText">各カメラの映像、VTRなどの切り替えを行います。また、ワイプの設定やクロマキーの処理、設定などもここで行います。<br/>
-                スイッチャーの担当者が、各カメラに指示を出します。</p>
-              <p><a id="modal-close" class="button-link">閉じる</a></p>
-              <!-- モーダルウィンドウのコンテンツ終了 -->
-            </div>
-          </div>
-        </div>
-        <!-- ここまで一つ目のモーダルウィンドウ -->
-        <!-- ここから二つ目のモーダルウィンドウ -->
-        <div class="modal-open"> <img src="img/modal/camera.jpg">
-          <div class="modal-content">
-            <div class="about_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-              <div class="movie-wrap"> <img src="img/modal/camera.jpg"> </div>
-              <p class="about_modalTitle">PMW350k(ENGカメラ)</p>
-              <p class="about_modalText">スタジオ収録で使用するカメラで、フルHD高画質での撮影が可能です。</p>
-              <p class="about_modalText">3台を基本としていますが、最大4台まで使用可能です。</p>
-              <p><a id="modal-close" class="button-link">閉じる</a></p>
-              <!-- モーダルウィンドウのコンテンツ終了 -->
-            </div>
-          </div>
-        </div>
-        <!-- ここまで二つ目のモー���ルウィンドウ -->
-        <!-- ここから三つ目のモーダルウィンドウ -->
-        <div class="modal-open"> <img src="img/modal/illumination.jpg">
-          <div class="modal-content">
-            <div class="about_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-              <div class="movie-wrap"> <img src="img/modal/illumination.jpg"> </div>
-              <p class="about_modalTitle">調光卓</p>
-              <p class="about_modalText">照明が変更できます</p>
-              <p class="about_modalText">スポットライトや蛍光灯、ホリゾントなどの照明があります。様々な色のカラーフィルターもあるので、多様な演出が可能です。</p>
-              <p><a id="modal-close" class="button-link">閉じる</a></p>
-              <!-- モーダルウィンドウのコンテンツ終了 -->
-            </div>
-          </div>
-        </div>
+      
+      <article class="modal_Wrap about_office">
+      <div class="about_officeItemWrap">
+        <a href="#modal_switcher" class="thumnail">
+          <figure>
+              <img src="img/modal/switcher.jpg" alt="スイッチャー">
+          </figure>
+        </a>
       </div>
+      <div class="about_officeItemWrap">
+        <a href="#modal_camera" class="thumnail">
+          <figure>
+              <img src="img/modal/camera.jpg" alt="カメラ">
+          </figure>
+        </a>
+      </div>
+      <div class="about_officeItemWrap">
+        <a href="#modal_illumination" class="thumnail">
+          <figure>
+              <img src="img/modal/illumination.jpg" alt="調光卓">
+          </figure>
+        </a>
+      </div>
+      <div class="remodal" data-remodal-id="modal_switcher"><!-- モーダルウィンドウのコンテンツ開始 -->
+    	<button data-remodal-action="close" class="remodal-close"></button>
+      <img src="img/modal/switcher.jpg">
+    	<h1>スイッチャー</h1>
+    	<p>各カメラの映像、VTRなどの切り替えを行います。また、ワイプの設定やクロマキーの処理、設定などもここで行います。<br/>
+                スイッチャーの担当者が、各カメラに指示を出します。</p>
+    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
     </div>
+    <div class="remodal" data-remodal-id="modal_camera">
+    	<button data-remodal-action="close" class="remodal-close"></button>
+      <img src="img/modal/camera.jpg">
+    	<h1>PMW350k(ENGカメラ)</h1>
+    	<p>スタジオ収録で使用するカメラで、フルHD高画質での撮影が可能です。<br/>3台を基本としていますが、最大4台まで使用可能です。</p>
+    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+    </div>
+    <div class="remodal" data-remodal-id="modal_illumination">
+    	<button data-remodal-action="close" class="remodal-close"></button>
+      <img src="img/modal/illumination.jpg">
+    	<h1>調光卓</h1>
+    	<p>照明が変更できます。<br/>
+    	スポットライトや蛍光灯、ホリゾントなどの照明があります。様々な色のカラーフィルターもあるので、多様な演出が可能です。</p>
+    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+    </div><!-- モーダルウィンドウのコンテンツ終了 -->
+    </article>
     <div id="about_enviromentBottom"></div>
   </article>
   <article class="about_secWrap"> <a name="medican"></a>
