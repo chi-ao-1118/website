@@ -1,10 +1,13 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
 <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+<link rel="stylesheet" href="css/remodal.css">
+<link rel="stylesheet" href="css/remodal-default-theme.css">
+<link rel="stylesheet" href="css/style.css">
 <title>MCS - About</title>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -102,7 +105,7 @@
     </div>
     </a>
     <p class="about"> 私達、Media Creative Supporter(通称MCS)は、関西大学公認の映像ボランティア団体です。関西大学高槻キャンパスにて行われる学園祭やオープンキャンパスでのスタジオイベントを催すほか、学部生向けの校内テレビ番組の制作や映画の自主制作を行い、その映画を多くの方に見て頂けるよう、学内外での上映会を催すなどの活動を行っています。最近では高槻市の地域活性化プロジェクトにも参加しています。</p>
-    <div class="flexIframe"id="about_moveMCS">
+    <div class="flexIframe" id="about_moveMCS">
       <iframe src="https://www.youtube.com/embed/akNGmvApd3g?rel=0&autohide=1&theme=dark&color=white" frameborder="0" allowfullscreen></iframe>
     </div>
   </article>
@@ -113,50 +116,53 @@
       <div class="about_titleTitle">各局紹介</div>
     </div>
     </a>
-    <article class="about_office">
+    <article class="modal_Wrap about_office">
       <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div id="about_officeItem01" class="about_officeItem"></div>
-          <div class="modal-content">
-            <div class="about_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-              <div class="movie-wrap"> <img src="img/modal/production_Department_2.jpg"> </div>
-              <p class="about_modalTitle">制作局</p>
-              <p class="about_modalText"> 映像コンテンツやイベントの企画・構成、台本の作成を担当し、撮影や収録の現場、編集作業では指揮をとります。</p>
-              <p><a id="modal-close" class="button-link">閉じる</a></p>
-              <!-- モーダルウィンドウのコンテンツ終了 -->
-            </div>
-          </div>
-        </div>
+        <a href="#modal_production" class="thumnail">
+          <figure>
+              <img src="img/modal/production_Department_3.jpg" alt="制作局">
+              <figcaption>制作局</figcaption>
+          </figure>
+        </a>
       </div>
       <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div class="about_officeItem" id="about_officeItem02"></div>
-          <div class="modal-content">
-            <div class="about_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-              <div class="movie-wrap"> <img src="img/modal/technical_Station_2.jpg"> </div>
-              <p class="about_modalTitle">技術局</p>
-              <p class="about_modalText"> 実際にテレビ局にあるものと同じ音響・照明・カメラ等の機材を用い、撮影を担当する他、撮影した映像の編集も担当します。また 、衣装やセットにあたる小道具や大道具の準備も技術局の仕事です。</p>
-              <p><a id="modal-close" class="button-link">閉じる</a></p>
-              <!-- モーダルウィンドウのコンテンツ終了 -->
-            </div>
-          </div>
-        </div>
+        <a href="#modal_technical" class="thumnail">
+          <figure>
+              <img src="img/modal/technical_Station_3.jpg" alt="技術局">
+              <figcaption>技術局</figcaption>
+          </figure>
+        </a>
       </div>
       <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div class="about_officeItem" id="about_officeItem03"></div>
-          <div class="modal-content">
-            <div class="about_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-              <div class="movie-wrap"> <img src="img/modal/DPI_2.jpg"> </div>
-              <p class="about_modalTitle">広報局</p>
-              <p class="about_modalText">MCSを認知してもらうため、広報活動を行います。HTMLやCSSを使ってのwebサイト制作や、IllustratorやPhotoshopを使ってのビラ、ポスター制作などを担当する他、オープンキャンパスなどのイベント時は、受付や誘導、ビラ配りなどを担当します。近年では、フリーペーパーの制作にも取り組んでいます。</p>
-              <p><a id="modal-close" class="button-link">閉じる</a></p>
-              <!-- モーダルウィンドウのコンテンツ終了 -->
-            </div>
-          </div>
-        </div>
+        <a href="#modal_DPI" class="thumnail">
+          <figure>
+              <img src="img/modal/DPI_3.jpg" alt="広報局">
+              <figcaption>広報局</figcaption>
+          </figure>
+        </a>
       </div>
     </article>
+    <div class="remodal" data-remodal-id="modal_production"><!-- モーダルウィンドウのコンテンツ開始 -->
+    	<button data-remodal-action="close" class="remodal-close"></button>
+      <img src="img/modal/production_Department_2.jpg">
+    	<h1>制作局</h1>
+    	<p>映像コンテンツやイベントの企画・構成、台本の作成を担当し、撮影や収録の現場、編集作業では指揮をとります。</p>
+    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+    </div>
+    <div class="remodal" data-remodal-id="modal_technical">
+    	<button data-remodal-action="close" class="remodal-close"></button>
+      <img src="img/modal/technical_Station_2.jpg">
+    	<h1>技術局</h1>
+    	<p>実際にテレビ局にあるものと同じ音響・照明・カメラ等の機材を用い、撮影を担当する他、撮影した映像の編集も担当します。また 、衣装やセットにあたる小道具や大道具の準備も技術局の仕事です。</p>
+    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+    </div>
+    <div class="remodal" data-remodal-id="modal_DPI">
+    	<button data-remodal-action="close" class="remodal-close"></button>
+      <img src="img/modal/DPI_2.jpg">
+    	<h1>広報局</h1>
+    	<p>MCSを認知してもらうため、広報活動を行います。HTMLやCSSを使ってのwebサイト制作や、IllustratorやPhotoshopを使ってのビラ、ポスター制作などを担当する他、オープンキャンパスなどのイベント時は、受付や誘導、ビラ配りなどを担当します。近年では、フリーペーパーの制作にも取り組んでいます。</p>
+    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+    </div><!-- モーダルウィンドウのコンテンツ終了 -->
   </article>
   <article class="about_secWrap"> <a name="emviroment"></a>
     <div class="about_titleWrap">
@@ -185,7 +191,6 @@
           </div>
         </div>
         <!-- ここまで一つ目のモーダルウィンドウ -->
-
         <!-- ここから二つ目のモーダルウィンドウ -->
         <div class="modal-open"> <img src="img/modal/camera.jpg">
           <div class="modal-content">
@@ -199,10 +204,8 @@
             </div>
           </div>
         </div>
-        <!-- ここまで二つ目のモーダルウィンドウ -->
-
+        <!-- ここまで二つ目のモー���ルウィンドウ -->
         <!-- ここから三つ目のモーダルウィンドウ -->
-
         <div class="modal-open"> <img src="img/modal/illumination.jpg">
           <div class="modal-content">
             <div class="about_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
@@ -216,7 +219,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
     <div id="about_enviromentBottom"></div>
   </article>
@@ -314,5 +316,7 @@
 <script type="text/javascript" src="top_topUnderHide.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript" src="modal.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/remodal.min.js"></script>
 </body>
 </html>

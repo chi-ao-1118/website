@@ -624,12 +624,13 @@ p.about {
 	padding: 0;
 	width: 100%;
 }
+
 .about_officeItemWrap {
-	display: inline-block;
-	margin: 0 1%;
-	width: 25%;
-	position: relative;
+	margin: 0 auto;
+	width: 60%;
 }
+
+
 .about_officeItem {
 	padding-top: 100%;/*padding-topの基準はwidth*/
 	width: 100%;
@@ -662,6 +663,10 @@ p.about {
 	font-size: 2em;
 	position: relative;
 	top: -20px;
+}
+.about_enviromentItemWrap {
+	margin: 0 auto;
+	width: 50%;
 }
 #about_environmentTop {
 	width: 100%;
@@ -934,18 +939,18 @@ p.about {
 	margin: 0.2%;
 	vertical-align: bottom;
 }
-figure {
+.contents_originalMovie figure {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 	margin: 0 auto;
 }
-figure img {
+.contents_originalMovie figure img {
 	width: 100%;
 	height: auto;
 	vertical-align: bottom;
 }
-figcaption {
+.contents_originalMovie figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;

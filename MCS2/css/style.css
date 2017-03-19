@@ -1,0 +1,69 @@
+/*
+    mordal
+            */
+
+article.modal_Wrap{
+  text-align: center;
+  margin:0 auto;
+}
+a.thumnail {
+    display: inline-block;
+    overflow: hidden;
+    margin: 1%;
+}
+
+@media (max-width:640px){
+  a.thumnail{
+    width:80%;
+  }
+}
+
+figure > img, .remodal > img {
+    height: auto;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.about_officeItemWrap figcaption{
+  background: rgba(0,0,0,.2);  
+}
+
+figcaption {
+    color: #FFF;
+    /*opacity: 0;*/
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding-top: calc(50% - 17px);
+    padding-top: calc(50% - 1.7rem);
+}
+
+a:hover>figure img {
+    transform: scale(1.15, 1.15);
+    -webkit-transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    -o-transform: scale(1.15, 1.15);
+}
+
+a:hover>figure figcaption {
+    background-color: rgba(0, 0, 0, 0.6);
+}
