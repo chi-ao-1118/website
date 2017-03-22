@@ -29,7 +29,7 @@ $( function() {
 			}
 			insert += '<div class="pre_continerDate date">' + csvArr[i][1] + '</div> <div class="pre_continerMain">';
 			insert += '<div class="pre_continerImg" style="background-image: url(img/'+csvArr[i][2]+'.jpg)"></div>';
-			insert += '<div class="pre_continerData"><div class="pre_continerSmartDate date">'+csvArr[i][1]+'</div>';
+			insert += '<div class="pre_continerData"><div class="pre_continerSPDate date">'+csvArr[i][1]+'</div>';
 			insert += '<div class="pre_continerTitle">'+csvArr[i][3]+'</div>';
 			insert += '<div class="pre_continerText">' + csvArr[i][4] + '</div></div>';
 			insert += '</div> </article></a>';

@@ -21,7 +21,7 @@ a:hover {
 /*
 		ヘッダー
 					*/
-					
+
 .head {
 	margin: 0 auto;
 	height: 80px;
@@ -90,13 +90,13 @@ ul.head_map a {
 .menu {
 	display: none;
 }
-/* 	Top画	*/	
+/* 	Top画	*/
 
 .top_topWrap {
 	height: 85%; /* IE8以下とAndroid4.3以下用フォールバック */
 	height : -webkit-calc(100% - 80px);
 	height : calc(100% - 80px);
-	background-image: url("img/top_top1.jpg");
+	background-image: url(../img/top_top1.jpg);
 	background-size: cover;
 	color: white;
 	text-align: center;
@@ -187,7 +187,7 @@ a#top_scroll span {
 	top: -172px;
 	height: 90px;
 	width: 100%;
-	background-image: url("img/top_topUnder.png");
+	background-image: url(../img/top_topUnder.png);
 	background-size: contain;
 	z-index: 2;
 	margin-bottom: -170px;
@@ -216,7 +216,7 @@ a#top_scroll span {
 /*
 	　ハンバーガー
 					*/
-					
+
 .hamMenu {
 	display: none;
 }
@@ -226,7 +226,7 @@ a#top_scroll span {
 /*
 	 Topページコンテンツ
 						*/
-						
+
 
 .try {
 	width: 0;
@@ -393,7 +393,7 @@ a#top_scroll span {
 	background-color: #d1bada;
 	padding: 5% 0 4% 0;
 }
-/*	
+/*
 		フッター
 					*/
 .foot {
@@ -509,7 +509,7 @@ input.footer, textarea.footer {
 }
 
 
-/**	
+/**
 		placeholderの装飾
 								**/
 /* Google Chrome, Safari, Opera 15+, Android, iOS*/

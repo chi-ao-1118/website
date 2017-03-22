@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
-<link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="css/max-640px.css">
+<link rel="stylesheet" media="(min-width: 640px)" href="css/min-640px.css">
 <title>MCS - Contents</title>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -50,37 +50,9 @@
     </ul>
   </nav>
 </header>
-</a><!--ここからハンバーガーメニュー-->
-<!--  <div class="menu_overlay"></div>-->
-<nav class="hamMenu">
-  <div class="menu_sec"><a href="index.html">TOP
-    <div class="menu_arrow"></div>
-    </a></div>
-  <div class="menu_sec"><a href="about.html">ABOUT
-    <div class="menu_arrow"></div>
-    </a></div>
-  <div class="menu_sec"><a href="works.html">WORKS
-    <div class="menu_arrow"></div>
-    </a></div>
-  <div class="menu_subsec menu_sec"><a href="events.html">EVENTS
-    <div class="menu_arrow"></div>
-    </a></div>
-  <div class="menu_subsec menu_sec"><a href="contents.html">CONTENTS
-    <div class="menu_arrow"></div>
-    </a></div>
-  <div class="menu_subsec menu_sec"><a href="pressrelease.html">PRESS RELEASE
-    <div class="menu_arrow"></div>
-    </a></div>
-  <div class="menu_subsec menu_sec"><a href="recruit.html">RECRUIT
-    <div class="menu_arrow"></div>
-    </a></div>
-  <div class="menu_sec"><a href="links.html">LINKS
-    <div class="menu_arrow"></div>
-    </a></div>
-
-  <!--<div class="menu_sec"><a class="menu_SNS"href="links.html"><img class="menu_SNS" src="img/twitter.png" alt="twitter"></a>
-     <a class="menu_SNS"href=""><img  class="menu_SNS" src="img/facebook.png" alt="facebook"></a></div>-->
-</nav>
+</a>
+<!--ここからハンバーガーメニュー-->
+<nav id="hamMenu"></nav>
 <!--ここからページ内容-->
 <!--Top画像-->
 <article class="topImg" id="topImg_contents">
@@ -137,7 +109,7 @@
 
       <a href="https://youtu.be/iHDuDkS87Y8" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/VIVAhiria.jpg" /> <img class="Smart" src="img/contents/Smart/VIVAhiria.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/VIVAhiria.jpg" /> <img class="SP" src="img/contents/SP/VIVAhiria.jpg" />
           <figcaption>
             <h3>VIVA非リア</h3>
             <p>~今年は全力でリア充が応援しますスペシャル~</p>
@@ -148,7 +120,7 @@
 
       <a href="https://youtu.be/W0a1GoC0rQ8" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/comeonSanta.jpg" /> <img class="Smart" src="img/contents/Smart/comeonSanta.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/comeonSanta.jpg" /> <img class="SP" src="img/contents/SP/comeonSanta.jpg" />
           <figcaption>
             <h3>カム オン サンタ</h3>
             <p>迷える男たちをリア充になれるようにお手伝い！</p>
@@ -159,7 +131,7 @@
 
       <a href="https://youtu.be/-gh12KD2GMk" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/romanSojo.jpg" /> <img class="Smart" src="img/contents/Smart/romanSojo.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/romanSojo.jpg" /> <img class="SP" src="img/contents/SP/romanSojo.jpg" />
           <figcaption>
             <h3>ロマンティック★総情</h3>
             <p></p>
@@ -170,7 +142,7 @@
 
       <a href="https://youtu.be/2xxQT9pl9L8" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/diet.jpg" /> <img class="Smart" src="img/contents/Smart/diet.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/diet.jpg" /> <img class="SP" src="img/contents/SP/diet.jpg" />
           <figcaption>
             <h3>１ヶ月ダイエットチャレンジ!!</h3>
             <p>食事系・運動系・日常系ダイエットに1ヶ月間挑戦</p>
@@ -181,7 +153,7 @@
 
       <a href="https://youtu.be/XeXodTYqlOk" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/guinness.jpg" /> <img class="Smart" src="img/contents/Smart/guinness.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/guinness.jpg" /> <img class="SP" src="img/contents/SP/guinness.jpg" />
           <figcaption>
             <h3><目指せ｢1番｣!! ギネス世界記録〜MCSの挑戦〜</h3>
             <p>「世界一」になれるのか？</p>
@@ -192,7 +164,7 @@
 
       <a href="https://youtu.be/AyhK1-et56g" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/gesyuku.jpg" /> <img class="Smart" src="img/contents/Smart/gesyuku.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/gesyuku.jpg" /> <img class="SP" src="img/contents/SP/gesyuku.jpg" />
           <figcaption>
             <h3>下宿生いきなり３分クッキング</h3>
             <p>下宿生は本当に料理ができるのか？</p>
@@ -203,7 +175,7 @@
 
       <a href="https://youtu.be/GjT-fe2z05c" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/biyoshi.jpg" /> <img class="Smart" src="img/contents/Smart/biyoshi.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/biyoshi.jpg" /> <img class="SP" src="img/contents/SP/biyoshi.jpg" />
           <figcaption>
             <h3>自分の道を～独立という選択～</h3>
             <p>夢を追い求めたその先に！</p>
@@ -213,7 +185,7 @@
       </a><!--オリジナルムービーBOXここまで-->
       <a href="https://youtu.be/D6PuimF1s34" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/yorozu.jpg" /> <img class="Smart" src="img/contents/Smart/combutsu.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/yorozu.jpg" /> <img class="SP" src="img/contents/SP/combutsu.jpg" />
           <figcaption>
             <h3>密着！劇団万絵巻～ビー・ヒア・ナウ～</h3>
             <p>舞台にかける熱い思い</p>
@@ -223,7 +195,7 @@
       </a><!--オリジナルムービーBOXここまで-->
       <a href="https://youtu.be/7Q8z6OTLrDs" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/combutsu.jpg" /> <img class="Smart" src="img/contents/Smart/combutsu.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/combutsu.jpg" /> <img class="SP" src="img/contents/SP/combutsu.jpg" />
           <figcaption>
             <h3>VSコン物</h3>
             <p>これでテストもバッチリ！？</p>
@@ -234,7 +206,7 @@
 
       <a href="https://youtu.be/cqOlmQwzI8g" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/unidol.jpg" /> <img class="Smart" src="img/contents/Smart/unidol.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/unidol.jpg" /> <img class="SP" src="img/contents/SP/unidol.jpg" />
           <figcaption>
             <h3>Check the Unknown</h3>
             <p>Kitty eyeとは？</p>
@@ -245,7 +217,7 @@
 
       <a href="https://www.youtube.com/watch?v=JY9bl4zyK9E&list=PL84LQTxfmIy7VqkPaN8V35v-JljEvroc_" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/youtuber.jpg" /> <img class="Smart" src="img/contents/Smart/youtuber.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/youtuber.jpg" /> <img class="SP" src="img/contents/SP/youtuber.jpg" />
           <figcaption>
             <h3>１ヶ月YouTuber生活</h3>
             <p>YouTuberの月収とは！？</p>
@@ -256,7 +228,7 @@
 
       <a href="https://youtu.be/7yJmBTKarMA" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/campasgossip.jpg" /> <img class="Smart" src="img/contents/Smart/campasgossip.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/campasgossip.jpg" /> <img class="SP" src="img/contents/SP/campasgossip.jpg" />
           <figcaption>
             <h3>キャンパスゴシップ</h3>
             <p>高槻キャンパス内の動物を探し出せ！</p>
@@ -267,7 +239,7 @@
 
       <a href="https://youtu.be/M0E0UH50XCE" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shiki_huyu.jpg" /> <img class="Smart" src="img/contents/Smart/shiki_huyu.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shiki_huyu.jpg" /> <img class="SP" src="img/contents/SP/shiki_huyu.jpg" />
           <figcaption>
             <h3>四季彩々</h3>
             <p>～冬の南大阪編～ </p>
@@ -279,7 +251,7 @@
 
       <a href="https://youtu.be/BnXqWsWR4y0" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/lovelab1.jpg" /> <img class="Smart" src="img/contents/Smart/lovelab1.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/lovelab1.jpg" /> <img class="SP" src="img/contents/SP/lovelab1.jpg" />
           <figcaption>
             <h3>らぶらぼ</h3>
             <p>男女の恋愛観の違いとは！？</p>
@@ -291,7 +263,7 @@
 
       <a href="https://youtu.be/tu7CdTVPGZ0" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/VIVIDMOVIE_OP.jpg" /> <img class="Smart" src="img/contents/Smart/VIVIDMOVIE_OP.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/VIVIDMOVIE_OP.jpg" /> <img class="SP" src="img/contents/SP/VIVIDMOVIE_OP.jpg" />
           <figcaption>
             <h3>VIVID MOVIE SHOW</h3>
             <p></p>
@@ -302,7 +274,7 @@
 
       <a href="https://youtu.be/KS8bcoOfRf8" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/arewonakusita.jpg" /> <img class="Smart" src="img/contents/Smart/arewonakusita.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/arewonakusita.jpg" /> <img class="SP" src="img/contents/SP/arewonakusita.jpg" />
           <figcaption>
             <h3>「アレ」をなくした男</h3>
             <p>人生、本当に大切なものに気付くかどうか。</p>
@@ -313,7 +285,7 @@
 
       <a href="https://youtu.be/x3hxEqz9Ka4" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/survival.jpg" /> <img class="Smart" src="img/contents/Smart/survival.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/survival.jpg" /> <img class="SP" src="img/contents/SP/survival.jpg" />
           <figcaption>
             <h3>総情生のためのサバイバル講座</h3>
             <p>高槻キャンパスを生き抜け！！</p>
@@ -324,7 +296,7 @@
 
       <a href="https://youtu.be/CUHLU17fmrY" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/VIVAhiria.jpg" /> <img class="Smart" src="img/contents/Smart/VIVAhiria.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/VIVAhiria.jpg" /> <img class="SP" src="img/contents/SP/VIVAhiria.jpg" />
           <figcaption>
             <h3>VIVA非リア</h3>
             <p>クリぼっちに捧げる</p>
@@ -335,7 +307,7 @@
 
       <a href="https://youtu.be/I1jxbwE9w3Q" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/sojomonitor.jpg" /> <img class="Smart" src="img/contents/Smart/sojomonitor.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/sojomonitor.jpg" /> <img class="SP" src="img/contents/SP/sojomonitor.jpg" />
           <figcaption>
             <h3>総情モニター</h3>
             <p>総情生観察バラエティ</p>
@@ -346,7 +318,7 @@
 
       <a href="https://youtu.be/uRHHi-4nJl0" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shiki_aki.jpg" /> <img class="Smart" src="img/contents/Smart/shiki_aki.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shiki_aki.jpg" /> <img class="SP" src="img/contents/SP/shiki_aki.jpg" />
           <figcaption>
             <h3>四季彩々</h3>
             <p>～秋の箕面滝編～</p>
@@ -357,7 +329,7 @@
 
       <a href="https://www.youtube.com/watch?v=AacGpXZQffc" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shinkankaku.jpg" /> <img class="Smart" src="img/contents/Smart/shinkankaku.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shinkankaku.jpg" /> <img class="SP" src="img/contents/SP/shinkankaku.jpg" />
           <figcaption>
             <h3>新感覚飯グランプリ</h3>
             <p>カップ麺に色々組み合わせてみました！</p>
@@ -368,7 +340,7 @@
 
       <a href="https://www.youtube.com/watch?v=_4vNrlvecGc" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shiki_natsu.jpg" /> <img class="Smart" src="img/contents/Smart/shiki_natsu.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shiki_natsu.jpg" /> <img class="SP" src="img/contents/SP/shiki_natsu.jpg" />
           <figcaption>
             <h3>四季彩々</h3>
             <p>〜夏の摂津峡編〜</p>
@@ -379,7 +351,7 @@
 
       <a href="https://www.youtube.com/watch?v=qVVyGoUeXPI" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shigotoniikiru.jpg" /> <img class="Smart" src="img/contents/Smart/shigotoniikiru.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shigotoniikiru.jpg" /> <img class="SP" src="img/contents/SP/shigotoniikiru.jpg" />
           <figcaption>
             <h3>仕事に生きる</h3>
             <p>本格派ドキュメンタリー！？</p>
@@ -390,7 +362,7 @@
 
       <a href="https://www.youtube.com/watch?v=Bd7Mw4AOH4o" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/kimatsukousa.jpg" /> <img class="Smart" src="img/contents/Smart/kimatsukousa.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/kimatsukousa.jpg" /> <img class="SP" src="img/contents/SP/kimatsukousa.jpg" />
           <figcaption>
             <h3>期末考査</h3>
             <p>ペンは剣よりも強しッ！</p>
@@ -401,7 +373,7 @@
 
       <a href="https://www.youtube.com/watch?v=6mOMtkHrl7Y" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/tamapara.jpg" /> <img class="Smart" src="img/contents/Smart/tamapara.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/tamapara.jpg" /> <img class="SP" src="img/contents/SP/tamapara.jpg" />
           <figcaption>
             <h3>tamapara</h3>
             <p>もしも人生をリセットできたら･･･</p>
@@ -412,7 +384,7 @@
 
       <a href="https://www.youtube.com/watch?v=SPzzFshhh_0" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/rikomen.jpg" /> <img class="Smart" src="img/contents/Smart/rikomen.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/rikomen.jpg" /> <img class="SP" src="img/contents/SP/rikomen.jpg" />
           <figcaption>
             <h3>リコメン！</h3>
             <p>ジャズがある定食屋</p>
@@ -423,7 +395,7 @@
 
       <a href="https://www.youtube.com/watch?v=0PO_HzZbYEQ" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/ukband.jpg" /> <img class="Smart" src="img/contents/Smart/ukband.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/ukband.jpg" /> <img class="SP" src="img/contents/SP/ukband.jpg" />
           <figcaption>
             <h3>Music Spot</h3>
             <p>UK BAND</p>
@@ -434,7 +406,7 @@
 
       <a href="https://www.youtube.com/watch?v=ATASoRelQOs" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/aiba.jpg" /> <img class="Smart" src="img/contents/Smart/aiba.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/aiba.jpg" /> <img class="SP" src="img/contents/SP/aiba.jpg" />
           <figcaption>
             <h3>相羽博士の公開実験</h3>
             <p>MOVE TO THE TV</p>
@@ -445,7 +417,7 @@
 
       <a href="https://www.youtube.com/watch?v=vmqCLSODFO0" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/higanbanatoani.jpg" /> <img class="Smart" src="img/contents/Smart/higanbanatoani.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/higanbanatoani.jpg" /> <img class="SP" src="img/contents/SP/higanbanatoani.jpg" />
           <figcaption>
             <h3>彼岸花と兄</h3>
             <p>全米が泣くかも！？</p>
@@ -456,7 +428,7 @@
 
       <a href="https://www.youtube.com/watch?v=StXxPySW_w4" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/sojopc.jpg" /> <img class="Smart" src="img/contents/Smart/sojopc.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/sojopc.jpg" /> <img class="SP" src="img/contents/SP/sojopc.jpg" />
           <figcaption>
             <h3>SOJO PC</h3>
             <p></p>
@@ -467,7 +439,7 @@
 
       <a href="https://www.youtube.com/watch?v=pOFX2cuoi4g" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/Banditz.jpg" /> <img class="Smart" src="img/contents/Smart/Banditz.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/Banditz.jpg" /> <img class="SP" src="img/contents/SP/Banditz.jpg" />
           <figcaption>
             <h3>Banditz CM</h3>
             <p></p>
@@ -478,7 +450,7 @@
 
       <a href="https://www.youtube.com/watch?v=t12SC9vE_G8" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/chikyujinmetsubou.jpg" /> <img class="Smart" src="img/contents/Smart/chikyujinmetsubou.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/chikyujinmetsubou.jpg" /> <img class="SP" src="img/contents/SP/chikyujinmetsubou.jpg" />
           <figcaption>
             <h3>地球人滅亡について</h3>
             <p>ある日、頭に触角がはえた！？</p>
@@ -489,7 +461,7 @@
 
       <a href="https://www.youtube.com/watch?v=hjxJGPWMdWY" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/nongenru.jpg" /> <img class="Smart" src="img/contents/Smart/nongenru.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/nongenru.jpg" /> <img class="SP" src="img/contents/SP/nongenru.jpg" />
           <figcaption>
             <h3>のんじゃんるTV</h3>
             <p></p>
@@ -500,7 +472,7 @@
 
       <a href="https://www.youtube.com/watch?v=UmyZsFFX2RY" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/L1.jpg" /> <img class="Smart" src="img/contents/Smart/L1.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/L1.jpg" /> <img class="SP" src="img/contents/SP/L1.jpg" />
           <figcaption>
             <h3>L-1グランプリ</h3>
             <p>これを見ればあなたも少しは関大通！？</p>
@@ -511,7 +483,7 @@
 
       <a href="https://www.youtube.com/watch?v=TZStC6Aj_Xw" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shiki_haru.jpg" /> <img class="Smart" src="img/contents/Smart/shiki_haru.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/shiki_haru.jpg" /> <img class="SP" src="img/contents/SP/shiki_haru.jpg" />
           <figcaption>
             <h3>四季彩々</h3>
             <p>〜春の摂津峡編〜</p>
@@ -522,7 +494,7 @@
 
       <a href="https://www.youtube.com/watch?v=UWJn9US8Dtk" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/junkeeys.jpg" /> <img class="Smart" src="img/contents/Smart/junkeeys.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/junkeeys.jpg" /> <img class="SP" src="img/contents/SP/junkeeys.jpg" />
           <figcaption>
             <h3>ジャンキース</h3>
             <p></p>
@@ -533,7 +505,7 @@
 
       <a href="https://www.youtube.com/watch?v=fwOyw7Nee1I" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/okanai.jpg" /> <img class="Smart" src="img/contents/Smart/okanai.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/okanai.jpg" /> <img class="SP" src="img/contents/SP/okanai.jpg" />
           <figcaption>
             <h3>おかん愛選手権！</h3>
             <p></p>
@@ -544,7 +516,7 @@
 
       <a href="https://www.youtube.com/watch?v=S_zoA4Tv-lE" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/ekitaikansoku.jpg" /> <img class="Smart" src="img/contents/Smart/ekitaikansoku.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/ekitaikansoku.jpg" /> <img class="SP" src="img/contents/SP/ekitaikansoku.jpg" />
           <figcaption>
             <h3>液体観測</h3>
             <p></p>
@@ -555,7 +527,7 @@
 
       <a href="https://www.youtube.com/watch?v=_JTAZmEpkvk" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/welldone.jpg" /> <img class="Smart" src="img/contents/Smart/welldone.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/welldone.jpg" /> <img class="SP" src="img/contents/SP/welldone.jpg" />
           <figcaption>
             <h3>ハンバーグはウェルダン派</h3>
             <p></p>
@@ -566,7 +538,7 @@
 
       <a href="https://www.youtube.com/watch?v=F0AyvLdAkZw" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/underson.jpg" /> <img class="Smart" src="img/contents/Smart/underson.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/underson.jpg" /> <img class="SP" src="img/contents/SP/underson.jpg" />
           <figcaption>
             <h3>さよなら、さよならアンダーソン</h3>
             <p></p>
@@ -577,7 +549,7 @@
 
       <a href="https://www.youtube.com/watch?v=fczv8TgOEqU" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/osakajudan.jpg" /> <img class="Smart" src="img/contents/Smart/osakajudan.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/osakajudan.jpg" /> <img class="SP" src="img/contents/SP/osakajudan.jpg" />
           <figcaption>
             <h3>大阪縦断55km</h3>
             <p></p>
@@ -588,7 +560,7 @@
 
       <a href="https://www.youtube.com/watch?v=_KAVhITCTKg" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/kawazoe.jpg" /> <img class="Smart" src="img/contents/Smart/kawazoe.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/kawazoe.jpg" /> <img class="SP" src="img/contents/SP/kawazoe.jpg" />
           <figcaption>
             <h3>MCSの川添商店街でショッピング！</h3>
             <p>経営者の素顔が見れる？！</p>
@@ -599,7 +571,7 @@
 
       <a href="https://www.youtube.com/watch?v=5Wm0wP3UDC0" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/tabihamichidure.jpg" /> <img class="Smart" src="img/contents/Smart/tabihamichidure.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/tabihamichidure.jpg" /> <img class="SP" src="img/contents/SP/tabihamichidure.jpg" />
           <figcaption>
             <h3>突然！旅は道ヅレ！</h3>
             <p></p>
@@ -610,7 +582,7 @@
 
       <a href="https://www.youtube.com/watch?v=MfLbZgpDE4E" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/cub.jpg" /> <img class="Smart" src="img/contents/Smart/cub.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/cub.jpg" /> <img class="SP" src="img/contents/SP/cub.jpg" />
           <figcaption>
             <h3>カブで行く</h3>
             <p>～三都物語の旅～</p>
@@ -621,7 +593,7 @@
 
       <a href="https://www.youtube.com/watch?v=4fBBi1TqOzc" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/monoteki.jpg" /> <img class="Smart" src="img/contents/Smart/monoteki.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/monoteki.jpg" /> <img class="SP" src="img/contents/SP/monoteki.jpg" />
           <figcaption>
             <h3>モノ的ビフォーアフター</h3>
             <p>要らないモノを素敵なモノに！</p>
@@ -632,7 +604,7 @@
 
       <a href="https://www.youtube.com/watch?v=QKI73SFP_k8" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/viva.jpg" /> <img class="Smart" src="img/contents/Smart/viva.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/viva.jpg" /> <img class="SP" src="img/contents/SP/viva.jpg" />
           <figcaption>
             <h3>ビバ青少年白書</h3>
             <p>えっソフレって何！？</p>
@@ -643,7 +615,7 @@
 
       <a href="https://www.youtube.com/watch?v=8IRi6im8lFQ" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/furikae.jpg" /> <img class="Smart" src="img/contents/Smart/furikae.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/furikae.jpg" /> <img class="SP" src="img/contents/SP/furikae.jpg" />
           <figcaption>
             <h3>振替授業</h3>
             <p>お前は単位が取れたらそれでいいのか？</p>
@@ -654,7 +626,7 @@
 
       <a href="https://www.youtube.com/watch?v=GMBP50b195A" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/princessTakatsuki.jpg" /> <img class="Smart" src="img/contents/Smart/princessTakatsuki.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/princessTakatsuki.jpg" /> <img class="SP" src="img/contents/SP/princessTakatsuki.jpg" />
           <figcaption>
             <h3>プリンセスタカツキ</h3>
             <p></p>
@@ -665,7 +637,7 @@
 
       <a href="https://www.youtube.com/watch?v=0RJVKcWouQo" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/FreePlanLocation.jpg" /> <img class="Smart" src="img/contents/Smart/FreePlanLocation.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/FreePlanLocation.jpg" /> <img class="SP" src="img/contents/SP/FreePlanLocation.jpg" />
           <figcaption>
             <h3>Free Plan Location</h3>
             <p></p>
@@ -676,7 +648,7 @@
 
       <a href="https://www.youtube.com/watch?v=UoSHegv2hgk" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/kinnun.jpg" /> <img class="Smart" src="img/contents/Smart/kinnun.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/kinnun.jpg" /> <img class="SP" src="img/contents/SP/kinnun.jpg" />
           <figcaption>
             <h3>金運アップ大作戦</h3>
             <p>宝くじを当てろ！！</p>
@@ -687,7 +659,7 @@
 
       <a href="https://youtu.be/CnAG9YbNeq8" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/yuurei.jpg" /> <img class="Smart" src="img/contents/Smart/yuurei.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/yuurei.jpg" /> <img class="SP" src="img/contents/SP/yuurei.jpg" />
           <figcaption>
             <h3>ゆうれいとあそぼっ！</h3>
             <p>ゆうれいをおびき寄せろ</p>
@@ -698,7 +670,7 @@
 
       <a href="https://youtu.be/eZxvZF3mq2Y" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/moteruSojo.jpg" /> <img class="Smart" src="img/contents/Smart/moteruSojo.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/moteruSojo.jpg" /> <img class="SP" src="img/contents/SP/moteruSojo.jpg" />
           <figcaption>
             <h3>モテルソージョー</h3>
             <p>高槻のカフェで繰り広げるガールズトーク</p>
@@ -709,7 +681,7 @@
 
       <a href="https://youtu.be/yXHThZR8OCA" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/hitori.jpg" /> <img class="Smart" src="img/contents/Smart/hitori.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/hitori.jpg" /> <img class="SP" src="img/contents/SP/hitori.jpg" />
           <figcaption>
             <h3>独りでできるもん！</h3>
             <p>ひとり〇〇に挑戦！！</p>
@@ -720,7 +692,7 @@
 
       <a href="https://youtu.be/LE33wTgRWAM" target="_blank"><!--ここからオリジナルムービーBOX-->
       <div class="contents_originalMovie">
-        <figure class="lostFig"> <img class="PC" src="img/contents/PC/binta.jpg" /> <img class="Smart" src="img/contents/Smart/binta.jpg" />
+        <figure class="lostFig"> <img class="PC" src="img/contents/PC/binta.jpg" /> <img class="SP" src="img/contents/SP/binta.jpg" />
           <figcaption>
             <h3>痛くないビンタ！徹底検証！</h3>
             <p>体張ってます！！！</p>
@@ -816,85 +788,10 @@
 <img class="page_top" src="img/up.png" alt="upButton">
 
 <!--ここからフッター-->
-<footer class="foot">
-  <article class="foot_smartBox"> <a href="index.html" class="foot_smartA">HOME</a>
-    <div class="foot_smartSNSWrap"> <a href="https://twitter.com/MCS_kutc" class="foot_smartSNSA" ><img src="img/twitter.png" alt="twitter"></a> <a href="https://www.facebook.com/mcs.kutc" class="foot_smartSNSA"><img src="img/facebook.png" alt="facebook"></a> </div>
-  </article>
-  <article class="footer_map">
-    <ul class="footer_mapBox" id="footer_linkTop">
-      <a class="footer" href="index.html">
-      <li class="footer_linkMain">TOP</li>
-      </a> <a class="footer" href="index.html#now">
-      <li class="footer_linkSubsec">Now</li>
-      </a> <a class="footer" href="index.html#news">
-      <li class="footer_linkSubsec">News</li>
-      </a> <a class="footer" href="index.html#twitter">
-      <li class="footer_linkSubsec">Twitter</li>
-      </a> <a class="footer" href="index.html#facebook">
-      <li class="footer_linkSubsec">Facebook</li>
-      </a>
-      </li>
-    </ul>
-    <ul class="footer_mapBox" id="footer_linkAbout">
-      <a class="footer" href="about.html">
-      <li class="footer_linkMain">ABOUT</li>
-      </a> <a class="footer" href="about.html#mcs">
-      <li class="footer_linkSubsec">What is MCS?</li>
-      </a> <a class="footer" href="about.html#office">
-      <li class="footer_linkSubsec">各局紹介</li>
-      </a> <a class="footer" href="about.html#emviroment">
-      <li class="footer_linkSubsec">環境</li>
-      </a> <a class="footer" href="about.html#medican">
-      <li class="footer_linkSubsec">めでぃカンさん</li>
-      </a>
-      </li>
-    </ul>
-    <ul class="footer_mapBox" id="footer_linkWorks">
-      <a class="footer" href="works.html">
-      <li class="footer_linkMain">WORKS</li>
-      </a> <a class="footer" href="recruit.html">
-      <li class="footer_linkSubsec">Recruit</li>
-      </a> <a class="footer" href="events.html">
-      <li class="footer_linkSubsec">Events</li>
-      </a> <a class="footer" href="contents.html">
-      <li class="footer_linkSubsec">Contents</li>
-      </a> <a class="footer" href="pressrelease.html">
-      <li class="footer_linkSubsec">PressRelease</li>
-      </a>
-    </ul>
-    <ul class="footer_mapBox" id="footer_linkLinks">
-      <a class="footer" href="links.html">
-      <li class="footer_linkMain">LINKS</li>
-      </a>
-    </ul>
-  </article>
-
-  <!--ここからフォーム-->
-  <a class="mailForm Smart" href="mailto:mcs.kutc@gmail.com?subject=問い合わせ&amp;body=ご記入ください">お問い合わせメールはこちらへ</a>
-  <article class="footer_form">
-    <div id="form_contact">CONTACT</div>
-    <form  action="mail.php" method="post"class="footer">
-      <div class="form_name">
-        <input class="footer" type="text" name="お名前" size="50" maxlength="50" placeholder="NAME" required>
-      </div>
-      <div class="form_mail">
-        <input class="footer"  type="email" title="example@example.comのような形式で入力してください" name="Email" placeholder="E-MAIL" required />
-      </div>
-      <div class="form_message">
-        <textarea class="footer"  name="お問い合わせ内容" cols="60" rows="5" wrap="hard" placeholder="MESSAGE" required></textarea>
-      </div>
-      <div class="form_send">
-        <input id="footer_submitBtn" type="submit" value="SEND">
-      </div>
-    </form>
-  </article>
-  <!--コピーライト-->
-  <p><small>© 2015 Media Creative Supporter</small></p>
-</footer>
+<footer id="foot"></footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="page_top.js"></script>
-<script type="text/javascript" src="top_topUnderHide.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript" src="originalContents.js"></script>
+<script type="text/javascript" src="js/page_top.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/originalContents.js"></script>
 </body>
 </html>

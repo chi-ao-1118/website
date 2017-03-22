@@ -15,7 +15,7 @@ li {
 .PC {
 	display: none;
 }
-.Smart {
+.SP {
 	display: inline;
 }
 /*
@@ -834,7 +834,7 @@ p.about {
 .events_imgPC {
 	display: none;
 }
-.events_imgSmart {
+.events_imgSP {
 	text-align: center;
 }
 .events_txtBox {
@@ -1082,7 +1082,7 @@ a.pre_conA {
 	width: 60%;
 	padding-left: 3%;
 }
-.pre_continerSmartDate {
+.pre_continerSPDate {
 }
 .pre_continerTitle {
 	font-size: 1em;
