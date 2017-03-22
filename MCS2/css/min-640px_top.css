@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*@import url("min-640px.css")*/
 /* ///////////////////////////////////////////////////////////////////
 
 
@@ -214,20 +215,8 @@ a#top_scroll span {
 	bottom: 15px;
 }
 /*
-	　ハンバーガー
-					*/
-
-.hamMenu {
-	display: none;
-}
-.menu_overlay {
-	display: none;
-}
-/*
 	 Topページコンテンツ
 						*/
-
-
 .try {
 	width: 0;
 	height: 0;
@@ -393,147 +382,198 @@ a#top_scroll span {
 	background-color: #d1bada;
 	padding: 5% 0 4% 0;
 }
+
+/*
+	　共通部分
+							*/
+.PC{}
+.SP{
+	displey:none;
+}
+/*
+	　ハンバーガー
+							*/
+
+.hamMenu {
+    display: none;
+}
+
+.menu_overlay {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+
 /*
 		フッター
 					*/
-.foot {
-	background-color: #000000;
-	color: #ffffff;
-	height: auto;
-	padding: 0.1em 0;
-	text-align: center;
-	position: relative;
-	z-index: 3;
+
+#foot {
+    background-color: #000000;
+    color: #ffffff;
+    height: auto;
+    padding: 0.1em 0;
+    text-align: center;
+    position: relative;
+    z-index: 0;
 }
-.foot_smartBox {
-	display: none;
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
 }
-a.footer {
-	color: #ffffff;
-	text-decoration: none;
-}
+
 .footer_linkSubsec:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
-.footer_map {
-	text-align: center;
+
+footer nav {
+    text-align: center;
 }
-.footer_mapBox {
-	display: inline-block;
-	vertical-align: top;
-	list-style: none;
-	width: 8em;
-	padding: 0.5em;
-	text-align: center;
+
+nav ul {
+    padding: 0;
+    margin: 0;
 }
-.footer_linkMain {
-	text-align: center;
-	font-size: 1.3em;
-	margin-bottom: 0.6em;
-	width: 6em;
-	border-bottom: 0.15em solid white;
+
+footer nav>ul ul {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    width: 9em;
+    padding: 0.5em;
+    text-align: center;
 }
-.footer_linkSubsec {
-	text-align: left;
-	padding: 0.1em;
+
+footer nav>ul>ul>li {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0 auto;
+    margin-bottom: 0.6em;
+    width: 6em;
+    border-bottom: 0.15em solid white;
 }
-#footer_linkTop .footer_linkSubsec {
-	padding-left: 2em;
+
+footer nav ul ul ul {
+    width: auto;
+    margin: 0 auto;
 }
-#footer_linkAbout .footer_linkSubsec {
-	padding-left: 0.5em;
-	width: 7em;
+
+footer nav ul ul ul li {
+    text-align: left;
+    padding: 0.1em;
 }
-#footer_linkWorks .footer_linkSubsec {
-	padding-left: 1.1em;
-}
+
+
 /**
 		 フォーム
 						**/
+
 .mailForm {
-	text-decoration: underline;
-	color: #fff;
+    text-decoration: underline;
+    color: #fff;
 }
+
 .mailForm:hover {
-	font-weight: 800;
+    font-weight: 800;
 }
+
 .footer_form {
-	text-align: center;
+    text-align: center;
 }
+
 .form_message {
-	vertical-align: top;
+    vertical-align: top;
 }
-.form_name {
-}
+
+.form_name {}
+
 form.footer {
-	/* フォームをページの中央に置く */
-	margin: 0 auto;
-	width: 30em;
-	/* フォームの範囲がわかるようにする */
-	padding: 1em;
+    /* フォームをページの中央に置く */
+    margin: 0 auto;
+    width: 30em;
+    /* フォームの範囲がわかるようにする */
+    padding: 1em;
 }
+
 #form_contact {
-	font-size: 1.4em;
-	width: 6em;
-	margin: 0em auto;
-	border-bottom: 0.15em solid white;
+    font-size: 1.4em;
+    width: 6em;
+    margin: 0em auto;
+    border-bottom: 0.15em solid white;
 }
-form.footer div + div {
-	margin-top: 0.05em;
+
+form.footer div+div {
+    margin-top: 0.05em;
 }
+
 input.footer, textarea.footer {
-	/* すべてのテキストフィールドのフォント設定を一致させる
+    /* すべてのテキストフィールドのフォント設定を一致させる
        デフォルトで、textarea は等幅フォントが設定されている */
-	font: 1em sans-serif;
-	/* すべてのテキストフィールドを同じサイズにする */
-	width: 30em;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	/* テキストフィールドのボーダーの外見を同一にする */
-	border: 1px solid #999;
-	background-color: #C0C0C0;
-	color: black;
+    font: 1em sans-serif;
+    /* すべてのテキストフィールドを同じサイズにする */
+    width: 30em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* テキストフィールドのボーダーの外見を同一にする */
+    border: 1px solid #999;
+    background-color: #C0C0C0;
+    color: black;
 }
+
 .form_send {
-	text-align: right;
-	width: 30em;
-	margin: 0 auto;
+    text-align: right;
+    width: 30em;
+    margin: 0 auto;
 }
+
 #footer_submitBtn {
-	padding: 0;
-	font-size: 1em;
-	background-color: #000;
-	color: #fff;
-	border-style: none;
-	cursor: pointer;
+    padding: 0;
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
 }
 
 
 /**
 		placeholderの装飾
 								**/
+
+
 /* Google Chrome, Safari, Opera 15+, Android, iOS*/
+
 ::-webkit-input-placeholder {
- color: black;
- padding-left: 0.5em;
+    color: black;
+    padding-left: 0.5em;
 }
+
 
 /*Firefox 18-*/
+
 :-moz-placeholder {
- color: black;
-opacity: 1;
- padding-left: 0.5em;
+    color: black;
+    opacity: 1;
+    padding-left: 0.5em;
 }
+
 
 /* Firefox 19+*/
+
 ::-moz-placeholder {
- color: black;
-opacity: 1;
- padding-left: 0.5em;
+    color: black;
+    opacity: 1;
+    padding-left: 0.5em;
 }
 
+
 /* IE 10+*/
+
 :-ms-input-placeholder {
- color: black;
- padding-left: 0.5em;
+    color: black;
+    padding-left: 0.5em;
 }

@@ -325,7 +325,7 @@ body.index_body {
     /* IE8以下とAndroid4.3以下用フォールバック */
     height: -webkit-calc(100% - 80px);
     height: calc(100% - 80px);
-    background-image: url("img/top_top1.jpg");
+    background-image: url(../img/top_top1.jpg);
     background-size: cover;
     color: white;
     text-align: center;
@@ -425,7 +425,7 @@ a#top_scroll span {
     top: -172px;
     height: 90px;
     width: 100%;
-    background-image: url("img/top_topUnder.png");
+    background-image: url(../img/top_topUnder.png);
     background-size: contain;
     z-index: 2;
     margin-bottom: -170px;
@@ -1032,7 +1032,7 @@ p.about {
 /*.works_btnShort {
 	display: inline-block;
 	width: 20%;
-	background-image: url("img/works-project-short.jpg");
+	background-image: url(../img/works-project-short.jpg);
 	background-size: cover;
 }*/
 
@@ -1047,12 +1047,12 @@ p.about {
 	display: inline-block;
 	width: 79%;
 	height: 100px;
-	background-image: url("img/long.png");
+	background-image: url(../img/long.png);
 	background-size: contain;
 }*/
 
 .works_btnLong:hover {
-    background-image: url("img/long-on.png");
+    background-image: url(../img/long-on.png);
     background-size: contain;
 }
 

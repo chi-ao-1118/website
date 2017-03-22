@@ -1,5 +1,12 @@
 // JavaScript Document$(function(){
 
+
+// メニューの読み込み
+$(function() {
+    $("#hamMenu").load("hamMenu.html");
+    $("#foot").load("footer.html");
+});
+
 //	ハンバーガーメニューを出現させるクリックイベント
 var num = 0;
 $(".menu").click(function() {
@@ -45,11 +52,4 @@ $(window).on('load resize', function() {
         $(".mainWrap").show();
         $(".topLost").show();
     }
-});
-
-
-// メニューの読み込み
-$(function() {
-    $("#hamMenu").load("hamMenu.html");
-    $("#foot").load("footer.html");
 });
