@@ -16,9 +16,7 @@ li {
 .PC {
 	display: none;
 }
-.SP {
-	display: inline;
-}
+.SP {}
 /*
 		ヘッダー
 					*/
@@ -1057,7 +1055,7 @@ time{
 	display: inline-block;
 	border-bottom: 1px solid #B4B4B4;
 }
-#press a article:last-of-type{
+#press>a:last-of-type article{
 	border-bottom: none;
 }
 #press a article>div {
@@ -1856,23 +1854,18 @@ input:checked + .panel {
 	z-index: 3;
 	margin-top: 2em;
 }
-.foot_smartBox {
+#SPfooter {
 	position: relative;
 	margin-bottom: -3%;
 }
-.foot_smartA {
+#SPfooter>a {
 	text-decoration: none;
 	color: #fff;
 }
-.foot_smartSNSWrap {
+#SPfooter div {
 	position: absolute;
 	right: 4%;
 	top: 1%;
-}
-.foot_smartSNSA {
-}
-.footer_map {
-	display: none;
 }
 /**
 		 フォーム

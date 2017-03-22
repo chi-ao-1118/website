@@ -2337,10 +2337,6 @@ input:text+.ato {
     z-index: 0;
 }
 
-.foot_smartBox {
-    display: none;
-}
-
 footer a {
     color: #ffffff;
     text-decoration: none;
