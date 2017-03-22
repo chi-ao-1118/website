@@ -4,6 +4,7 @@
 
 
 /////////////////////////////////////////////////////////////////// */
+
 html, body {
 	height: 100%;
 	margin: 0;
@@ -13,6 +14,12 @@ html, body {
 li {
 	list-style: none;
 }
+
+.PC{}
+.SP{
+	displey:none;
+}
+
 a:hover {
 	text-decoration: underline;
 }
@@ -382,30 +389,6 @@ a#top_scroll span {
 	background-color: #d1bada;
 	padding: 5% 0 4% 0;
 }
-
-/*
-	　共通部分
-							*/
-.PC{}
-.SP{
-	displey:none;
-}
-/*
-	　ハンバーガー
-							*/
-
-.hamMenu {
-    display: none;
-}
-
-.menu_overlay {
-    display: none;
-}
-
-.menu {
-    display: none;
-}
-
 
 /*
 		フッター
