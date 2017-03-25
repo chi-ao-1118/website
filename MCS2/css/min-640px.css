@@ -1790,13 +1790,16 @@ label:hover {
     display: none;
 }
 
-input:checked+.panel {
+input.recruit{
+  display:none;
+}
+input.recruit:checked+.panel {
     height: auto;
     padding-bottom: 40px;
     display: block;
 }
 
-input:text+.ato {
+input.recruit:text+.ato {
     height: auto;
 }
 
