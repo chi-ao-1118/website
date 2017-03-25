@@ -24,39 +24,10 @@
 
 <body>
 <!--ここからヘッダー-->
-<a name="header">
-<header class="head">
-  <article class="head_btn">
-    <div class="head_btnLeft">
-      <div class="head_btnLink" id="head_logo"><a href="index.html"><img id="head_mcsLogo" src="img/mcs.jpg" alt="mcs_logo"></a>
-        <div class="menuWrap"><img class="menu" src="img/menu.png" alt="menu"></div>
-      </div>
-    </div>
-    <div class="head_btnRight">
-      <ul>
-        <li class="head_btnLink"><a href="https://twitter.com/MCS_kutc" target="_blank"><img src="img/twitter.png" alt="Twiter_Link"></a></li>
-        <li class="head_btnLink"><a href="https://www.facebook.com/mcs.kutc" target="_blank"><img src="img/facebook.png" alt="Facebook_Link"></a></li>
-        <!--<li class="head_btnLink"><img src="img/search.jpg" width="30" height="30" alt="search"></li>-->
-      </ul>
-    </div>
-  </article>
-  <nav class="head_map">
-    <ul class="head_map">
-      <li class="head_mapLink"></li>
-      <a href="index.html">
-      <li class="head_mapLink">TOP</li>
-      </a><a href="about.html">
-      <li class="head_mapLink">ABOUT</li>
-      </a><a href="works.html">
-      <li class="head_mapLink" id="head_mapThis">WORKS</li>
-      </a><a href="links.html">
-      <li class="head_mapLink">LINKS</li>
-      </a>
-      <li class="head_mapLink"></li>
-    </ul>
-  </nav>
-</header>
-</a>
+<header id="header"></header>
+<script>
+  var header_id = "#h_works";
+</script>
 <!--ここからハンバーガーメニュー-->
 <nav id="hamMenu" class ="SP"></nav>
 <!--ここからページ内容-->
@@ -87,16 +58,16 @@
     <p class="SvsP">資料はこちらからダウンロード！</p>
   </div>
   </a>
-  <article class="works_bkBtnWrap"> <a class="works_bkBtnA" href="javascript:history.back();">
-    <div class="works_bkBtn" id="events_bk"> <img src="img/arrow.png" alt="arrow" class="works_bkBtnImg">
-      <p class="works_bkTxt">BACK</p>
-    </div>
-    </a> </article>
 </article>
+<!--バックボタン-->
+  <article id="bkBtn" class="hamLost"></article>
+<script>
+  var bk_id = "events_bk"
+</script>
 <img class="page_top" src="img/up.png" alt="upButton">
 
 <!--ここからフッター-->
-<footer id="foot"></footer>
+<footer id="footer"></footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/page_top.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>

@@ -1,287 +1,272 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" media="(max-width: 640px)" href="css/max-640px.css">
-<link rel="stylesheet" media="(min-width: 640px)" href="css/min-640px.css">
-<title>MCS</title>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-92540234-1', 'auto');
-  ga('send', 'pageview');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="(max-width: 640px)" href="css/max-640px.css">
+  <link rel="stylesheet" media="(min-width: 640px)" href="css/min-640px.css">
+  <title>MCS</title>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-92540234-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 <body>
-<!--ここからヘッダー-->
-<a name="header">
-<header class="head">
-  <article class="head_btn">
-    <div class="head_btnLeft">
-      <div class="head_btnLink" id="head_logo"><a href="index.html"><img id="head_mcsLogo" src="img/mcs.jpg" alt="mcs_logo"></a>
-        <div class="menuWrap"><img class="menu" src="img/menu.png" alt="menu"></div>
+  <!--ここからヘッダー-->
+  <header id="header"></header>
+  <script>
+    var header_id = "#h_works";
+  </script>
+  <!--ここからハンバーガーメニュー-->
+  <nav id="hamMenu" class="SP"></nav>
+  <!--ここからページ内容-->
+  <!--Top画像-->
+  <article class="topImg" id="topImg_recruit">
+    <div class="lineBox">
+      <div class="topTitleWrap">
+        <div class="topTitle">RECRUIT</div>
       </div>
     </div>
-    <div class="head_btnRight">
-      <ul>
-        <li class="head_btnLink"><a href="https://twitter.com/MCS_kutc" target="_blank"><img src="img/twitter.png" alt="Twiter_Link"></a></li>
-        <li class="head_btnLink"><a href="https://www.facebook.com/mcs.kutc" target="_blank"><img src="img/facebook.png" alt="Facebook_Link"></a></li>
-        <!--<li class="head_btnLink"><img src="img/search.jpg" width="30" height="30" alt="search"></li>-->
-      </ul>
-    </div>
   </article>
-  <nav class="head_map">
-    <ul class="head_map">
-      <li class="head_mapLink"></li>
-      <a href="index.html">
-      <li class="head_mapLink">TOP</li>
-      </a><a href="about.html">
-      <li class="head_mapLink">ABOUT</li>
-      </a><a href="works.html">
-      <li class="head_mapLink" id="head_mapThis">WORKS</li>
-      </a><a href="links.html">
-      <li class="head_mapLink">LINKS</li>
+  <!--本文-->
+  <article class="mainWrap">
+    <article class="about_secWrap">
+      <a name="mcs">
+        <div class="about_titleWrap">
+          <div class="about_titleNum">01</div>
+          <div class="about_titleTitle">新歓PV</div>
+          <div class="about_titleBar" id="recruit_sec01"></div>
+        </div>
       </a>
-      <li class="head_mapLink"></li>
-    </ul>
-  </nav>
-</header>
-</a>
-<!--ここからハンバーガーメニュー-->
-<nav id="hamMenu" class ="SP"></nav>
-<!--ここからページ内容-->
-<!--Top画像-->
-<article class="topImg" id="topImg_recruit">
-  <div class="lineBox">
-    <div class="topTitleWrap">
-      <div class="topTitle">RECRUIT</div>
-    </div>
-  </div>
-</article>
-<!--本文-->
-<article class="mainWrap">
-  <article class="about_secWrap"> <a name="mcs">
-    <div class="about_titleWrap">
-      <div class="about_titleNum">01</div>
-      <div class="about_titleTitle">新歓PV</div>
-      <div class="about_titleBar" id="recruit_sec01"></div>
-    </div>
-    </a>
-    <div class="flexIframe"id="about_moveMCS">
-      <iframe src="https://www.youtube.com/embed/qyOihsluS7o?rel=0&autohide=1&theme=dark&color=white" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </article>
-  <article class="about_secWrap"> <a name="office">
-    <div class="about_titleWrap">
-      <div class="about_titleBar" id="recruit_sec02"></div>
-      <div class="about_titleNum">02</div>
-      <div class="about_titleTitle">メッセージ</div>
-    </div>
-    </a>
-    <article class="about_office">
-      <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div id="recruit_modal1" class="about_officeItem"></div>
-          <div class="recruit_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-            <img src="img/modal/leaders1_modal.jpg">
-            <p class="recruit_modalTitle"> リーダー<br/>
-              <span>木山 慎太郎</span></p>
-            <p class="recruit_modalText"> どうも！MCSリーダーの木山です！
-              ニュージーランドに4年間留学してたけど、英語が話せない、おまけに日本語もダメダメ！そんなリーダーですが、気軽に話しかけてくださいね！<br/>
-              <br>
-              僕たち、Media Creative Supporter(MCS)は、関西大学公認の映像ボランティア団体です。高槻キャンパス内にて行われる学園祭やオープンキャンパスでのスタジオイベントを催すほか、そこで培った経験を活かし、実際にキャンパス外での活動も行なっています。最近では、毎年2万人以上が来る高槻でのイベントの運営メンバーとしての参加や、アイスホッケー試合の生放送、音楽アーティストのミュージックビデオ制作、入学式用のビデオ制作などを行っており、他ではできない貴重な経験ができる団体です！<br/>
-              <br/>
-              MCSはみんなのやりたいことを全力で応援します！！　なにもしなかったら、なにもしないまま終わってしまう大学生活を、MCSでなにか一つでも打ち込めることを見つけてもらえると幸いです！<br/>
-            </p>
-            <p><a id="modal-close" class="button-link">閉じる</a></p>
-            <!-- モーダルウィンドウのコンテンツ終了 -->
-
-          </div>
-        </div>
-      </div>
-      <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div id="recruit_modal2" class="about_officeItem" ></div>
-          <div class="recruit_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-            <img src="img/modal/leaders2_modal.jpg">
-            <p class="recruit_modalTitle">サブリーダー<br/>
-              <span>横川慶</span></p>
-            <p class="recruit_modalText">こんにちは！ MCSサブリーダーの横川慶です。<br/>
-              ここ総合情報学部では、興味を持ち、自主的に行動することが凄く大切です。<br/>
-              この大学では様々な分野のことが学べます。でも、それと引き換えに、講義だけでは深くまで追求できないということが時たまあります。積極的に教授に質問したり、先輩に相談することで、より充実した学生生活を過ごせると思います。<br/>
-              そんな僕がMCSを選んだ理由は、なんといっても、スタジオやたくさんの業務機材を頻繁に扱うことができる点が魅力的だったからです。
-              MCSでは、学生の間じゃなかなか味わえない、様々な体験をする事が多く、とても楽しい生活を送っています！<br/>
-              みなさんもぜひ、MCSで一緒にいろいろな経験をしましょう！</p>
-            <p><a id="modal-close" class="button-link">閉じる</a></p>
-            <!-- モーダルウィンドウのコンテンツ終了 -->
-
-          </div>
-        </div>
-      </div>
-      <br/>
-      <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div id="recruit_modal3" class="about_officeItem"></div>
-          <div class="recruit_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-            <img src="img/modal/leaders3_modal.jpg">
-            <p class="recruit_modalTitle">制作局　チーフ<br/>
-              <span>北村 柊至</span></p>
-            <p class="recruit_modalText"> 制作局チーフの北村です。背が高いので歩く電柱と言われてません。<br/>
-              制作局はどんな番組を作るのか企画し、台本を書いたり、現場で指揮をとるような役職です。バラエティやドラマまたはホモビなどどんな番組でも作りたい方大募集です！！またその番組に出演することも多い局になるので、「アナウンサーをしてみたい！」という方などなど演者も募集してます。 <br/>
-              制作局は他局と比べてゆるゆるです。モンストが好きな人大募集してます。</p>
-            <p><a id="modal-close" class="button-link">閉じる</a></p>
-            <!-- モーダルウィンドウのコンテンツ終了 -->
-
-          </div>
-        </div>
-      </div>
-      <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div id="recruit_modal4" class="about_officeItem"></div>
-          <div class="recruit_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-            <img src="img/modal/leaders4_modal.jpg">
-            <p class="recruit_modalTitle">技術局　チーフ<br/>
-              <span>大上 雄介</span></p>
-            <p class="recruit_modalText"> 新入生のみなさん、こんにちは！MCS技術局チーフの大上です。動画編集を得意としています。<br/>
-              風船恐怖症です。無闇に近づけてくる人は入団を認めません。<br/>
-              <br/>
-              技術局では、ディレクターの企画、構成に沿って撮影･編集を行い、目に見える形として、ひとつの映像コンテンツをつくっています。
-              実際のテレビ局にある機材や、プロ御用達の編集ソフトを使用した本格的な映像制作を行っています。<br/>
-              他にも、アニメーション制作や、スタジオで行われる番組収録のセット設営にも取り組んでいます。<br/>
-              <br/>
-              ほとんどの人が初心者からですが、安心してください、私たちがイチからサポートします！
-              撮影機材や動画編集などに少しでも興味がある方は、技術局で一緒に本気で映像制作に取り組んでみませんか？お待ちしてます！！</p>
-            <p><a id="modal-close" class="button-link">閉じる</a></p>
-            <!-- モーダルウィンドウのコンテンツ終了 -->
-
-          </div>
-        </div>
-      </div>
-      <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div id="recruit_modal5" class="about_officeItem"></div>
-          <div class="recruit_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-            <img src="img/modal/leaders5_modal.jpg">
-            <p class="recruit_modalTitle"> 広報局　チーフ<br/>
-              <span>長谷川 綾弓</span></p>
-            <p class="recruit_modalText"> 新入生の皆さんこんにちわ！<br/>
-              心配性で何回も同じことを言ってしまう癖がある長谷川です！<br/>
-              <br/>
-              私たち広報局は、IllustratorやPhotoshopを使ってのポスター・ビラ・パンフレット制作や、WEBサイト制作などの広報物制作がメインの局です！<br/>
-              イベント時には、ビラ配りや受付・誘導、渉外など、よりお客さんと近い距離で接することが多い局でもあります。たくさんの人と関わりたい、人の目を引き寄せるような広報物を作りたいなどと感じている方を募集しています！<br/>
-              <br/>
-              みんなが仲良しなので自分の意見が言いやすい局だと思います。自分の考えたものを心にしまっておくのはもったいない！広報局が少しでも気になったらすぐにレッツゴー！ </p>
-            <p><a id="modal-close" class="button-link">閉じる</a></p>
-            <!-- モーダルウィンドウのコンテンツ終了 -->
-
-          </div>
-        </div>
-      </div>
-      <br/>
-      <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div id="recruit_modal6" class="about_officeItem"></div>
-          <div class="recruit_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-            <img src="img/modal/leaders6_modal.jpg">
-            <p class="recruit_modalTitle">制作局　サブチーフ<br/>
-              <span>谷上 琴音</span></p>
-            <p class="recruit_modalText">初めまして、制作局サブチーフの谷上です。とてもユニークで大きいチーフを支えられるよう、頑張っています！<br/>
-              私は大学へ来た当初から、「本気で何かをしたい」という思いがありました。そんな時に口の上手い先輩に引っ掛けられ、MCSのスタジオ見学・入団説明会へと足を運びました。そして、本気で取り組める何かがMCSにはあると感じ、入団を決意しました。
-              他の人に比べて具体的な目的はありませんでしたが、入団後には番組司会や映画監督など、したい事が生まれ、実現もしました！<br/>
-              新入生の皆さんも色々な所を見て、様々な事を感じて下さい。MCSでは、想像以上に色々なことができますよ！</p>
-            <p><a id="modal-close" class="button-link">閉じる</a></p>
-            <!-- モーダルウィンドウのコンテンツ終了 -->
-          </div>
-        </div>
-      </div>
-      <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div id="recruit_modal7" class="about_officeItem"></div>
-          <div class="recruit_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-            <img src="img/modal/leaders7_modal.jpg">
-            <p class="recruit_modalTitle">技術局　サブチーフ<br/>
-              <span>中嶋 涼人</span></p>
-            <p class="recruit_modalText">みなさんこんにちは！　技術局サブチーフ、職人の愛称で親しまれている中嶋涼人です！技術局内で主に美術・カメラなどを担当しています。<br/>
-              <br/>
-              新入生の皆さん、ご入学おめでとうございます！
-              僕がMCSに入ったのは、テレビ局で使ってそうなカメラやスタジオがあってかっこいい！と思ったからです。実際に入団してみると、カメラ以外にも照明、音響、編集などのプロに匹敵するような機材があり、それらを使って映像制作をする事にドンドン夢中になっていきました。<br/>
-              夢中な事が一つでもあれば、大学生活はさらに楽しくなります。 キッカケはどんな事でもいいですが、何か一つ、勉強でも、スポーツでも、映像制作でも、なんでもいいから、夢中になれるものを見つけて頑張ってください！ よかったら一緒にMCSで夢中になれるものを見つけてみませんか？</p>
-            <p><a id="modal-close" class="button-link">閉じる</a></p>
-            <!-- モーダルウィンドウのコンテンツ終了 -->
-          </div>
-        </div>
-      </div>
-      <div class="about_officeItemWrap">
-        <div class="modal-open">
-          <div id="recruit_modal8" class="about_officeItem"></div>
-          <div class="recruit_modalContent"> <!-- モーダルウィンドウのコンテンツ開始 -->
-            <img src="img/modal/leaders8_modal.jpg">
-            <p class="recruit_modalTitle">広報局　サブチーフ<br/>
-              <span>播磨 尚希</span></p>
-            <p class="recruit_modalText">ご入学おめでとうございます。<br/>
-              広報局サブチーフの播磨です。<br/>
-              <br/>
-              このサイトを見に来てくださっているあなたは、どんなサークルに入ろうかと情報を集めている真っ最中でしょうか。<br/>
-              総合情報学部には、体育会の部活動と16の準登録団体、いくつかの非公認サークル、そして、MCSというボランティア団体が存在します。僕は、バイトもしながら、その中の5つの団体に所属し、3つの団体で役員を勤めさせていただいております。そんなに兼部する事なんて可能なのか？と、思うかもしれませんが、これが予想通り、非常につらいです。そして、ずばり、所属団体の中でどれが一番大変かと聞かれれば、迷うことなく、『MCS』だと断言できます。ですが、その分、一番やりがいを感じるのも、一番達成感を味わえるのも、MCSだと思います。今しかない青春時代を生きているのですから、何事にも興味を持って、一生懸命取り組んでみませんか。僕がサポートします。<br/>
-              あなたと会えるのが、ここ、『MCS』だと、立場上、うれしいのですが。。。</p>
-            <p><a id="modal-close" class="button-link">閉じる</a></p>
-            <!-- モーダルウィンドウのコンテンツ終了 -->
-
-          </div>
-        </div>
+      <div class="flexIframe" id="about_moveMCS">
+        <iframe src="https://www.youtube.com/embed/qyOihsluS7o?rel=0&autohide=1&theme=dark&color=white" frameborder="0" allowfullscreen></iframe>
       </div>
     </article>
-  </article>
-  <article class="about_secWrap"> <a name="toQandA"></a>
-    <div class="about_titleWrap">
-      <div class="about_titleNum">03</div>
-      <div class="about_titleTitle"> FAQ </div>
-      <div class="about_titleBar" id="recruit_sec03"></div>
-    </div>
-    <section class="recruit_QandA">
-      <p class="recruit_Question">Q.MCSとは？</p>
-      <p class="recruit_Answer">A.関西大学公認の映像ボランティアサークルです。正式名称である「Media Creative Supporter」を略して、MCSと呼ばれています。MCSのことをもっと知りたい方は<a href="about.html">こちら</a></p>
-    </section>
-    <section class="recruit_QandA">
-      <p class="recruit_Question">Q.活動日、活動時間は？</p>
-      <p class="recruit_Answer">A.主に金曜日に活動しています。昼休みに全体の集まりが、授業終わり(5限後が多い)に各局の活動があります。</p>
-    </section>
-    <section class="recruit_QandA">
-      <p class="recruit_Question">Q.男女比は？</p>
-      <p class="recruit_rateText recruit_Answer">A.現在は女子の方が多いですが、年度によって変動しています。</p>
-      <div class="flexIframe"id="recruit_graph">
-        <iframe width="595.5" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1XzRw0e27r6Sy6MaAzQaFDwTRppdtf5QH6L5H5mmD9ZU/pubchart?oid=721678758&amp;format=interactive"></iframe>
-      </div>
-    </section>
-  </article>
-  <article class="about_secWrap"> <a name="medican"></a>
-    <div class="about_titleWrap">
-      <div class="about_titleNum">04</div>
-      <div class="about_titleTitle">スケジュール</div>
-      <div class="about_titleBar" id="recruit_sec04"></div>
-    </div>
-    <a name="calendar">
-    <div class="flexIframe"id="recruit_schedule">
-      <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mcs.kutc%40gmail.com&amp;color=%23875509&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-    </a> </article>
-  <article class="works_bkBtnWrap"> <a class="works_bkBtnA" href="javascript:history.back();">
-    <div class="works_bkBtn" id="recruit_bk"> <img src="img/arrow.png" alt="arrow" class="works_bkBtnImg">
-      <p class="works_bkTxt">BACK</p>
-    </div>
-    </a> </article>
-</article>
-<img class="page_top" src="img/up.png" alt="upButton">
+    <article class="about_secWrap">
+      <a name="office">
+        <div class="about_titleWrap">
+          <div class="about_titleBar" id="recruit_sec02"></div>
+          <div class="about_titleNum">02</div>
+          <div class="about_titleTitle">メッセージ</div>
+        </div>
+      </a>
+      <article class="about_office">
+        <div class="about_officeItemWrap">
+          <div class="modal-open">
+            <div id="recruit_modal1" class="about_officeItem"></div>
+            <div class="recruit_modalContent">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <img src="img/modal/leaders1_modal.jpg">
+              <p class="recruit_modalTitle"> リーダー<br/>
+                <span>木山 慎太郎</span></p>
+              <p class="recruit_modalText"> どうも！MCSリーダーの木山です！ ニュージーランドに4年間留学してたけど、英語が話せない、おまけに日本語もダメダメ！そんなリーダーですが、気軽に話しかけてくださいね！
+                <br/>
+                <br> 僕たち、Media Creative Supporter(MCS)は、関西大学公認の映像ボランティア団体です。高槻キャンパス内にて行われる学園祭やオープンキャンパスでのスタジオイベントを催すほか、そこで培った経験を活かし、実際にキャンパス外での活動も行なっています。最近では、毎年2万人以上が来る高槻でのイベントの運営メンバーとしての参加や、アイスホッケー試合の生放送、音楽アーティストのミュージックビデオ制作、入学式用のビデオ制作などを行っており、他ではできない貴重な経験ができる団体です！<br/>
+                <br/> MCSはみんなのやりたいことを全力で応援します！！　なにもしなかったら、なにもしないまま終わってしまう大学生活を、MCSでなにか一つでも打ち込めることを見つけてもらえると幸いです！
+                <br/>
+              </p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
 
-<!--ここからフッター-->
-<footer id="foot"></footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/page_top.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
-<script type="text/javascript" src="js/recruit_modal-old.js"></script>
+            </div>
+          </div>
+        </div>
+        <div class="about_officeItemWrap">
+          <div class="modal-open">
+            <div id="recruit_modal2" class="about_officeItem"></div>
+            <div class="recruit_modalContent">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <img src="img/modal/leaders2_modal.jpg">
+              <p class="recruit_modalTitle">サブリーダー<br/>
+                <span>横川慶</span></p>
+              <p class="recruit_modalText">こんにちは！ MCSサブリーダーの横川慶です。<br/> ここ総合情報学部では、興味を持ち、自主的に行動することが凄く大切です。
+                <br/> この大学では様々な分野のことが学べます。でも、それと引き換えに、講義だけでは深くまで追求できないということが時たまあります。積極的に教授に質問したり、先輩に相談することで、より充実した学生生活を過ごせると思います。
+                <br/> そんな僕がMCSを選んだ理由は、なんといっても、スタジオやたくさんの業務機材を頻繁に扱うことができる点が魅力的だったからです。 MCSでは、学生の間じゃなかなか味わえない、様々な体験をする事が多く、とても楽しい生活を送っています！
+                <br/> みなさんもぜひ、MCSで一緒にいろいろな経験をしましょう！
+              </p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
+
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div class="about_officeItemWrap">
+          <div class="modal-open">
+            <div id="recruit_modal3" class="about_officeItem"></div>
+            <div class="recruit_modalContent">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <img src="img/modal/leaders3_modal.jpg">
+              <p class="recruit_modalTitle">制作局　チーフ<br/>
+                <span>北村 柊至</span></p>
+              <p class="recruit_modalText"> 制作局チーフの北村です。背が高いので歩く電柱と言われてません。<br/> 制作局はどんな番組を作るのか企画し、台本を書いたり、現場で指揮をとるような役職です。バラエティやドラマまたはホモビなどどんな番組でも作りたい方大募集です！！またその番組に出演することも多い局になるので、「アナウンサーをしてみたい！」という方などなど演者も募集してます。 <br/> 制作局は他局と比べてゆるゆるです。モンストが好きな人大募集してます。
+              </p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
+
+            </div>
+          </div>
+        </div>
+        <div class="about_officeItemWrap">
+          <div class="modal-open">
+            <div id="recruit_modal4" class="about_officeItem"></div>
+            <div class="recruit_modalContent">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <img src="img/modal/leaders4_modal.jpg">
+              <p class="recruit_modalTitle">技術局　チーフ<br/>
+                <span>大上 雄介</span></p>
+              <p class="recruit_modalText"> 新入生のみなさん、こんにちは！MCS技術局チーフの大上です。動画編集を得意としています。<br/> 風船恐怖症です。無闇に近づけてくる人は入団を認めません。
+                <br/>
+                <br/> 技術局では、ディレクターの企画、構成に沿って撮影･編集を行い、目に見える形として、ひとつの映像コンテンツをつくっています。 実際のテレビ局にある機材や、プロ御用達の編集ソフトを使用した本格的な映像制作を行っています。
+                <br/> 他にも、アニメーション制作や、スタジオで行われる番組収録のセット設営にも取り組んでいます。
+                <br/>
+                <br/> ほとんどの人が初心者からですが、安心してください、私たちがイチからサポートします！ 撮影機材や動画編集などに少しでも興味がある方は、技術局で一緒に本気で映像制作に取り組んでみませんか？お待ちしてます！！
+              </p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
+
+            </div>
+          </div>
+        </div>
+        <div class="about_officeItemWrap">
+          <div class="modal-open">
+            <div id="recruit_modal5" class="about_officeItem"></div>
+            <div class="recruit_modalContent">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <img src="img/modal/leaders5_modal.jpg">
+              <p class="recruit_modalTitle"> 広報局　チーフ<br/>
+                <span>長谷川 綾弓</span></p>
+              <p class="recruit_modalText"> 新入生の皆さんこんにちわ！<br/> 心配性で何回も同じことを言ってしまう癖がある長谷川です！
+                <br/>
+                <br/> 私たち広報局は、IllustratorやPhotoshopを使ってのポスター・ビラ・パンフレット制作や、WEBサイト制作などの広報物制作がメインの局です！
+                <br/> イベント時には、ビラ配りや受付・誘導、渉外など、よりお客さんと近い距離で接することが多い局でもあります。たくさんの人と関わりたい、人の目を引き寄せるような広報物を作りたいなどと感じている方を募集しています！
+                <br/>
+                <br/> みんなが仲良しなので自分の意見が言いやすい局だと思います。自分の考えたものを心にしまっておくのはもったいない！広報局が少しでも気になったらすぐにレッツゴー！ </p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
+
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div class="about_officeItemWrap">
+          <div class="modal-open">
+            <div id="recruit_modal6" class="about_officeItem"></div>
+            <div class="recruit_modalContent">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <img src="img/modal/leaders6_modal.jpg">
+              <p class="recruit_modalTitle">制作局　サブチーフ<br/>
+                <span>谷上 琴音</span></p>
+              <p class="recruit_modalText">初めまして、制作局サブチーフの谷上です。とてもユニークで大きいチーフを支えられるよう、頑張っています！<br/> 私は大学へ来た当初から、「本気で何かをしたい」という思いがありました。そんな時に口の上手い先輩に引っ掛けられ、MCSのスタジオ見学・入団説明会へと足を運びました。そして、本気で取り組める何かがMCSにはあると感じ、入団を決意しました。 他の人に比べて具体的な目的はありませんでしたが、入団後には番組司会や映画監督など、したい事が生まれ、実現もしました！
+                <br/> 新入生の皆さんも色々な所を見て、様々な事を感じて下さい。MCSでは、想像以上に色々なことができますよ！
+              </p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
+            </div>
+          </div>
+        </div>
+        <div class="about_officeItemWrap">
+          <div class="modal-open">
+            <div id="recruit_modal7" class="about_officeItem"></div>
+            <div class="recruit_modalContent">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <img src="img/modal/leaders7_modal.jpg">
+              <p class="recruit_modalTitle">技術局　サブチーフ<br/>
+                <span>中嶋 涼人</span></p>
+              <p class="recruit_modalText">みなさんこんにちは！　技術局サブチーフ、職人の愛称で親しまれている中嶋涼人です！技術局内で主に美術・カメラなどを担当しています。<br/>
+                <br/> 新入生の皆さん、ご入学おめでとうございます！ 僕がMCSに入ったのは、テレビ局で使ってそうなカメラやスタジオがあってかっこいい！と思ったからです。実際に入団してみると、カメラ以外にも照明、音響、編集などのプロに匹敵するような機材があり、それらを使って映像制作をする事にドンドン夢中になっていきました。
+                <br/> 夢中な事が一つでもあれば、大学生活はさらに楽しくなります。 キッカケはどんな事でもいいですが、何か一つ、勉強でも、スポーツでも、映像制作でも、なんでもいいから、夢中になれるものを見つけて頑張ってください！ よかったら一緒にMCSで夢中になれるものを見つけてみませんか？</p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
+            </div>
+          </div>
+        </div>
+        <div class="about_officeItemWrap">
+          <div class="modal-open">
+            <div id="recruit_modal8" class="about_officeItem"></div>
+            <div class="recruit_modalContent">
+              <!-- モーダルウィンドウのコンテンツ開始 -->
+              <img src="img/modal/leaders8_modal.jpg">
+              <p class="recruit_modalTitle">広報局　サブチーフ<br/>
+                <span>播磨 尚希</span></p>
+              <p class="recruit_modalText">ご入学おめでとうございます。<br/> 広報局サブチーフの播磨です。
+                <br/>
+                <br/> このサイトを見に来てくださっているあなたは、どんなサークルに入ろうかと情報を集めている真っ最中でしょうか。
+                <br/> 総合情報学部には、体育会の部活動と16の準登録団体、いくつかの非公認サークル、そして、MCSというボランティア団体が存在します。僕は、バイトもしながら、その中の5つの団体に所属し、3つの団体で役員を勤めさせていただいております。そんなに兼部する事なんて可能なのか？と、思うかもしれませんが、これが予想通り、非常につらいです。そして、ずばり、所属団体の中でどれが一番大変かと聞かれれば、迷うことなく、『MCS』だと断言できます。ですが、その分、一番やりがいを感じるのも、一番達成感を味わえるのも、MCSだと思います。今しかない青春時代を生きているのですから、何事にも興味を持って、一生懸命取り組んでみませんか。僕がサポートします。
+                <br/> あなたと会えるのが、ここ、『MCS』だと、立場上、うれしいのですが。。。
+              </p>
+              <p><a id="modal-close" class="button-link">閉じる</a></p>
+              <!-- モーダルウィンドウのコンテンツ終了 -->
+
+            </div>
+          </div>
+        </div>
+      </article>
+    </article>
+    <article class="about_secWrap">
+      <a name="toQandA"></a>
+      <div class="about_titleWrap">
+        <div class="about_titleNum">03</div>
+        <div class="about_titleTitle"> FAQ </div>
+        <div class="about_titleBar" id="recruit_sec03"></div>
+      </div>
+      <section class="recruit_QandA">
+        <p class="recruit_Question">Q.MCSとは？</p>
+        <p class="recruit_Answer">A.関西大学公認の映像ボランティアサークルです。正式名称である「Media Creative Supporter」を略して、MCSと呼ばれています。MCSのことをもっと知りたい方は<a href="about.html">こちら</a></p>
+      </section>
+      <section class="recruit_QandA">
+        <p class="recruit_Question">Q.活動日、活動時間は？</p>
+        <p class="recruit_Answer">A.主に金曜日に活動しています。昼休みに全体の集まりが、授業終わり(5限後が多い)に各局の活動があります。</p>
+      </section>
+      <section class="recruit_QandA">
+        <p class="recruit_Question">Q.男女比は？</p>
+        <p class="recruit_rateText recruit_Answer">A.現在は女子の方が多いですが、年度によって変動しています。</p>
+        <div class="flexIframe" id="recruit_graph">
+          <iframe width="595.5" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1XzRw0e27r6Sy6MaAzQaFDwTRppdtf5QH6L5H5mmD9ZU/pubchart?oid=721678758&amp;format=interactive"></iframe>
+        </div>
+      </section>
+    </article>
+    <article class="about_secWrap">
+      <a name="medican"></a>
+      <div class="about_titleWrap">
+        <div class="about_titleNum">04</div>
+        <div class="about_titleTitle">スケジュール</div>
+        <div class="about_titleBar" id="recruit_sec04"></div>
+      </div>
+      <a name="calendar">
+        <div class="flexIframe" id="recruit_schedule">
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mcs.kutc%40gmail.com&amp;color=%23875509&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0"
+              scrolling="no"></iframe>
+        </div>
+      </a>
+    </article>
+  </article>
+<!--バックボタン-->
+<article id="bkBtn" class="hamLost"></article>
+<script>
+  var bk_id = "recruit_bk"
+</script>
+  <img class="page_top" src="img/up.png" alt="upButton">
+
+  <!--ここからフッター-->
+  <footer id="footer"></footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/page_top.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/recruit_modal-old.js"></script>
 </body>
+
 </html>

@@ -1,222 +1,211 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" media="(max-width: 640px)" href="css/max-640px.css">
-<link rel="stylesheet" media="(min-width: 640px)" href="css/min-640px.css">
-<link rel="stylesheet" href="remodal/remodal.css">
-<link rel="stylesheet" href="remodal/remodal-default-theme.css">
-<link rel="stylesheet" href="remodal/style.css">
-<title>MCS - About</title>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-92540234-1', 'auto');
-  ga('send', 'pageview');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="(max-width: 640px)" href="css/max-640px.css">
+  <link rel="stylesheet" media="(min-width: 640px)" href="css/min-640px.css">
+  <link rel="stylesheet" href="remodal/remodal.css">
+  <link rel="stylesheet" href="remodal/remodal-default-theme.css">
+  <link rel="stylesheet" href="remodal/style.css">
+  <title>MCS - About</title>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-92540234-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 <body>
-<!--ここからヘッダー-->
-<a name="header">
-<header class="head">
-  <article class="head_btn">
-    <div class="head_btnLeft">
-      <div class="head_btnLink" id="head_logo"><a href="index.html"><img id="head_mcsLogo" src="img/mcs.jpg" alt="mcs_logo"></a>
-        <div class="menuWrap"><img class="menu" src="img/menu.png" alt="menu"></div>
+  <!--ここからヘッダー-->
+  <header id="header"></header>
+  <script>
+    var header_id = "#h_about";
+  </script>
+  <!--ここからハンバーガーメニュー-->
+  <nav id="hamMenu" class="SP"></nav>
+  <!--ここからページ内容-->
+  <!--Top画像-->
+  <article class="topImg" id="topImg_about">
+    <div class="lineBox">
+      <div class="topTitleWrap">
+        <div class="topTitle">ABOUT</div>
       </div>
     </div>
-    <div class="head_btnRight">
-      <ul>
-        <li class="head_btnLink"><a href="https://twitter.com/MCS_kutc" target="_blank"><img src="img/twitter.png" alt="Twiter_Link"></a></li>
-        <li class="head_btnLink"><a href="https://www.facebook.com/mcs.kutc" target="_blank"><img src="img/facebook.png" alt="Facebook_Link"></a></li>
-        <!--<li class="head_btnLink"><img src="img/search.jpg" width="30" height="30" alt="search"></li>-->
-      </ul>
-    </div>
   </article>
-  <nav class="head_map">
-    <ul class="head_map">
-      <li class="head_mapLink"></li>
-      <a href="index.html">
-      <li class="head_mapLink">TOP</li>
-      </a><a href="about.html">
-      <li class="head_mapLink" id="head_mapThis">ABOUT</li>
-      </a><a href="works.html">
-      <li class="head_mapLink">WORKS</li>
-      </a><a href="links.html">
-      <li class="head_mapLink">LINKS</li>
+  <!--本文-->
+  <article id="about" class="mainWrap">
+    <article class="about_secWrap">
+      <a name="mcs">
+        <div class="about_titleWrap">
+          <div class="about_titleNum">01</div>
+          <div class="about_titleTitle">What is MCS?</div>
+          <div class="about_titleBar" id="about_sec01"></div>
+        </div>
       </a>
-      <li class="head_mapLink"></li>
-    </ul>
-  </nav>
-</header>
-</a>
-<!--ここからハンバーガーメニュー-->
-<nav id="hamMenu" class ="SP"></nav>
-<!--ここからページ内容-->
-<!--Top画像-->
-<article class="topImg" id="topImg_about">
-  <div class="lineBox">
-    <div class="topTitleWrap">
-      <div class="topTitle">ABOUT</div>
-    </div>
-  </div>
-</article>
-<!--本文-->
-<article class="mainWrap">
-  <article class="about_secWrap"> <a name="mcs">
-    <div class="about_titleWrap">
-      <div class="about_titleNum">01</div>
-      <div class="about_titleTitle">What is MCS?</div>
-      <div class="about_titleBar" id="about_sec01"></div>
-    </div>
-    </a>
-    <p class="about"> 私達、Media Creative Supporter(通称MCS)は、関西大学公認の映像ボランティア団体です。関西大学高槻キャンパスにて行われる学園祭やオープンキャンパスでのスタジオイベントを催すほか、学部生向けの校内テレビ番組の制作や映画の自主制作を行い、その映画を多くの方に見て頂けるよう、学内外での上映会を催すなどの活動を行っています。最近では高槻市の地域活性化プロジェクトにも参加しています。</p>
-    <div class="flexIframe" id="about_moveMCS">
-      <iframe src="https://www.youtube.com/embed/akNGmvApd3g?rel=0&autohide=1&theme=dark&color=white" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </article>
-  <article class="about_secWrap"> <a name="office">
-    <div class="about_titleWrap">
-      <div class="about_titleBar" id="about_sec02"></div>
-      <div class="about_titleNum">02</div>
-      <div class="about_titleTitle">各局紹介</div>
-    </div>
-    </a>
-    <article class="modal_Wrap about_office">
-      <div class="about_officeItemWrap">
-        <a href="#modal_production" class="thumnail">
-          <figure>
+      <p class="about"> 私達、Media Creative Supporter(通称MCS)は、関西大学公認の映像ボランティア団体です。関西大学高槻キャンパスにて行われる学園祭やオープンキャンパスでのスタジオイベントを催すほか、学部生向けの校内テレビ番組の制作や映画の自主制作を行い、その映画を多くの方に見て頂けるよう、学内外での上映会を催すなどの活動を行っています。最近では高槻市の地域活性化プロジェクトにも参加しています。</p>
+      <div class="flexIframe" id="about_moveMCS">
+        <iframe src="https://www.youtube.com/embed/akNGmvApd3g?rel=0&autohide=1&theme=dark&color=white" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+    <article class="about_secWrap">
+      <a name="office">
+        <div class="about_titleWrap">
+          <div class="about_titleBar" id="about_sec02"></div>
+          <div class="about_titleNum">02</div>
+          <div class="about_titleTitle">各局紹介</div>
+        </div>
+      </a>
+      <article class="modal_Wrap about_office">
+        <div class="about_officeItemWrap">
+          <a href="#modal_production" class="thumnail">
+            <figure>
               <img src="img/modal/production_Department_3.jpg" alt="制作局">
               <figcaption>制作局</figcaption>
-          </figure>
-        </a>
-      </div>
-      <div class="about_officeItemWrap">
-        <a href="#modal_technical" class="thumnail">
-          <figure>
+            </figure>
+          </a>
+        </div>
+        <div class="about_officeItemWrap">
+          <a href="#modal_technical" class="thumnail">
+            <figure>
               <img src="img/modal/technical_Station_3.jpg" alt="技術局">
               <figcaption>技術局</figcaption>
-          </figure>
-        </a>
-      </div>
-      <div class="about_officeItemWrap">
-        <a href="#modal_DPI" class="thumnail">
-          <figure>
+            </figure>
+          </a>
+        </div>
+        <div class="about_officeItemWrap">
+          <a href="#modal_DPI" class="thumnail">
+            <figure>
               <img src="img/modal/DPI_3.jpg" alt="広報局">
               <figcaption>広報局</figcaption>
-          </figure>
-        </a>
+            </figure>
+          </a>
+        </div>
+      </article>
+      <div class="remodal" data-remodal-id="modal_production">
+        <!-- モーダルウィンドウのコンテンツ開始 -->
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="img/modal/production_Department_2.jpg">
+        <h1>制作局</h1>
+        <p>映像コンテンツやイベントの企画・構成、台本の作成を担当し、撮影や収録の現場、編集作業では指揮をとります。</p>
+        <button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
       </div>
+      <div class="remodal" data-remodal-id="modal_technical">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="img/modal/technical_Station_2.jpg">
+        <h1>技術局</h1>
+        <p>実際にテレビ局にあるものと同じ音響・照明・カメラ等の機材を用い、撮影を担当する他、撮影した映像の編集も担当します。また 、衣装やセットにあたる小道具や大道具の準備も技術局の仕事です。</p>
+        <button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+      </div>
+      <div class="remodal" data-remodal-id="modal_DPI">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="img/modal/DPI_2.jpg">
+        <h1>広報局</h1>
+        <p>MCSを認知してもらうため、広報活動を行います。HTMLやCSSを使ってのwebサイト制作や、IllustratorやPhotoshopを使ってのビラ、ポスター制作などを担当する他、オープンキャンパスなどのイベント時は、受付や誘導、ビラ配りなどを担当します。近年では、フリーペーパーの制作にも取り組んでいます。</p>
+        <button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+      </div>
+      <!-- モーダルウィンドウのコンテンツ終了 -->
     </article>
-    <div class="remodal" data-remodal-id="modal_production"><!-- モーダルウィンドウのコンテンツ開始 -->
-    	<button data-remodal-action="close" class="remodal-close"></button>
-      <img src="img/modal/production_Department_2.jpg">
-    	<h1>制作局</h1>
-    	<p>映像コンテンツやイベントの企画・構成、台本の作成を担当し、撮影や収録の現場、編集作業では指揮をとります。</p>
-    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
-    </div>
-    <div class="remodal" data-remodal-id="modal_technical">
-    	<button data-remodal-action="close" class="remodal-close"></button>
-      <img src="img/modal/technical_Station_2.jpg">
-    	<h1>技術局</h1>
-    	<p>実際にテレビ局にあるものと同じ音響・照明・カメラ等の機材を用い、撮影を担当する他、撮影した映像の編集も担当します。また 、衣装やセットにあたる小道具や大道具の準備も技術局の仕事です。</p>
-    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
-    </div>
-    <div class="remodal" data-remodal-id="modal_DPI">
-    	<button data-remodal-action="close" class="remodal-close"></button>
-      <img src="img/modal/DPI_2.jpg">
-    	<h1>広報局</h1>
-    	<p>MCSを認知してもらうため、広報活動を行います。HTMLやCSSを使ってのwebサイト制作や、IllustratorやPhotoshopを使ってのビラ、ポスター制作などを担当する他、オープンキャンパスなどのイベント時は、受付や誘導、ビラ配りなどを担当します。近年では、フリーペーパーの制作にも取り組んでいます。</p>
-    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
-    </div><!-- モーダルウィンドウのコンテンツ終了 -->
-  </article>
 
-  <article class="about_secWrap"> <a name="emviroment"></a>
-    <div class="about_titleWrap">
-      <div class="about_titleNum">03</div>
-      <div class="about_titleTitle">環境</div>
-      <div class="about_titleBar" id="about_sec03"></div>
-    </div>
-    <div class="flexIframe" id="about_environmentTop">
-      <div id="about_enviromentMap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31146.700616502883!2d135.583874647285!3d34.85890043879787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fdb89c68a7e5%3A0x94e056504f4ec5d9!2z56eB56uL6Zai6KW_5aSn5a2m57eP5ZCI5oOF5aCx5a2m6YOo!5e0!3m2!1sja!2sjp!4v1450105599915" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <article class="about_secWrap">
+      <a name="emviroment"></a>
+      <div class="about_titleWrap">
+        <div class="about_titleNum">03</div>
+        <div class="about_titleTitle">環境</div>
+        <div class="about_titleBar" id="about_sec03"></div>
       </div>
-      <p id="about_emviromentP">主に関西大学高槻キャンパスで活動しています。<br/>
-        大学内にあるスタジオには、様々な設備が整っており、本格的なスタジオ撮影が行えます。</p>
+      <div class="flexIframe" id="about_environmentTop">
+        <div id="about_enviromentMap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31146.700616502883!2d135.583874647285!3d34.85890043879787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fdb89c68a7e5%3A0x94e056504f4ec5d9!2z56eB56uL6Zai6KW_5aSn5a2m57eP5ZCI5oOF5aCx5a2m6YOo!5e0!3m2!1sja!2sjp!4v1450105599915"
+              frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <p id="about_emviromentP">主に関西大学高槻キャンパスで活動しています。<br/> 大学内にあるスタジオには、様々な設備が整っており、本格的なスタジオ撮影が行えます。
+        </p>
 
-      <article class="modal_Wrap about_office">
-      <div class="about_officeItemWrap">
-        <a href="#modal_switcher" class="thumnail">
-          <figure>
-              <img src="img/modal/switcher.jpg" alt="スイッチャー">
-          </figure>
-        </a>
-      </div>
-      <div class="about_officeItemWrap">
-        <a href="#modal_camera" class="thumnail">
-          <figure>
-              <img src="img/modal/camera.jpg" alt="カメラ">
-          </figure>
-        </a>
-      </div>
-      <div class="about_officeItemWrap">
-        <a href="#modal_illumination" class="thumnail">
-          <figure>
-              <img src="img/modal/illumination.jpg" alt="調光卓">
-          </figure>
-        </a>
-      </div>
-      <div class="remodal" data-remodal-id="modal_switcher"><!-- モーダルウィンドウのコンテンツ開始 -->
-    	<button data-remodal-action="close" class="remodal-close"></button>
-      <img src="img/modal/switcher.jpg">
-    	<h1>スイッチャー</h1>
-    	<p>各カメラの映像、VTRなどの切り替えを行います。また、ワイプの設定やクロマキーの処理、設定などもここで行います。<br/>
-                スイッチャーの担当者が、各カメラに指示を出します。</p>
-    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
-    </div>
-    <div class="remodal" data-remodal-id="modal_camera">
-    	<button data-remodal-action="close" class="remodal-close"></button>
-      <img src="img/modal/camera.jpg">
-    	<h1>PMW350k(ENGカメラ)</h1>
-    	<p>スタジオ収録で使用するカメラで、フルHD高画質での撮影が可能です。<br/>3台を基本としていますが、最大4台まで使用可能です。</p>
-    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
-    </div>
-    <div class="remodal" data-remodal-id="modal_illumination">
-    	<button data-remodal-action="close" class="remodal-close"></button>
-      <img src="img/modal/illumination.jpg">
-    	<h1>調光卓</h1>
-    	<p>照明が変更できます。<br/>
-    	スポットライトや蛍光灯、ホリゾントなどの照明があります。様々な色のカラーフィルターもあるので、多様な演出が可能です。</p>
-    	<button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
-    </div><!-- モーダルウィンドウのコンテンツ終了 -->
+        <article class="modal_Wrap about_office">
+          <div class="about_officeItemWrap">
+            <a href="#modal_switcher" class="thumnail">
+              <figure>
+                <img src="img/modal/switcher.jpg" alt="スイッチャー">
+              </figure>
+            </a>
+          </div>
+          <div class="about_officeItemWrap">
+            <a href="#modal_camera" class="thumnail">
+              <figure>
+                <img src="img/modal/camera.jpg" alt="カメラ">
+              </figure>
+            </a>
+          </div>
+          <div class="about_officeItemWrap">
+            <a href="#modal_illumination" class="thumnail">
+              <figure>
+                <img src="img/modal/illumination.jpg" alt="調光卓">
+              </figure>
+            </a>
+          </div>
+          <div class="remodal" data-remodal-id="modal_switcher">
+            <!-- モーダルウィンドウのコンテンツ開始 -->
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="img/modal/switcher.jpg">
+            <h1>スイッチャー</h1>
+            <p>各カメラの映像、VTRなどの切り替えを行います。また、ワイプの設定やクロマキーの処理、設定などもここで行います。<br/> スイッチャーの担当者が、各カメラに指示を出します。
+            </p>
+            <button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal_camera">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="img/modal/camera.jpg">
+            <h1>PMW350k(ENGカメラ)</h1>
+            <p>スタジオ収録で使用するカメラで、フルHD高画質での撮影が可能です。<br/>3台を基本としていますが、最大4台まで使用可能です。</p>
+            <button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+          </div>
+          <div class="remodal" data-remodal-id="modal_illumination">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="img/modal/illumination.jpg">
+            <h1>調光卓</h1>
+            <p>照明が変更できます。<br/> スポットライトや蛍光灯、ホリゾントなどの照明があります。様々な色のカラーフィルターもあるので、多様な演出が可能です。
+            </p>
+            <button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
+          </div>
+          <!-- モーダルウィンドウのコンテンツ終了 -->
+        </article>
+        <div id="about_enviromentBottom"></div>
     </article>
-    <div id="about_enviromentBottom"></div>
+    <article class="about_secWrap">
+      <a name="medican"></a>
+      <div class="about_titleWrap">
+        <div class="about_titleNum">04</div>
+        <div class="about_titleTitle">めでぃカンさん</div>
+        <div class="about_titleBar" id="about_sec04"></div>
+      </div>
+      <div id="about_medican3Wrap SP"> <img class="about_medican3Img SP" src="img/medican3.png" alt="めでぃカンさん">
+        <p id="about_medican3P"> ペリカンをモチーフにした、MCS公式キャラクター。<br/> ポスターやチラシ、番組のオープニングなどで登場することがあるかも！？
+          <br/> 是非、探してみてくださいね！
+        </p>
+        <img class="about_medican3Img PC" src="img/medican3.png" alt="めでぃカンさん"> </div>
+    </article>
   </article>
-  <article class="about_secWrap"> <a name="medican"></a>
-    <div class="about_titleWrap">
-      <div class="about_titleNum">04</div>
-      <div class="about_titleTitle">めでぃカンさん</div>
-      <div class="about_titleBar" id="about_sec04"></div>
-    </div>
-    <div id="about_medican3Wrap SP"> <img class="about_medican3Img SP" src="img/medican3.png" alt="めでぃカンさん">
-      <p id="about_medican3P"> ペリカンをモチーフにした、MCS公式キャラクター。<br/>
-        ポスターやチラシ、番組のオープニングなどで登場することがあるかも！？<br/>
-        是非、探してみてくださいね！</p>
-      <img class="about_medican3Img PC" src="img/medican3.png" alt="めでぃカンさん"> </div>
-  </article>
-</article>
-<img class="page_top" src="img/up.png" alt="upButton">
+  <img class="page_top" src="img/up.png" alt="upButton">
 
-<!--ここからフッター-->
-<footer id="foot"></footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/page_top.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
-<script type="text/javascript" src="js/modal-old.js"></script>
-<script src="remodal/remodal.min.js"></script>
+  <!--ここからフッター-->
+  <footer id="footer"></footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/page_top.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/modal-old.js"></script>
+  <script src="remodal/remodal.min.js"></script>
 </body>
+
 </html>
