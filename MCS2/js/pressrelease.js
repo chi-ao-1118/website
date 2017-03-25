@@ -18,6 +18,7 @@ $(function() {
                 insertContents += '<p>' + thisItem.children('article').text() + '</p>';
                 insertContents += '</div></div></article></a>';
             });
+            insertContents +="<article></article><article></article>";
             $('#press').append(insertContents);
         }
     });
