@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" media="(max-width: 640px)" href="css/max-640px.css">
-  <link rel="stylesheet" media="(min-width: 640px)" href="css/min-640px.css">
+  <link rel="stylesheet" media="(max-width: 640px)" href="css/SP.css">
+  <link rel="stylesheet" media="(min-width: 640px)" href="css/PC.css">
+  <link rel="stylesheet" href="css/recruit_2016.css">
+
   <title>MCS</title>
   <script>
     (function(i, s, o, g, r, a, m) {
@@ -42,27 +44,15 @@
     </div>
   </article>
   <!--本文-->
-  <article class="mainWrap">
-    <article class="about_secWrap">
-      <a name="mcs">
-        <div class="about_titleWrap">
-          <div class="about_titleNum">01</div>
-          <div class="about_titleTitle">新歓PV</div>
-          <div class="about_titleBar" id="recruit_sec01"></div>
-        </div>
-      </a>
-      <div class="flexIframe" id="about_moveMCS">
+  <article class="about mainWrap">
+    <section id="pv">
+      <h1 class="left"><span>01</span>新歓PV</h1>
+      <div class="flexIframe" id="about_movieMCS">
         <iframe src="https://www.youtube.com/embed/qyOihsluS7o?rel=0&autohide=1&theme=dark&color=white" frameborder="0" allowfullscreen></iframe>
       </div>
-    </article>
-    <article class="about_secWrap">
-      <a name="office">
-        <div class="about_titleWrap">
-          <div class="about_titleBar" id="recruit_sec02"></div>
-          <div class="about_titleNum">02</div>
-          <div class="about_titleTitle">メッセージ</div>
-        </div>
-      </a>
+    </section>
+    <section id="office">
+      <h1 class="right"><span>02</span>メッセージ</h1>
       <article class="about_office">
         <div class="about_officeItemWrap">
           <div class="modal-open">
@@ -215,14 +205,9 @@
           </div>
         </div>
       </article>
-    </article>
-    <article class="about_secWrap">
-      <a name="toQandA"></a>
-      <div class="about_titleWrap">
-        <div class="about_titleNum">03</div>
-        <div class="about_titleTitle"> FAQ </div>
-        <div class="about_titleBar" id="recruit_sec03"></div>
-      </div>
+    </section>
+    <section id="FAQ">
+      <h1 class="left"><span>03</span>FAQ</h1>
       <section class="recruit_QandA">
         <p class="recruit_Question">Q.MCSとは？</p>
         <p class="recruit_Answer">A.関西大学公認の映像ボランティアサークルです。正式名称である「Media Creative Supporter」を略して、MCSと呼ばれています。MCSのことをもっと知りたい方は<a href="about.html">こちら</a></p>
@@ -238,27 +223,22 @@
           <iframe width="595.5" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1XzRw0e27r6Sy6MaAzQaFDwTRppdtf5QH6L5H5mmD9ZU/pubchart?oid=721678758&amp;format=interactive"></iframe>
         </div>
       </section>
-    </article>
-    <article class="about_secWrap">
-      <a name="medican"></a>
-      <div class="about_titleWrap">
-        <div class="about_titleNum">04</div>
-        <div class="about_titleTitle">スケジュール</div>
-        <div class="about_titleBar" id="recruit_sec04"></div>
-      </div>
+    </section>
+    <section id="medican">
+      <h1 class="left"><span>04</span>スケジュール</h1>
       <a name="calendar">
         <div class="flexIframe" id="recruit_schedule">
           <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mcs.kutc%40gmail.com&amp;color=%23875509&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0"
               scrolling="no"></iframe>
         </div>
       </a>
-    </article>
+    </section>
   </article>
-<!--バックボタン-->
-<article id="bkBtn" class="hamLost"></article>
-<script>
-  var bk_id = "recruit_bk"
-</script>
+  <!--バックボタン-->
+  <article id="bkBtn" class="hamLost"></article>
+  <script>
+    var bk_id = "recruit_bk"
+  </script>
   <img class="page_top" src="img/up.png" alt="upButton">
 
   <!--ここからフッター-->

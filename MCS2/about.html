@@ -4,11 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" media="(max-width: 640px)" href="css/max-640px.css">
-  <link rel="stylesheet" media="(min-width: 640px)" href="css/min-640px.css">
-  <link rel="stylesheet" href="remodal/remodal.css">
-  <link rel="stylesheet" href="remodal/remodal-default-theme.css">
-  <link rel="stylesheet" href="remodal/style.css">
+  <link rel="stylesheet" media="(max-width: 640px)" href="css/SP.css">
+  <link rel="stylesheet" media="(min-width: 640px)" href="css/PC.css">
   <title>MCS - About</title>
   <script>
     (function(i, s, o, g, r, a, m) {
@@ -45,49 +42,35 @@
     </div>
   </article>
   <!--本文-->
-  <article id="about" class="mainWrap">
-    <article class="about_secWrap">
-        <div class="about_titleWrap">
-          <div class="about_titleNum">01</div>
-          <div class="about_titleTitle">What is MCS?</div>
-          <div class="about_titleBar" id="about_sec01"></div>
-        </div>
+  <article id="about" class="about mainWrap">
+    <section id="wahtIs">
+      <h1 class="left"><span>01</span>What is MCS?</h1>
       <p class="about"> 私達、Media Creative Supporter(通称MCS)は、関西大学公認の映像ボランティア団体です。関西大学高槻キャンパスにて行われる学園祭やオープンキャンパスでのスタジオイベントを催すほか、学部生向けの校内テレビ番組の制作や映画の自主制作を行い、その映画を多くの方に見て頂けるよう、学内外での上映会を催すなどの活動を行っています。最近では高槻市の地域活性化プロジェクトにも参加しています。</p>
-      <div class="flexIframe" id="about_moveMCS">
+      <div class="flexIframe" id="about_movieMCS">
         <iframe src="https://www.youtube.com/embed/akNGmvApd3g?rel=0&autohide=1&theme=dark&color=white" frameborder="0" allowfullscreen></iframe>
       </div>
-    </article>
-    <article id="office" class="about_secWrap">
-        <div class="about_titleWrap">
-          <div class="about_titleBar" id="about_sec02"></div>
-          <div class="about_titleNum">02</div>
-          <div class="about_titleTitle">各局紹介</div>
-        </div>
-      <article class="modal_Wrap about_office">
-        <div class="about_officeItemWrap">
+    </section>
+    <section id="office">
+      <h1 class="right"><span>02</span>各局紹介</h1>
+      <article class="modal_wrap">
           <a href="#modal_production" class="thumnail">
             <figure>
               <img src="img/modal/production_Department_3.jpg" alt="制作局">
               <figcaption>制作局</figcaption>
             </figure>
           </a>
-        </div>
-        <div class="about_officeItemWrap">
           <a href="#modal_technical" class="thumnail">
             <figure>
               <img src="img/modal/technical_Station_3.jpg" alt="技術局">
               <figcaption>技術局</figcaption>
             </figure>
           </a>
-        </div>
-        <div class="about_officeItemWrap">
           <a href="#modal_DPI" class="thumnail">
             <figure>
               <img src="img/modal/DPI_3.jpg" alt="広報局">
               <figcaption>広報局</figcaption>
             </figure>
           </a>
-        </div>
       </article>
       <div class="remodal" data-remodal-id="modal_production">
         <!-- モーダルウィンドウのコンテンツ開始 -->
@@ -112,44 +95,34 @@
         <button data-remodal-action="confirm" class="remodal-confirm">閉じる</button>
       </div>
       <!-- モーダルウィンドウのコンテンツ終了 -->
-    </article>
+    </section>
 
-    <article id="emviroment" class="about_secWrap">
-      <div class="about_titleWrap">
-        <div class="about_titleNum">03</div>
-        <div class="about_titleTitle">環境</div>
-        <div class="about_titleBar" id="about_sec03"></div>
-      </div>
-      <div class="flexIframe" id="about_environmentTop">
-        <div id="about_enviromentMap">
+    <section id="emviroment">
+      <h1 id="sec01" class="left"><span>03</span>環境</h1>
+      <div class="flexIframe" id="about_emvTop">
+        <div id="about_emvMap">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31146.700616502883!2d135.583874647285!3d34.85890043879787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fdb89c68a7e5%3A0x94e056504f4ec5d9!2z56eB56uL6Zai6KW_5aSn5a2m57eP5ZCI5oOF5aCx5a2m6YOo!5e0!3m2!1sja!2sjp!4v1450105599915"
               frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <p id="about_emviromentP">主に関西大学高槻キャンパスで活動しています。<br/> 大学内にあるスタジオには、様々な設備が整っており、本格的なスタジオ撮影が行えます。
+        <p id="about_emvP">主に関西大学高槻キャンパスで活動しています。<br/> 大学内にあるスタジオには、様々な設備が整っており、本格的なスタジオ撮影が行えます。
         </p>
 
-        <article class="modal_Wrap about_office">
-          <div class="about_officeItemWrap">
+        <article class="modal_wrap">
             <a href="#modal_switcher" class="thumnail">
               <figure>
                 <img src="img/modal/switcher.jpg" alt="スイッチャー">
               </figure>
             </a>
-          </div>
-          <div class="about_officeItemWrap">
             <a href="#modal_camera" class="thumnail">
               <figure>
                 <img src="img/modal/camera.jpg" alt="カメラ">
               </figure>
             </a>
-          </div>
-          <div class="about_officeItemWrap">
             <a href="#modal_illumination" class="thumnail">
               <figure>
                 <img src="img/modal/illumination.jpg" alt="調光卓">
               </figure>
             </a>
-          </div>
           <div class="remodal" data-remodal-id="modal_switcher">
             <!-- モーダルウィンドウのコンテンツ開始 -->
             <button data-remodal-action="close" class="remodal-close"></button>
@@ -176,20 +149,16 @@
           </div>
           <!-- モーダルウィンドウのコンテンツ終了 -->
         </article>
-        <div id="about_enviromentBottom"></div>
-    </article>
-    <article id="medican" class="about_secWrap">
-      <div class="about_titleWrap">
-        <div class="about_titleNum">04</div>
-        <div class="about_titleTitle">めでぃカンさん</div>
-        <div class="about_titleBar" id="about_sec04"></div>
-      </div>
+
+    </section>
+    <section id="medican">
+      <h1 class="left"><span>04</span>めでぃカンさん</h1>
       <div id="about_medican3Wrap SP"> <img class="about_medican3Img SP" src="img/medican3.png" alt="めでぃカンさん">
         <p id="about_medican3P"> ペリカンをモチーフにした、MCS公式キャラクター。<br/> ポスターやチラシ、番組のオープニングなどで登場することがあるかも！？
           <br/> 是非、探してみてくださいね！
         </p>
         <img class="about_medican3Img PC" src="img/medican3.png" alt="めでぃカンさん"> </div>
-    </article>
+    </section>
   </article>
   <img class="page_top" src="img/up.png" alt="upButton">
 
@@ -198,7 +167,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="js/page_top.js"></script>
   <script type="text/javascript" src="js/menu.js"></script>
-  <script type="text/javascript" src="js/modal-old.js"></script>
   <script src="remodal/remodal.min.js"></script>
 </body>
 
