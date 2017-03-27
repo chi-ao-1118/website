@@ -2,16 +2,22 @@
     mordal
             */
 
-article.modal_wrap {
+.modal_wrap {
     text-align: center;
     margin: 0 auto;
 }
+.modal_wrap li{
 
+display: inline-block;
+overflow: hidden;
+margin: 1%;
+width: 20%;
+}
 a.thumnail {
-    display: inline-block;
+    /*display: inline-block;*/
     overflow: hidden;
-    margin: 1%;
-    width: 20%;
+    /*margin: 1%;*/
+    /*width: 20%;*/
 }
 
 @media (max-width:640px) {

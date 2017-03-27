@@ -15,7 +15,10 @@ html, body {
     line-height: 1.7em;
     font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
-
+ul{
+  padding: 0;
+  margin: 0;
+}
 li {
     list-style: none;
 }
@@ -727,6 +730,9 @@ p.about {
     margin: 0 auto;
 }
 
+#office .modal_wrap img {
+  filter:blur(1px);
+}
 #about_movieMCS {
     width: 68%;
     padding-top: 38.25%;
@@ -749,12 +755,11 @@ p.about {
     vertical-align: middle;
 }
 
-#about_emvP {
+#about #emviroment p {
     display: inline-block;
     width: 70%;
     vertical-align: middle;
     text-align: left;
-    padding-left: 2%;
 }
 
 #about_medican3Wrap {
@@ -2001,11 +2006,6 @@ footer a {
 
 footer nav {
     text-align: center;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
 }
 
 footer nav>ul ul {
