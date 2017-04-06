@@ -1067,8 +1067,9 @@ p.about {
 .contents_hotP {}
 
 .contents_originalWrap {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .contents_originalWrap a {
@@ -1076,17 +1077,19 @@ p.about {
 }
 
 .contents_originalMovie {
-    width: 24%;
+    width: 33%;
+    min-width: 280px;
     /*padding-top: 13.5%;/*0.5625*width%*/
     display: inline-block;
     margin: 0.2%;
+    font-size: 1rem;
 }
 
 .contents_originalMovie figure {
     position: relative;
     overflow: hidden;
     width: 100%;
-    left: -17%;
+    /*left: -17%;*/
 }
 
 .contents_originalMovie figure img {
@@ -1118,14 +1121,20 @@ p.about {
 }
 
 .contents_originalMovie figcaption h3 {
-    top: 5%;
-    line-height: 1.2em;
+    line-height: 1em;
+    margin:-2.5rem 0 2rem 0;
+  font-size: 0.8em;
+    /*font-size: 0.8rem;*/
 }
 
 .contents_originalMovie figcaption p {
+
+  margin:0;
     top: 50%;
     font-size: 0.9em;
-    line-height: 1em;
+    line-height: 0.9em;
+    font-size: 0.6em;
+    /*font-size: 0.6rem;*/
 }
 
 figure:hover figcaption {
