@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .contnts {
+      text-align: center;
+    }
+
+    .main {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    a {
+      direction: none;
+      color: #fff;
+    }
+
+    article.original {
+      display: inline-block;
+      width: 33%;
+      min-width: 270px;
+      max-width: 400px;
+    }
+
+    figure {
+      width: 100%;
+      margin: 0;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      -webkit-margin-start: 0;
+      -webkit-margin-end: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    figure img {
+      width: 100%;
+      vertical-align: bottom;
+    }
+
+    figcaption {
+      background: rgba(0, 0, 0, .6);
+      opacity:0;
+      transition: 3s;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      min-width: 240px;
+      max-width: 400px;
+      transition: .3s;
+      text-align: center;
+    }
+    figure:hover figcaption{
+      opacity: 1;
+    }
+    figure:hover figcaption h1, figure:hover figcaption p{
+      left:50%;
+      transform: translate(-50%,0);
+      transition: .3s;
+    }
+    figure:hover figcaption h1{
+      transition-delay: .5s;
+    }
+    figure:hover figcaption p{
+      transition-delay: .8s;
+
+    }
+
+    figcaption h1 {
+      padding:0 .5rem;
+      font-size: 1.4rem;
+      display: block;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      position: relative;;
+      left:-100%;
+    }
+
+    figcaption p {
+      padding:0 .5rem;
+      font-size: 1.2rem;
+      display: block;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      position: relative;
+      left:-100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <article class="contents main">
+    <!--ここからオリジナルムービーBOX-->
+    <article class="original">
+      <a href="https://www.youtube.com/watch?v=ATASoRelQOs" target="_blank">
+        <figure class="lostFig">
+          <img src="img/aiba.jpg">
+          <figcaption>
+            <h1><目指せ｢1番｣!! ギネス世界記録〜MCSの挑戦〜</h3>
+          <p>「世界一」になれるのか？</p>
+        </figcaption>
+      </figure>
+    </a>
+    </article>
+  <!--オリジナルムービーBOXここまで-->
+</article>
+
+
+</body>
+
+</html>
