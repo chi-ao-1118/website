@@ -7,7 +7,6 @@
     margin: 0 auto;
 }
 .modal_wrap li{
-
 display: inline-block;
 overflow: hidden;
 margin: 1%;
@@ -34,7 +33,7 @@ a.thumnail {
     vertical-align: bottom;
 }
 
-figure {
+.about figure {
     margin: 0;
     overflow: hidden;
     position: relative;
@@ -45,7 +44,7 @@ figure {
     background: rgba(0, 0, 0, .2);
 }
 
-figcaption {
+.about figcaption {
     color: #FFF;
     /*opacity: 0;*/
     font-size: 20px;
@@ -64,7 +63,7 @@ figcaption {
     padding-top: calc(50% - 1rem);
 }
 
-a:hover>figure img {
+.about a:hover>figure img {
     transform: scale(1.15, 1.15);
     -webkit-transform: scale(1.15, 1.15);
     -moz-transform: scale(1.15, 1.15);
@@ -72,6 +71,6 @@ a:hover>figure img {
     -o-transform: scale(1.15, 1.15);
 }
 
-a:hover>figure figcaption {
+.about a:hover>figure figcaption {
     background-color: rgba(0, 0, 0, 0.6);
 }
