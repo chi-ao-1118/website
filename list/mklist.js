@@ -11,9 +11,17 @@ $(function() {
         '技術局': $("#gijutsu"),
         '広報局': $("#koho")
     };
-    var thisYear = 17;
+    var DATE = new Date();
+    var year = DATE.getFullYear();
+    var month = DATE.getMonth();
+    
+    var thisYear = year - 2000;
+    if (month + 1 <= 3){
+        thisYear--;
+    }
+    // monthは実際の月より1少ない数となる
 
-    $.get("memberlist.csv", function(data) {
+    $.get("tst.csv", function(data) {
         data = data.replace(/^(\n+)|(\n+)$/g, ""); //データ前後の余計な改行を削除
         arr = data.split(/\r\n|\r|\n/); //行ごとに分解
         console.log(arr[0]);
@@ -42,14 +50,14 @@ $(function() {
         //     insert += '<article class="nonebox databox"></article>';
         // }
         // console.log(insert);
-        No = mkInsert('制作局', No, 1);
-        $("#seisaku1").html(insert);
-        No = mkInsert('制作局', No, 2);
-        $("#seisaku2").html(insert);
-        No = mkInsert('制作局', No, 3);
-        $("#seisaku3").html(insert);
         No = mkInsert('制作局', No, 4);
         $("#seisaku4").html(insert);
+        No = mkInsert('制作局', No, 3);
+        $("#seisaku3").html(insert);
+        No = mkInsert('制作局', No, 2);
+        $("#seisaku2").html(insert);
+        No = mkInsert('制作局', No, 1);
+        $("#seisaku1").html(insert);
 
 
         console.log(No);
@@ -67,14 +75,14 @@ $(function() {
         // for (j = 0; j < 4; j++) {
         //     insert += '<article class="nonebox databox"></article>';
         // }
-        No = mkInsert('技術局', No, 1);
-        $("#gijutsu1").html(insert);
-        No = mkInsert('技術局', No, 2);
-        $("#gijutsu2").html(insert);
-        No = mkInsert('技術局', No, 3);
-        $("#gijutsu3").html(insert);
         No = mkInsert('技術局', No, 4);
         $("#gijutsu4").html(insert);
+        No = mkInsert('技術局', No, 3);
+        $("#gijutsu3").html(insert);
+        No = mkInsert('技術局', No, 2);
+        $("#gijutsu2").html(insert);
+        No = mkInsert('技術局', No, 1);
+        $("#gijutsu1").html(insert);
 
 
         console.log(No);
@@ -92,14 +100,14 @@ $(function() {
         // for (j = 0; j < 4; j++) {
         //     insert += '<article class="nonebox databox"></article>';
         // }
-        No = mkInsert('広報局', No, 1);
-        $("#koho1").html(insert);
-        No = mkInsert('広報局', No, 2);
-        $("#koho2").html(insert);
-        No = mkInsert('広報局', No, 3);
-        $("#koho3").html(insert);
         No = mkInsert('広報局', No, 4);
         $("#koho4").html(insert);
+        No = mkInsert('広報局', No, 3);
+        $("#koho3").html(insert);
+        No = mkInsert('広報局', No, 2);
+        $("#koho2").html(insert);
+        No = mkInsert('広報局', No, 1);
+        $("#koho1").html(insert);
 
         console.log(No);
 
