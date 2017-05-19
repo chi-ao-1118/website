@@ -30,8 +30,8 @@ $(function() {
         // insert = '';
         // i = 0;
         // for (i; i <= csvArr.length - 1 && csvArr[i][3] == 1; i++) {
-        //     insert += '<article class="databox"><img src="img/' + csvArr[i][0] + '.png" alt="person">';
-        //     // 必要に応じてpngとjpgを書き換える
+        //     insert += '<article class="databox"><img src="img/' + csvArr[i][0] + '.jpg" alt="person">';
+        //     // 必要に応じてjpgとjpgを書き換える
         //
         //     insert += '<div class="id">情' + csvArr[i][0] + '</div>';
         //     insert += '<div class="furigana">' + csvArr[i][2] + '</div>';
@@ -43,7 +43,7 @@ $(function() {
         // }
         // console.log(insert);
         No = mkInsert('制作局', No, 1);
-        $("#seisaku").html(insert);
+        $("#seisaku1").html(insert);
         No = mkInsert('制作局', No, 2);
         $("#seisaku2").html(insert);
         No = mkInsert('制作局', No, 3);
@@ -56,8 +56,8 @@ $(function() {
         // 技術局
         // insert = '';
         // for (i; i <= csvArr.length - 1 && csvArr[i][3] == 2; i++) {
-        //     insert += '<article class="databox"><img src="img/' + csvArr[i][0] + '.png" alt="person">';
-        //     // 必要に応じてpngとjpgを書き換える
+        //     insert += '<article class="databox"><img src="img/' + csvArr[i][0] + '.jpg" alt="person">';
+        //     // 必要に応じてjpgとjpgを書き換える
         //
         //     insert += '<div class="id">情' + csvArr[i][0] + '</div>';
         //     insert += '<div class="furigana">' + csvArr[i][2] + '</div>';
@@ -81,8 +81,8 @@ $(function() {
         // 広報局
         // insert = '';
         // for (i; i <= csvArr.length - 1 && csvArr[i][3] == 3; i++) {
-        //     insert += '<article class="databox"><img src="img/' + csvArr[i][0] + '.png" alt="person">';
-        //     // 必要に応じてpngとjpgを書き換える
+        //     insert += '<article class="databox"><img src="img/' + csvArr[i][0] + '.jpg" alt="person">';
+        //     // 必要に応じてjpgとjpgを書き換える
         //
         //     insert += '<div class="id">情' + csvArr[i][0] + '</div>';
         //     insert += '<div class="furigana">' + csvArr[i][2] + '</div>';
@@ -115,7 +115,7 @@ $(function() {
               var NAME = csvArr[No][1];
               var FURIGANA = csvArr[No][2];
                 insert += `<article class="databox">
-                  <img src="img/${ID}.png" alt="person">
+                  <img src="img/${ID}.jpg" alt="person">
                   <div class="id">情${ID}</div>
                   <div class="furigana">${FURIGANA}</div>
                   <div class="name">${NAME}</div>
