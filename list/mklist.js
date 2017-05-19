@@ -11,6 +11,7 @@ $(function() {
         '技術局': $("#gijutsu"),
         '広報局': $("#koho")
     };
+    var thisYear = 17;
 
     $.get("memberlist.csv", function(data) {
         data = data.replace(/^(\n+)|(\n+)$/g, ""); //データ前後の余計な改行を削除
@@ -107,7 +108,7 @@ $(function() {
             insert = '';
             for (No; No <= csvArr.length - 1 && csvArr[No][3] == sec; No++) {
               var IdArry = csvArr[No][0].split("-");
-              if (IdArry[0] != grade){
+              if (thisYear + 1 - IdArry[0] != grade){
                 break;
               }
               var ID = csvArr[No][0];
