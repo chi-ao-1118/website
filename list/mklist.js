@@ -14,7 +14,7 @@ $(function() {
     var DATE = new Date();
     var year = DATE.getFullYear();
     var month = DATE.getMonth();
-    
+
     var thisYear = year - 2000;
     if (month + 1 <= 3){
         thisYear--;
@@ -50,31 +50,6 @@ $(function() {
         //     insert += '<article class="nonebox databox"></article>';
         // }
         // console.log(insert);
-        No = mkInsert('制作局', No, 4);
-        $("#seisaku4").html(insert);
-        No = mkInsert('制作局', No, 3);
-        $("#seisaku3").html(insert);
-        No = mkInsert('制作局', No, 2);
-        $("#seisaku2").html(insert);
-        No = mkInsert('制作局', No, 1);
-        $("#seisaku1").html(insert);
-
-
-        console.log(No);
-        // 技術局
-        // insert = '';
-        // for (i; i <= csvArr.length - 1 && csvArr[i][3] == 2; i++) {
-        //     insert += '<article class="databox"><img src="img/' + csvArr[i][0] + '.jpg" alt="person">';
-        //     // 必要に応じてjpgとjpgを書き換える
-        //
-        //     insert += '<div class="id">情' + csvArr[i][0] + '</div>';
-        //     insert += '<div class="furigana">' + csvArr[i][2] + '</div>';
-        //     insert += '<div class="name"> ' + csvArr[i][1] + '</div>';
-        //     insert += '</article>';
-        // }
-        // for (j = 0; j < 4; j++) {
-        //     insert += '<article class="nonebox databox"></article>';
-        // }
         No = mkInsert('技術局', No, 4);
         $("#gijutsu4").html(insert);
         No = mkInsert('技術局', No, 3);
@@ -83,23 +58,9 @@ $(function() {
         $("#gijutsu2").html(insert);
         No = mkInsert('技術局', No, 1);
         $("#gijutsu1").html(insert);
-
-
         console.log(No);
-        // 広報局
-        // insert = '';
-        // for (i; i <= csvArr.length - 1 && csvArr[i][3] == 3; i++) {
-        //     insert += '<article class="databox"><img src="img/' + csvArr[i][0] + '.jpg" alt="person">';
-        //     // 必要に応じてjpgとjpgを書き換える
-        //
-        //     insert += '<div class="id">情' + csvArr[i][0] + '</div>';
-        //     insert += '<div class="furigana">' + csvArr[i][2] + '</div>';
-        //     insert += '<div class="name"> ' + csvArr[i][1] + '</div>';
-        //     insert += '</article>';
-        // }
-        // for (j = 0; j < 4; j++) {
-        //     insert += '<article class="nonebox databox"></article>';
-        // }
+
+
         No = mkInsert('広報局', No, 4);
         $("#koho4").html(insert);
         No = mkInsert('広報局', No, 3);
@@ -108,7 +69,16 @@ $(function() {
         $("#koho2").html(insert);
         No = mkInsert('広報局', No, 1);
         $("#koho1").html(insert);
+        console.log(No);
 
+        No = mkInsert('制作局', No, 4);
+        $("#seisaku4").html(insert);
+        No = mkInsert('制作局', No, 3);
+        $("#seisaku3").html(insert);
+        No = mkInsert('制作局', No, 2);
+        $("#seisaku2").html(insert);
+        No = mkInsert('制作局', No, 1);
+        $("#seisaku1").html(insert);
         console.log(No);
 
 
@@ -132,7 +102,7 @@ $(function() {
             for (j = 0; j < 4; j++) {
                 insert += '<article class="nonebox databox"></article>';
             }
-            $secID[sec].html(insert);
+            // $secID[sec].html(insert);
             return No;
         }
 
