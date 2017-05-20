@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>README - List</title>
+</head>
+
+<body>
+
+    <h1>準備</h1>
+    <p>１．列１：名前　列２：班名　という形式のスプレットシートを作成（今回の班名は「studio」「live」「event」の三つ）</p>
+    <p>２．データを班名別にソート（必要であれば先に名前順にソートする）</p>
+    <p>３．ファイル → 形式を指定してダウンロード → .csv</p>
+    <p>４．整形したcsvファイルを「listFile.csv」にリネームしてアップロード</p>
+    <p>５．下のアップローダーより名札デザインのpng画像をアップロード．ファイル名は，studio.pnf．live.png，event.pngとする．(jpgがいい場合は管理者に連絡してください)．</p>
+    <p>※ファイルはアップロードするたびに上書きされます．</p>
+    <p>※容量には限界がありますので，誤って大きなデータをアップロードしてしまった場合は至急管理者にご連絡ください</p>
+    <p>※現在は拡張子.pngで名札の生成を行なっています.png以外を使いたい場合は管理者に連絡してください</p>
+
+    <p><strong>NameTag.csvのアップローダー</strong></p>
+    <form id="list_form">
+        <input type="file" name="listFile">
+        <button type="button" onclick="list_file_upload()">アップロード</button>
+    </form>
+
+    <br/>
+
+    <p><strong>デザインのアップローダー</strong></p>
+    <form id="img_form">
+        <input type="file" name="img_file[]" multiple="multiple" accept="image/*">
+        <button type="button" onclick="img_file_upload()">アップロード</button>
+    </form>
+
+
+    <h1>出力</h1>
+    <p>１．<a href="RESULT.html">こちら</a>を開く</p>
+    <p>２．印刷より，PDFとして出力する</p>
+
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="upload.js"></script>
+</body>
+
+</html>
