@@ -19,7 +19,7 @@ $(function() {
     if (month + 1 <= 3){
         thisYear--;
     }
-    $(".Department h1::before").css("contents",year);
+    $(".Department h1::before").css("content",year);
     // monthは実際の月より1少ない数となる
 
     $.get("tst.csv", function(data) {
