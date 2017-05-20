@@ -3,7 +3,6 @@ $(function() {
     //csvファイルを二項配列に読み込み
     var arr;
     var csvArr = [];
-    var insert='';
 
 
     $.get("NameTag.csv", function(data) {
@@ -24,22 +23,25 @@ $(function() {
 
 
         function mkInsert(group) {
-            insert = '';
-            for (var group_num = 0; group_num < group.length;group_num++){
-              for (var No = 0; No < csvArr.length && csvArr[No][1] == group[group_num]; No++) {
+            var insert = '';
+            var No = 0;
+            
+            for (var group_num = 0; group_num < group.length;  group_num++){
+              for (No; No < csvArr.length && csvArr[No][1] == group[group_num]; No++) {
+                var NAME = csvArr[No][0];
+                var GROUP = group[group_num];
+                  insert += `<article class="item">
+                    <img src="img/${GROUP}.png">
+                    <h1>${NAME}</h1>
+                  </article>`;
+                  if(No != 0 && (No + 1) % 16 == 0){
+                    insert += `<article class="padding"></article>
+                    <article class="padding"></article>`;
+                  }
               }
-              var NAME = csvArr[No][0];
-              var GROUP = group[group_num];
-                insert += `<article class="item">
-                  <img src="img/${GROUP}.png">
-                  <h1>${NAME}</h1>
-                </article>`;
-                if(No != 0 && No % 16 == 0){
-                  insert += `<article class="padding"></article>
-                  <article class="padding"></article>`
-                }
+              console.log(insert);
             }
-            for (j = 0; j < 3; j++) {
+            for (var i = 0; i < 3; i++) {
                 insert += '<article class="nonebox databox"></article>';
             }
             return insert;
