@@ -35,7 +35,9 @@
         .nonebox {
             height: 1px;
         }
-        img::before
+        .Department h1::before{
+            content: attr(data-year);
+        }
     </style>
 
 </head>
@@ -43,7 +45,7 @@
 <body>
 
     <article class="Department">
-        <h1>年度　制作局 1回生</h1>
+        <h1 data-year="">年度　制作局 1回生</h1>
         <article id="seisaku1"></article>
     </article>
     <article class="Department">

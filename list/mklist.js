@@ -6,23 +6,23 @@ $(function() {
     var No = 0;
     var insert='';
 
-    var $secID = {
-        '制作局': $("#seisaku"),
-        '技術局': $("#gijutsu"),
-        '広報局': $("#koho")
-    };
+    // var $secID = {
+    //     '制作局': $("#seisaku"),
+    //     '技術局': $("#gijutsu"),
+    //     '広報局': $("#koho")
+    // };
     var DATE = new Date();
     var year = DATE.getFullYear();
     var month = DATE.getMonth();
-
-    var thisYear = year - 2000;
-    if (month + 1 <= 3){
-        thisYear--;
-    }
-    $(".Department h1::before").css("contents",year);
+    month++;
     // monthは実際の月より1少ない数となる
+    if (month <= 3){
+        year--;
+    }
+    var thisYear = year - 2000;
+    $(".Department h1").attr("data-year",year);
 
-    $.get("tst.csv", function(data) {
+    $.get("memberlist.csv", function(data) {
         data = data.replace(/^(\n+)|(\n+)$/g, ""); //データ前後の余計な改行を削除
         arr = data.split(/\r\n|\r|\n/); //行ごとに分解
         console.log(arr[0]);
@@ -34,23 +34,6 @@ $(function() {
 
         console.log(csvArr);
 
-        // 挿入するHTMLを作成
-        // 制作局
-        // insert = '';
-        // i = 0;
-        // for (i; i <= csvArr.length - 1 && csvArr[i][3] == 1; i++) {
-        //     insert += '<article class="databox"><img src="img/' + csvArr[i][0] + '.jpg" alt="person">';
-        //     // 必要に応じてjpgとjpgを書き換える
-        //
-        //     insert += '<div class="id">情' + csvArr[i][0] + '</div>';
-        //     insert += '<div class="furigana">' + csvArr[i][2] + '</div>';
-        //     insert += '<div class="name"> ' + csvArr[i][1] + '</div>';
-        //     insert += '</article>';
-        // }
-        // for (j = 0; j < 4; j++) {
-        //     insert += '<article class="nonebox databox"></article>';
-        // }
-        // console.log(insert);
         No = mkInsert('技術局', No, 4);
         $("#gijutsu4").html(insert);
         No = mkInsert('技術局', No, 3);
