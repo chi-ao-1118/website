@@ -11,14 +11,15 @@
 <body>
 
     <h1>準備</h1>
-    <p>１．列１：名前　列２：班名　という形式のスプレットシートを作成（今回の班名は「studio」「live」「event」の三つ）</p>
-    <p>２．データを班名別にソート（必要であれば先に名前順にソートする）</p>
-    <p>３．ファイル → 形式を指定してダウンロード → .csv</p>
-    <p>４．整形したcsvファイルを「listFile.csv」にリネームしてアップロード</p>
-    <p>５．下のアップローダーより名札デザインのpng画像をアップロード．ファイル名は，studio.pnf．live.png，event.pngとする．(jpgがいい場合は管理者に連絡してください)．</p>
+    <p>１．下のアップローダーより名札デザインのpng画像をアップロードする．何枚でも可．ファイル名には，半角英数字と半角の -(ハイフン)，_(アンダーバー)が利用可．</p>
+    <p>　　今回の例ではstudio.png．live.png，event.pngとする．（複数枚用いる場合は，拡張子を揃えておいてください）</p>
+    <p>２．列１：名前　列２：デザイン画像名(拡張子以外)　という形式のスプレットシートを作成（今回の列２は「studio」「live」「event」の３種類）</p>
+    <p>３．データをデザイン画像名別にソート（所属やIDを元にあらかじめソートしておきたい場合は，3列目以降にそのデータを挿入し，先にその要素でソートしたのちにデザイン画名でソートする）</p>
+    <p>４．ファイル → 形式を指定してダウンロード → .csv</p>
+    <p>５．整形したcsvファイルをアップロード(ファイル名は半角英数字でつけてください)</p>
     <p>※ファイルはアップロードするたびに上書きされます．</p>
     <p>※容量には限界がありますので，誤って大きなデータをアップロードしてしまった場合は至急管理者にご連絡ください</p>
-    <p>※現在は拡張子.pngで名札の生成を行なっています.png以外を使いたい場合は管理者に連絡してください</p>
+    <p>※ブラウザでプレビューできない画像形式では作成できません．.jpgか.pngくらいで勘弁してやってください．</p>
 
     <p><strong>NameTag.csvのアップローダー</strong></p>
     <form id="list_form">
@@ -36,8 +37,24 @@
 
 
     <h1>出力</h1>
-    <p>１．<a href="RESULT.html">こちら</a>を開く</p>
-    <p>２．印刷より，PDFとして出力する</p>
+    <p>１．以下のフォームを入力．</p>
+    <p>２．印刷より，PDFとして出力する．（用紙サイズをフォームで指定したものに忘れず設定すること）</p>
+    <form action="RESULT.html" method="get">
+      <label>名札の縦幅(mm):<input type="number" name="item_height" min="0" required></label><br>
+      <label>名札の横幅(mm):<input type="number" name="item_width" min="0" required></label><br>
+      <label>名前を下に何パーセント移動？:<input type="number" name="top" min="-100" max="100" value="0" required></label><br>
+      <label>名前を右に何パーセント移動？:<input type="number" name="left" min="-100" max="100" value="0" required></label><br>
+      <p>　　上と左にずらしたい場合はマイナス値を入力．真ん中で良いなら0を入力．</p>
+      <p>
+      <label>印刷用紙サイズ<input type="radio" name="size" value="A3" checked="checked" required>A3(297mm × 420mm)
+      <input type="radio" name="size" value="A4" required>A4(210mm × 297mm)</label>
+      </p>
+      <label>印刷用上下余白(mm):<input type="number" name="margin_top" min="0" value="5" required></label><br>
+      <label>印刷用左右余白(mm):<input type="number" name="margin_left" min="0" value="5" required></label><br>
+      プリント用余白：上下
+
+      <input type="submit" value="名札の出力">
+    </form>
 
 
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
