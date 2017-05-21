@@ -11,7 +11,7 @@ if (PARAM["size"] == "A3") {
 
 var nameArr = getCsvArr("NameTag.csv");
 var inPage_num = fitWindow(PARAM,PAPER);
-var insert = mkInsert(nameArr, inPage_num);
+var insert = mkInsert(nameArr, inPage_num, PARAM["extension"]);
 $("#NameTag").html(insert);
 
 });
@@ -36,7 +36,7 @@ function getCsvArr(fileName) {
     });
   };
 
-  function mkInsert(csvArr, inPage_num) {
+  function mkInsert(csvArr, inPage_num, EXTENSION) {
     var insert = '';
     var No = 0;
 
@@ -46,8 +46,8 @@ function getCsvArr(fileName) {
       No++) {
       var NAME = csvArr[No][0];
       insert += `<article class="item">
-              <img src="img/${GROUP}.png">
-              <h1>${NAME}</h1>
+              <img src="img/${GROUP}.${EXTENSION}">
+              <div class="name">${NAME}</div>
             </article>`;
       if (No != 0 && (No + 1) % inPage_num == 0) {
         insert += `<article class="padding"></article>
@@ -81,6 +81,8 @@ function fitWindow(PARAM,PAPER) {
   $(".item").height(item_height * resize_param);
   $(".padding").height(padding_top * resize_param);
   $(".name").css("font-size",Math.floor(item_width / 7));
+  $(".name").css("top",50 + PARAM["top"]);
+  $(".name").css("left",50 + PARAM["left"]);
 
   return wodth_num * height_num;
 };
