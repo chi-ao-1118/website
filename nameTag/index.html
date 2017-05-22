@@ -12,16 +12,16 @@
 
     <h1>準備</h1>
     <p>１．下のアップローダーより名札デザインの画像をアップロードする．何枚でも可．ファイル名には，半角英数字と半角の -(ハイフン)，_(アンダーバー)が利用可．</p>
-    <p>　　今回の例ではstudio.png．live.png，event.pngとする．（複数枚用いる場合は，拡張子を揃えておいてください）</p>
+    <p>　　今回の例ではstudio.png．live.png，event.pngとする．</p>
     <p>２．列１：名前　列２：デザイン画のファイル名(拡張子も)　という形式のスプレットシートを作成（今回の列２は「studio.png」「live.png」「event.png」の３種類）</p>
     <p>３．データをデザイン画像名別にソート（所属やIDを元にあらかじめソートしておきたい場合は，3列目以降にそのデータを挿入し，先にその要素でソートしたのちにデザイン画像名でソートする）</p>
     <p>４．ファイル → 形式を指定してダウンロード → .csv</p>
-    <p>５．整形したcsvファイルをアップロード(ファイル名は半角英数字でつけてください)</p>
+    <p>５．整形したcsvファイルをアップロード(ファイル名は半角英数字で任意のもの)</p>
     <p>※ファイルはアップロードするたびに上書きされます．</p>
     <p>※容量には限界がありますので，誤って大きなデータをアップロードしてしまった場合は至急管理者にご連絡ください</p>
     <p>※ブラウザでプレビューできない画像形式では作成できません．.jpgか.pngくらいで勘弁してやってください．</p>
 
-    <p><strong>NameTag.csvのアップローダー</strong></p>
+    <p><strong>名簿用csvファイルのアップローダー</strong></p>
     <form id="list_form">
         <input type="file" name="listFile">
         <button type="button" onclick="list_file_upload()">アップロード</button>
@@ -29,7 +29,7 @@
 
     <br/>
 
-    <p><strong>デザインのアップローダー</strong></p>
+    <p><strong>デザイン画像のアップローダー</strong></p>
     <form id="img_form">
         <input type="file" name="img_file[]" multiple="multiple" accept="image/*">
         <button type="button" onclick="img_file_upload()">アップロード</button>
@@ -55,7 +55,8 @@
 
       <input type="submit" value="名札の出力">
     </form>
-    <p>出力してからウィンドウサイズを変えた場合は，再読み込みしてください．</p>
+    <p>※名前は最大7文字まで対応しています．文字数が多い方は氏名の区切り空白文字を削除するなどで対応してください．(名前文字数ごとにフォントサイズ変えてもいいならそのような調整も可能です．管理者に相談してください)</p>
+    <p>※出力してからウィンドウサイズを変えた場合は，再読み込みしてください．</p>
     <!-- リサイズ時になぜかwhindow.widthが取得できない -->
 
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
