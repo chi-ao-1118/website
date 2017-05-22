@@ -16,8 +16,6 @@ $(function() {
   // var nameArr;
   var nameArr = getCsvArr("NameTag.csv");
 
-  // console.log(nameArr);
-  // console.log(nameArr.length);
   var inPage_num = fitWindow(PARAM, PAPER);
   var insert = mkInsert(nameArr, inPage_num, PARAM["extension"]);
   $("#NameTag").html(insert);
@@ -50,13 +48,11 @@ function getCsvArr(filename) {
     success: function(data) {
       data = data.replace(/^(\n+)|(\n+)$/g, ""); //データ前後の余計な改行を削除
       arr = data.split(/\r\n|\r|\n/); //行ごとに分解
-      // console.log(arr[0]);
       for (var i = 0; i < arr.length; i++) { //各行の内部を分解
         csvArr[i] = arr[i].split(","); //,で分解
       }
     }
   })
-  console.log(csvArr);
   return csvArr;
 };
 
@@ -115,7 +111,6 @@ function fitWindow(PARAM, PAPER) {
   $(".item").css("height", PARAM["item_height"] * resize_param);
   $(".padding").height(padding_top * resize_param);
   var fz = Math.floor(PARAM["item_width"] / 7) * resize_param + "px";
-  // console.log(fz);
   $(".name").css("font-size", fz);
   $(".name").css("top", 50 + PARAM["top"]);
   $(".name").css("left", 50 + PARAM["left"]);
