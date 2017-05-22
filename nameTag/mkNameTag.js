@@ -1,37 +1,43 @@
 $(function() {
-var PARAM = GetQueryString();
+  var PARAM = GetQueryString();
 
-if (PARAM["size"] == "A3") {
-  var PAPER = {"width": 420, "height": 297};
-} else if (PARAM["size"] == "A4") {
-  var PAPER = {"width": 297, "height": 210};
-}
+  if (PARAM["size"] == "A3") {
+    var PAPER = {
+      "width": 420,
+      "height": 297
+    };
+  } else if (PARAM["size"] == "A4") {
+    var PAPER = {
+      "width": 297,
+      "height": 210
+    };
+  }
 
-// var nameArr;
-var nameArr = getCsvArr("NameTag.csv");
+  // var nameArr;
+  var nameArr = getCsvArr("NameTag.csv");
 
-// console.log(nameArr);
-// console.log(nameArr.length);
-var inPage_num = fitWindow(PARAM,PAPER);
-var insert = mkInsert(nameArr, inPage_num, PARAM["extension"]);
-$("#NameTag").html(insert);
+  // console.log(nameArr);
+  // console.log(nameArr.length);
+  var inPage_num = fitWindow(PARAM, PAPER);
+  var insert = mkInsert(nameArr, inPage_num, PARAM["extension"]);
+  $("#NameTag").html(insert);
 
 });
 
 var timer = false;
 $(window).resize(function() {
-    if (timer !== false) {
-        clearTimeout(timer);
-    }
-    timer = setTimeout(function() {
-        console.log('resized');
+  if (timer !== false) {
+    clearTimeout(timer);
+  }
+  timer = setTimeout(function() {
+    console.log('resized');
     fitWindow();
-    }, 200);
+  }, 200);
 });
 
 
 
-function getCsvArr(filename){
+function getCsvArr(filename) {
 
   var arr;
   var csvArr = [];
@@ -40,8 +46,8 @@ function getCsvArr(filename){
     url: filename,
     async: false,
     //非同期通信だと永遠にコールバックし続けなくてはならない．一度取得知れば十分なので同期通信にしてしまう．
-    
-    success: function(data){
+
+    success: function(data) {
       data = data.replace(/^(\n+)|(\n+)$/g, ""); //データ前後の余計な改行を削除
       arr = data.split(/\r\n|\r|\n/); //行ごとに分解
       // console.log(arr[0]);
@@ -66,23 +72,23 @@ function mkInsert(csvArr, inPage_num, EXTENSION) {
         <img src="img/${GROUP}">
         <div class="name">${NAME}</div>
       </article>`;
-            
-      if (No != 0 && No != csvArr.length - 1  && (No + 1) % inPage_num == 0) {
+
+      if (No != 0 && No != csvArr.length - 1 && (No + 1) % inPage_num == 0) {
         insert += `
-        
+
       <article class="padding"></article>
       <article class="padding"></article>
       `;
       }
-       if(No == csvArr.length - 1){
-      break;
+      if (No == csvArr.length - 1) {
+        break;
       }
     }
-    if(No == csvArr.length - 1){
+    if (No == csvArr.length - 1) {
       break;
     }
   }
-  
+
   for (var i = 0; i < 3; i++) {
     insert += '<article class="nonebox item"></article>';
   }
@@ -91,7 +97,7 @@ function mkInsert(csvArr, inPage_num, EXTENSION) {
 };
 
 
-function fitWindow(PARAM,PAPER) {
+function fitWindow(PARAM, PAPER) {
 
   var resize_param = $(window).innerWidth() / PAPER["width"];
 
@@ -105,14 +111,14 @@ function fitWindow(PARAM,PAPER) {
 
   $("body").css("padding-top", padding_top * resize_param);
   // $("body").css("padding-left",(padding_left + margin_left) * resize_param); //margi:0 auto; で十分
-  $(".item").css("width",PARAM["item_width"] * resize_param);
-  $(".item").css("height",PARAM["item_height"] * resize_param);
+  $(".item").css("width", PARAM["item_width"] * resize_param);
+  $(".item").css("height", PARAM["item_height"] * resize_param);
   $(".padding").height(padding_top * resize_param);
-  var fz = Math.floor(PARAM["item_width"] / 7)*resize_param + "px";
+  var fz = Math.floor(PARAM["item_width"] / 7) * resize_param + "px";
   // console.log(fz);
-  $(".name").css("font-size",fz);
-  $(".name").css("top",50 + PARAM["top"]);
-  $(".name").css("left",50 + PARAM["left"]);
+  $(".name").css("font-size", fz);
+  $(".name").css("top", 50 + PARAM["top"]);
+  $(".name").css("left", 50 + PARAM["left"]);
 
   return width_num * height_num;
 };
