@@ -13,7 +13,7 @@
     <h1>準備</h1>
     <p>１．下のアップローダーより名札デザインの画像をアップロードする．何枚でも可．ファイル名には，半角英数字と半角の -(ハイフン)，_(アンダーバー)が利用可．</p>
     <p>　　今回の例ではstudio.png．live.png，event.pngとする．（複数枚用いる場合は，拡張子を揃えておいてください）</p>
-    <p>２．列１：名前　列２：デザイン画像名(拡張子以外)　という形式のスプレットシートを作成（今回の列２は「studio」「live」「event」の３種類）</p>
+    <p>２．列１：名前　列２：デザイン画のファイル名(拡張子も)　という形式のスプレットシートを作成（今回の列２は「studio.png」「live.png」「event.png」の３種類）</p>
     <p>３．データをデザイン画像名別にソート（所属やIDを元にあらかじめソートしておきたい場合は，3列目以降にそのデータを挿入し，先にその要素でソートしたのちにデザイン画像名でソートする）</p>
     <p>４．ファイル → 形式を指定してダウンロード → .csv</p>
     <p>５．整形したcsvファイルをアップロード(ファイル名は半角英数字でつけてください)</p>
@@ -51,11 +51,11 @@
       </p>
       <label>印刷用上下余白(mm):<input type="number" name="margin_top" min="0" value="5" required></label><br>
       <label>印刷用左右余白(mm):<input type="number" name="margin_left" min="0" value="5" required></label><br>
-      <label>デザイン画像の拡張子:<input type="text" name="extension" required></label>
 
 
       <input type="submit" value="名札の出力">
     </form>
+    <p>出力してからウィンドウサイズを変えた場合は，再読み込みしてください．</p>
 
 
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
