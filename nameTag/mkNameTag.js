@@ -1,5 +1,12 @@
 $(function() {
   var PARAM = GetQueryString();
+  PARAM["item_height"]=parseInt(PARAM["item_height"]);
+  PARAM["item_width"]=parseInt(PARAM["item_width"]);
+  PARAM["top"]=parseInt(PARAM["top"]);
+  PARAM["left"]=parseInt(PARAM["left"]);
+  PARAM["margin_top"]=parseInt(PARAM["margin_top"]);
+  PARAM["margin_left"]=parseInt(PARAM["margin_left"]);
+  
 
   if (PARAM["size"] == "A3") {
     var PAPER = {
@@ -19,7 +26,8 @@ $(function() {
   var inPage_num = fitWindow(PARAM, PAPER);
   var insert = mkInsert(nameArr, inPage_num, PARAM["extension"]);
   $("#NameTag").html(insert);
-
+  fitWindow(PARAM, PAPER);
+  // jQueryによる変更は，DOMが読み込まれた後でないと効かない
 });
 
 var timer = false;
@@ -43,7 +51,7 @@ function getCsvArr(filename) {
     type: 'POST',
     url: filename,
     async: false,
-    //非同期通信だと永遠にコールバックし続けなくてはならない．一度取得知れば十分なので同期通信にしてしまう．
+    //非同期通信だと永遠にコールバックし続けなくてはならない．一度取得すれば十分なので同期通信にしてしまう．
 
     success: function(data) {
       data = data.replace(/^(\n+)|(\n+)$/g, ""); //データ前後の余計な改行を削除
@@ -72,8 +80,8 @@ function mkInsert(csvArr, inPage_num, EXTENSION) {
       if (No != 0 && No != csvArr.length - 1 && (No + 1) % inPage_num == 0) {
         insert += `
 
-      <article class="padding"></article>
-      <article class="padding"></article>
+      <article class="padding1"></article>
+      <article class="padding2"></article>
       `;
       }
       if (No == csvArr.length - 1) {
@@ -94,27 +102,48 @@ function mkInsert(csvArr, inPage_num, EXTENSION) {
 
 
 function fitWindow(PARAM, PAPER) {
+  var win_width = $(window).width();
+  
+  var resize_param = win_width / PAPER["width"];
 
-  var resize_param = $(window).innerWidth() / PAPER["width"];
-
-  var paper_width = PAPER["width"] - PARAM["margin_left"] * 2;
-  var paper_height = PAPER["height"] - PARAM["margin_top"] * 2;
+  // var paper_width = PAPER["width"] - PARAM["margin_left"] * 2;
+  // var paper_height = PAPER["height"] - PARAM["margin_top"] * 2;
+  
+  var paper_width = PAPER["width"] - (PARAM["margin_left"]);
+  var paper_height = PAPER["height"] - PARAM["margin_top"]*2;
 
   var width_num = Math.floor(paper_width / PARAM["item_width"]);
   var height_num = Math.floor(paper_height / PARAM["item_height"]);
-  // var padding_left = (paper_width % PARAM["item_width"]) / 2; //margi:0 auto; で十分
-  var padding_top = (paper_height % PARAM["item_height"]) / 2 + PARAM["margin_top"];
+  var padding_top = (paper_height - PARAM["item_height"] * height_num) / 2 + PARAM["margin_top"];
+  var padding_left = (paper_width - PARAM["item_width"] * width_num) / 2;
+  var item_width = PARAM["item_width"] - ((padding_left * 2) / width_num);
+  
 
-  $("body").css("padding-top", padding_top * resize_param);
-  // $("body").css("padding-left",(padding_left + margin_left) * resize_param); //margi:0 auto; で十分
-  $(".item").css("width", PARAM["item_width"] * resize_param);
-  $(".item").css("height", PARAM["item_height"] * resize_param);
-  $(".padding").height(padding_top * resize_param);
-  var fz = Math.floor(PARAM["item_width"] / 7) * resize_param + "px";
-  $(".name").css("font-size", fz);
-  $(".name").css("top", 50 + PARAM["top"]);
-  $(".name").css("left", 50 + PARAM["left"]);
-
+  var top =  50 + PARAM["top"];
+  var left =  50 + PARAM["left"];
+  
+  var re_padding_top = padding_top * resize_param;
+  var re_padding_left = padding_left * resize_param;
+  var re_item_width = item_width * resize_param;
+  var re_item_height = PARAM["item_height"] * resize_param;
+  var re_fz = Math.floor(PARAM["item_width"] / 6.2) * resize_param;
+  
+  
+  $("body").css("padding-top", re_padding_top);
+  
+  $("body").css("padding-left",re_padding_left);
+  $("body").css("padding-right",re_padding_left);
+ 
+  $(".item").width(re_item_width);
+  $(".item").height(re_item_height);
+  $(".padding1").height(re_padding_top);
+  $(".padding2").height(re_padding_top);
+  
+  
+  $(".name").css("font-size", re_fz);
+  $(".name").css("top",top + "%");
+  $(".name").css("left",left + "%");
+  
   return width_num * height_num;
 };
 
