@@ -179,29 +179,41 @@ body{
 	transform:skew(0deg,0deg);
 
 }
-#studio{
+.contents{
 	position: relative;
 	z-index:50;
 	width: 100%;
 	height: 100vh;
 	padding-top: 0.5%;
-	background-color: #f2d500;
-	border: 5px solid #d3b609;
 	border-right: none;
 	border-left: none;
 	opacity: 1.0;
 	transform:skew(0deg,0deg);
-
-
 }
-#studio .sec{
-	display:inline-block;
+#studio{
+	background-color: #f2d500;
+	border: 5px solid #d3b609;
+}
+#live{
+	background-color: #ddddaa;
+	border: 5px solid #d3b609;
+}
+#shop{
+	background-color: #f2d500;
+	border: 5px solid #d3b609;
+}
+
+.sec{
 	text-align: center;
 	width: 80%;
 	height: 100%;
 	margin: 100px;
-	background-color: #C85ADF;
+	background-color: #fff;
 }
+#studio .sec{
+
+}
+
 #studio .text{
 	width: 100%;
 	height: 100%;
