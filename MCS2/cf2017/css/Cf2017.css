@@ -15,7 +15,10 @@ html, body {
 li {
 	list-style: none;
 }
-
+ul{
+	padding:0;
+	margin:0;
+}
 .PC{}
 .SP{
 	display:none;
@@ -55,6 +58,7 @@ body{
 
 #shoes{
 	width: 30%;
+	/*margin:0 auto;*/
 }
 .line{
 	position:relative;
