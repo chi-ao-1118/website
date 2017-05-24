@@ -29,122 +29,110 @@ a:visited {
 a:hover {
 	text-decoration: none;
 }
-#top_firstView {
-	height: 100%;
-}
+
 /* CSS Document */
 
-.AllWrapper{
+body{
 	width:100%;
 	height:auto;
 	text-align: center;
-	background-image: url(./asphalt02-large.jpg);
 }
 .TopWrapper{
+	z-index:10;
 	position:fixed;
-	background-image: url(./asphalt02-large.jpg);
-	background-color: #3E3E3E;
-	height: 50vh;
+	background-image: url("../img/asphalt02-large.jpg");
+	height: 100vh;
 	width: 100%;
-	padding:15% 5%;
-	padding-top: 0;
-	transform:skew(0deg, 0deg); 
+	transform:skew(0deg, 0deg);
 	color:#fff;
-	padding-bottom: 25%;
 }
-.dammy{
-	height: 50vh;
-	padding:15% 5%;
-	padding-top: 0;
-	transform:skew(0deg, 0deg); 
-	color:#fff;
-	padding-bottom: 25%;
-}
+
 .TopContent{
-	display: inline-block;
-	width: 80%;
-	height: 20%;
-	transform:skew(0deg, 0deg); 
+	width: 100%;
+	height: 60%;
+	transform:skew(0deg, 0deg);
 }
+
 #shoes{
 	width: 30%;
 }
+.line{
+	position:relative;
+	height: 5rem;
+	width:100%;
+}
 #whiteline{
-	background-image: url(./whiteline.png);
-	color:black;
+	height:5rem;
+	width: 100%;
 }
-.jumpBtnWrapper{
-	transform:skew(0deg, 0deg); 
+.line h1{
+	width: 100%;
+	text-align: center;
+	display: block;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3em;
+	color:#000;
 }
-#studio{
+
+.top_btn{
+
+}
+.top_btn li{
 	display: inline-block;
 	width:15%;
 	height:5%;
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
-	margin-right: 2.5%;
-	padding-top: 0%;
-	padding-bottom: 0%;
-	color:#ffffff;
+	padding-top: 0.125%;
+	padding-bottom: 0.125%;
+	transform:skew(0deg, 0deg);
+	font-size: 1.2rem;
+}
+.top_btn li a{
+	display: block;
+	margin: 5%;
+	text-decoration: none;
+	color: #fff;
+}
+
+#b_studio{
 	background-color: #E4D647;
 	border: solid 5px #BBA40A;
-	transform:skew(0deg, 0deg); 
-	font-size: 1.2rem;
-	
 }
-#studio p{
-	margin: 5%;
-	text-decoration: none;
-}
-#jump01 a{
-	text-decoration: none;
-}
-#studio:hover{
+
+#b_studio:hover{
 	background-color: #8EE586;
 }
-#live{
-	display: inline-block;
-	width:15%;
-	height:5%;
-	margin-right: 2.5%;
-	padding-top: 0.125%;
-	padding-bottom: 0.125%;
+#b_live{
 	background-color: #6F82E1;
 	border: solid 5px #000001;
-	transform:skew(0deg, 0deg); 
-	font-size: 1.2rem;
-}
-#live p{
-	margin: 5%;
-	color: #ffffff;
 }
 
-#live:hover{
+#b_live:hover{
 	background-color: #8EE586 ;
-	color: #ffffff;
 }
-#shop{
-	display: inline-block;
-	width:15%;
-	height:5%;
-	padding-top: 0.125%;
-	padding-bottom: 0.125%;
+#b_shop{
 	background-color: #FF3131;
 	border: solid 5px #941B1B;
-	transform:skew(0deg, 0deg); 
-	font-size: 1.2rem;
-}
-#shop p{
-	margin: 5%;
 }
 
-#shop:hover{
+#b_shop:hover{
 	background-color: #8EE586;
 }
-#Click{
-	width: 20%;
-	margin-right: 60%;
+
+.dammy{
+	position: relative;
+	z-index: 0;
+	height: 50vh;
+	padding:15% 5%;
+	padding-top: 0;
+	transform:skew(0deg, 0deg);
+	color:#fff;
+	padding-bottom: 25%;
 }
+
+
 .general{
 	width: 100%;
 	height: 100vh;
@@ -189,9 +177,11 @@ a:hover {
 	font-size: 3.6rem;
 	font-weight: 700;
 	transform:skew(0deg,0deg);
-	
+
 }
-.studio{
+#studio{
+	position: relative;
+	z-index:50;
 	width: 100%;
 	height: 100vh;
 	padding-top: 0.5%;
@@ -201,10 +191,10 @@ a:hover {
 	border-left: none;
 	opacity: 1.0;
 	transform:skew(0deg,0deg);
-	
-	
+
+
 }
-.studio_article{
+#studio .sec{
 	display:inline-block;
 	text-align: center;
 	width: 80%;
@@ -212,7 +202,7 @@ a:hover {
 	margin: 100px;
 	background-color: #C85ADF;
 }
-.studio_text{
+#studio .text{
 	width: 100%;
 	height: 100%;
 	color: #FFFFFF;
