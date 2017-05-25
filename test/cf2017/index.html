@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  html, body {
+  	height: 100%;
+  	margin: 0;
+  	line-height: 1.7em;
+  	text-align: center;
+  	font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  }
+  li {
+  	list-style: none;
+  }
+  ul{
+  	padding:0;
+  	margin:0;
+  }
+  .PC{}
+  .SP{
+  	display:none;
+  }
+  a:link {
+  	text-decoration: none;
+  }
+  a:visited {
+  	text-decoration: none;
+  }
+  a:hover {
+  	text-decoration: none;
+  }
+
+  /* CSS Document */
+
+  .TopWrapper{
+  	z-index:10;
+  	position:fixed;
+  	background-image: url("./img/asphalt02-large.jpg");
+  	height: 100vh;
+  	width: 100%;
+  	transform:skew(0deg, 0deg);
+  	color:#fff;
+  }
+
+  .TopContent{
+  	width: 100%;
+  	height: 60%;
+  	transform:skew(0deg, 0deg);
+  }
+
+  #shoes{
+  	width: 30%;
+  	/*margin:0 auto;*/
+  }
+  .line{
+  	height: 5rem;
+  	width:100%;
+  }
+  #whiteline{
+  	height:5rem;
+  	width: 100%;
+  }
+  .line h1{
+  	width: 100%;
+  	text-align: center;
+  	display: block;
+  	position:absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	font-size: 3em;
+  	color:#000;
+  }
+
+  .top_btn{
+
+  }
+  .top_btn li{
+  	display: inline-block;
+  	width:15%;
+  	height:5%;
+  	padding-top: 0.125%;
+  	padding-bottom: 0.125%;
+  	transform:skew(0deg, 0deg);
+  	font-size: 1.2rem;
+  }
+  .top_btn li a{
+  	display: block;
+  	margin: 5%;
+  	text-decoration: none;
+  	color: #fff;
+  }
+
+  #b_studio{
+  	background-color: #E4D647;
+  	border: solid 5px #BBA40A;
+  }
+
+  #b_studio:hover{
+  	background-color: #8EE586;
+  }
+  #b_live{
+  	background-color: #6F82E1;
+  	border: solid 5px #000001;
+  }
+
+  #b_live:hover{
+  	background-color: #8EE586 ;
+  }
+  #b_shop{
+  	background-color: #FF3131;
+  	border: solid 5px #941B1B;
+  }
+
+  #b_shop:hover{
+  	background-color: #8EE586;
+  }
+  </style>
+</head>
+<body>
+	<header class="TopWrapper">
+		<article class="TopContent">
+			<img id="shoes" src="img/bg_shoes.png">
+			<article class="line">
+				<img id="whiteline" src="img/whiteline.png" alt="">
+				<h1>2017 高槻キャンパス祭</h1>
+			</article>
+			<img id="challenge_logo" src="img/challenge_moji.png">
+		</article>
+		<nav class="jumpBtnWrapper">
+			<ul class="top_btn">
+				<li id="b_studio"><a href="#studio">スタジオ</a></li>
+				<li id="b_live"><a href="#live">生放送</a></li>
+				<li id="b_shop"><a href="shop">模擬店</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
