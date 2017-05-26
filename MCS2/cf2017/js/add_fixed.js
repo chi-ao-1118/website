@@ -7,26 +7,46 @@ $(window).load(function() {
   var shop = $('#shop'),
     shop_offset = shop.offset();
   var top = $("#Top");
+  var w_height = $(window).height();
+
 
   $(window).scroll(function() {
-    if ($(window).scrollTop() > studio_offset.top) {
+
+    if ($(window).scrollTop() + w_height < studio_offset.top) {
+      add(top);
+      remove(studio);
+      remove(live);
+      remove(shop);
+    } else if ($(window).scrollTop() < studio_offset.top) {
+      stay(top);
+      remove(studio);
+      remove(live);
+      remove(shop);
+    } else if ($(window).scrollTop() + w_height < live_offset.top) {
       remove(top);
       add(studio);
-    } else {
-      remove(studio);
-      top.css("position","fixed");
-    }
-    if ($(window).scrollTop() > live_offset.top) {
+      remove(live);
+      remove(shop);
+    } else if ($(window).scrollTop() < live_offset.top) {
+      remove(top);
+      stay(studio);
+      remove(live);
+      remove(shop);
+    } else if ($(window).scrollTop() + w_height < shop_offset.top) {
+      remove(top);
       remove(studio);
       add(live);
+      remove(shop);
+    } else if ($(window).scrollTop() < shop_offset.top) {
+      remove(top);
+      remove(studio);
+      stay(live);
+      remove(shop);
     } else {
-      remove(live);
-    }
-    if ($(window).scrollTop() > shop_offset.top) {
+      remove(top);
+      remove(studio);
       remove(live);
       add(shop);
-    } else {
-      remove(shop);
     }
   });
 });
@@ -34,11 +54,15 @@ $(window).load(function() {
 function add(obj) {
   obj.css("position", "fixed");
   obj.css("overflow", "scroll");
-  obj.css("top", "0");
-  obj.css("left", "0");
+};
+
+function stay(obj) {
+  obj.css("position", "fixed");
+  obj.css("overflow", "hidden");
 };
 
 function remove(obj) {
   obj.css("position", "relative");
   obj.css("overflow", "hidden");
+
 };

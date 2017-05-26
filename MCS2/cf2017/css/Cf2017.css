@@ -10,7 +10,6 @@
 /////////////////////////////////////////////////////////////////// */
 
 html, body {
-    height: 700vh;
     margin: 0;
     line-height: 1.7em;
     text-align: center;
@@ -60,6 +59,8 @@ a:hover {
     width: 100%;
     transform: skew(0deg, 0deg);
     color: #fff;
+    top:0;
+    left:0;
 }
 
 .TopContent {
@@ -181,6 +182,8 @@ a:hover {
     text-align: center;
     border-top: 10px solid #fff;
     border-bottom: 10px solid #fff;
+    top:0;
+    left:0;
 }
 
 #studio {
