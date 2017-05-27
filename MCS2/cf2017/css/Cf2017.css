@@ -227,7 +227,6 @@ a:hover {
     border-bottom: 10px solid #fff;
     top:0;
     left:0;
-    padding:3rem 0;
 }
 
 #studio {
@@ -247,33 +246,32 @@ a:hover {
     z-index: 130;
     text-align: center;
 }
-
-
-#live .sec {
-    height: 100rem;
+.contents > .logo{
+  margin: 5rem auto 1.5rem auto;
 }
 
-#shop .sec {
-    height: 100rem;
+.logo h2{
+  padding: 0 0 2rem 0;
+  /*display: inline-block;
+  これ必要なの？*/
+  font-size: 3.2rem;
+  color: #fff;
+  width: 100%;
+  font-weight: 700;
+}
+.padding{
+  height:8rem;
+  width:100%;
 }
 
-.a_title {
-    display: inline-block;
-    text-align: center;
-    font-size: 3.0rem;
-    color: #ffffff;
-    width: 100%;
-    font-weight: 700;
-    margin-bottom: 3%;
-    margin-top: 3%;
-}
 
 .sec {
     text-align: center;
     width: 80%;
     background-color: #fff;
     border-radius: 15px;
-    margin: 5rem auto;
+    margin: 0 auto 2rem auto;
+    padding : 2rem 0 2rem 0;
 }
 
 #studio .sec {
@@ -284,15 +282,6 @@ a:hover {
 #studio .textbox {
     display: inline-block;
     width: 65%;
-}
-
-#studio .title {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-    font-size: 2.0rem;
-    margin-top: 8%;
-    margin-left: 2%;
 }
 
 #studio .logo1 {
@@ -351,10 +340,8 @@ a:hover {
 	display: inline-block;
 	vertical-align: top;
 	width: 15%;
-	height: 20%;
-	margin-top: 4%;
-	margin-left: 2%;
-	margin-right: 2%;
+	height: 18rem;
+	margin : 4% 1% 0 1%;
 	background-color: #FFAB00;
 	border: solid 3px #DD7902;
 	border-radius: 8px;
