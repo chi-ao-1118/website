@@ -28,6 +28,8 @@ ul {
 h1, h2, h3, h4 {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
+  margin:0;
+  padding:0;
 }
 
 a {
