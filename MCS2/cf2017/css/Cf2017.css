@@ -473,7 +473,7 @@ a:hover {
     text-align: left;
   }
   #studio .textbox {
-    width: 100%;
+    width: calc(100% - 2rem);
   }
 
   #studio .sec img{
