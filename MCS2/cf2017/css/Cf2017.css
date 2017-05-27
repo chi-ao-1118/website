@@ -478,16 +478,16 @@ a:hover {
 
   #studio .sec img{
     vertical-align: middle;
+    width:20%;
+    margin:0 4%;
   }
   #studio .sec h3{
     display:inline-block;
     vertical-align: middle;
+    width:70%;
   }
   .textbox {
     text-align: left;
     padding-left: 2rem;
-  }
-  #studio .sec img{
-    margin:0 1rem;
   }
 }
