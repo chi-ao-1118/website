@@ -136,6 +136,7 @@ a:hover {
 .challenge_logo {
   height: 25%;
   width: auto;
+  margin-top: 2.5%;
 }
 
 .challenge_arrow {
@@ -165,7 +166,7 @@ a:hover {
 .top_btn li {
   display: inline-block;
   width: 25%;
-  height: 100%;
+  height: 70%;
   padding: 0.125% 0;
   transform: skew(0deg, 0deg);
   font-size: 1.4rem;
@@ -293,19 +294,19 @@ a:hover {
   display: inline-block;
   vertical-align: top;
   width: 22%;
-  margin: 2% 4%;
+  margin: 8% 4% 4% 4%;
 }
 
 #studio .logo2 {
   display: inline-block;
   vertical-align: top;
   width: 20%;
-  margin: 2% 4%;
+  margin: 8% 4% 4% 4%;
 }
 
 #studio .logo3 {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 22%;
   margin: 2% 4%;
 }
@@ -394,38 +395,50 @@ a:hover {
 }
 
 .shopbox {
-  width: 40%;
+  width: 80%;
   display: inline-block;
   background-color: #FFFFFF;
   border-radius: 8px;
   vertical-align: top;
-  margin-top: 5%;
 }
 
 .shoptext {
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 1.5%;
   font-size: 1.5rem;
   border: 3px solid #AF096C;
   border-radius: 8px;
   background-color: #EC5F9E;
   color: #FFFFFF;
-  text-align: left;
+  text-align: center;
   font-weight: 600;
 }
 
-.shopphoto {
-  display: inline-block;
-  width: 10vw;
-  height: 10vw;
+.shopphoto{
+  width: 10vh;
+  height: 10vh;
   margin: 3%;
-  background-color: #000;
+  border: 3px solid #000000;
+  border-radius: 8px;
+}
+.shopphoto_w{
+  width: 60%;
+  margin: 3%;
+  border: 3px solid #000000;
+  border-radius: 8px;
 }
 
+#movie {
+  display: inline-block;
+  width: 65vw;
+  height: calc(65vw * 0.5625);
+  margin: 2% 0;
+}
 #map {
   width: 80%;
   margin: 5%;
 }
+
 
 
 /*PC用*/
@@ -449,9 +462,19 @@ a:hover {
   .line {
     height: 25%;
   }
-  #challenge_logo {
-    max-height: 45%;
-    max-width:100%;
+  .line h1{
+    font-size: 1.8rem;
+  }
+  .logo h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .challenge_logo {
+    height: 15vw;
+    width:60%;
+  }
+  #challenge_arrow{
+    height: 25%;
   }
   .top_btn {
     height: 60%;
@@ -466,28 +489,82 @@ a:hover {
   }
   .top_btn li {
     width: 80%;
-    height: 24%;
+    height: 18%;
   }
   #studio .sec {
     width: 90%;
-    text-align: left;
+    text-align: center;
+    padding: 2% 0;
   }
   #studio .textbox {
-    width: calc(100% - 2rem);
+    width: calc(100% - 4rem);
+    text-align: center;
   }
 
   #studio .sec img{
     vertical-align: middle;
-    width:20%;
-    margin:0 4%;
+    text-align: center;
+    width: 80%;
+    margin: 0 2%;
+  }
+  #studio .sec img {
+    vertical-align: middle;
+    text-align: center;
+    width: 80%;
+    margin: 4% 0;
   }
   #studio .sec h3{
     display:inline-block;
     vertical-align: middle;
-    width:70%;
+    text-align: center;
+    width:100%;
   }
   .textbox {
     text-align: left;
-    padding-left: 2rem;
+    width: 70%;
+  }
+  .textbox p{
+    font-size: 0.9rem;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 50%;
+  }
+  .boxlogo{
+    width: 80%;
+  }
+  #live .live_logo{
+    width: 60%;
+  }
+  #live .live_title{
+    font-size: 0.8rem;
+  }
+  #live .livebox{
+    width: 60%;
+  }
+  #shop .shop_logo{
+    width: 70%;
+  }
+  #shop .shoptext{
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  #shop #map{
+    width: 70%;
+  }
+  .shopphoto{
+    width: 20vh;
+    height: 20vh;
+    border: 3px solid #000;
+    border-radius: 8px;
+    margin: 2%;
+  }
+  .shopphoto_w{
+    width: 60%;
+    border: 3px solid #000;
+    border-radius: 8px;
+  }
+  .shopbox p{
+    font-size: 0.8rem;
   }
 }
