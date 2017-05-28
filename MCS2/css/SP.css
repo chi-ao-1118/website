@@ -230,8 +230,8 @@ ul.menu_sec li {
     line-height: 3em;
     text-align: center;
     /*head+foot=10vh+18vh=28vh*/
-    /*(100vh-28vh)/8=72/8*/
-    height: 9vh;
+    /*(100vh-28vh)/9=72/9*/
+    height: 8vh;
 }
 
 ul.menu_sec a {
