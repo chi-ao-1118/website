@@ -1,12 +1,5 @@
 $(function() {
   var PARAM = GetQueryString();
-  PARAM["item_height"]=parseInt(PARAM["item_height"]);
-  PARAM["item_width"]=parseInt(PARAM["item_width"]);
-  PARAM["top"]=parseInt(PARAM["top"]);
-  PARAM["left"]=parseInt(PARAM["left"]);
-  PARAM["margin_top"]=parseInt(PARAM["margin_top"]);
-  PARAM["margin_left"]=parseInt(PARAM["margin_left"]);
-  
 
   if (PARAM["size"] == "A3") {
     var PAPER = {
@@ -19,16 +12,31 @@ $(function() {
       "height": 210
     };
   }
+  
+  var forIntParamName = ["item_height","item_width","top","left","margin_top","margin_left"];
 
+  // PARAM = PtoI(PARAM, forIntParamName);
+  //     for(var i=0;i<forIntParamName.length;i++){
+  // console.log(PARAM[forIntParamName[i]]);
+  // }
+  
+  $("body").css("width",PAPER["width"]+"mm");
+  
+  var ITEM_NUM = countItemNum(PAPER,PARAM);
+  
   // var nameArr;
   var nameArr = getCsvArr("NameTag.csv");
 
-  var inPage_num = fitWindow(PARAM, PAPER);
-  var insert = mkInsert(nameArr, inPage_num, PARAM["extension"]);
+  var insert = mkInsert(nameArr, ITEM_NUM);
+
   $("#NameTag").html(insert);
-  fitWindow(PARAM, PAPER);
+  
+  WindowFit(PARAM, PAPER);
   // jQueryによる変更は，DOMが読み込まれた後でないと効かない
 });
+
+
+
 
 var timer = false;
 $(window).resize(function() {
@@ -37,10 +45,28 @@ $(window).resize(function() {
   }
   timer = setTimeout(function() {
     console.log('resized');
-    fitWindow();
+    WindowFit();
   }, 200);
 });
 
+function PtoI(PARAM,Arr){
+   for(var i=0;i<Arr.length;i++){
+  PARAM[Arr[i]] = parseInt(PARAM[Arr[i]]);
+  // この代入処理がうまくいかない．型が違うから当たり前といえば当たり前？
+  // どう実装するのがスマートだろうか
+  }
+}
+
+function countItemNum(PAPER,PARAM){
+  var height_num = Math.floor((PAPER["height"] - PARAM["margin_top"]*2) / PARAM["item_height"]);
+  var width_num = Math.floor((PAPER["width"] - PARAM["margin_left"]*2 )/ PARAM["item_width"]);
+  var ITEM_NUM = {
+      "width": width_num,
+      "height": height_num,
+      "all" : width_num * height_num
+    };
+  return ITEM_NUM;
+}
 
 
 function getCsvArr(filename) {
@@ -64,7 +90,7 @@ function getCsvArr(filename) {
   return csvArr;
 };
 
-function mkInsert(csvArr, inPage_num, EXTENSION) {
+function mkInsert(csvArr, ITEM_NUM) {
   var insert = '';
   var No = 0;
   while (No < csvArr.length) {
@@ -77,7 +103,7 @@ function mkInsert(csvArr, inPage_num, EXTENSION) {
         <div class="name">${NAME}</div>
       </article>`;
 
-      if (No != 0 && No != csvArr.length - 1 && (No + 1) % inPage_num == 0) {
+      if (No != 0 && No < csvArr.length && (No + 1) % ITEM_NUM["width"] == 0) {
         insert += `
 
       <article class="padding1"></article>
@@ -93,58 +119,38 @@ function mkInsert(csvArr, inPage_num, EXTENSION) {
     }
   }
 
-  for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < (csvArr.length % ITEM_NUM["all"]); i++) {
     insert += '<article class="nonebox item"></article>';
   }
-
   return insert;
 };
 
 
-function fitWindow(PARAM, PAPER) {
-  var win_width = $(window).width();
+function WindowFit(PARAM, PAPER, ITEM_NUM) {
   
-  var resize_param = win_width / PAPER["width"];
+  var padding_top = (PAPER["height"] - PARAM["item_height"] * ITEM_NUM("height")) / 2;
+  var padding_left = (PAPER["width"] - PARAM["item_width"] * ITEM_NUM("width")) / 2;
+  
+  var Name_top =  50 + PARAM["top"];
+  var Name_left =  50 + PARAM["left"];
 
-  // var paper_width = PAPER["width"] - PARAM["margin_left"] * 2;
-  // var paper_height = PAPER["height"] - PARAM["margin_top"] * 2;
-  
-  var paper_width = PAPER["width"] - (PARAM["margin_left"]);
-  var paper_height = PAPER["height"] - PARAM["margin_top"]*2;
-
-  var width_num = Math.floor(paper_width / PARAM["item_width"]);
-  var height_num = Math.floor(paper_height / PARAM["item_height"]);
-  var padding_top = (paper_height - PARAM["item_height"] * height_num) / 2 + PARAM["margin_top"];
-  var padding_left = (paper_width - PARAM["item_width"] * width_num) / 2;
-  var item_width = PARAM["item_width"] - ((padding_left * 2) / width_num);
-  
-
-  var top =  50 + PARAM["top"];
-  var left =  50 + PARAM["left"];
-  
-  var re_padding_top = padding_top * resize_param;
-  var re_padding_left = padding_left * resize_param;
-  var re_item_width = item_width * resize_param;
-  var re_item_height = PARAM["item_height"] * resize_param;
-  var re_fz = Math.floor(PARAM["item_width"] / 6.2) * resize_param;
+  var re_fz = Math.floor(PARAM["item_width"] / 6.2);
   
   
-  $("body").css("padding-top", re_padding_top);
+  $("body").css("padding-top", padding_top);
   
-  $("body").css("padding-left",re_padding_left);
-  $("body").css("padding-right",re_padding_left);
+  $("body").css("padding-left",padding_left);
+  $("body").css("padding-right",padding_left);
  
-  $(".item").width(re_item_width);
-  $(".item").height(re_item_height);
-  $(".padding1").height(re_padding_top);
-  $(".padding2").height(re_padding_top);
+  $(".item").width(PARAM["item_width"]+"mm");
+  $(".item").height(PARAM["item_height"]+"mm");
+  $(".padding1").height(PARAM["padding_top"]+"mm");
+  $(".padding2").height(PARAM["padding_top"]+"mm");  
   
+  $(".name").css("font-size", re_fz + "mm");
+  $(".name").css("top",Name_top + "%");
+  $(".name").css("left",Name_left + "%");
   
-  $(".name").css("font-size", re_fz);
-  $(".name").css("top",top + "%");
-  $(".name").css("left",left + "%");
-  
-  return width_num * height_num;
 };
 
 function GetQueryString() {
