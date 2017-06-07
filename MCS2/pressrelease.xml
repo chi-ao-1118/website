@@ -3,6 +3,13 @@
 <pressrelease>
   <!-- 追加時はitemを上に増やしていく -->
     <item>
+        <link>pressrelease/index11.html</link>
+        <img>img/pressIndex11.png</img>
+        <time>2017.5.28</time>
+        <title>高槻キャンパス祭 終了</title>
+        <article>高槻キャンパス祭が5月28日に無事終了しました。</article>
+    </item>
+    <item>
         <link>pressrelease/index10.html</link>
         <img>img/pressIndex10.png</img>
         <time>2016.12.5</time>
