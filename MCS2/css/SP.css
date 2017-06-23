@@ -869,6 +869,14 @@ p.about {
     margin: 2em auto;
     background-color: #000;
 }
+.freshWrap{
+    text-align: center;
+    margin: 5%;
+}
+.fresh {
+  width: 70vw;
+  height: calc(70vw * 0.5625);
+}
 
 
 /*
