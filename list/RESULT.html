@@ -2,53 +2,67 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RESULT - List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RESULT - List</title>
 
 
 
-    <style>
-        body {
-            width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-        }
+  <style>
+    body {
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
 
-        .databox {
-            display: inline-block;
-            ;
-            width: 160px;
-            margin: 0.5em 0.5em;
-        }
+    .databox {
+      display: inline-block;
+      ;
+      width: 160px;
+      margin: 0.5em 0.5em;
+    }
 
-        .databox img {
-            width: 100%;
-            height: auto;
-        }
+    .databox img {
+      width: 100%;
+      height: auto;
+    }
 
-        .id,.furigana,.name {
-            font-size: 1em;
-        }
+    .id,
+    .furigana,
+    .name {
+      font-size: 1em;
+    }
 
-        .nonebox {
-            height: 1px;
-        }
-        .Department h1::before{
-            content: attr(data-year);
-        }
-    </style>
+    .nonebox {
+      height: 1px;
+    }
+
+    .Department h1::before {
+      content: attr(data-year);
+    }
+
+    .padding {
+      height: 1px;
+      width: 100%;
+    }
+    #p01{
+      height:9rem;
+    }
+    #p02{
+      height:3rem;
+    }
+  </style>
 
 </head>
 
 <body>
 
-    <article class="Department">
-        <h1 data-year="">年度　制作局 1回生</h1>
-        <article id="seisaku1"></article>
-    </article>
-    <article class="Department">
+  <article class="Department">
+    <h1>年度入団　制作局 1回生</h1>
+    <article id="seisaku1"></article>
+  </article>
+  <!-- <article class="Department">
         <h1>年度　制作局 2回生</h1>
         <article id="seisaku2"></article>
     </article>
@@ -59,14 +73,14 @@
     <article class="Department">
         <h1>年度　制作局 4回生</h1>
         <article id="seisaku4"></article>
-    </article>
+    </article> -->
+  <div class="padding" id="p01"></div>
 
-
-    <article class="Department">
-        <h1>年度　技術局 1回生</h1>
-        <article id="gijutsu1"></article>
-    </article>
-    <article class="Department">
+  <article class="Department">
+    <h1>年度入団　技術局 1回生</h1>
+    <article id="gijutsu1"></article>
+  </article>
+  <!-- <article class="Department">
         <h1>年度　技術局 2回生</h1>
         <article id="gijutsu2"></article>
     </article>
@@ -77,28 +91,28 @@
     <article class="Department">
         <h1>年度　技術局 4回生</h1>
         <article id="gijutsu4"></article>
-    </article>
+    </article> -->
 
-
-    <article class="Department">
-        <h1>年度　広報局 1回生</h1>
-        <div id="koho1"></div>
-    </article>
-    <article class="Department">
-        <h1>年度　広報局 2回生</h1>
-        <div id="koho2"></div>
-    </article>
-    <article class="Department">
+  <div class="padding" id="P02"></div>
+  <article class="Department">
+    <h1>年度入団　広報局 1回生</h1>
+    <div id="koho1"></div>
+  </article>
+  <article class="Department">
+    <h1>年度入団　広報局 2回生</h1>
+    <div id="koho2"></div>
+  </article>
+  <!-- <article class="Department">
         <h1>年度　広報局 3回生</h1>
         <div id="koho3"></div>
     </article>
     <article class="Department">
         <h1>年度　広報局 4回生</h1>
         <div id="koho4"></div>
-    </article>
+    </article> -->
 
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="mklist.js"></script>
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="mklist.js"></script>
 </body>
 
 </html>
