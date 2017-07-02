@@ -49,8 +49,8 @@ $(function() {
     // $("#koho4").html(insert);
     // No = mkInsert('広報局', No, 3);
     // $("#koho3").html(insert);
-    No = mkInsert('広報局', No, 2);
-    $("#koho2").html(insert);
+    // No = mkInsert('広報局', No, 2);
+    // $("#koho2").html(insert);
     No = mkInsert('広報局', No, 1);
     $("#koho1").html(insert);
     console.log(No);
