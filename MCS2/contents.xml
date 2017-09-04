@@ -2,6 +2,23 @@
 <contents>
     <originalContents>
         <!-- 新規追加時はitemを上に増やしていく -->
+        <!--<item>
+            <link>https://youtu.be/jF9Oqp4nTS8</link>
+            <img>onigokko.png</img>
+            <title>キャンパス鬼ごっこ</title>
+            <article>大学生の本気おにごっこ</article>
+        </item>-->
+        <item>
+            <link>https://youtu.be/YyYlINhpUQc</link>
+            <img>Sojo_maruwakari.jpg</img>
+            <title>総情まるわかり旅</title>
+            <article>不安はこれ見て解決！</article>
+        </item>
+            <link>https://youtu.be/YyYlINhpUQc</link>
+            <img>Sojo_maruwakari.jpg</img>
+            <title>総情まるわかり旅</title>
+            <article>不安はこれ見て解決！</article>
+        </item>
         <item>
             <link>https://youtu.be/iHDuDkS87Y8</link>
             <img>VIVAhiria.jpg</img>
