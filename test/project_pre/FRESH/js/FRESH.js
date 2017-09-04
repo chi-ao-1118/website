@@ -69,7 +69,7 @@ $(function(){
     startTimer();
 });
 
-//iFrame2IMG (TEST)
+//iFrame2IMG
 
 $(function (){
     var movie = [];
@@ -90,16 +90,15 @@ $(function (){
         title_s[index] = movie_title.substring(0, movie_title.lastIndexOf("|")-1)
 
         movie_link[index] = 'https://freshlive.tv/mcs/' + movie_id[index];
-        //Page作成段階では、生放送→fersh+movie_id、再アップした放送→lfresh+movie_id。
         image[index] = 'https://hayabusa.io/movie.amebafresh.tv/thumbnail/fresh' + movie_id[index] + '/archive.jpg';
         limage[index] = 'https://hayabusa.io/movie.amebafresh.tv/thumbnail/lfresh' + movie_id[index] + '/archive.jpg';
         
         $(this).parent().after('<img src="'+image[index]+'"><img src="'+limage[index]+'"><p><a href="'+movie_link[index]+'">'+title_s[index]+'</a></p>').remove();
     });
 
-    $('.video img').each(function(index, element) {
+    $('.video').each(function(index, element) {
         $(this).click(function (){
-            $(this).parent('.video').empty().prepend('<div style="padding-bottom:56.25%"></div><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" title="'+title[index]+'" src="'+movie[index]+'" scrolling="no" frameborder="0" allowfullscreen></iframe>');
+            $(this).empty().prepend('<div style="padding-bottom:56.25%"></div><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" title="'+title[index]+'" src="'+movie[index]+'" scrolling="no" frameborder="0" allowfullscreen></iframe>');
         });
     });
 });
