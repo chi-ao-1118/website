@@ -1,0 +1,273 @@
+/*共通*/
+
+html{overflow-y:scroll;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+#center{
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #ffffff;
+}
+
+img{
+    vertical-align: bottom;
+    padding:0px;
+}
+
+a{
+    outline: none;
+}
+
+a:link{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active{
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/*ヘッダー*/
+
+.header{
+    background-color: #ffffff;
+    height: 60px;
+}
+
+.MCS_logo img{
+    height: 50px;
+    padding: 0px 30px;
+
+    
+}
+
+li{
+    list-style: none;
+    float:left;
+}
+
+.header_text{
+    font-size: 20pt; 
+    padding: 10px 30px;
+    font-family:"impact","Arial Black","DIN Condensed","Arial";
+}
+
+.header_text img{
+    height: 40px;
+    padding: 0px;
+}
+
+/*HOME-メイン*/
+
+
+
+.KAISERS_TV_logo{
+    font-size: 200px;
+    margin:0px;
+    padding:0px;
+    font-family: "impact","Arial Black","DIN Condensed","Arial";
+}
+
+.main p{
+    text-align: center;
+}
+
+.text{
+    font-size: 20pt;
+    font-family: "MS PGothic","ヒラギノ角ゴシック","Hiragino Sans","impact","Arial Black","DIN Condensed","Arial";
+    padding: 0px 0px 50px;
+}
+
+.link_box{
+    width: 200px;
+    height: 50px;
+    border: solid 3px; 
+    border-color: #000000;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.link_box a{
+    line-height: 50px;
+    font-family: "impact","Arial Black","DIN Condensed","Arial";
+    font-size: 20pt;
+    color: #000000;
+    padding: 10px 10px;
+    margin: 0px auto;
+}
+
+.PV{
+    font-size: 30px;
+    text-align: center;
+    font-family: "MS PGothic","ヒラギノ角ゴシック","Hiragino Sans","impact","Arial Black","DIN Condensed","Arial";
+    margin:0px;
+    padding: 100px 0px 50px;
+}
+
+
+/*フッター*/
+
+.footer{
+    text-align: center;
+    height:100px;
+    padding-top: 100px;
+}
+
+.footer p{
+    font-size: 30px;
+    margin:0px;
+    font-family: "impact","Arial Black","DIN Condensed","Arial";
+}
+
+
+
+/*ABOUT-メイン*/
+
+
+.page_title{
+    position: relative;
+}
+
+.page_title p{
+    position: absolute;
+    color: #ffffff;
+    font-size: 70pt;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    font-family: "impact","Arial Black","DIN Condensed","Arial";
+}
+
+.about_title{
+    font-size: 70px;
+    margin:0px;
+    padding:25px 0px;
+    font-family: "impact","Arial Black","DIN Condensed","Arial";
+}
+
+.about_pic{
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.about_box {
+    width: 900px;
+    padding: 0.5em 1em;
+    margin: 2em auto;
+    color: #000000;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    line-height: 45px;
+}
+
+.about_box p {
+    font-size: 16pt;
+    text-align: left;
+    margin: 0; 
+    padding: 0;
+    font-family: "MS PGothic","ヒラギノ角ゴシック","Hiragino Sans","impact","Arial Black","DIN Condensed","Arial";
+}
+
+.KAISERS_character {
+    padding:100px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.KAISERS_character ul {
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+.KAISERS_character ul li {
+    position: relative;
+    left: -50%;
+    float: left;
+}
+
+.kai_chan{
+    padding-right: 80px;
+}
+
+.about_box2 {
+    width: 550px;
+    padding: 0.5em 1em;
+    margin: 2em auto;
+    color: #000000;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    line-height: 45px;
+}
+
+.about_box2 p {
+    font-size: 16pt;
+    text-align: left;
+    margin: 0; 
+    padding: 0;
+    font-family: "MS PGothic","ヒラギノ角ゴシック","Hiragino Sans","impact","Arial Black","DIN Condensed","Arial";
+}
+
+
+/*WORKS-メイン*/
+
+.works_text{
+    font-size: 40px;
+    margin:0px;
+    padding:50px 0px 0px;
+    font-family: "MS PGothic","ヒラギノ角ゴシック","Hiragino Sans","impact","Arial Black","DIN Condensed","Arial";
+}
+
+.works_YouTube{
+    padding:50px 0px;
+    text-align: center;
+    color: #000000;
+    font-size: 13pt;
+    font-weight: bold;
+    margin:0;
+    padding:0;
+    font-family: "MS PGothic","ヒラギノ角ゴシック","Hiragino Sans","impact","Arial Black","DIN Condensed","Arial";
+}
+
+.works_video{
+    padding: 50px 0px;
+}
+
+.link_box_works{
+    width: 200px;
+    height: 50px;
+    border: solid 3px; 
+    border-color: #000000;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.link_box_works a{
+    line-height: 50px;
+    font-family: "impact","Arial Black","DIN Condensed","Arial";
+    font-size: 20pt;
+    color: #000000;
+    padding: 10px 10px;
+    margin: 0px auto;
+}

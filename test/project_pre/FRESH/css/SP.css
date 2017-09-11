@@ -1,0 +1,142 @@
+/* GENERAL */
+
+body {
+    background-color: #000000;
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans', 'Noto Sans CJK JP', 'Meiryo', 'メイリオ', arial, sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgba(0,0,0,0.8);
+    padding: 1em 0;
+    height: 2em;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.nav a {
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1em;
+    height: 2em;
+    max-width: 52em;
+}
+
+.nav .left {
+    margin-right: auto;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav .right {
+    display: none;
+}
+
+/* SLIDESHOW */
+
+.slide {
+    padding: 4em 0 0 0;
+    width: 100%;
+}
+
+.slide:before {
+    display: block;
+    content:"";
+    padding-top: 56.25%;
+}
+
+.slide img {
+    position: absolute;
+    padding: 4em 0 0 0;
+    top: 0;
+    width: 100%;
+    max-width: 54em;
+    height: auto;
+}
+
+/* ARTICLE */
+
+article a:visited {
+    color: #9575CD    
+}
+
+article a:link {
+    color: #64B5F6;
+}
+
+article a:active {
+    color: #EF5350;
+    text-decoration: underline;
+}
+
+section {
+    margin: 1.5em 0;
+    padding: 1em;
+    background-color: #424242;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 0.1em 0.5em;
+    border-bottom: solid 0.1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.video {
+    position: relative;
+    margin: 1em;
+}
+
+.video img {
+    width: 100%;
+    height: auto;
+    filter: brightness(80%);    
+}
+
+.video p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0.5em;
+}
+
+.video p a {
+    font-weight: normal;
+    color: #ffffff;
+}
+
+section p {
+    margin: 1em auto 0 auto;
+    padding: 0 1.5em;
+}
+
+/* FOOTER */
+
+/* 公式サイトのCSSを使用しています! */
+
+footer img {
+    display: inline;
+}

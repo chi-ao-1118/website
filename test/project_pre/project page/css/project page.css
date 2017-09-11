@@ -1,0 +1,390 @@
+@charset "utf-8";
+/* CSS Document */
+p{
+	text-align: center;
+	font-size: 1.2em
+}
+
+
+#cover_box {
+		width: 100%;
+		min-width: 1020px;
+		height: 300px;
+		background: url(head.jpg)no-repeat;
+		background-position: center center;
+		background-size: 100%;
+		}
+#cover {
+		width: 1020px;
+		height: 300px;
+		margin: 0 auto;
+		position: relative;
+}
+	
+#cover h1 {
+		position: center;
+		left: 150px;
+		top: 150px;
+}
+
+a img {
+		border: none;
+}
+
+img.more {
+	  	width: 100%
+}
+
+img.top{
+		position: left;
+		width: 100%
+		
+}
+
+html, body {
+	height:100%;
+	height: 100vh;
+	margin: 0;
+	line-height: 1.7em;
+	font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+li {
+	list-style: none;
+}
+.SP {
+	display: none;
+}
+.PC {
+}
+/*アンカーへリンクした際、そのアンカーの付いたa要素の中身がimg要素だった場合、imgの外側に水色の枠線が発生してしまう問題の解決*/
+a:focus {
+	outline: none;
+}
+
+/*
+	　 闇の技術
+				　	*/
+.page_top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 70px;
+	height: auto;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	z-index: 5;
+	display: none;
+}
+.page_top:hover {
+	background-color: rgba(96,96,96,0.53);
+}
+.page_top:active {
+	bottom: 15px;
+}
+/*
+	　ハンバーガー
+					*/
+.hamMenu {
+	display: none;
+}
+.menu_overlay {
+	display: none;
+}
+.menu {
+	display: none;
+}
+
+
+/*
+		Top画像
+					*/
+					
+					
+.lineBox {
+	text-align: center;
+	margin: 0 auto;
+}
+.lineBox div {
+	color: #000;
+	text-align: center;
+	display: inline-block;
+}
+.lineBox .topTitleWrap {
+	border: solid 0.25em #000000;
+	background-color: rgba(255,255,255,0.5);
+}
+.lineBox .subTitle {
+	border: solid 0.25em #000000;
+	background-color: rgba(255,255,255,0.5);
+}
+.subTitle {
+	margin: 2em auto;
+	padding: 0.5em 1.5em;
+	font-weight: 800;
+}
+.topTitleWrap {
+	padding: 1.5em 1.5em;
+	display: inline-block;
+}
+.topTitle {
+	width: 6em;
+	font-size: 1.5em;
+	font-weight: 600;
+	border-bottom: solid 0.2em #000000;
+}
+.date {
+	font-size: 0.8em;
+	color: #000;
+	text-align: left;
+}
+
+/*
+		 TOP画
+					*/
+.topImg {
+	width: 100%;
+	/*height : -webkit-calc(20% - 80px);
+	height : calc(20% - 80px);*/
+	height:0%;
+	height:20vh;
+	padding: 20vh 0;
+	background-size: cover;
+	text-align: center;
+}
+
+#topImg_events {
+	background-image: url(img/works_top.jpg);
+}
+#topImg_KAISERS{
+	background-image: url(img/KAISERS_top.jpg);
+}
+#topImg_KAWAZOE{
+	background-image: url(img/KAWAZOE_top.jpg);
+}
+#topImg_HANICOTTO{
+	background-image: url(img/HANICOTTO_top.jpg);
+}
+#topImg_FREEPAPER{
+	background-image: url(img/FREEPAPER_top.jpg);
+}
+
+
+/*
+		Project
+					*/
+
+.project_btnWrap{
+	text-align:center;
+}
+.project_btn{
+	height:30%;
+	height:25vh;
+	width:18%;
+	margin:1% 2%;
+	display:inline-block;
+}
+.project_btn img{
+height:100%;
+}
+
+
+
+/*
+		bkBtn
+					*/
+.works_bkBtnWrap {
+	width: 8em;
+	margin-left:15%;
+	
+	margin-bottom:10vh;
+	}
+.works_bkBtnA {
+	color: #000;
+	text-decoration: none;
+}
+.works_bkBtn {
+	color: #000;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	position: relative;
+}
+.works_bkBtn:hover {
+	left : -2px;
+}
+.works_bkBtn:active {
+	left : -6px;
+}
+.works_bkBtnImg {
+	display: inline-block;
+	width: auto;
+	height: 2em;
+	vertical-align: middle;
+}
+.works_bkTxt {
+	display: inline-block;
+	text-align: right;
+	padding: 0 0 0 2em;
+	line-height: 0.1em;
+	vertical-align: middle;
+}
+#events_bk {
+	background-color: #FF9B91;
+	box-shadow: -6px 0 #ab3c3c;
+}
+#events_bk:hover {
+	box-shadow: -4px 0 #ab3c3c;
+}
+#events_bk:active {
+	box-shadow: 0px 0 #ab3c3c;
+}
+
+
+/*	
+		フッター
+					*/
+.foot {
+	background-color: #000000;
+	color: #ffffff;
+	height: auto;
+	padding: 0.1em 0;
+	text-align: center;
+	position: relative;
+	z-index: 0;
+}
+.foot_smartBox {
+	display: none;
+}
+a.footer {
+	color: #ffffff;
+	text-decoration: none;
+}
+.footer_linkSubsec:hover {
+	text-decoration: underline;
+}
+.footer_map {
+	text-align: center;
+}
+.footer_mapBox {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;
+	width: 8em;
+	padding: 0.5em;
+	text-align: center;
+}
+.footer_linkMain {
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 0.6em;
+	width: 6em;
+	border-bottom: 0.15em solid white;
+}
+.footer_linkSubsec {
+	text-align: left;
+	padding: 0.1em;
+}
+#footer_linkTop .footer_linkSubsec {
+	padding-left: 2em;
+}
+#footer_linkAbout .footer_linkSubsec {
+	padding-left: 0.5em;
+	width: 7em;
+}
+#footer_linkWorks .footer_linkSubsec {
+	padding-left: 1.1em;
+}
+/**
+		 フォーム
+						**/
+.mailForm {
+	text-decoration: underline;
+	color: #fff;
+}
+.mailForm:hover {
+	font-weight: 800;
+}
+.footer_form {
+	text-align: center;
+}
+.form_message {
+	vertical-align: top;
+}
+.form_name {
+}
+form.footer {
+	/* フォームをページの中央に置く */
+	margin: 0 auto;
+	width: 30em;
+	/* フォームの範囲がわかるようにする */
+	padding: 1em;
+}
+#form_contact {
+	font-size: 1.4em;
+	width: 6em;
+	margin: 0em auto;
+	border-bottom: 0.15em solid white;
+}
+form.footer div + div {
+	margin-top: 0.05em;
+}
+input.footer, textarea.footer {
+	/* すべてのテキストフィールドのフォント設定を一致させる
+       デフォルトで、textarea は等幅フォントが設定されている */
+	font: 1em sans-serif;
+	/* すべてのテキストフィールドを同じサイズにする */
+	width: 30em;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/* テキストフィールドのボーダーの外見を同一にする */
+	border: 1px solid #999;
+	background-color: #C0C0C0;
+	color: black;
+}
+.form_send {
+	text-align: right;
+	width: 30em;
+	margin: 0 auto;
+}
+#footer_submitBtn {
+	padding: 0;
+	font-size: 1em;
+	background-color: #000;
+	color: #fff;
+	border-style: none;
+	cursor: pointer;
+}
+
+
+/**	
+		placeholderの装飾
+								**/
+/* Google Chrome, Safari, Opera 15+, Android, iOS*/
+::-webkit-input-placeholder {
+ color: black;
+ padding-left: 0.5em;
+}
+
+/*Firefox 18-*/
+:-moz-placeholder {
+ color: black;
+opacity: 1;
+ padding-left: 0.5em;
+}
+
+/* Firefox 19+*/
+::-moz-placeholder {
+ color: black;
+opacity: 1;
+ padding-left: 0.5em;
+}
+
+/* IE 10+*/
+:-ms-input-placeholder {
+ color: black;
+ padding-left: 0.5em;
+}
