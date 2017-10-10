@@ -1746,7 +1746,9 @@ input.recruit:text+.ato {
     font-size: 1.3em;
     padding-right: 0.3em;
 }
-/*学内放送*/
+/*
+    学内放送
+*/
 .gakunaitWrap {
     text-align: center;
     width: 100%;
