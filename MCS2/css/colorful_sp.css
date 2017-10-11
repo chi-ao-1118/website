@@ -62,6 +62,10 @@ a:visited {
     display: none;
 }
 
+#gakunai2 {
+    opacity: 0;
+}
+
 #share {
     display: flex;
     margin-top: 1vh;
