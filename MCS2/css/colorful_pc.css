@@ -61,6 +61,10 @@ a:visited {
     width: auto;
 }
 
+#gakunai2 {
+    display: none;
+}
+
 #share {
     display: flex;
     justify-content: flex-end;
