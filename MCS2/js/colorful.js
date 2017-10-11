@@ -3,6 +3,7 @@
 $(function() {
     setTimeout(function() {
         $('#gakunai').addClass('fadeIn animated');
+        $('#gakunai2').addClass('fadeIn animated');
         $('#share').addClass('fadeIn animated');
         $('#information').addClass('fadeIn animated');
         setTimeout(function(){
