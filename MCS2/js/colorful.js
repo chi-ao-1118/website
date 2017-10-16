@@ -217,9 +217,9 @@ utf = new function()
 
 $(function() {
     var url = location.href;
-    var utf8url = utf.URLencode("【学内放送】『自分のカラダのことをもっと知ろう！』10月17日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！ ") + utf.URLencode(url);
+    var utf8url = utf.URLencode("【学内放送】『自分のカラダのことをもっと知ろう！』10月24日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！\n") + utf.URLencode(url);
     // about these -> https://qiita.com/takuhito-h/items/891f3d53ad14a1182963
-    var tweet = "https://twitter.com/share?url=" + url + "&text=【学内放送】『自分のカラダのことをもっと知ろう！』10月17日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！&via=MCS_kutc&related=MCS_kutc"
+    var tweet = "https://twitter.com/share?url=" + url + "&text=【学内放送】『自分のカラダのことをもっと知ろう！』10月24日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！&via=MCS_kutc&related=MCS_kutc"
     var fb_share = "https://www.facebook.com/sharer/sharer.php?u=" + url;
     var line = "http://line.me/R/msg/text/?" + utf8url;
     $("#tweet").attr("href",tweet);
