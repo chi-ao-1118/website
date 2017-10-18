@@ -3,7 +3,7 @@
 ### :gendo:スロット
 
 # Miai
-# git {% pullquote %}
+<!--# git {% pullquote %}-->
 text {" quote "} text
 {% endpullquote %}
 
