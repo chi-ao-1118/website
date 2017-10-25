@@ -5,39 +5,15 @@ $(function() {
         $('#gakunai').addClass('fadeIn animated');
         $('#gakunai2').addClass('fadeIn animated');
         $('#share').addClass('fadeIn animated');
-        $('#information').addClass('fadeIn animated');
-        setTimeout(function(){
-            $('#p1').addClass('fadeInUp animated');
-            setTimeout(function(){
-                $('#s1').addClass('fadeInLeft animated');
-                setTimeout(function() {
-                    $('#s2').addClass('fadeInLeft animated');
-                    setTimeout(function() {
-                        $('#s3').addClass('fadeInLeft animated');
-                        setTimeout(function() {
-                            $('#q1').addClass('fadeInUp animated');
-                            setTimeout(function() {
-                                $('#q2').addClass('fadeInUp animated');
-                                setTimeout(function() {
-                                    $('#scroll').addClass('fadeInUpBig animated'); 
-                                }, 2000);
-                            }, 1500);
-                        }, 2000);
-                    }, 1000);
-                }, 1000);
-            }, 2000);
-        }, 2000);
-    }, 2000);
+        setTimeout(function() {
+            $('#message').addClass('fadeIn animated');
+        }, 1000)
+    }, 1000);
 });
 
 // Slide In
 
 $(function() {
-    $('#about_gakunai').on('inview', function(event, isInView) {
-        if (isInView) {
-            $(this).addClass('fadeInUp animated');
-        }
-    });
     $('#about_colorful').on('inview', function(event, isInView) {
         if (isInView) {
             $(this).addClass('fadeInUp animated');
@@ -217,9 +193,9 @@ utf = new function()
 
 $(function() {
     var url = location.href;
-    var utf8url = utf.URLencode("【学内放送】『自分のカラダのことをもっと知ろう！』10月24日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！\n") + utf.URLencode(url);
+    var utf8url = utf.URLencode("【学内放送】『自分のカラダのことをもっと知ろう！』10月17日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！ ") + utf.URLencode(url);
     // about these -> https://qiita.com/takuhito-h/items/891f3d53ad14a1182963
-    var tweet = "https://twitter.com/share?url=" + url + "&text=【学内放送】『自分のカラダのことをもっと知ろう！』10月24日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！&via=MCS_kutc&related=MCS_kutc"
+    var tweet = "https://twitter.com/share?url=" + url + "&text=【学内放送】『自分のカラダのことをもっと知ろう！』10月17日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！&via=MCS_kutc&related=MCS_kutc"
     var fb_share = "https://www.facebook.com/sharer/sharer.php?u=" + url;
     var line = "http://line.me/R/msg/text/?" + utf8url;
     $("#tweet").attr("href",tweet);
