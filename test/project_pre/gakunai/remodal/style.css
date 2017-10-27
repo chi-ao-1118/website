@@ -1,0 +1,76 @@
+/*
+    mordal
+            */
+
+.modal_wrap {
+    text-align: center;
+    margin: 0 auto;
+}
+.modal_wrap li{
+display: inline-block;
+overflow: hidden;
+margin: 1%;
+width: 20%;
+}
+a.thumnail {
+    /*display: inline-block;*/
+    overflow: hidden;
+    /*margin: 1%;*/
+    /*width: 20%;*/
+}
+
+@media (max-width:640px) {
+    a.thumnail {
+        width: 60%;
+    }
+}
+
+.modal_wrap img, .remodal img {
+    height: auto;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.about figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.about_officeItemWrap figcaption {
+    background: rgba(0, 0, 0, .2);
+}
+
+.about figcaption {
+    color: #FFF;
+    /*opacity: 0;*/
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding-top: calc(50% - 1em);
+    padding-top: calc(50% - 1rem);
+}
+
+.about a:hover>figure img {
+    transform: scale(1.15, 1.15);
+    -webkit-transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    -o-transform: scale(1.15, 1.15);
+}
+
+.about a:hover>figure figcaption {
+    background-color: rgba(0, 0, 0, 0.6);
+}
