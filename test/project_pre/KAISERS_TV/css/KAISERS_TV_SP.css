@@ -196,10 +196,18 @@ li{
     padding: 50px 0px 25px;
 }
 
-.YouTube iframe{
-    width: 50%;
-    height: 50%;
-    max-width: 560px;
+.youtube{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.youtube iframe{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 50% !important;
+    height: 50% !important;
     margin: 0px auto;
 }
 
@@ -218,9 +226,9 @@ li{
     margin-top: 5px
 }
 
-.about_title{
-    font-size: 35px;
-    font-family: "impact","impact2","Arial Black","DIN Condensed","Arial";
+.logo_about{
+    width: 60%;
+    margin: 50px auto;
 }
 
 .about_img{
@@ -277,4 +285,63 @@ li{
     text-align: left;
     margin: 0; 
     padding: 0;
+}
+
+/*WORKS - メイン*/
+
+.works_text{
+    font-size: 30px;
+    margin: 0px;
+    padding: 50px 0px 0px;
+}
+
+.youtube_works{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.youtube_works iframe{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px auto;
+}
+
+.flex_box{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    width: 100%;
+}
+
+.works_video{
+    width: 80%;
+    height: 80%;
+    padding: 0px 20px;
+}
+
+.link_box_works{
+    width: 100px;
+    height: 25px;
+    background-color: #111;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.link_box_works a{
+    line-height: 25px;
+    font-size: 10pt;
+    color : #fff;
+    padding: 5px 5px;
+    margin: 0px auto;
+}
+
+.link_box_works:hover{
+    background-color : #444;
 }
