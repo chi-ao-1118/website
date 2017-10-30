@@ -1772,7 +1772,7 @@ input:checked+.panel {
 .theme-container label{
     font-family: 'Hind Siliguri', sans-serif;
 	letter-spacing: 0.05rem;
-    padding: 2px 20pxpx;
+    padding: 2px 20px 2px;
 	margin: 0;
     position: relative;
     z-index: 20;
@@ -1804,8 +1804,8 @@ input:checked+.panel {
     position: absolute;
     width: 24px;
     height: 24px;
-    right: 13px;
-    top: 7px;
+    right: 0px;
+    top: 0px;
 }
 .theme-container input:checked + label:after{
     content: "\f0d8";
@@ -1813,8 +1813,8 @@ input:checked+.panel {
     position: absolute;
     width: 24px;
     height: 24px;
-    right: 13px;
-    top: 7px;
+    right: 0px;
+    top: 0px;
 }
 .theme-container input:checked + label:hover:after{
     content: "\f0d8";;
