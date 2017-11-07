@@ -6,14 +6,45 @@ $(function() {
         $('#gakunai2').addClass('fadeIn animated');
         $('#share').addClass('fadeIn animated');
         setTimeout(function() {
-            $('#message').addClass('fadeIn animated');
-        }, 1000)
-    }, 1000);
+            $('#s4').addClass('fadeIn animated');
+            setTimeout(function() {
+                $('#p2').addClass('fadeIn animated');
+                setTimeout(function() {
+                    $('#s1').addClass('fadeIn animated');
+                    setTimeout(function() {
+                        $('#s2').addClass('fadeIn animated');
+                        setTimeout(function() {
+                            $('#f1').addClass('fadeIn animated');
+                            setTimeout(function() {
+                                $('#f2').addClass('fadeIn animated');
+                                setTimeout(function() {
+                                    $('#s3').addClass('fadeIn animated');
+                                    setTimeout(function() {
+                                        $('#lb').addClass('zoomInUp animated');
+                                        $('#lb').css({'opacity':'1'});
+                                        setTimeout(function() {
+                                            $('#lm').addClass('zoomInUp animated');
+                                            $('#lm').css({'opacity':'1'});
+                                        }, 750); //タイトル
+                                    }, 750); //飛沫
+                                }, 500); //文字
+                            }, 500); //f2
+                        }, 1500); //f1
+                    }, 1000); //s2
+                }, 1000); //s1
+            }, 1500); // 人
+        }, 1500) //日時など
+    }, 1500); //初期
 });
 
 // Slide In
 
 $(function() {
+    $('#about_gakunai').on('inview', function(event, isInView) {
+        if (isInView) {
+            $(this).addClass('fadeInUp animated');
+        }
+    });
     $('#about_colorful').on('inview', function(event, isInView) {
         if (isInView) {
             $(this).addClass('fadeInUp animated');
@@ -30,7 +61,7 @@ $(function() {
         }
     });
 });
-  
+
 //iFrame2IMG4YouTube
 
 $(function() {
@@ -193,9 +224,9 @@ utf = new function()
 
 $(function() {
     var url = location.href;
-    var utf8url = utf.URLencode("【学内放送】『自分のカラダのことをもっと知ろう！』10月17日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！ ") + utf.URLencode(url);
+    var utf8url = utf.URLencode("【学内放送】『独断』11月14日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！") + "%0D%0A" + utf.URLencode(url);
     // about these -> https://qiita.com/takuhito-h/items/891f3d53ad14a1182963
-    var tweet = "https://twitter.com/share?url=" + url + "&text=【学内放送】『自分のカラダのことをもっと知ろう！』10月17日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！&via=MCS_kutc&related=MCS_kutc"
+    var tweet = "https://twitter.com/share?url=" + url + "&text=【学内放送】『独断』11月14日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！&via=MCS_kutc&related=MCS_kutc"
     var fb_share = "https://www.facebook.com/sharer/sharer.php?u=" + url;
     var line = "http://line.me/R/msg/text/?" + utf8url;
     $("#tweet").attr("href",tweet);
