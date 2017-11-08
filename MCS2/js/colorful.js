@@ -20,11 +20,12 @@ $(function() {
                                 setTimeout(function() {
                                     $('#s3').addClass('fadeIn animated');
                                     setTimeout(function() {
-                                        $('#lb').addClass('zoomInUp animated');
-                                        $('#lb').css({'opacity':'1'});
+                                        $('#lm').addClass('zoomInUp animated');
+                                        $('#lm').css({'opacity':'1'});
                                         setTimeout(function() {
-                                            $('#lm').addClass('zoomInUp animated');
-                                            $('#lm').css({'opacity':'1'});
+                                            $('#lb').addClass('zoomInUp animated');
+                                            $('#poster *').addClass('shake animated');
+                                            $('#lb').css({'opacity':'1'});
                                         }, 750); //タイトル
                                     }, 750); //飛沫
                                 }, 500); //文字
