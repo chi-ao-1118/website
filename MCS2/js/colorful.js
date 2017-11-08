@@ -223,12 +223,23 @@ utf = new function()
 //SNS Share Link
 
 $(function() {
-    var url = location.href;
-    var utf8url = utf.URLencode("【学内放送】『独断』11月14日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！") + "%0D%0A" + utf.URLencode(url);
-    // about these -> https://qiita.com/takuhito-h/items/891f3d53ad14a1182963
-    var tweet = "https://twitter.com/share?url=" + url + "&text=【学内放送】『独断』11月14日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！&via=MCS_kutc&related=MCS_kutc"
-    var fb_share = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+    //パラメータの削除
+    if (location.href.indexOf('?') != -1) {
+        var url = location.href.replace(/\?.*$/,"");
+    } else {
+        var url = location.href;
+    }
+
+    //メッセージを追加 (TwitterとLINEのみ)
+    var message = "【学内放送】『独断』11月14日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！"
+    var utf8url = utf.URLencode(message) + "%0D%0A" + utf.URLencode(url+'?line');
+
+    // URLの生成   詳細: https://qiita.com/takuhito-h/items/891f3d53ad14a1182963
+    var tweet = "https://twitter.com/share?url=" + url + "?twitter" + "&text=" + message + "&via=MCS_kutc&related=MCS_kutc"
+    var fb_share = "https://www.facebook.com/sharer/sharer.php?u=" + url + "?facebook";
     var line = "http://line.me/R/msg/text/?" + utf8url;
+
+    //リンク付
     $("#tweet").attr("href",tweet);
     $("#fb_share").attr("href",fb_share);
     $("#line").attr("href",line);

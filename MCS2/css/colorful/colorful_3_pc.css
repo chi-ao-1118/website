@@ -100,22 +100,22 @@ a:visited {
 
 #main {
     position: relative;
-    margin: 0 auto;
-    height: 95%;
+    height: 85vh;
+    width: 90vw;
 }
 
     /* MAIN */
 
     #main * {
         position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
         height: 100%;
         width: auto;
-        z-index: 2;
         opacity: 0;
-    }
-
-    #lb {
-        z-index: 1;
     }
 
 /* ARTICLE */
