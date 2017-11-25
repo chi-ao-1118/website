@@ -1,0 +1,169 @@
+<!doctype html5>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sojo Out of Stage</title>
+<link rel="stylesheet" href="SOS.css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<!-- CreateJSのライブラリー読み込み -->
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<!-- ParticleJSのライブラリー読み込み -->
+<script src="https://cdn.rawgit.com/ics-creative/ParticleJS/release/0.1.2/libs/particlejs.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="./SOS.js"></script>
+<script>
+	window.addEventListener("load", init);
+		
+    function init() {
+		// Stageオブジェクトを作成します。表示リストのルートになります。
+		stage = new createjs.Stage("myCanvas");
+ 
+		// パーティクルシステム作成します。
+		particleSystem = new particlejs.ParticleSystem();
+ 
+		// パーティクルシステムの描画コンテナーを表示リストに登録します。
+		stage.addChild(particleSystem.container);
+		
+		// Particle Developから保存したパラメーターを反映します。
+		particleSystem.importFromJson(
+		// JSONテキストのコピー＆ペースト ここから--
+			{
+				"bgColor": "#00000",
+				"width": 2000,
+				"height": 10000,
+				"emitFrequency": 111,
+				"startX": 498,
+				"startXVariance": 2000,
+				"startY": 632,
+				"startYVariance": 2000,
+				"initialDirection": "0",
+				"initialDirectionVariance": "360",
+				"initialSpeed": "2",
+				"initialSpeedVariance": "3.7",
+				"friction": 0.061,
+				"accelerationSpeed": 0.133,
+				"accelerationDirection": 270,
+				"startScale": "0.76",
+				"startScaleVariance": "1",
+				"finishScale": "0",
+				"finishScaleVariance": "0",
+				"lifeSpan": "50",
+				"lifeSpanVariance": "196",
+				"startAlpha": "1",
+				"startAlphaVariance": 0.5,
+				"finishAlpha": 0.2,
+				"finishAlphaVariance": 0.6,
+				"shapeIdList": [
+					"blur_circle"
+				],
+				"startColor": {
+					"hue": 229,
+					"hueVariance": 79,
+					"saturation": "71",
+					"saturationVariance": 100,
+					"luminance": "83",
+					"luminanceVariance": 30
+				},
+				"blendMode": true,
+				"alphaCurveType": "0",
+				"VERSION": "0.1.3"
+			}
+		// JSONテキストのコピー＆ペースト ここまで--
+		);
+		// フレームレートの設定
+		createjs.Ticker.framerate = 60;
+		// requestAnimationFrameに従った呼び出し
+		createjs.Ticker.timingMode = createjs.Ticker.RAF;
+		// 定期的に呼ばれる関数を登録
+		createjs.Ticker.addEventListener("tick", handleTick);
+		
+		var theCanvas = document.getElementById('myCanvas');
+ 
+		function canvas_resize(){
+		  var windowInnerWidth=window.innerWidth;
+		  var windowInnerHeight=window.innerHeight;
+
+		  theCanvas.setAttribute('width',windowInnerWidth);
+		  theCanvas.setAttribute('height',windowInnerHeight);
+		}
+ 
+		window.addEventListener('resize',canvas_resize,false);
+
+		canvas_resize();
+
+
+
+
+      function handleTick() {
+  		// パーティクルの発生・更新
+  		particleSystem.update();
+ 
+  		// 描画を更新する
+  		stage.update();
+	  }
+
+    }
+  </script>
+</head>
+
+<body>
+	<div class="canvasWrap">
+		<canvas width="1024" height="10000" id="myCanvas"></canvas>
+		<div class="logoWrap">
+			<a href="#Main"><img id="sos_logo" src="img/sos_logo.SVG"><div id="date"><h1>2017.12.07 &lt;Thu&gt;</h1></div></a>
+		</div>
+		<article id="Main">
+			<h2 id="Sub1" class="SubTitle">What is "Sojo Out of Stage" ?</h2>
+			<div class="contents_text">
+				<p>MCSが送る、総合情報学部生のための学内イベント「Sojo Out of Stage」!<br>
+					Sojo Out of Stageでは総合情報学部内の様々な団体が集い、日頃の活動の成果を披露してもらいます。<br>
+					今年も昨年と同様に開催場所をC棟スタジオ、噴水広場でパフォーマンスが行われます。<br><br>
+					各団体が競い合い、お互いを高め合うことで総情を盛り上げたい！そんな思いを込めて、我々MCSはこのイベントを運営しています！！<br><br>
+					会場：高槻キャンパスC棟スタジオ、噴水広場<br>
+					開場：16:40~<br>
+					開演：17:00~
+				</p>
+			</div>
+			<h2 id="Sub2" class="SubTitle">Lineup</h2>
+			<div class="contents_text" id="lineup">
+				<table border="1 solid" width="90%" cellspacing="0" cellpadding="5" bordercolor="#333333" id="lineupTable">
+					<tr>
+					<th bgcolor="#999999" width="35%"><font color="#FFFFFF">団体名</font></th>
+					<th bgcolor="#999999" width="20%"><font color="#FFFFFF">説明</font></th>
+					<th bgcolor="#999999" width="35%"><font color="#FFFFFF">意気込み</font></th>
+					</tr>
+					<tr>
+					<td bgcolor="#FFFFFF" align="center" nowrap>gliDJe</td>
+					<td bgcolor="#FFFFFF" valign="top" width="150">DJサークル</td>
+					<td bgcolor="#FFFFFF" valign="top" width="200"></td>
+					</tr>
+					<tr>
+					<td bgcolor="#FFFFFF" align="center" nowrap>QUEST</td>
+					<td bgcolor="#FFFFFF" valign="top" width="150">ヒップホップダンスグループ</td>
+					<td bgcolor="#FFFFFF" valign="top" width="200"></td>
+					</tr>
+					<tr>
+					<td bgcolor="#FFFFFF" align="center" nowrap>Vocalise</td>
+					<td bgcolor="#FFFFFF" valign="top" width="150">アカペラサークル</td>
+					<td bgcolor="#FFFFFF" valign="top" width="200"></td>
+					</tr>
+					<tr>
+					<td bgcolor="#FFFFFF" align="center" nowrap>TSDC</td>
+					<td bgcolor="#FFFFFF" valign="top" width="150">ダンスサークル</td>
+					<td bgcolor="#FFFFFF" valign="top" width="200"></td>
+					</tr>
+					<tr>
+					<td bgcolor="#FFFFFF" align="center" nowrap>Banditz</td>
+					<td bgcolor="#FFFFFF" valign="top" width="150">軽音楽サークル</td>
+					<td bgcolor="#FFFFFF" valign="top" width="200"></td>
+					</tr>
+				</table>
+			</div>
+			
+		</article>
+		
+	</div>
+</body>
+</html>
