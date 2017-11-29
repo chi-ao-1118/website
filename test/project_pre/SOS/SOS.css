@@ -15,38 +15,54 @@ body{
 a{
 	text-decoration: none;
 	color: #FFFFFF;
+	text-align: center;
+}
+header{
+	position:relative;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
 }
 li{
 	list-style-type: none;
 	color: #FFFFFF;
 }
 #date{
-	text-align: center;
-	margin-top: 4vh;
-	width: 30vw;
-}
-.adjustment{
 	display: inline-block;
-	height:22vh;
-	width: 100vw;
-}
-@media only screen and (max-width: 640px) {
-	.adjustment{
-		display: inline-block;
-		height:32vh;
-		width: 100vw;
-	}
-}
-h1{
-	display: inline-block;
-	position: relative;
-	width: 40vw;
+	position: absolute;
+	width: 60vw;
+	max-width: 400px;
 	color: #fff;
 	font-family: 'Orbitron', sans-serif;
-	margin-left: 5vw;
 	padding-bottom: 1vh;
 	border-bottom: #fff solid 2px;
 	z-index: 9999;
+	font-size: 1.7rem;
+	top: 65vh;
+	left: 50vw;
+	-webkit-transform: translateY(-65%) translateX(-50%);
+    transform: translateY(-65%) translateX(-50%);
+}
+@media only screen and (max-width: 640px) {
+	#date{
+		display: inline-block;
+		position: absolute;
+		width: 60vw;
+		max-width: 400px;
+		color: #fff;
+		font-family: 'Orbitron', sans-serif;
+		padding-bottom: 1vh;
+		border-bottom: #fff solid 2px;
+		z-index: 9999;
+		font-size: 1.3rem;
+		top: 60vh;
+		left: 50vw;
+		-webkit-transform: translateY(-60%) translateX(-50%);
+	    transform: translateY(-60%) translateX(-50%);
+	}	
+}
+h1{
+	color: #fff;
 	font-size: 1.7rem;
 	margin: 0;
 }
@@ -57,7 +73,6 @@ h1{
 	width: 60vw;
 	color: #fff;
 	font-family: 'Orbitron', sans-serif;
-	margin-left: 5vw;
 	padding-bottom: 1vh;
 	border-bottom: #fff solid 2px;
 	z-index: 9999;
@@ -99,6 +114,7 @@ p{
 	padding-bottom: 1vh;
 	z-index: 9999;
 	margin: 0;
+	letter-spacing: 2.0px;
 }
 @media only screen and (max-width: 640px) {
 	p{
@@ -113,31 +129,28 @@ p{
 	font-size: 0.8rem;
 	}
 }
-.logoWrap{
-	width: 100vw;
-	height: 100vh;
-	text-align: center;
-}
 img#sos_logo{
 	display: inline-block;
-	position: relative;
-	text-align: left;
+	position: absolute;
+	top: 40vh;
+	left: 50vw;
 	width: 60vw;
 	max-width: 900px;
 	height: 40vw;
-	max-height: 400px;
-	right: 10vw;
+	max-height: 300px;
 	z-index: 9999;
+	-webkit-transform: translateY(-40%) translateX(-50%);
+    transform: translateY(-40%) translateX(-50%);
 }
 @media only screen and (max-width: 640px) {
     img#sos_logo{
 	display: inline-block;
-	position: relative;
+	position: absolute;
 	width: 90vw;
-	margin-left: 10vw;
-	margin-right: 10vw;
-	margin-bottom: 2vh;
-	right: 25vw;
+	top: 40vh;
+	left: 50vw;
+	-webkit-transform: translateY(-40%) translateX(-50%);
+    transform: translateY(-40%) translateX(-50%);
 	z-index: 9999;
 }
  
@@ -169,19 +182,11 @@ img#sos_logo{
 }
 #myCanvas { 
         position:fixed;
+        pointer-events: none;
         top:0;
         left:0;
         width:100%;
         height:100%;
-}
-#lineupTable{
-	margin-left: 5vw;
-}
-.tHead{
-	background-color: rgba(153,153,153,0.6);
-}
-.cellBg{
-	background-color: rgba(255,255,255,0.9);
 }
 .programNum{
 	font-family: 'Orbitron', sans-serif;
@@ -196,6 +201,7 @@ img#sos_logo{
 .programDetail{
 	margin-left: 4vw;
 	font-size: 1.0rem;
+	letter-spacing: 2.0px;
 }
 @media only screen and (max-width: 640px) {
 	.programDetail{
