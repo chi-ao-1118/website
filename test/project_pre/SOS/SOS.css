@@ -27,6 +27,12 @@ li{
 	list-style-type: none;
 	color: #FFFFFF;
 }
+#headLogo{
+	display: inline-block;
+	width: 60vw;
+	height: 46vh;
+	margin-top: 22vh;
+}
 #date{
 	display: inline-block;
 	position: absolute;
