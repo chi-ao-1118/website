@@ -1,5 +1,7 @@
 /* GENERAL */
-
+html{
+    overflow: hidden;
+}
 body {
     font-family: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans', 'Noto Sans CJK JP', 'Segoe UI', 'Meiryo', arial, sans-serif;
     font-weight: 300;

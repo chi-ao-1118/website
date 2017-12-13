@@ -1,6 +1,9 @@
 //Poster Animetion
-
 $(function() {
+    // スクロールを無効にする
+    $("#poster").on('touchmove.noScroll', function(e) {
+        e.preventDefault();
+    });
     setTimeout(function() {
         $('#gakunai').addClass('fadeIn animated');
         $('#gakunai2').addClass('fadeIn animated');
@@ -36,7 +39,15 @@ $(function() {
             }, 0); // 人
         }, 0) //日時など
     }, 1200); //初期
+    $('#poster').off('.noScroll');
+    setTimeout(function() {
+    $('html').css('overflow','visible'); 
+    }, 7000); 
 });
+// スクロール無効を解除する
+
+
+
 
 // Slide In
 
