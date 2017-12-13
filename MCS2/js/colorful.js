@@ -232,7 +232,7 @@ $(function() {
     }
 
     //メッセージを追加 (TwitterとLINEのみ)
-    var message = "【学内放送】『独断』11月14日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！"
+    var message = "【学内放送】『恐怖』12月19日(火)A棟りそな横モニター・E棟コミュニティルームで12時20分から放送！"
     var utf8url = utf.URLencode(message) + "%0D%0A" + utf.URLencode(url+'?line');
 
     // URLの生成   詳細: https://qiita.com/takuhito-h/items/891f3d53ad14a1182963
