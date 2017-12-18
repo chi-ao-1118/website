@@ -1,7 +1,7 @@
 //Poster Animetion
 $(function() {
     // スクロールを無効にする
-    $("#poster").on('touchmove.noScroll', function(e) {
+    $(window).on('touchmove.noScroll', function(e) {
         e.preventDefault();
     });
     setTimeout(function() {
@@ -39,18 +39,37 @@ $(function() {
             }, 0); // 人
         }, 0) //日時など
     }, 1200); //初期
-    $('#poster').off('.noScroll');
-    setTimeout(function() {
-    $('html').css('overflow','visible'); 
-    }, 7000); 
 });
-// スクロール無効を解除する
 
-
-
-
+$(function(){
+    setTimeout(function(){
+        $('.scroll').css('display','inline-block');
+        $('.scroll').addClass('fadeIn animated');
+        // スクロール無効を解除する
+        $(window).off('.noScroll');
+        $('html').css('overflow','visible')
+    },7000);
+    
+});
+//Scroll
+$(function(){
+    var headHight = 60;
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^="#"]').click(function() {
+	  // スクロールの速度
+	  var speed = 300; // ミリ秒
+	  // アンカーの値取得
+	  var href= $(this).attr("href");
+	  // 移動先を取得
+	  var target = $(href == "#" || href == "" ? 'html' : href);
+	  // 移動先を数値で取得
+	  var position = target.offset().top+headHight;
+	  // スムーススクロール
+	  $('body,html').animate({scrollTop:position}, speed, 'swing');
+	  return false;
+   });
+});
 // Slide In
-
 $(function() {
     $('#about_gakunai').on('inview', function(event, isInView) {
         if (isInView) {
