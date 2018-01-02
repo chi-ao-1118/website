@@ -21,6 +21,7 @@ $(function() {
                             $('#m4').addClass('lightSpeedIn animated');
                             setTimeout(function() {
                                $('#m5').addClass('lightSpeedIn animated'); 
+                               $('#m6').addClass('fadeInDown animated');
                             },1000);//料理ショー
                         },1000,);//協力
                     },1000);//煙
