@@ -4,52 +4,40 @@ $(function() {
     $(window).on('touchmove.noScroll', function(e) {
         e.preventDefault();
     });
+    
     setTimeout(function() {
         $('#gakunai').addClass('fadeIn animated');
         $('#gakunai2').addClass('fadeIn animated');
         $('#share').addClass('fadeIn animated');
         setTimeout(function() {
-            $('#s4').addClass('fadeIn animated');
-            setTimeout(function() {
-                $('#p2').addClass('fadeIn animated');
-                setTimeout(function() {
-                    $('#s1').addClass('fadeIn animated');
+            $('#m0').addClass('fadeIn animated');
+             setTimeout(function() {
+                $('#m1').addClass('fadeIn animated');
+                setTimeout(function(){
+                    $('#m2').addClass('flash animated');
                     setTimeout(function() {
-                        $('#s2').addClass('fadeIn animated');
+                        $('#m3').addClass('fadeInUp animated');
                         setTimeout(function() {
-                            $('#f1').addClass('fadeIn animated');
+                            $('#m4').addClass('lightSpeedIn animated');
                             setTimeout(function() {
-                                $('#f2').addClass('fadeIn animated');
-                                setTimeout(function() {
-                                    $('#s3').addClass('fadeIn animated');
-                                    setTimeout(function() {
-                                        $('#lm').addClass('zoomInUp animated');
-                                        $('#lm').css({'opacity':'1'});
-                                        setTimeout(function() {
-                                            $('#lb').addClass('zoomInUp animated');
-                                            $('#poster *').addClass('shake animated');
-                                            $('#lb').css({'opacity':'1'});
-                                        }, 1600); //タイトル
-                                    }, 0); //飛沫
-                                }, 0); //文字
-                            }, 1000); //f2
-                        }, 0); //f1
-                    }, 1300); //s2
-                }, 0); //s1
-            }, 0); // 人
-        }, 0) //日時など
-    }, 1200); //初期
+                               $('#m5').addClass('lightSpeedIn animated'); 
+                            },1000);//料理ショー
+                        },1000,);//協力
+                    },1000);//煙
+                },2000);//炎
+            }, 1000);//フライパン
+        },0);//背景
+    });
 });
 
 $(function(){
-    setTimeout(function(){
-        $('.scroll').css('display','inline-block');
-        $('.scroll').addClass('fadeIn animated');
-        // スクロール無効を解除する
-        $(window).off('.noScroll');
-        $('html').css('overflow','visible')
-    },7000);
-    
+        setTimeout(function(){
+            $('.scroll').css('display','inline-block');
+            $('.scroll').addClass('fadeIn animated');
+            // スクロール無効を解除する
+            $(window).off('.noScroll');
+            $('html').css('overflow','visible')
+        },8000);
 });
 //Scroll
 $(function(){
