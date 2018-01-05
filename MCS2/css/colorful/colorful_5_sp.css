@@ -107,8 +107,11 @@ a:visited {
     position: absolute;
     padding-top: 60px;
     top: 70vh;
-    color: #000;
-    left: 46vw;
+    color: #22c129;
+    left: 44vw;
+    font-size: 1.2rem;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #fff;
 }
 .scroll:hover{
      text-decoration: none;
@@ -118,43 +121,30 @@ a:visited {
     color:#ffffff;
 }
 .scroll span{
-  display: inline-block;
   position: absolute;
   top: 0;
   left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #000;
-  border-bottom: 1px solid #000;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  background-color: #22c129;
+}
+.scroll span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  -webkit-animation: sdb 2s infinite;
-  animation: sdb 2s infinite;
   box-sizing: border-box;
-  color:white;
-}
-@-webkit-keyframes sdb {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-  }
-  20% {
-    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-  }
-  40% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-  }
-}
-@keyframes sdb {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-  }
-  20% {
-    transform: rotate(-45deg) translate(-10px, 10px);
-  }
-  40% {
-    transform: rotate(-45deg) translate(0, 0);
-  }
 }
     /* MAIN */
 
