@@ -48,9 +48,13 @@ li {
 }
 
 #head_mcsLogo {
-    margin-top: 1vh;
-    width: auto;
-    height: 8vh;
+    display: none;
+}
+
+#head_mcsLogo_sp{
+  margin-top: 2.0vh;
+  width: auto;
+  height: 7vh;
 }
 
 .menu {
@@ -2056,6 +2060,15 @@ input:checked+.panel {
     top: 1%;
 }
 
+#twi-logo{
+  margin-top: 1vh;
+  height: 3vh;
+}
+
+#fb-logo{
+  margin-top: 1vh;
+  height: 3vh;
+}
 
 /**
 		 フォーム

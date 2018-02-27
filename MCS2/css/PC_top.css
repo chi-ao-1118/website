@@ -33,12 +33,13 @@ a:hover {
 #header {
     margin: 0 auto;
 		height:80px;
-    height: 13vh;
+    height: 16vh;
 }
 
 #header>article {
 	height:40%;
-    height: 4.5vh;
+    height: 82px;
+		height: 8.5vh;
 }
 
 #head_btn .Left {
@@ -49,24 +50,30 @@ a:hover {
 }
 
 #head_mcsLogo {
-    height: 90%;
+    height: 50%;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     width: auto;
+		padding: 20%;
+}
+
+#head_mcsLogo_sp{
+	display: none;
 }
 
 #head_btn .Right {
     float: right;
-    padding: 0 1rem;
-    height: 100%;
+    padding: 0.5rem 1rem;
+    height: 60%;
+		margin-top: 10px;
 }
 
 #head_btn .Right a img {
     height: 100%;
     margin: 0;
+		margin-right: 10px;
 }
-
 
 /*
   	 headmap
@@ -88,7 +95,7 @@ a:hover {
     height: 100%;
     margin: 0 auto;
 		border-bottom: 8px solid #525252;
-    border-bottom: 1vh solid #525252;
+    border-bottom: 1.1vh solid #525252;
     box-sizing: border-box;
 }
 
@@ -127,8 +134,8 @@ a:hover {
 
 .top_topWrap {
 	height: 85%; /* IE8以下とAndroid4.3以下用フォールバック */
-	height : -webkit-calc(100% - 13vh);
-	height : calc(100% - 13vh);
+	height : -webkit-calc(100% - 17vh);
+	height : calc(100% - 17vh);
 	background-image: url(../img/top_top1.jpg);
 	background-size: cover;
 	color: white;
@@ -136,6 +143,7 @@ a:hover {
 	position: relative;
 	display: table;
 	width: 100%;
+	margin-top: 1vh;
 }
 .top_topMCSWrap {
 	display: table-cell;
