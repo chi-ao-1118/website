@@ -51,31 +51,28 @@ a:focus {
     margin: 0 auto;
     height: 5em;
     height: 5rem;
-    height: 80px;
-    height: 16vh;
+    height: 13vh;
 }
 
 #header>article {
     height: 2em;
     height: 2rem;
-    height: 8.5vh;
+    height: 4.5vh;
 }
 
 #head_btn .Left {
     float: left;
     height: 100%;
-    padding: 0 1em;
-    padding: 0 1rem;
     position: relative;
 }
 
 #head_mcsLogo {
-    height: 50%;
+    height: 60%;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     width: auto;
-    padding: 20%;
+    padding: 1vh 1vw;
 }
 
 #head_mcsLogo_sp{
@@ -84,17 +81,13 @@ a:focus {
 
 #head_btn .Right {
     float: right;
-    padding: 0 1em;
-    padding: 0 1rem;
-    padding: 0.5rem 1rem;
-    height: 60%;
-		margin-top: 10px;
+    height: 70%;
+    padding: 0.6vh 1.2vw;
 }
 
 #head_btn .Right a img {
     height: 100%;
     margin: 0;
-    margin-right: 10px;
 }
 
 /*
@@ -292,7 +285,6 @@ a:focus {
     background-size: cover;
     padding: 9% 0;
     text-align: center;
-    margin-top: 1vh;
 }
 
 #topImg_about {
