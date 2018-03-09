@@ -3,6 +3,13 @@
 <pressrelease>
   <!-- 追加時はitemを上に増やしていく -->
     <item>
+        <link>pressrelease/index12.html</link>
+        <img>img/pressIndex12.png</img>
+        <time>2018.3.3</time>
+        <title>MCSロゴ変更のお知らせ</title>
+        <article>MCSのロゴが生まれ変わりました。</article>
+    </item>
+    <item>
         <link>pressrelease/index11.html</link>
         <img>img/pressIndex11.jpg</img>
         <time>2017.5.28</time>
