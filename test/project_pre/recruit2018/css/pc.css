@@ -1,0 +1,469 @@
+/* General */
+
+  /* Font */
+
+  /* 全体，ゴシック体 */
+
+  body {
+    font-family: 'Helvetica', -apple-system, 'BlinkMacSystemFont', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans', 'Noto Sans CJK JP', 'Segoe UI', 'Meiryo', arial, sans-serif;
+  }
+
+  /* 明朝体 */
+
+  @font-face {
+    font-family: 'Noto Serif Japanese';
+    src: url('../font/NotoSerifCJKjp-Light.min.woff2')
+  }
+
+  section h2, section p {
+    font-family: 'Noto Serif Japanese', sans-serif;
+    letter-spacing: 0.1em;
+  }
+
+body {
+  margin: 0;
+  background-color: rgb(57, 57, 57);
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+  width: auto;
+  font-size: 1em;
+  line-height: 1.7em;
+  word-break: normal;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+/* Header */
+
+#first-block {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  margin-top: -50vh;
+  background-color: rgba(213, 0, 0, 0.75);
+}
+
+header {
+  background-image: url("../img/header.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 7.5vh;
+  height: 92.5vh;
+  width: 100%;
+  z-index: -2;
+  overflow-x: hidden;
+}
+
+#nav-container {
+  position: relative;
+  width: 100%;
+  height: 84vh;
+  border-style: solid;
+  border-color: rgb(104, 142, 170);
+  border-width: 0.75vh 0;
+  z-index: 1;
+}
+
+nav {
+  height: 100%;
+  margin-right: 3vw;
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 52.5vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav li {
+  height: 9vh;
+  font-size: 9vh;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+nav * {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav ul li:first-child {
+  margin: 7.5vh 0 1vh 0;
+  height: 7.25vh;
+}
+
+nav ul li:last-child {
+  margin: 2vh 0 7.5vh;
+}
+
+#home-btn a {
+  position: relative;
+  height: 100%;
+  width: 32.5vh;
+}
+
+#home-btn img {
+  height: 100%;
+}
+
+#nav-line {
+  position: absolute;
+  background-color: rgb(104, 142, 170);
+  top: 0;
+  left: -0.5em;
+  bottom: 0;
+  margin: auto 0;
+  height: 1.75vh;
+  width: 150vw;
+}
+
+nav li a div {
+  position: relative;
+  height: 9vh;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-hover {
+  background-color: rgb(104, 142, 170);
+  display: none;
+}
+
+  #welcome-btn .nav-hover {
+    width: 47.5vh;
+  }
+
+  #about-btn .nav-hover {
+    width: 32.5vh;
+  }
+
+  #works-btn .nav-hover {
+    width: 37.5vh;
+  }
+
+.nav-hover img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 75%;
+}
+
+#mcs {
+  padding: 1.75vh 0 0 5vw;
+  font-size: 2.5vh;
+  color: rgb(104, 142, 170);
+}
+
+/* Section */
+
+section:last-child {
+  margin-bottom: -5em;
+}
+
+.block {
+  overflow: hidden;
+  position: relative;
+  transform: skew(0, -8deg);
+}
+
+.block:nth-child(even) {
+  background-color: rgba(213, 0, 0, 0.75);
+  color: rgb(57, 57, 57);
+}
+
+.block:nth-child(odd) {
+  background-color: rgb(57, 57, 57);
+  color: rgb(104, 142, 170);
+}
+
+.block:nth-child(even) .main-card {
+  background-color: rgb(57, 57, 57);
+  color: rgb(255, 255, 255);
+}
+
+.block:nth-child(odd) .main-card {
+  background-color: rgb(104, 142, 170);
+  color: rgb(57, 57, 57);
+}
+
+.block:nth-child(even) .main-card .btn {
+  background-color: rgba(213, 0, 0, 0.75);
+}
+
+.block:nth-child(odd) .main-card .btn {
+  background-color: rgb(57, 57, 57);
+}
+
+.block-inner {
+  margin: 10vw auto;
+  max-width: 950px;
+  width: 80vw;
+  transform: skew(0, 8deg)
+}
+
+  .block-inner:last-child {
+    margin-bottom: 15vw;
+  }
+
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+}
+
+.section-heading h1 {
+  margin-right: 0.25em;
+  font-size: 5em;
+}
+
+.section-heading p {
+  font-size: 2em;
+  line-height: 1.5em;
+  color: rgb(255, 255, 255);
+  flex: 1;
+}
+
+.contents {
+  position: relative;
+  margin-top: 1.5em;
+}
+
+.sub-card {
+  position: absolute;
+  width: 40%;
+  max-width: 500px;
+  height: auto;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+}
+
+.sub-card img {
+  width: 100%;
+  height: auto;
+}
+
+.main-card {
+  padding: 1.5em;
+  position: relative;
+  z-index: 0;
+}
+
+.main-card > div {
+  width: 100%;
+  height: 100%;
+}
+
+.main-card h2 {
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 300;
+}
+
+.btn {
+  margin-top: 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.btn a{
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding:0.7em 0 0.5em 0;
+}
+
+  /* layout1 */
+
+  .layout1 .sub-card {
+    margin-top: -15%;
+  }
+
+  .layout1 .main-card {
+    margin: 20% 0 0 8%;
+    padding-left: 25%;
+  }
+
+  /* Layout2 */
+
+  .layout2 .sub-card {
+    right: 0;
+    margin-top: -10%
+  }
+
+  .layout2 .main-card {
+    margin: 15% 10% 0 0;
+    padding-right: 35%;
+  }
+
+  /* Layout3 */
+
+  .layout3 .sub-card {
+    margin-top: 3%;
+  }
+
+  .layout3 .main-card {
+    margin: 3em 0 15% 10%;
+    padding-left: 35%;
+  }
+
+  /* Layout4 (table) */
+
+  .layout4 .sub-card {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  .layout4 table {
+    min-width: 32.5em;
+    width: 100%;
+    padding: 1em 1em 1em 0;
+    line-height: 1.75em;
+  }
+
+  .layout4 th {
+    padding: 0.5em 0;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.25em;
+  }
+
+  .layout4 tr > * {
+    transform: scale(0.9,0.9);
+    padding: 0 1em;
+    text-align: center;
+  }
+
+  .layout4 tr > *:first-child {
+    text-align: right;
+    width: 3em;
+  }
+
+  .layout4 .multiline {
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .layout4 .ivent{
+    background-color: rgb(104, 142, 170);
+    color: rgb(57, 57, 57);
+  }
+
+  /* Layout5 */
+
+  .layout5 .sub-card {
+    right: 0;
+    margin-top: 8%
+  }
+
+  .layout5 .main-card {
+    margin: 3em 10% 0 0;
+    padding-right: 35%;
+  }
+
+  /* Detail */
+
+  #welcome .contents {
+    margin: auto auto 0 auto;
+    width: 85%;
+  }
+
+  #welcome .sub-card {
+    width: 30%;
+    height: auto;
+    max-width: 225px;
+  }
+
+  #welcome .main-card > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #leader {
+    margin-top: 1em;
+    text-align: right;
+  }
+
+  #works .block-inner {
+    margin-bottom: 25vw;
+  }
+
+  .video-list {
+    position: relative;
+    width: 90%;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+  }
+
+  .video, .video_wrapper, .thumbnail, .ratio {
+    width: 100%;
+    position: relative;
+  }
+
+  .play {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 30%;
+  }
+
+  .ratio {
+    padding-bottom: 56.25%;
+    height:0px;
+  }
+
+  .ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #works .main-card {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    height: 115%;
+  }
+
+  #works .btn {
+    position: absolute;
+    right: 1.5em;
+    bottom:1.5em;
+  }
+
+  #how-to .layout3 .main-card {
+    margin-bottom: 10%;
+  }
+
+  #how-to .layout5 .main-card {
+    margin-bottom: 7.5%;
+  }
