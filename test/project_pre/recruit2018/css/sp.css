@@ -390,10 +390,11 @@ section:last-child {
 
   #leader {
     text-align: right;
+    margin-top: 1em;
   }
 
   #works .block-inner {
-    padding-bottom: 25vw;
+    padding-bottom: 40%;
   }
 
   .video-list {
@@ -408,8 +409,10 @@ section:last-child {
     position: relative;
   }
 
-  .videos_wrapper {
-    position: relative;
+  .thumbnail {
+    object-fit: cover;
+    width: 100%;
+    height: 100%
   }
 
   .play {
@@ -443,7 +446,7 @@ section:last-child {
     padding: 0;
     margin: 0;
     width: 90%;
-    height: 120%;
+    height: 135%;
   }
 
   #works .btn {

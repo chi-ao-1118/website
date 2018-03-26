@@ -35,12 +35,12 @@ $(function() {
 
       movie[index] = movie_src;
       movie_id[index] = movie_src.slice(movie_src.lastIndexOf("/")+1);
-      thumbnail[index] = "http://i.ytimg.com/vi/" + movie_id[index] + "/mqdefault.jpg";
+      thumbnail[index] = "http://i.ytimg.com/vi/" + movie_id[index] + "/maxresdefault.jpg";
 
-      $(this).after('<div class="video_wrapper"><img class="thumbnail" src="'+thumbnail[index]+'" alt="サムネイル"><img class="play" src="./img/youtube.svg" alt="再生ボタン"></div>').remove();
+      $(this).after('<div class="ratio"><img class="thumbnail" src="'+thumbnail[index]+'" alt="サムネイル"><img class="play" src="./img/youtube.svg" alt="再生ボタン"></div>').remove();
   });
 
-  $('.video_wrapper').each(function(index, element) {
+  $('.ratio').each(function(index, element) {
       $(this).click(function() {
           $(this).empty().prepend('<div class="ratio"><iframe src="'+movie[index]+'?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
       });
