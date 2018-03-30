@@ -36,8 +36,25 @@ p {
   word-break: normal;
 }
 
-h1, h2 {
+
+a{
+  text-decoration : none;
+}
+a:hover{
+  text-decoration : underline;
+}
+#about a{
+  color: rgba(255,255,255,0.80);
+}
+#works a{
+  color: rgba(0,0,0,0.60);
+}
+
+
+h1, h2, h3 {
   margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 /* Header */
@@ -47,7 +64,7 @@ h1, h2 {
   width: 100%;
   height: 50vh;
   margin-top: -50vh;
-  background-color: rgba(213, 0, 0, 0.75);
+  background-color: rgba(213, 0, 0, 0.60);
 }
 
 header {
@@ -183,7 +200,7 @@ section:last-child {
 }
 
 .block:nth-child(even) {
-  background-color: rgba(213, 0, 0, 0.75);
+  background-color: rgba(213, 0, 0, 0.60);
   color: rgb(57, 57, 57);
 }
 
@@ -203,7 +220,7 @@ section:last-child {
 }
 
 .block:nth-child(even) .main-card .btn {
-  background-color: rgba(213, 0, 0, 0.75);
+  background-color: rgba(213, 0, 0, 0.60);
 }
 
 .block:nth-child(odd) .main-card .btn {
@@ -211,14 +228,14 @@ section:last-child {
 }
 
 .block-inner {
-  margin: 10vw auto;
+  margin: 7vw auto;
   max-width: 950px;
   width: 80vw;
   transform: skew(0, 8deg)
 }
 
   .block-inner:last-child {
-    margin-bottom: 15vw;
+    margin-bottom: 10vw;
   }
 
 .section-heading {
@@ -232,7 +249,7 @@ section:last-child {
 }
 
 .section-heading p {
-  font-size: 2em;
+  font-size: 1.7em;
   line-height: 1.5em;
   color: rgb(255, 255, 255);
   flex: 1;
@@ -264,15 +281,28 @@ section:last-child {
   z-index: 0;
 }
 
-.main-card > div {
-  width: 100%;
+.layout2 > .main-card > div {
+  width: 95%;
+  height: 100%;
+
+  padding-left:5%;
+}
+.layout3 > .main-card > div {
+  width: 95%;
   height: 100%;
 }
 
 .main-card h2 {
-  line-height: 1.5em;
-  margin-bottom: 0.5em;
+  font-size: 1.8em;
+  line-height: 1.4em;
   font-weight: 300;
+  margin-bottom: 0.3em;
+}
+.main-card h3 {
+  line-height: 1em;
+  font-weight: 200;
+  font-size: 1.2em;
+
 }
 
 .btn {
@@ -283,7 +313,7 @@ section:last-child {
 
 .btn a{
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(255,255,255,0.85) !important;
   text-decoration: none;
   display: block;
   padding:0.7em 0 0.5em 0;
@@ -406,7 +436,7 @@ section:last-child {
   }
 
   #works .block-inner {
-    margin-bottom: 25vw;
+    margin-bottom: 20vw;
   }
 
   .video-list {
@@ -424,7 +454,8 @@ section:last-child {
   .thumbnail {
     object-fit: cover;
     width: 100%;
-    height: 100%
+    /* これをつけると何故かサムネイルが表示されない */
+    /* height: 100% */
   }
 
   .play {
