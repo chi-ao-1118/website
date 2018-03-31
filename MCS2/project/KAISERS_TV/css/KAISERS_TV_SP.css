@@ -1,0 +1,353 @@
+
+/*共通*/
+
+html{
+    overflow-y: scroll;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+img{
+    vertical-align: bottom;
+    padding: 0px;
+}
+
+a{
+    outline: none;
+}
+
+a:link{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active{
+    color: #000000;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.center{
+    width:auto;
+    max-width: 960px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.mcs_logo{
+    text-align: center;
+}
+
+.mcs_logo img{
+    padding: 10px;
+    height: 30px;
+}
+
+@font-face {
+  font-family: impact2;
+  src: url(font/impact.ttf);
+}
+
+.pc_link{
+    display: none;
+}
+.sp_link{
+    display: block;
+}
+/*メニュー*/
+
+#menu{
+    width: 100%;
+    display: none;
+    margin:  0px;
+    padding: 0px;
+}
+
+#menu li{
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #444;
+}
+
+#menu li a{
+    display: block;
+    padding: 12px 0 10px;
+    background-color: #111;
+    color : #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+#toggle{
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #222;
+}
+
+#toggle a{
+    display: block;
+    position: relative;
+    padding: 12px 0 10px;
+    border-bottom: solid 1px #444;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+#toggle:before{
+    display: block;
+    content: "";
+    position: absolute;
+    top : 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: #fff;
+}
+
+#toggle a:before,#toggle a:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left:  10px;
+    width:  20px;
+    height: 4px;
+    background: #222;
+}
+
+#toggle a:before{
+    margin-top: -5px;
+}
+
+#toggle a:after{
+    margin-top: 3px;
+}
+
+/*メイン*/
+
+.main_img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.KAISERS_TV_logo{
+    width:85%;
+    margin-top:25px;
+}
+
+.main p{
+    text-align: center;
+}
+
+.text{
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.text{
+    text-align: center;
+    font-size: 15pt;
+    padding: 0px 0px 25px;
+}
+
+.link_box{
+    width: 100px;
+    height: 25px;
+    background-color: #111;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.link_box a{
+    line-height: 25px;
+    font-size: 10pt;
+    color : #fff;
+    padding: 5px 5px;
+    margin: 0px auto;
+}
+
+.link_box:hover{
+    background-color : #444;
+}
+
+.PV{
+    font-size: 15px;
+    text-align: center;
+    margin:0px;
+    padding: 50px 0px 25px;
+}
+
+.youtube{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.youtube iframe{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 50% !important;
+    height: 50% !important;
+    margin: 0px auto;
+}
+
+/*フッター*/
+
+.footer{
+    margin-top:50px;
+}
+
+
+
+/*ABOUT-メイン*/
+
+.about_background{
+    width: 100%;
+    margin-top: 5px
+}
+
+.logo_about{
+    width: 60%;
+    margin: 50px auto;
+}
+
+.about_img{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.about_img img{
+    width: 45%;
+    height: 45%;
+    padding: 0px 10px;
+}
+
+.about_box {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0px 5px;
+    color: #000000;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    line-height: 30px;
+}
+
+.about_box p {
+    font-size: 10pt;
+    text-align: left;
+    margin: 0; 
+    padding: 0;
+}
+
+.kai_chan{
+    margin: 100px auto 20px;
+}
+
+.about_box2 {
+    width: 80%;
+    max-width: 550px;
+    margin: 0px auto;
+    padding: 0px 5px;
+    color: #000000;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    line-height: 30px;
+}
+
+.about_box2 p {
+    font-size: 10pt;
+    text-align: left;
+    margin: 0; 
+    padding: 0;
+}
+
+/*WORKS - メイン*/
+
+.works_text{
+    font-size: 30px;
+    margin: 0px;
+    padding: 50px 0px 0px;
+}
+
+.youtube_works{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.youtube_works iframe{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px auto;
+}
+
+.flex_box{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    width: 100%;
+}
+
+.works_video{
+    width: 80%;
+    height: 80%;
+    padding: 0px 20px;
+}
+
+.link_box_works{
+    width: 100px;
+    height: 25px;
+    background-color: #111;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.link_box_works a{
+    line-height: 25px;
+    font-size: 10pt;
+    color : #fff;
+    padding: 5px 5px;
+    margin: 0px auto;
+}
+
+.link_box_works:hover{
+    background-color : #444;
+}
