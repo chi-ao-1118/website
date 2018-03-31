@@ -1,184 +1,31 @@
-/* General */
-
-  /* Font */
-
-  /* 全体，ゴシック体 */
-
-  body {
-    font-family: 'Helvetica', -apple-system, 'BlinkMacSystemFont', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans', 'Noto Sans CJK JP', 'Segoe UI', 'Meiryo', arial, sans-serif;
-  }
-
-  /* 明朝体 */
-
-  @font-face {
-    font-family: 'Noto Serif Japanese';
-    src: url('../font/NotoSerifCJKjp-Light.min.woff2')
-  }
-
-  section h2, section p {
-    font-family: 'Noto Serif Japanese', sans-serif;
-    letter-spacing: 0.1em;
-  }
-
-body {
-  margin: 0;
-  background-color: rgb(57, 57, 57);
-  color: rgb(255, 255, 255);
-  font-weight: 300;
-  overflow-x: hidden;
-}
-
-p {
-  margin: 0;
-  width: auto;
-  font-size: 1em;
-  line-height: 1.7em;
-  word-break: normal;
-}
-
-
-a{
-  text-decoration : none;
-}
-a:hover{
-  text-decoration : underline;
-}
-#about a{
-  color: rgba(255,255,255,0.80);
-}
-#works a{
-  color: rgba(0,0,0,0.60);
-}
-
-
-h1, h2, h3 {
-  margin: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-}
-
 /* Header */
 
-#first-block {
-  position: absolute;
-  width: 100%;
-  height: 50vh;
-  margin-top: -50vh;
-  background-color: rgba(213, 0, 0, 0.60);
-}
-
-header {
-  background-image: url("../img/header.jpg");
-  background-position: center;
-  background-size: cover;
-  padding-top: 7.5vh;
-  height: 92.5vh;
-  width: 100%;
-  z-index: -2;
-  overflow-x: hidden;
-}
-
-#nav-container {
-  position: relative;
-  width: 100%;
-  height: 84vh;
-  border-style: solid;
-  border-color: rgb(104, 142, 170);
-  border-width: 0.75vh 0;
-  z-index: 1;
-}
-
-nav {
-  height: 100%;
-  margin-right: 3vw;
-  float: right;
-}
-
 nav ul {
-  margin: 0;
-  padding: 0;
-  height: 100%;
   width: 52.5vh;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 nav li {
-  height: 9vh;
-  font-size: 9vh;
-  font-weight: 500;
-  white-space: nowrap;
+  height: 7vh;
 }
 
-nav * {
-  text-decoration: none;
-  color: #ffffff;
+nav li:first-child {
+  margin: 7.5vh 0 0 0;
 }
 
-nav ul li:first-child {
-  margin: 7.5vh 0 1vh 0;
-  height: 7.25vh;
-}
-
-nav ul li:last-child {
+nav li:last-child {
   margin: 2vh 0 7.5vh;
 }
 
-#home-btn a {
-  position: relative;
-  height: 100%;
+#welcome-btn .nav-hover {
+  width: 47.5vh;
+}
+
+#about-btn .nav-hover {
   width: 32.5vh;
 }
 
-#home-btn img {
-  height: 100%;
-}
-
-#nav-line {
-  position: absolute;
-  background-color: rgb(104, 142, 170);
-  top: 0;
-  left: -0.5em;
-  bottom: 0;
-  margin: auto 0;
-  height: 1.75vh;
-  width: 150vw;
-}
-
-nav li a div {
-  position: relative;
-  height: 9vh;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-hover {
-  background-color: rgb(104, 142, 170);
-  display: none;
-}
-
-  #welcome-btn .nav-hover {
-    width: 47.5vh;
-  }
-
-  #about-btn .nav-hover {
-    width: 32.5vh;
-  }
-
-  #works-btn .nav-hover {
-    width: 37.5vh;
-  }
-
-.nav-hover img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  height: 75%;
+#works-btn .nav-hover {
+  width: 35vh;
 }
 
 #mcs {
@@ -189,49 +36,9 @@ nav li a div {
 
 /* Section */
 
-section:last-child {
-  margin-bottom: -5em;
-}
-
-.block {
-  overflow: hidden;
-  position: relative;
-  transform: skew(0, -8deg);
-}
-
-.block:nth-child(even) {
-  background-color: rgba(213, 0, 0, 0.60);
-  color: rgb(57, 57, 57);
-}
-
-.block:nth-child(odd) {
-  background-color: rgb(57, 57, 57);
-  color: rgb(104, 142, 170);
-}
-
-.block:nth-child(even) .main-card {
-  background-color: rgb(57, 57, 57);
-  color: rgb(255, 255, 255);
-}
-
-.block:nth-child(odd) .main-card {
-  background-color: rgb(104, 142, 170);
-  color: rgb(57, 57, 57);
-}
-
-.block:nth-child(even) .main-card .btn {
-  background-color: rgba(213, 0, 0, 0.60);
-}
-
-.block:nth-child(odd) .main-card .btn {
-  background-color: rgb(57, 57, 57);
-}
-
 .block-inner {
   margin: 7vw auto;
   max-width: 950px;
-  width: 80vw;
-  transform: skew(0, 8deg)
 }
 
   .block-inner:last-child {
@@ -251,13 +58,7 @@ section:last-child {
 .section-heading p {
   font-size: 1.7em;
   line-height: 1.5em;
-  color: rgb(255, 255, 255);
   flex: 1;
-}
-
-.contents {
-  position: relative;
-  margin-top: 1.5em;
 }
 
 .sub-card {
@@ -266,7 +67,6 @@ section:last-child {
   max-width: 500px;
   height: auto;
   overflow: hidden;
-  z-index: 1;
   text-align: center;
 }
 
@@ -275,48 +75,16 @@ section:last-child {
   height: auto;
 }
 
+  .parallax img {
+    padding-top: 70px;
+  }
+
 .main-card {
   padding: 1.5em;
-  position: relative;
-  z-index: 0;
 }
 
-.layout2 > .main-card > div {
-  width: 95%;
-  height: 100%;
-
-  padding-left:5%;
-}
-.layout3 > .main-card > div {
-  width: 95%;
-  height: 100%;
-}
-
-.main-card h2 {
-  font-size: 1.8em;
-  line-height: 1.4em;
-  font-weight: 300;
-  margin-bottom: 0.3em;
-}
 .main-card h3 {
   line-height: 1em;
-  font-weight: 200;
-  font-size: 1.2em;
-
-}
-
-.btn {
-  margin-top: 1em;
-  width: 8em;
-  text-align: center;
-}
-
-.btn a{
-  text-decoration: none;
-  color: rgba(255,255,255,0.85) !important;
-  text-decoration: none;
-  display: block;
-  padding:0.7em 0 0.5em 0;
 }
 
   /* layout1 */
@@ -342,6 +110,12 @@ section:last-child {
     padding-right: 35%;
   }
 
+  .layout2 > .main-card > div {
+    width: 95%;
+    height: 100%;
+    padding-left:5%;
+  }
+  
   /* Layout3 */
 
   .layout3 .sub-card {
@@ -351,6 +125,11 @@ section:last-child {
   .layout3 .main-card {
     margin: 3em 0 15% 10%;
     padding-left: 35%;
+  }
+
+  .layout3 > .main-card > div {
+    width: 95%;
+    height: 100%;
   }
 
   /* Layout4 (table) */
@@ -411,7 +190,7 @@ section:last-child {
     padding-right: 35%;
   }
 
-  /* Detail */
+  /* Other */
 
   #welcome .contents {
     margin: auto auto 0 auto;
@@ -424,77 +203,12 @@ section:last-child {
     max-width: 225px;
   }
 
-  #welcome .main-card > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  #leader {
-    margin-top: 1em;
-    text-align: right;
-  }
-
   #works .block-inner {
-    margin-bottom: 20vw;
-  }
-
-  .video-list {
-    position: relative;
-    width: 90%;
-    z-index: 1;
-    color: rgb(255, 255, 255);
-  }
-
-  .video, .thumbnail, .ratio {
-    width: 100%;
-    position: relative;
-  }
-
-  .thumbnail {
-    object-fit: cover;
-    width: 100%;
-    /* これをつけると何故かサムネイルが表示されない */
-    /* height: 100% */
-  }
-
-  .play {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 20%;
-  }
-
-  .ratio {
-    padding-bottom: 56.25%;
-    height:0px;
-  }
-
-  .ratio iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    margin-bottom: 20%;
   }
 
   #works .main-card {
-    position: absolute;
-    top: 10%;
-    right: 0;
-    padding: 0;
-    margin: 0;
-    width: 90%;
     height: 115%;
-  }
-
-  #works .btn {
-    position: absolute;
-    right: 1.5em;
-    bottom:1.5em;
   }
 
   #how-to .layout3 .main-card {

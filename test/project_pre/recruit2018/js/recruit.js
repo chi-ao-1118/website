@@ -14,35 +14,53 @@ $(function(){
 
 $(function(){
   $('a[href^="#"]').click(function() {
-    var speed = 500;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href).children();
-    var position = ($(window).width() < 700 ? target.offset().top : target.offset().top - target.position().top );
+    const speed = 500;
+    let href= $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href).children();
+    let position = ($(window).width() < 700 ? target.offset().top : target.offset().top - target.position().top );
     $('body,html').animate({scrollTop:position}, speed, 'swing');
     return false;
   });
 });
 
+// Parallax
+
+$(function() {
+  if ($(window).width() >= 700) {
+    $(window).scroll(function() {
+      const displayed_area = $(window).scrollTop() + $(window).height();
+      $('.parallax img').each(function(index, target) {
+        const top = $(target).offset().top;
+        const end = top + $(target).outerHeight(true) + $(window).height();
+        let move = (top - displayed_area) / 15;
+        if (top <= displayed_area && displayed_area <= end) {
+          $(target).css('transform', 'translateY(' + move + 'px)')
+        }
+      });
+    });
+  }
+});
+
 // iFrame2IMG4YouTube
 
 $(function() {
-  var movie = [];
+  const movie = [];
 
   $('.video iframe').each(function(index, element) {
-      var movie_src = $(this).attr('src');
-      var thumbnail = [];
-      var movie_id = [];
+      let movie_src = $(this).attr('src');
+      let thumbnail = [];
+      let movie_id = [];
 
       movie[index] = movie_src;
       movie_id[index] = movie_src.slice(movie_src.lastIndexOf("/")+1);
-      thumbnail[index] = "http://i.ytimg.com/vi/" + movie_id[index] + "/maxresdefault.jpg";
+      thumbnail[index] = "https://i.ytimg.com/vi/" + movie_id[index] + "/maxresdefault.jpg";
 
       $(this).after('<div class="ratio"><img class="thumbnail" src="'+thumbnail[index]+'" alt="サムネイル"><img class="play" src="./img/youtube.svg" alt="再生ボタン"></div>').remove();
   });
 
   $('.ratio').each(function(index, element) {
       $(this).click(function() {
-          $(this).empty().prepend('<div class="ratio"><iframe src="'+movie[index]+'?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
+          $(this).empty().prepend('<iframe src="'+movie[index]+'?autoplay=1" frameborder="0" allowfullscreen></iframe>');
       });
   });
 });
