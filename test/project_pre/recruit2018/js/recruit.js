@@ -53,7 +53,7 @@ $(function() {
 
       movie[index] = movie_src;
       movie_id[index] = movie_src.slice(movie_src.lastIndexOf("/")+1);
-      thumbnail[index] = "https://i.ytimg.com/vi/" + movie_id[index] + "/maxresdefault.jpg";
+      thumbnail[index] = "https://i.ytimg.com/vi/" + movie_id[index] + "/hqdefault.jpg";
 
       $(this).after('<div class="ratio"><img class="thumbnail" src="'+thumbnail[index]+'" alt="サムネイル"><img class="play" src="./img/youtube.svg" alt="再生ボタン"></div>').remove();
   });
