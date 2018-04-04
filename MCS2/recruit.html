@@ -1,175 +1,347 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Media Creative Supporter (MCS) 公式サイト" />
-  <meta property="og:type" content="article" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge;chrome=1">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@MCS_kutc" />
   <meta property="og:url" content="http://mcs-kutc.com/recruit.html" />
-  <meta property="og:image:width" content="300" />
-  <meta property="og:image:height" content="300" />
-  <meta property="og:image" content="http://mcs-kutc.com/img/mcs.jpg" />
-  <meta property="og:description" content="Media Creative Supporter(MCS)は、
-関西大学高槻キャンパス総合情報学部にて活動しています。
-総合情報学部におけるコンテンツの制作サポートから創造・自己発信までできるスタッフの集合体を目指し、日々活動しているボランティア団体です。新入生のみなさまの入団をお待ちしております。" />
-  <link rel="stylesheet" media="(max-width: 640px)" href="css/SP.css">
-  <link rel="stylesheet" media="(min-width: 640px)" href="css/PC.css">
+  <meta property="og:title" content="Recruit - MCS" />
+  <meta property="og:description" content="Media Creative Supporter(通称MCS)の新入生向けページです。" />
+  <meta property="og:image" content="http://mcs-kutc.com/img/header.jpg" />
   <title>MCS - Recruit</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/sp.css" media="screen and (max-width:700px)">
+  <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width:700px)">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/recruit.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92540234-1"></script>
   <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-92540234-1', 'auto');
-    ga('send', 'pageview');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-92540234-1');
   </script>
-  <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@MCS_kutc">
-<meta name="twitter:title" content="Recruit - MCS">
-<meta name="twitter:description" content="関西大学公認の映像ボランティアサークルです。正式名称である「Media Creative Supporter」を略して、MCSと呼ばれています。テレビ局で用いられているような本格的機材を用いて、番組制作を行うことができる団体です。関西大学高槻キャンパス内で放送されるテレビ番組をはじめとした様々な番組制作の他、各種イベントの運営や、夏には長編映画の自主制作なども行います。">
-<meta name="twitter:image" content="http://mcs-kutc.com/img/banner_recruit2017.jpg">
 </head>
-
 <body>
-  <!--ここからヘッダー-->
-  <header id="header"></header>
-  <script>
-    var header_id = "#h_works";
-  </script>
-  <!--ここからハンバーガーメニュー-->
-  <nav id="hamMenu" class="SP"></nav>
-  <!--ここからページ内容-->
-  <!--Top画像-->
-  <article class="topImg" id="topImg_recruit">
-    <div class="lineBox">
-      <div class="topTitleWrap">
-        <div class="topTitle">RECRUIT</div>
+  <div id="first-block" class="block"></div>
+  <article>
+    <header>
+      <div id="nav-container">
+        <nav>
+          <ul>
+            <li id="home-btn">
+              <a href="#">
+                <img src="./img/home.svg" alt="HOME">
+                <div id="nav-line"></div>
+              </a>
+            </li>
+            <li id="welcome-btn">
+              <a href="#welcome">
+                <div class="nav-normal"><img src="./img/welcome.svg" alt="WELCOME"></div>
+                <div class="nav-hover"><img src="./img/omedeto.svg" alt="おめでとさん"></div>
+              </a>
+            </li>
+            <li id="about-btn">
+              <a href="#about">
+                <div class="nav-normal"><img src="./img/about.svg" alt="ABOUT"></div>
+                <div class="nav-hover"><img src="./img/nan.svg" alt="なんなん"></div>
+              </a>
+            </li>
+            <li id="works-btn">
+              <a href="#works">
+                <div class="nav-normal"><img src="./img/works.svg" alt="WORKS"></div>
+                <div class="nav-hover"><img src="./img/nani.svg" alt="何しとんの"></div>
+              </a>
+            </li>
+            <li id="schedule-btn">
+              <a href="#schedule">
+                <div class="nav-normal"><img src="./img/schedule.svg" alt="SCHEDULE"></div>
+                <div class="nav-hover"><img src="./img/itsu.svg" alt="いつやっとんの"></div>
+              </a>
+            </li>
+            <li id="how-to-btn">
+              <a href="#how-to">
+                <div class="nav-normal"><img src="./img/how-to.svg" alt="How to Enter"></div>
+                <div class="nav-hover"><img src="./img/donai.svg" alt="どないして入るん"></div>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </article>
-  <!--本文-->
-  <article class="mainWrap">
-    <article>
-      <div class="recruitWrap">
-        <div class=recruitTitleWrap id="adjust-mgn3">&nbsp;&nbsp;新歓 PV&nbsp;&nbsp;</div>
-        <div class="flexIframe" id="about_movieMCS">
-          <iframe src="https://www.youtube.com/embed/jmHY4Z2Fuf4?rel=0&autohide=1&theme=dark&color=white" frameborder="0" allowfullscreen></iframe>
+      <div id="mcs">Media Creative Supporter</div>
+    </header>
+    <section id="welcome" class="block">
+      <div class="block-inner">
+        <div class="section-heading">
+          <h1>WELCOME<br>to MCS</h1>
+          <p>ご入学おめでとうございます。<br>総情に来たなら是非MCSを覗いてみてください。</p>
+        </div>
+        <div class="contents layout1">
+          <div class="sub-card parallax">
+            <img src="./img/welcome.jpg" alt="玄道俊">
+          </div>
+          <div class="main-card">
+            <div>
+              <p>
+                ご入学おめでとうございます。MCS代表の玄道俊です。<br>
+                MCSは創設から10年経ちました。10年も経っていると思っている人もいるかもしれませんが、私から言わせてもらうとたった10年しか経っていない歴史の浅い団体です。<br>
+                だからこそ、この団体はまだまだ変えることができます。<br>
+                新しく入団する1回生がMCSを変えていきます。MCSだけでなく地域や世の中、世界を変えていきます。<br>
+                <br>
+                それ以前に、君たち1人1人が変わります。<br>
+                <br>
+                自分にコンプレックスがある人、現状に満足していない人、向上心がある人。<br>
+                <br>
+                大歓迎です。是非MCSに入団してください。<br>
+                私はそういう人を楽しみに待っています。
+              </p>
+              <div id="leader">MCS リーダー 玄道俊</div>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
-    <article>
-      <div class="recruitBox">
-        <div class="RBtitle" id="RB1">
-          </br>
-          </br>MCSとは
-          <div class="RBtxt">
-            </br>関西大学公認の映像ボランティアサークルです。正式名称である「Media Creative Supporter」を略して、MCSと呼ばれています。</div>
-          </br>
-          <a class="RBbtn" href="about.html">　詳しく見る　＞　</a>
+    </section>
+    <section id="about" class="block">
+      <div class="block-inner">
+        <div class="section-heading">
+          <h1>ABOUT<br>of MCS</h1>
+          <p>Media Creative Supporter (通称MCS)は関西大学高槻キャンパス事務室直属の映像制作ボランティアです。</p>
+        </div>
+        <div class="contents layout2">
+          <div class="sub-card parallax">
+            <img src="./img/cf_live.jpg" alt="キャンパス祭生放送">
+          </div>
+          <div class="main-card">
+            <div>
+              <h2>総合情報学部におけるコンテンツの制作サポートから創造・自己発信までできるスタッフの集合体を目指し、「総合情報学部を盛り上げよう！」をコンセプトに活動しているボランティア団体です。</h2>
+              <p>
+                MCSは、制作局・技術局・広報局の3つの局から成り立っています。それぞれの局については<a href="http://mcs-kutc.com/about.html#office">こちら</a>をご覧ください。<br>
+                学部生向けの校内テレビ番組の制作や映画の自主制作、その広告・告知を活動の根幹としています。
+              </p>
+              <div class="btn"><a href="#">READ MORE</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="contents layout3">
+          <div class="sub-card parallax">
+            <img src="./img/cf_image.jpg" alt="キャンパス祭集合写真">
+          </div>
+          <div class="main-card">
+            <div>
+              <h2>他ではできない体験がここにあります。</h2>
+              <p>
+                MCSでは映像制作の他にも、プロジェクト活動としてMCS内で有志のグループを結成し、関西大学内の他団体や地域との交流も行なっています。<br>
+                現在は<a href="http://mcs-kutc.com/project/KAISERS_TV/HOME.html">KAISERS TVプロジェクト(関西大学体育会の方々)</a>、<a href="http://hanicotto.com/index.html">はにコットプロジェクト(高槻市民の方々)</a>で総合情報学部外の方々との交流があります。<br>
+                また、<a href="http://mcs-kutc.com/project/FRESH/FRESH.html">FRESH!プロジェクト</a>ではラジオ番組や生放送番組などのコンテンツを配信しています。<br>
+                そして、MCSの二大行事である春の高槻キャンパス祭と秋のSojo Out Stageがあります。<br>
+                高槻キャンパス祭では主にスタジオイベントや生放送番組の配信で高槻キャンパス祭を盛り上げます。<br>
+                Sojo Out StageではMCSがイベント主催者となり、高槻キャンパスの他サークルに日頃の練習の成果を披露してもらう場を提供しています。
+              </p>
+              <div class="btn"><a href="#">READ MORE</a></div>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
-    <article>
-      <div class="recruitBox">
-        <div class="RBtitle" id="RB2">
-          </br>
-          </br>MCSの活動
-          <div class="RBtxt">
-            </br>関西大学高槻キャンパス内で放送されるテレビ番組をはじめとした様々な番組制作の他、各種イベントの運営や、夏には長編映画の自主制作なども行います。</div>
-          </br>
-          <a class="RBbtn" href="contents.html">　詳しく見る　＞　</a>
+    </section>
+    <section id="works" class="block">
+      <div class="block-inner">
+        <div class="section-heading">
+          <h1>WORKS<br>of MCS</h1>
+          <p>バラエティ番組からドラマまで幅広く制作しています。作品の一部はYouTubeチャンネル<a href="https://www.youtube.com/user/MCSnomori">MCSTube</a>にて公開しています。是非ご覧ください。</p>
         </div>
-    </article>
-    <article>
-      <div class="recruitBox" id="adjust-mgn">
-        <div class="RBtitle" id="RB3">
-          </br>
-          </br>新入生へのメッセージ
-          <div class="RBtxt">
-            </br>MCS現リーダーから、新入生の皆さんへのメッセージをいただきました。</div>
-          </br>
-          </br>
-          <label for="check" id="changer" class="change"><div id="hc">　詳しく見る　＞　</div><div id="ch"></div></label>
-        </div>
-        <input id="check" class="recruit" type="checkbox">
-        <div class="panel" id=adjust-mgn2>
-          <table>
-            <td class="recruit_td"><img src="img/leader2017.jpg" class="leader_photo"></td>
-            <td class="recruit_td">
-              <div id="leader_message">皆さん、初めまして！<br> 私は今年度のMCS代表になりました3回生の谷上琴音（たにがみことね）です。
-                <br> MCSとは、Media Creative Supporter（メディア・クリエイティブ・サポーター）の略称で、映像を中心とした様々なメディアを使って、関西大学総合情報学部を盛り上げよう！をコンセプトに活動している団体です。<br> そんなMCSは、今年で10周年を迎えました！ そこでMCSに興味のある新入生には、ぜひ今年起こる特別な瞬間を目の当たりにしてください！ もちろん、MCSに入らなくても総合情報学部を始め、色々なところで楽しめるようなイベントもしていくのでお楽しみに!!
-              </div>
-            </td>
-            <tr><img src="img/leader2017.jpg" class="leader_photo_smart"></tr>
-            <tr>
-              <div id="leader_message_smart">皆さん、初めまして！<br> 今年度のMCS代表になりました3回生の谷上琴音（たにがみことね）です。
-                <br> MCSは、Media Creative Supporter（メディア・クリエイティブ・サポーター）の略称で、映像を中心とした様々なメディアを使って、関西大学総合情報学部を盛り上げよう！をコンセプトに活動している団体です。<br> そんなMCSは、今年で10周年を迎えました！ MCSに興味のある新入生は、実際にMCSに入って、今年起こる特別な瞬間を目の当たりにしてください！ もちろん、MCSに入らなくても総合情報学部を始め、色々なところで楽しめるようなイベントもしていくのでお楽しみに!!
-              </div>
-            </tr>
-          </table>
+        <div class="contents layout1">
+          <div class="video-list">
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ce-TPclTnUA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <p>Media Creative Supporter 2018 イメージムービー</p>
+            </div>
+          </div>
+          <div class="main-card">
+            <div class="btn-wrapper">
+              <div class="btn"><a href="#">READ MORE</a></div>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
-    <article>
-      <div class="recruitWrap">
-        <div id="FAQ">
-          <div class=recruitTitleWrap>&nbsp;&nbsp;FAQ&nbsp;&nbsp;</div>
-          <section>
-            <p class="Questions"><span>Q.</span>MCSとは?</p>
-            <p class="Answers"><span>A.</span>関西大学公認の映像ボランティアサークルです。正式名称である「Media Creative Supporter」を略して、MCSと呼ばれています。MCSのことをもっと知りたい方は<a href="about.html">こちら</a>。</p>
-          </section>
-          <section>
-            <p class="Questions"><span>Q.</span>MCSってどんなところ?</p>
-            <p class="Answers"><span>A.</span>テレビ局で用いられているような本格的機材を用いて、番組制作を行うことができる団体です。</p>
-          </section>
-          <section>
-            <p class="Questions"><span>Q.</span>活動日、活動時間は?</p>
-            <p class="Answers"><span>A.</span>主に金曜日に活動しています。昼休みに全体の集まりが、授業終わり(主に5限後)に各局の活動があります。</p>
-          </section>
-          <section>
-            <p class="Questions"><span>Q.</span>MCSでは何が身につくの?</p>
-            <p class="Answers"><span>A.</span>カメラや動画編集の技術、PhotoshopやIllustrator等の扱い、企画制作やマネジメント、マーケティング、広報活動等の技術を実体験を通じて学ぶことができます。</p>
-          </section>
-          <section>
-            <p class="Questions"><span>Q.</span>ほかのサークルとの掛け持ちはできるの?</p>
-            <p class="Answers"><span>A.</span>もちろんできます。MCSのメンバーの中には5つのサークルを掛け持ちしている人もいます。</p>
-          </section>
+    </section>
+    <section id="schedule" class="block">
+      <div class="block-inner">
+        <div class="section-heading">
+          <h1>SCHEDULE<br>of MCS</h1>
+          <p>ご参考までに、MCSの例年の年間予定を掲載しています。</p>
+        </div>
+        <div class="contents layout4">
+          <div class="sub-card">
+            <table>
+              <tr>
+                <th></th>
+                <th>イベント</th>
+                <th>学年ごと</th>
+                <th>通年</th>
+              </tr>
+              <tr>
+                <td>4月</td>
+                <td></td>
+                <td></td>
+                <td class="ivent" rowspan="4"><div class="multiline">春学期<br>学内放送</div></td>
+              </tr>
+              <tr>
+                <td>5月</td>
+                <td class="ivent">高槻キャンパス祭</td>
+                <td class="ivent" rowspan="3"><div class="multiline">一回生<br>ショートムービー</div></td>
 
-        </div>
-      </div>
-    </article>
-    <article>
-      <div class="recruitTitleWrap_L">&nbsp;新入生向けMCSスケジュール&nbsp;</div>
-      <div class="scheduleWrap">
-        <div class="Rschedule">
-           <script async name='freecals' id='calinc-mem62542-height600' type="text/javascript" src="//freecalend.com/jstac/calinc.js"></script>
-        </div>
-      </div>
-    </article>
-  </article>
-  <!--バックボタン-->
-    <article id="bkBtn" class="hamLost"></article>
-  <script>
-    var bk_id = "recruit_bk"
-  </script>
-  </article>
-  <img class="page_top" src="img/up.png" alt="upButton">
+              </tr>
+              <tr>
+                <td>6月</td>
+                <td></td>
 
-  <!--ここからフッター-->
-  <footer id="footer"></footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="js/page_top.js"></script>
-  <script type="text/javascript" src="js/menu.js"></script>
-  <script type="text/javascript" src="js/recruit_modal-old.js"></script>
-  <script type="text/javascript" src="js/recruit_2017.js"></script>
+
+              </tr>
+              <tr>
+                <td>7月</td>
+                <td></td>
+
+
+              </tr>
+              <tr>
+                <td>8月</td>
+                <td></td>
+                <td class="ivent" rowspan="2">夏の映画製作</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>9月</td>
+                <td></td>
+
+                <td></td>
+              </tr>
+              <tr>
+                <td>10月</td>
+                <td></td>
+                <td></td>
+                <td class="ivent" rowspan="4"><div class="multiline">秋学期<br>学内放送</div></td>
+              </tr>
+              <tr>
+                <td>11月</td>
+                <td class="ivent">Sojo Out Stage</td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td>12月</td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td>1月</td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td>2月</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>3月</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how-to" class="block">
+      <div class="block-inner">
+        <div class="section-heading">
+          <h1>How To Enter<br>MCS</h1>
+          <p>皆様の入団をお待ちしています！</p>
+        </div>
+        <div class="contents layout2">
+          <div class="sub-card parallax">
+            <img src="./img/studio.JPG" alt="スタジオ">
+          </div>
+          <div class="main-card">
+            <div>
+              <h2>新入生ガイダンス(スタジオ見学)</h2>
+              <h3>見学だけでも大丈夫です！</h3>
+              <p><br>
+                日程：4/2(月)、4/3(火)<両日全日><br>場所：関西大学高槻キャンパスC棟スタジオ<br><br>
+                健康診断や新入生行事の空いた時間に是非どうぞ。履修相談等もこの機会に！<br><br>
+                ※<u>参加は必須ではありません。</u>
+              </p>
+              <div class="btn"><a>STEP 1</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="contents layout3">
+          <div class="sub-card parallax">
+            <img src="./img/sakura.jpg" alt="桜の写真">
+          </div>
+          <div class="main-card">
+            <div>
+              <h2>お菓子パーティ</h2>
+              <h3>気になることがあれば先輩に相談！</h3>
+              <p><br>
+                 日程：4/10(火) 16:20~19:00<br>
+                 場所：関西大学高槻キャンパスB棟206教室<br><br>
+                 MCSについてのことでも、大学生活のことでも気軽に聞いてみてください。お菓子を食べたり、飲み物を飲んだりしながら楽しくおしゃべりしましょう！<br><br>
+                 ※<u>参加は必須ではありません。</u><br>
+              </p>
+              <div class="btn"><a>STEP 2</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="contents layout2">
+          <div class="sub-card parallax">
+            <img src="./img/instruction.jpg" alt="説明会">
+          </div>
+          <div class="main-card">
+            <div>
+              <h2>入団説明会＆新入生歓迎お食事会</h2>
+              <h3>MCSについて詳しく説明します！</h3>
+              <p><br>
+                日程：4/13(金)<br>入団説明会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18:00~18:30<br>
+                新入生歓迎お食事会&nbsp;&nbsp;19:30~21:30<br>
+                場所：関西大学高槻キャンパスC棟スタジオ<br><br>
+                MCSについての説明と入団方法についての説明などを代表が行います。<br>その後バスで移動して、高槻駅周辺のお店でお食事会があります。MCSについてのあれやこれやを先輩から聞いてみてください！<br><br>
+                ※<u>お食事会参加希望の新入生は当日千円の持参</u>をお願いします。<br><br>
+                ※入団説明会・新入生歓迎お食事会共に、<u>参加は必須ではありません。</u><br>
+              </p>
+              <div class="btn"><a>STEP 3</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="contents layout3">
+          <div class="sub-card parallax">
+            <img src="./img/uketsuke.JPG" alt="受付">
+          </div>
+          <div class="main-card">
+            <div>
+              <h2>入団届け提出</h2>
+              <h3>入団届け提出でMCS入団となります。</h3>
+              <p><br>
+                入手場所：関西大学高槻キャンパスC棟TC101教室前<br>
+                提出場所：関西大学高槻キャンパスC棟TC101教室前<br>
+                提出期限：4/20(金)<br><br>
+                MCSは他団体、他サークルとは異なり、春・秋学期の初頭（4月・9月）に限り団員を募集しています。
+                従って、<u>学期期間中の途中入団ができません。</u>ご注意ください。
+              </p>
+              <div class="btn"><a>STEP 4</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
 </body>
-
 </html>
