@@ -39,9 +39,6 @@ p {
 a{
   text-decoration : none;
 }
-a:hover{
-  text-decoration : underline;
-}
 #about a{
   color: rgba(255,255,255,0.80);
 }
@@ -188,7 +185,7 @@ section:last-child {
 }
 
 .block-inner {
-  width: 80vw;
+  width: 85vw;
   transform: skew(0, 8deg)
 }
 .section-heading p {
@@ -201,6 +198,7 @@ section:last-child {
 }
 
 .sub-card {
+  position: absolute;
   z-index: 1;
 }
 
@@ -281,6 +279,11 @@ section:last-child {
   left: 0;
   margin: auto;
   width: 68px;
+}
+
+.layout4 .sub-card {
+    position: relative;
+    width: 100%;
 }
 
 #works .main-card {

@@ -1,3 +1,9 @@
+/* General */
+
+a:hover{
+  text-decoration : underline;
+}
+
 /* Header */
 
 nav ul {
@@ -37,12 +43,12 @@ nav li:last-child {
 /* Section */
 
 .block-inner {
-  margin: 7vw auto;
+  margin: 10vw auto;
   max-width: 950px;
 }
 
   .block-inner:last-child {
-    margin-bottom: 10vw;
+    margin-bottom: 10%;
   }
 
 .section-heading {
@@ -62,7 +68,6 @@ nav li:last-child {
 }
 
 .sub-card {
-  position: absolute;
   width: 40%;
   max-width: 500px;
   height: auto;
@@ -135,11 +140,7 @@ nav li:last-child {
   /* Layout4 (table) */
 
   .layout4 .sub-card {
-    position: relative;
-    margin: 0;
-    padding: 0;
     max-width: none;
-    width: 100%;
   }
 
   .layout4 table {

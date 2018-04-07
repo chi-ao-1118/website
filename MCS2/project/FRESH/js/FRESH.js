@@ -1,4 +1,4 @@
-//Jump
+//Scroller
 
 $(function () {
     var headerHight = 62;

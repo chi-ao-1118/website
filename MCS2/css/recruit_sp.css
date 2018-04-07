@@ -55,13 +55,14 @@ nav li:last-child {
   display: flex;
 }
 
-.sub-card {
-  position: relative;
-}
-
 .sub-card img {
   width: 65vw;
   height: auto;
+}
+
+.main-card {
+  margin: 0 auto;
+  width: 75%;
 }
 
   /* Layout */
@@ -105,7 +106,6 @@ nav li:last-child {
   /* Layout4 (table) */
 
   .layout4 .sub-card {
-    width: 100%;
     overflow: scroll;
   }
 
