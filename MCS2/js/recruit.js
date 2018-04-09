@@ -1,24 +1,47 @@
+// UserAgent
+
+const ua = {};
+ua.name = window.navigator.userAgent.toLowerCase();
+ua.isiPhone = ua.name.indexOf('iphone') >= 0;
+ua.isiPod = ua.name.indexOf('ipod') >= 0;
+ua.isiPad = ua.name.indexOf('ipad') >= 0;
+ua.isiOS = (ua.isiPhone || ua.isiPod || ua.isiPad);
+
 // Mouseover
 
 $(function(){
-  $('nav ul li a').hover(function(){
-    $(this).find('.nav-normal').hide();
-    $(this).find('.nav-hover').show();
-  }, function(){
-    $(this).find('.nav-normal').show();
-    $(this).find('.nav-hover').hide();
-  });
+  if (ua.isiOS) {
+    $('nav ul li a').click(function(){
+      $(this).find('.nav-normal').hide();
+      $(this).find('.nav-hover').show();
+      $(this).delay(300).queue(function(){
+        $(this).find('.nav-normal').show();
+        $(this).find('.nav-hover').hide();
+      });
+    });
+  } else {
+    $('nav ul li a').hover(function(){
+      $(this).find('.nav-normal').hide();
+      $(this).find('.nav-hover').show();
+    }, function(){
+      $(this).find('.nav-normal').show();
+      $(this).find('.nav-hover').hide();
+    });
+  }
 });
 
 // Page Scroller
 
 $(function(){
   $('a[href^="#"]').click(function() {
+    const time = ua.isiOS ? 250 : 0;
     const speed = 500;
     let href= $(this).attr("href");
     let target = $(href == "#" || href == "" ? 'html' : href).children();
     let position = ($(window).width() < 700 ? target.offset().top : target.offset().top - target.position().top );
-    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    setTimeout(function(){
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+    },time);
     return false;
   });
 });
