@@ -14,10 +14,10 @@ $(function(){
     $('nav ul li a').click(function(){
       $(this).find('.nav-normal').hide();
       $(this).find('.nav-hover').show();
-      $(this).delay(300).queue(function(){
+      setTimeout(() => {
         $(this).find('.nav-normal').show();
         $(this).find('.nav-hover').hide();
-      });
+      },300);
     });
   } else {
     $('nav ul li a').hover(function(){
