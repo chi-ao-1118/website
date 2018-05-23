@@ -16,54 +16,88 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-P8DV9QV');</script>
   <!-- End Google Tag Manager -->
-  </head>
+</head>
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8DV9QV"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <section class="topWrap">
-    <p class="top">2018年度 高槻キャンパス祭</p>
-    <p class="top">スタジオイベント</p>
-    <img id="top_logo" src="./img/nazotoki.svg"/>
-    <p class="top date">2018/05/27(Sun)</p>
+    <article>
+      <p class="top">2018年度 高槻キャンパス祭</p>
+      <p class="top">スタジオイベント</p>
+      <img id="top_logo" src="./img/nazotoki.svg"/>
+      <p class="top date">2018/05/27(Sun)</p>
+    </article>
   </section>
   <section class="prgrminfoWrap">
-    <p class="title_ja">番組情報</p>
-    <p class="title_en"id="program">Program Information</p>
-    <p class="text">
-    当番組はMCSが主催する、謎解き番組です。謎解きが得意だという人をゲストとしてお招きし、
-    誰が一番なのかを決定いたします。当番組では、観客の皆様にも謎解きに参加していただけるような仕組みをご用意しております。
-    謎解きが得意な方、謎解きをあまりしない方どちらでも楽しめる選りすぐりの謎解きを用意しております。
-    皆様のお越しをお待ちしております。
-    </p>
+      <h2>番組情報</h2>
+      <h3 id="program">Program Information</h3>
+      <p class="text">
+      当番組はMCSが主催する、謎解き番組です。謎解きが得意だという人をゲストとしてお招きし、
+      誰が一番なのかを決定いたします。<br>
+      当番組では、観客の皆様にも謎解きに参加していただけるような仕組みをご用意しております。
+      謎解きが得意な方、謎解きをあまりしない方どちらでも楽しめる選りすぐりの謎解きを用意しております。<br>
+      皆様のお越しをお待ちしております。
+      </p>
   </section>
   <section class="ctntimeWrap">
-    <p class="title_ja">開演時間</p>
-    <p class="title_en" id="time">Curtain time</p>
-    <p class="time_info">
-      2018年5月27日(日)
-      <br>
-      関西大学高槻キャンパスC棟スタジオにて
-      <br>
-      <br>
-      第一部　10:30 ~
-      <br>
-      第二部　14:00 ~
-      <br>
-      <br>
-      スタジオイベントへの参加は入場整理券が必要です。
-      <br>
-      10:00より整理券を配布いたします。(なくなり次第終了)
-    </p>
+      <h2>開演時間</h2>
+      <h3 id="time">Curtain time</h3>
+      <p class="time_info">
+        2018年5月27日(日)
+        <br>
+        関西大学高槻キャンパスC棟スタジオにて
+        <br>
+        <br>
+        第一部　10:30 ~
+        <br>
+        第二部　14:00 ~
+        <br>
+        <br>
+        スタジオイベントへの参加は入場整理券が必要です。
+        <br>
+        10:00より整理券を配布いたします。(なくなり次第終了)
+      </p>
   </section>
-  <p class="title_ja">謎解き</p>
-  <p class="title_en" id="time">Question</p>
+  <section class="charaWrap">
+      <h2>演者情報</h2>
+      <h3 id="act">Actors</h3>
+      <br/>
+      <div class="chara">
+        <article>
+        <p class="charainfo">統計から答えを導く男</p>
+        <p class="charaname">健登</p>
+        <button class="vote" type="button">投票する</button>
+        </article>
+      </div>
+      <div class="chara">
+        <article>
+        <p class="charainfo">頭やわらか系マジシャン</p>
+        <p class="charaname">宗馬</p>
+        <button class="vote" type="button">投票する</button>
+        </article>
+      </div>
+      <div class="chara">
+        <article>
+        <p class="charainfo">ミステリー系女子</p>
+        <p class="charaname">光歩</p>
+        <button class="vote" type="button">投票する</button>
+        </article>
+      </div>
+      <p class="text">
+        謎解き王になると予想される人物を以上の3名から選び、投票することができます。
+        各々の紹介の下にある「投票する」ボタンを押してください。
+      </p>
+  </section>
+  <section>
+  <h2>謎解き</h2>
+  <h3 id="time">Question</h3>
   <p class="text">正解の場合のみ、送信することができます。正解すると何かが起こる？！</p>
   <img id="question" src="./img/Question.jpg" alt="謎解き">
   <form id="ans_form" action="" method="post">
     <input name="answer" type="text" id="answerbox"><br/>
-    <div id='submit'>送信</div>
+    <button id='submit' type="button">送信</button>
   </form>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>
@@ -74,12 +108,15 @@
       }
     });
   </script>
+  </section>
   <section class="contentsend">
     <div class="end">
-      <p class="title_en"id="presented">Presented by</p>
+      <h3 id="presented">Presented by</h3>
     </div>
     <div class="end">
-      <img id="mcs_logo" src="./img/logo.png"/>
+      <a href="https://mcs-kutc.com/">
+        <img id="mcs_logo" src="./img/logo.png"/>
+      </a>
     </div>
   </section>
 </body>
