@@ -37,6 +37,7 @@ section{
   margin-bottom:35vh;
   width:100%;
 }
+
 section:last-child{
   margin-bottom:0;
   padding-bottom:10vh;
@@ -66,7 +67,7 @@ section > p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom:3vh;
+  margin-bottom:15vh;
 }
 
 .top{
