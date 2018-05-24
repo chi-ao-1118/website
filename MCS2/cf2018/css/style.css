@@ -223,13 +223,10 @@ button{
   color:#fff;
   background-color: #5D0000;
   border:solid 2px #330000;
+  margin:1rem 0;
   
   cursor: pointer;
 }
-button.vote{
-  margin:1rem 0;
-}
-
 
 @media screen and (max-width: 768px) {
     p.charainfo{
@@ -259,7 +256,6 @@ button.vote{
     
     cursor: pointer;
   }
-  }
 }
 
 
@@ -272,11 +268,7 @@ button.vote{
   margin: 5vh 20vw;
 }
 #submit{
-  display: inline-block;
-  position: relative;
-  
-  margin: 5vh 0;
-  text-align: center;
+  width:20vw;
 }
 #answerbox{
   width: 10vw;
