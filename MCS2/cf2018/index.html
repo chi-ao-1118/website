@@ -95,19 +95,10 @@
   <h3 id="time">Question</h3>
   <p class="text">正解の場合のみ、送信することができます。正解すると何かが起こる？！</p>
   <img id="question" src="./img/Question.jpg" alt="謎解き">
-  <form id="ans_form" action="" method="post" onsubmit="return false;">
+  <form id="ans_form" onsubmit="return check();">
     <input name="answer" type="text" id="answerbox"><br/>
-    <button id='submit' type="button">送信</button>
+    <button id='submit'>送信</button>
   </form>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script>
-    $("#submit").click(function(){
-      var $input = $('#ans_form [name=answer]').val();
-      if( $input == "mcs"){
-      location.href="./ans.html";
-      }
-    });
-  </script>
   </section>
   <section class="login">
     <h2>ログイン</h2>
@@ -124,5 +115,17 @@
       </a>
     </div>
   </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+  function check() {
+    console.log('check!!');
+    var input = $('#ans_form [name=answer]').val();
+    if( input == "mcs"){
+    location.href="./ans.html";
+    }
+    return false;
+  };
+  </script>
 </body>
 </html>
