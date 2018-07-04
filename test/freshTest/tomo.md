@@ -1,3 +1,2 @@
 # tomo
-
-Github and Atom Test
+## Hello World
