@@ -1,0 +1,52 @@
+body{
+background-image:url(haikei03.png);
+}
+
+header {
+width:960px;
+margin:0 auto;
+} 
+
+.migimawari{
+float:right;
+padding-top:30px;
+}
+
+#wrap{
+width:960px; 
+height:1800;
+background-image:url(haikei02.png);
+background-repeat:repeat;
+margin:0 auto;
+} 
+
+#contents {
+float:left;
+width:536px;
+height:498px;
+margin:10px 0px 10px 0px;
+}
+
+#sidenavi { 
+background-repeat:repeat;
+float:left;
+width:200px;
+height:498px;
+margin:10px 10px 10px 0px;
+}
+
+#sidenavi02 { 
+background-repeat:repeat;
+float:left;
+width:200px;
+height:498px;
+margin:10px 10px 10px 0px;
+}
+
+#foot{
+position:absolute;
+font-size:larger;
+bottom:0px;
+height:30px;
+width:100%;
+}
