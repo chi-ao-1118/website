@@ -2,6 +2,13 @@
 
 <pressrelease>
   <!-- 追加時はitemを上に増やしていく -->
+     <item>
+        <link>pressrelease/index14.html</link>
+        <img>img/pressIndex14.jpg</img>
+        <time>2018.11.4</time>
+        <title>第41階関西大学統一学園祭 終了</title>
+        <article>第41回関西大学統一学園祭が11月4日に無事終了しました。</article>
+    </item>
     <item>
         <link>pressrelease/index13.html</link>
         <img>img/pressIndex13.jpg</img>
