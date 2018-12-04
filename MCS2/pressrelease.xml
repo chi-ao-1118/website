@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <pressrelease>
-  <!-- 追加時はitemを上に増やしていく -->
-     <item>
+    <!-- 追加時はitemを上に増やしていく -->
+    <item>
+        <link>pressrelease/index15.html</link>
+        <img>img/pressIndex15.jpg</img>
+        <time>2018.11.18</time>
+        <title>come come*はにコット vol.8 終了</title>
+        <article>come come*はにコット vol.8が11月18日に無事終了しました。</article>
+    </item>
+    <item>
         <link>pressrelease/index14.html</link>
         <img>img/pressIndex14.jpg</img>
         <time>2018.11.4</time>
