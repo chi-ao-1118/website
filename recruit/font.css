@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family:"cooper-black-std";
+}
+
+.top_sentence{
+	color:#FFF;
+	position: absolute;
+	margin: 20px;
+}
+
+.about_us{
+	position: absolute;
+	top:310px;
+	left:210px;
+}
+

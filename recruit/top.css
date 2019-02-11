@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.top_red{
+	position:absolute;
+	top:-130px;
+	left:-80px;
+	border-radius: 100%;
+	background: #d70034;
+	width: 600px;
+	height: 600px;
+	filter:opacity(80%);
+}
+.img_menu{
+	position:fixed;
+	top:20px;
+	right:10px;
+	margin-right:0px;
+	weight:40px;
+	height:30px;
+}
+.open{
+	position:fixed;
+	top:50px;
+	right:20px;
+	cursor: grab;
+}
+
+.img_about_us{
+	position:absolute;
+	top:350px;
+	left:330px;
+	width: 25px;
+	height: 25px;
+}
+.top_blue{
+	position:absolute;
+	top:280px;
+	left:370px;
+	border-radius: 100%;
+	background: #008cb4;
+	width: 280px;
+	height: 280px;
+	filter:opacity(80%);
+}
+.top_purple{
+	position:absolute;
+	top:90px;
+	left:470px;
+	border-radius: 100%;
+	background: #44318f;
+	width: 320px;
+	height: 320px;
+	filter:opacity(80%);
+}
+.mcs{
+	position: absolute;
+	top:220px;
+	left: 520px;
+	width:230px;
+	height:70px;
+}
