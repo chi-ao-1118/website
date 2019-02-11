@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="top.css">
+<link rel="stylesheet" href="font.css">
+	<script type="text/javascript" src="menu.js"></script>
+<title>recruit_2019</title>
+</head>
+
+<body>
+	<articlez>
+		<header>
+			<div id="page_top">
+				<div class="top">
+					<div class="top_blue"></div>
+					<div class="top_purple"></div>
+					<div class="top_red"></div>
+					<div class="top_sentence">
+						<h1 class="top_message">”人とは違うこと”をしよう。<br>４年間もその先も。<wbr></h1>
+			  			<h3>Media Creative Supporter</h3>
+						<br>
+			  			<p>Media Creative Suppoter（通称 MCS）は関西大学<br>高槻キャンパス事務直属の映像制作ボランティア団体です。</p>
+			  			<p class="about_us">About us</p>
+					</div>
+					<img src="about_us.png" alt="img.about us" class="img_about_us">
+					<img src="mcs.png" alt="mcs" class="mcs">
+
+<p><input type="image" src="menu.png" onclick="menu_open()" class="img_menu"></p>
+<div  class="open">
+	<span class="cls"></span>
+	<span>
+		<ul class="sub-menu ">
+			<li>
+				<a href="message" title="Message">あいさつ</a>
+			</li>
+			<li>
+				<a href="#about" title="MCS">MCSとは</a>
+			</li>
+			<li>
+				<a href="#project" title="Project">Projectとは</a>
+			</li>
+			<li>
+				<a href="#group" title="group">局とは</a>
+			</li>
+			<li>
+				<a href="#works" title="works">その他の活動</a>
+			</li>
+			<li>
+				<a href="#how" title="contact">入団の仕方</a>
+			</li>
+			<li>
+				<a href="https://mcs-kutc.com/index.html" title="home">ホームに戻る</a>
+			</li>
+		</ul>
+	</span>
+	<span class="cls"></span>
+
+</div>
+					</div>
+		  		</div>
+		</header>
+
+		<section id="message" class="block">
+			<h2>Message</h2>
+			<p>代表あいさつ</p>
+		</section>
+
+		<section id="about" class="block">
+			<h2>About</h2>
+			<p>MCSについて</p>
+			<section id="group" class="block">
+				<p>説明</p>
+			</section>
+			<section id="project" class="block">
+				<p>説明</p>
+			</section>
+			<section id="works" class="block">
+				<p>説明</p>
+			</section>
+			<section id="other" class="block">
+				<p>説明</p>
+			</section>
+		</section>
+		<section id="how" class="block">
+			<section id="guidance" class="block">
+				<p class="01">01.Guidance</p>
+				<h3>新入生ガイダンス<br>（スタジオ見学）</h3>
+				<p>説明</p>
+			</section>
+			<section id="party" class="block">
+				<p class="02">02.party</p>
+				<h3>お菓子パーティ</h3>
+				<p>説明</p>
+			</section>
+			<section id="briefing" class="block">
+				<p class="03">03.Briefing</p>
+				<h3>入団説明会＆<br>新入生歓迎お食事会</h3>
+				<p>説明</p>
+			</section>
+			<section id="submit" class="block">
+				<p class="04">04.Submit</p>
+				<h3>入団届け提出</h3>
+				<p>説明</p>
+			</section>
+		</section>
+
+		<footer>
+			<div class="up"><img src="to_top.png" alt="up"></div>
+		</footer>
+	</articlez>
+</body>
+</html>
