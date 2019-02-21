@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
+#page_top{
+	width: 750px;
+}
+#top_message{
+	position: relative;
+	width: 500px;
+}
 
 .top_red{
 	position:absolute;

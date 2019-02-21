@@ -9,6 +9,7 @@ body{
 	color:#FFF;
 	position: absolute;
 	margin: 20px;
+	height: 500px;
 }
 
 .about_us{
@@ -17,3 +18,109 @@ body{
 	left:210px;
 }
 
+
+.main_message {
+	position: relative;
+  max-width: 50%;
+  margin: 620px auto 0 auto;
+  text-align:center;
+}
+
+.nakamura_message{
+	position: relative;
+	max-width: 50%;
+  margin: 500px auto 0 auto;
+  text-align:center;
+	font-size: 35px;
+}
+
+.main_about{
+	position: relative;
+  max-width: 50%;
+  margin: 60px auto 0 auto;
+  text-align:center;
+}
+
+.description_mcs{
+	position: relative;
+  max-width: 50%;
+  margin: 0px auto;
+  text-align:center;
+	font-size: 35px;
+}
+
+.description{
+	position: relative;
+  max-width: 50%;
+  margin: 320px auto 0px auto;
+  text-align:center;
+	font-size: 35px;
+}
+
+#groupactivity_red p {
+  position: relative;
+  top:32%;
+  transform: translateY(-50%);
+  font-size: 50px;
+	color: #fff;
+}
+
+#project_blue p {
+  position: relative;
+  top:32%;
+  transform: translateY(-50%);
+  font-size: 50px;
+	color: #fff;
+}
+
+#works_purple p {
+  position: relative;
+  top:32%;
+  transform: translateY(-50%);
+  font-size: 50px;
+	color: #fff;
+}
+
+.guidance_01{
+	position: relative;
+	width: 100px;
+	color: #fff;
+	background-color: #D70034;
+	text-align: center;
+  left: calc(50% + 50px);
+}
+
+h3{
+	position: relative;
+	color: #D70034;
+	text-align: left;
+  left: calc(50% + 50px);
+}
+
+.guidance{
+	position: relative;
+	color: #D70034;
+	margin: 0px auto ;
+	left: calc(50% - 210px);
+}
+
+.party_02{
+	position: relative;
+	width: 100px;
+	color: #fff;
+	background-color: #008cb4;
+	text-align: center;
+  left: calc(50% - 250px);
+}
+
+.how_right{
+	position: relative;
+	left: calc(50% + 50px);
+	font-size: 25px;
+}
+
+.how_left{
+	position: relative;
+	left: calc(50% - 50px);
+	font-size: 25px;
+}
