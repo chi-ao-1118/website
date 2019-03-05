@@ -206,7 +206,10 @@
 
 
 img.up{
-  position: absolute;
+  filter:opacity(90%);
+  width: 100px;
+  height: 100px;
+  position: fixed;
   right: 0%;
   bottom: 0%;
 }
