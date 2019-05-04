@@ -1,0 +1,63 @@
+body{
+  background-color:#F9ECE2;
+}
+
+h1{
+  font-size:15px;
+  text-align: center;
+  background:
+}
+h2,h3{
+  text-align: center;
+  background-color: #E9CCCC;
+  background-size: 40% auto;
+}
+h4{
+  text-align: center;
+}
+p{
+  margin:20%;
+  margin-top: 0%;
+}
+.main{
+  margin-top: 50%;
+
+}
+.make {
+  position: absolute;
+}
+
+.top ul {
+list-style: none; /* 先頭記号を消す */
+position:fixed;
+overflow: hidden;
+margin-top: 0%;
+padding:0%;
+}
+.top ul li {
+float: left; /* リスト項目を横方向に並べる */
+border-right: 1px solid #DDD;
+}
+.top ul a {
+background-color:inherit;/* 背景色 */
+color: black; /* 文字色 */
+display: block; /* ブロックレベルに */
+text-align: center; /* 文字を中央合わせに */
+padding: 5px 10px; /* 内部の余白 */
+text-decoration: none; /* 下線を消す */
+outline: none; /* 選択時の点線枠線を消す */
+}
+.top ul li a span {
+    display: block;
+    font-size: 10px;
+    color: #333;
+
+}
+.top ul a:hover{/* マウスカーソルが乗っている状態 */
+background-color: white; /* 背景色 */
+color: #000; /* 文字色 */
+}
+.top ul a:active,span:active{/* マウスがクリックされている状態 */
+background-color: white; /* 背景色 */
+color: red; /* 文字色 */
+}
