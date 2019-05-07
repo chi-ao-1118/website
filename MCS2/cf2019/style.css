@@ -10,7 +10,8 @@ h1{
 h2,h3{
   text-align: center;
   background-color: #E9CCCC;
-  background-size: 40% auto;
+  border-radius:50%;
+  border-bottom:  2px solid #E9AAAA;
 }
 h4{
   text-align: center;
@@ -19,12 +20,26 @@ p{
   margin:20%;
   margin-top: 0%;
 }
+
 .main{
   margin-top: 50%;
 
 }
 .make {
-  position: absolute;
+  font-family: monospace;
+  background-color: #E9cccc;
+  padding: 30px;
+  border-radius:30%;
+  border:  4px double #E9aaaa;
+}
+
+
+.time{
+  background-color: #E9CCCC;
+  padding: 30px;
+  border-radius:20%;
+  border-right: 7px solid #E9AAAA;
+  border-bottom:  7px solid #E9AAAA;
 }
 
 .top ul {
