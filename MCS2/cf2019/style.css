@@ -1,5 +1,9 @@
 body{
   background-color:#F9ECE2;
+  background-image: url("20.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+  background-size: contain;
 }
 
 h1{
