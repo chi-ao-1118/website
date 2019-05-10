@@ -1,9 +1,38 @@
+/*load*/
+.overlay{
+  position:absolute;
+  text-align: center;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  animation: feadout 0.3s linear 0.2s 1 normal forwards;
+}
+.progress{
+  font-size: 20px;
+}
+.LoadLogo{
+  margin-top: 250px;
+}
+.you{
+  color: red;
+  animation: feadin 0.2s ease 0s 1 normal forwards;
+}
+@keyframes feadout{
+	from {opacity: 1;}
+  to {opacity: 0;}
+}
+@keyframes feadin{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+ /*main*/
 body{
   background-color:#F9ECE2;
   background-image: url("20.png");
 	background-repeat: no-repeat;
 	background-position: center top;
   background-size: contain;
+  margin: 0;
 }
 
 h1{
