@@ -1,29 +1,7 @@
 /*load*/
-.overlay{
-  position:absolute;
+p{
   text-align: center;
-  height: 100%;
-  background-color: white;
-  z-index: 10;
-  animation: feadout 0.3s linear 0.2s 1 normal forwards;
-}
-.progress{
-  font-size: 20px;
-}
-.LoadLogo{
-  margin-top: 250px;
-}
-.you{
-  color: red;
-  animation: feadin 0.2s ease 0s 1 normal forwards;
-}
-@keyframes feadout{
-	from {opacity: 1;}
-  to {opacity: 0;}
-}
-@keyframes feadin{
-	from {opacity: 0;}
-	to {opacity: 1;}
+  font-size: 10px;
 }
  /*main*/
 body{
@@ -34,50 +12,65 @@ body{
   background-size: contain;
   margin: 0;
 }
+.black{
+  margin-left: 150px;
+  margin-right: 150px;
+  background: black;
+  color: white;
+}
+.black2{
 
+  margin-left: 50px;
+  margin-right: 50px;
+  background: black;
+  color: white;
+}
+.gray{
+  background:rgba(125,125, 125, 0.3);
+  padding-bottom: 20px;
+}
 h1{
-  font-size:15px;
-  text-align: center;
-  background:
-}
-h2,h3{
-  text-align: center;
-  background-color: #E9CCCC;
-  border-radius:50%;
-  border-bottom:  2px solid #E9AAAA;
-}
-h4{
+  font-family:monospace;
+  font-size: 14px;
   text-align: center;
 }
-p{
-  margin:20%;
-  margin-top: 0%;
+h2{
+  font-size: 17px;
+  text-align: center;
 }
-
-.main{
-  margin-top: 50%;
-
+h3{
+  text-align: center;
+  font-size: 13px;
 }
-.make {
-  font-family: monospace;
-  background-color: #E9cccc;
-  padding: 30px;
-  border-radius:30%;
-  border:  4px double #E9aaaa;
-}
-
-
 .time{
-  background-color: #E9CCCC;
-  padding: 30px;
-  border-radius:20%;
-  border-right: 7px solid #E9AAAA;
-  border-bottom:  7px solid #E9AAAA;
+  background-color: #FFd090;
+  border-radius:10px;
+  margin: 0px  80px;
+}
+.TYPE01{
+  margin-right: 30%;
+}
+.TYPE02{
+  margin-top: 10%;
+  margin-left: 30%;
+}
+tr,td{
+  border: 0.5px #ffffff solid;
+}
+table{
+  border-collapse: collapse;
+  border: 0.5px #ffffff solid;
+  text-align: center;
+  color: white;
+  background-color: #ff9090;
+  border-radius:10pt;
 }
 
 .top ul {
 list-style: none; /* 先頭記号を消す */
-position:fixed;
+position:absolute;
+top: 0;
+right:0%;
 overflow: hidden;
 margin-top: 0%;
 padding:0%;
