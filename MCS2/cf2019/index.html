@@ -4,18 +4,20 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
   <title>cf2019_index</title>
+  <script src="jquery.min.js"></script>
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
   <header id="top">
-    <p id="top-event">関西大学高槻キャンパス祭スタジオイベント</p>
+    <p id="top-event"><span id="top-event-arrow"></span>関西大学高槻キャンパス祭スタジオイベント</p>
     <p id="top-mcs">Media Creative Supporter Presents</p>
-    <h1><img src="cf2019.svg" alt="Let's answer"></h1>
-    <div id="scroll"><a href="#about"><span id="scroll-arrow"></span><div>スクロール</div></a></div>
+    <h1><img src="cf2019.svg" alt="Let's answer" height="300vh"></h1>
+    <h1 id="date">2019/5/26 (<span class="font_red">SUN</span>)</h1>
+    <div id="scroll"><a href="#about"><span id="scroll-arrow"></span><div>Scroll</div></a></div>
   </header>
   <main>
     <section class="main-section" id="about">
-      <h2>体感しよう、MCSの世界を</h2>
+      <h2 class="color-mix">体感しよう、MCSの世界を</h2>
       <p>今年のMCSのスタジオイベントのコンセプトは</p>
       <strong id="catchphrase">「番組を作るのはあなたです」</strong>
       <p>
@@ -26,8 +28,9 @@
       </p>
     </section>
     <section class="main-section" id="event">
-      <h2>公演情報</h2>
-      <strong id="date">2019/5/26 (SUN)</strong>
+      <h2 class="color-mix">公演情報</h2>
+      <h3>スタジオイベント</h3>
+      <h3>『Let'answer!~番組を作るのは「あなた」です~』</h3>
       <table id="main-event-table">
         <tr>
           <th></th>
@@ -45,8 +48,9 @@
           <td>14:30~15:00</td>
         </tr>
       </table>
-      <strong id="place">関西大学高槻キャンパス C棟 スタジオ</strong>
-      <p>参加していただくには整理券が必要な場合があります。お早めにお越しください。</p>
+      <strong id="place">場所：関西大学高槻キャンパス C棟 スタジオ</strong>
+      <p class="font_red">※１参加していただくには必ず整理券が必要です。</p>
+      <p class="font_red">※２整理券は9時よりC棟前で配布いたします。</p>
     </section>
     <section class="main-section" id="access">
       <h2>アクセス</h2>
@@ -57,11 +61,29 @@
         </li>
       </ul>
     </section>
+    <section class="main-section" id="event">
+      <h2 class="color-mix">模擬店情報</h2>
+      <h3>模擬店『わくわくワッフル』</h3>
+      <p>甘〜いワッフルに<br/>
+        蜂蜜がかかった<br/>
+        美味しい逸品。<br/>
+        お一ついかがですか？？</p>
+    </section>
   </main>
   <footer>
     <img src="mcs.svg" alt="Media Creative Supporter">
     <p>HP:https://mcs-kutc.com</p>
     <p>Twitter:@MCS_kutc</p>
   </footer>
+  <script>
+  $(function() {
+    $(".color-mix").children().addBack().contents().each(function(){
+        if (this.nodeType == 3) {
+            $(this).replaceWith($(this).text().replace(/(\S)/g, "<span>$&</span>"));
+        }
+    });
+});
+
+  </script>
 </body>
 </html>

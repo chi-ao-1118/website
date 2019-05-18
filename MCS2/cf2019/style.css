@@ -24,7 +24,9 @@ body {
 ul {
   text-align: left;
 }
-
+.font_red{
+  color: red;
+}
 /*
   HEADER
 */
@@ -132,3 +134,10 @@ table {
 tr > * {
   padding: 0.5rem 1rem;
 }
+
+/*font-coloful*/
+.color-mix span:nth-child(5n+1) {color: #ea535d;}
+.color-mix span:nth-child(5n+2) {color: #ed6d00;}
+.color-mix span:nth-child(5n+3) {color: #6eb92b;}
+.color-mix span:nth-child(5n+4) {color: #8f70af;}
+.color-mix span:nth-child(5n) {color: #68a3d7;}
