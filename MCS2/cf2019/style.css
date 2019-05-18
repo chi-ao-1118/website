@@ -1,126 +1,104 @@
-/*load*/
-p{
-  text-align: center;
-  font-size: 10px;
-}
- /*main*/
-body{
-  background-color:#F7F2E9;
-  margin: 0;
-}
-.main_img{
-  margin-top: 10px;
-  width:100%;
-}
-.black{
-  margin-left: 150px;
-  margin-right: 150px;
-  background: black;
-  color: white;
-}
-.black2{
+/*
+  Reset CSS
+*/
 
-  margin-left: 50px;
-  margin-right: 50px;
-  background: black;
-  color: white;
+html{box-sizing:border-box;overflow-y:scroll;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search]{-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted ButtonText}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select{-moz-appearance:none;-webkit-appearance:none}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}img{border-style:none}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}
+
+/*
+  GENERAL
+*/
+
+html {
+  font-size: 62.5%;
 }
-.gray{
-  background:rgba(125,125, 125, 0.3);
-  padding-bottom: 20px;
-}
-h1{
-  font-family:monospace;
-  font-size: 14px;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans", "Noto Sans JP", "Noto Sans CJK JP", "Helvetica Neue", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Segoe UI", メイリオ, Meiryo, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.75;
+  letter-spacing: 0.05em;
   text-align: center;
 }
-h2{
-  font-size: 17px;
-  text-align: center;
+
+/*
+  HEADER
+*/
+
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
-h3{
-  text-align: center;
-  font-size: 13px;
+
+#top-event {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
-.time{
-  background-color: #FFd090;
-  border-radius:10px;
-  margin: 0px  80px;
+
+#top-mcs {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
-.TYPE01{
-  margin-right: 30%;
+
+#top img {
+  width: 80vw;
+  max-width: 90rem;
+  hight: auto;
 }
-.TYPE01_img{
+
+#scroll {
+  padding-top: 1rem;
+}
+
+#scroll span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+/*
+  MAIN
+*/
+
+.main-section {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 100rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+#catchphrase {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+#catchphrase:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 90px;
+  height: 2px;
   background-color: red;
-  background-image: url("red.png");
-	background-repeat: no-repeat;
-	background-position: center top;
-  background-size:cover;
-}
-.TYPE02{
-  margin-top: 10%;
-  margin-left: 30%;
-}
-.TYPE02_img{
-  width: 100%;
-  background-color: orange;
-}
-tr,td{
-  border: 0.5px #ffffff solid;
-}
-table{
-  border-collapse: collapse;
-  border: 0.5px #ffffff solid;
-  text-align: center;
-  color: white;
-  background-color: #ff9090;
-  border-radius:10pt;
 }
 
-.top ul {
-list-style: none; /* 先頭記号を消す */
-position:absolute;
-top: 0;
-right:0%;
-overflow: hidden;
-margin-top: 0%;
-padding:0%;
-}
-.top ul li {
-float: left; /* リスト項目を横方向に並べる */
-border-right: 1px solid #DDD;
-}
-.top ul a {
-background-color:inherit;/* 背景色 */
-color: black; /* 文字色 */
-display: block; /* ブロックレベルに */
-text-align: center; /* 文字を中央合わせに */
-padding: 5px 10px; /* 内部の余白 */
-text-decoration: none; /* 下線を消す */
-outline: none; /* 選択時の点線枠線を消す */
-}
-.top ul li a span {
-    display: block;
-    font-size: 10px;
-    color: #333;
-
-}
-.top ul a:hover{/* マウスカーソルが乗っている状態 */
-background-color: white; /* 背景色 */
-color: #000; /* 文字色 */
-}
-.top ul a:active,span:active{/* マウスがクリックされている状態 */
-background-color: white; /* 背景色 */
-color: red; /* 文字色 */
-}
-footer{
-    background:rgba(125,125, 125, 0.3);
-    margin-top: 50px;
-    padding-bottom: 10px;
-}
-.twitter{
-  width: 25px;
-  margin-top: 10px;
+#date, #place {
+  font-size: 1.6rem;
 }
