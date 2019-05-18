@@ -18,6 +18,11 @@ body {
   line-height: 1.75;
   letter-spacing: 0.05em;
   text-align: center;
+  background-color: #f3efe7;
+}
+
+ul {
+  text-align: left;
 }
 
 /*
@@ -31,10 +36,11 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  padding: 5rem 0;
 }
 
 #top-event {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -43,26 +49,32 @@ body {
   margin-bottom: 1rem;
 }
 
-#top img {
+#top > img {
   width: 80vw;
   max-width: 90rem;
-  hight: auto;
+  height: auto;
 }
 
 #scroll {
-  padding-top: 1rem;
+  margin-top: auto;
+  position: relative;
+  width: 10rem;
+  height: 5rem;
 }
 
-#scroll span {
+#scroll a {
+  color: black;
+  text-decoration: none;
+}
+
+#scroll-arrow {
   position: absolute;
-  top: 0;
-  left: 50%;
+  bottom: 0;
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
@@ -72,8 +84,8 @@ body {
 */
 
 .main-section {
-  margin: 0 auto;
-  width: 90%;
+  margin: 10rem auto;
+  width: 80%;
   max-width: 100rem;
   display: flex;
   align-items: center;
@@ -81,18 +93,24 @@ body {
 }
 
 h2 {
+  margin-bottom: 2rem;
   font-size: 2.5rem;
 }
+
+/*
+  ABOUT
+*/
 
 #catchphrase {
   position: relative;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 #catchphrase:after {
   content: " ";
   position: absolute;
+  left: 0;
   bottom: 0;
   width: 100%;
   height: 2px;
@@ -101,4 +119,16 @@ h2 {
 
 #date, #place {
   font-size: 1.6rem;
+}
+
+/*
+  EVENT
+*/
+
+table {
+  margin: 2rem 0;
+}
+
+tr > * {
+  padding: 0.5rem 1rem;
 }
