@@ -30,7 +30,6 @@ ul {
 /*
   HEADER
 */
-
 #top {
   display: flex;
   align-items: center;
@@ -46,15 +45,54 @@ ul {
   margin-bottom: 1.5rem;
 }
 
+#top-red-right {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: -40px;
+  border-left: 3px solid #f00;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#top-orange-right {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: -20px;
+  border-left: 3px solid orange;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#top-red-left{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  border-left: 3px solid #f00;
+  transform: rotate(-135deg);
+  box-sizing: border-box;
+}
+#top-orange-left {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: -10px;
+  border-left: 3px solid orange;
+  transform: rotate(-135deg);
+  box-sizing: border-box;
+}
 #top-mcs {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-#top > img {
-  width: 80vw;
+#top img {
+  width: 70vw;
   max-width: 90rem;
   height: auto;
+}
+#top strong{
+  color: blue;
 }
 
 #scroll {
@@ -98,7 +136,10 @@ h2 {
   margin-bottom: 2rem;
   font-size: 2.5rem;
 }
-
+.dot_add{
+  -webkit-text-emphasis: filled circle red;
+  text-emphasis: filled circle red;
+}
 /*
   ABOUT
 */
@@ -107,16 +148,7 @@ h2 {
   position: relative;
   font-weight: bold;
   font-size: 2rem;
-}
-
-#catchphrase:after {
-  content: " ";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: red;
+  text-decoration:underline red;
 }
 
 #date, #place {
@@ -129,10 +161,32 @@ h2 {
 
 table {
   margin: 2rem 0;
+  border: solid 1px #000000;
+  border-collapse: collapse;
 }
 
 tr > * {
   padding: 0.5rem 1rem;
+  border: solid 1px #555555;
+}
+#event img{
+  width:100px;
+  max-width: 90rem;
+  height: auto;
+}
+#event div{
+  display:inline;
+  vertical-align: middle;
+}
+/*footer*/
+footer div{
+  display:inline-block;
+}
+
+footer img{
+  width:100px;
+  max-width: 90rem;
+  height: auto;
 }
 
 /*font-coloful*/
