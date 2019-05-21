@@ -38,51 +38,52 @@ ul {
   height: 100vh;
   width: 100vw;
   padding: 5rem 0;
+
 }
 
 #top-event {
-  font-size: 2rem;
+  font-size: 4vw;
   margin-bottom: 1.5rem;
 }
 
 #top-red-right {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  margin-left: -40px;
+  position:absolute;
+  width: 4vw;
+  height: 4vw;
+  margin-left: -5vw;
   border-left: 3px solid #f00;
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
 #top-orange-right {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  margin-left: -20px;
+  width: 4vw;
+  height: 4vw;
+  margin-left: -3vw;
   border-left: 3px solid orange;
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
 #top-red-left{
   position: absolute;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+  width: 4vw;
+  height: 4vw;
+  margin-left: 1vw;
   border-left: 3px solid #f00;
   transform: rotate(-135deg);
   box-sizing: border-box;
 }
 #top-orange-left {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  margin-left: -10px;
+  width: 4vw;
+  height: 4vw;
+  margin-left: -1vw;
   border-left: 3px solid orange;
   transform: rotate(-135deg);
   box-sizing: border-box;
 }
 #top-mcs {
-  font-size: 2rem;
+  font-size: 4vw;
   margin-bottom: 1rem;
 }
 
@@ -143,12 +144,16 @@ h2 {
 /*
   ABOUT
 */
+#about p{
+  line-height:3.5rem;
+}
 
 #catchphrase {
   position: relative;
   font-weight: bold;
   font-size: 2rem;
   text-decoration:underline red;
+  line-height:7rem;
 }
 
 #date, #place {
@@ -175,8 +180,16 @@ tr > * {
   height: auto;
 }
 #event div{
-  display:inline;
-  vertical-align: middle;
+  display: center;
+}
+#place{
+  line-height: 7rem;
+}
+#event p{
+  line-height: 3rem;
+}
+#event h3{
+  line-height: 5rem;
 }
 /*footer*/
 footer div{
@@ -190,6 +203,12 @@ footer img{
 }
 
 /*font-coloful*/
+
+.color-mix>span{
+  display: inline-block;
+  letter-spacing:0.5rem;
+}
+
 .color-mix span:nth-child(5n+1) {color: #ea535d;}
 .color-mix span:nth-child(5n+2) {color: #ed6d00;}
 .color-mix span:nth-child(5n+3) {color: #6eb92b;}
