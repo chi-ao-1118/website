@@ -151,7 +151,7 @@ h2 {
 #catchphrase {
   position: relative;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 5.2vw;
   text-decoration:underline red;
   line-height:7rem;
 }
