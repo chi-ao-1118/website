@@ -153,7 +153,7 @@ h2 {
   font-weight: bold;
   font-size: 5.2vw;
   text-decoration:underline red;
-  line-height:7rem;
+  line-height:25vw;
 }
 
 #date, #place {
@@ -163,7 +163,9 @@ h2 {
 /*
   EVENT
 */
-
+li{
+  margin: 4vh;
+}
 table {
   margin: 2rem 0;
   border: solid 1px #000000;
@@ -192,14 +194,12 @@ tr > * {
   line-height: 5rem;
 }
 /*footer*/
-footer div{
-  display:inline-block;
-}
 
 footer img{
   width:100px;
   max-width: 90rem;
   height: auto;
+  padding:2vw;
 }
 
 /*font-coloful*/
