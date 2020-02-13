@@ -1,0 +1,59 @@
+.container {
+  max-width: 80rem;
+}
+
+.header-btns {
+  display: flex;
+  justify-content: center;
+  /* Flexboxで検索！検索！！ */
+}
+
+.header-btn {
+  width: 100%;
+  margin: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.contents-wrapper {
+  position: relative;
+  margin: 2rem 0;
+  min-height: 15rem;
+}
+
+.contents-wrapper img {
+  position: absolute;
+  right: 0;
+  height: auto;
+  width: 15rem;
+  z-index: 0;
+}
+
+.contents-wrapper img::before {
+  content: " ";
+  display: block;
+  padding-top: 75%;
+}
+
+.contents-wrapper p {
+  position: relative;
+  display: block;
+  word-break: break-all;
+  margin: 0 9rem 0 5rem;
+  z-index: 1;
+}
+
+#details .contents-wrapper img, #how-to .contents-wrapper img {
+  top: 0;
+  /* margin-right: 2rem; */
+}
+#details .contents-wrapper img {
+  left: 0;
+  margin: 0;
+}
+
+#details .contents-wrapper h3, #details .contents-wrapper p {
+  margin: 0 0 0 17rem;
+}
