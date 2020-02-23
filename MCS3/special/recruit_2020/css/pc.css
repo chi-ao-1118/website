@@ -17,6 +17,15 @@
   padding: 0;
 }
 
+
+
+.header-nav {
+  width: auto;
+  height: 100%;
+}
+/* .header-sentense{
+  margin-top: 10rem;
+} */
 .contents-wrapper {
   position: relative;
   margin: 2rem 0;

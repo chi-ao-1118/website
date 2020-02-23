@@ -2,17 +2,20 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--スマホやタブレットのモバイル端末で表示するためのタグ-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /><!--IEに表示させるものらしい-->
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/html5reset-1.6.1.css" />
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="./css/html5reset-1.6.1.css" />
+      <!--cssのブラウザごとの変化をリセット-->
     <link rel="stylesheet" href="./css/sp.css" />
-    <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width: 550px)">
+    <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width: 550px)"><!--550px-->
+    <!-- <link rel="stylesheet" href="./css/large_pc.css" media="screen and (min-width: 1024px)">1024px -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!--CDN-jQuery-->
     <script src="./main.js"></script>
     <title>Recruit | Media Creative Supporter (MCS)</title>
+    <script src="https://kit.fontawesome.com/3fe69ce995.js" crossorigin="anonymous"></script><!--awesomeフォント-->
   </head>
 
   <body>
@@ -30,12 +33,40 @@
                 />
               </a>
             </li>
-            <li>
-              🍔
+            <!-- ハンバーガーメニュー -->
+            <!-- <li>
+              <div class="ham">
+                <span class="ham_line
+                ham_line1"></span>
+                <span class="ham_line
+                ham_line2"></span>
+                <span class="ham_line
+                ham_line3"></span>
+              </div>
+              <div class="menu_wrapper"
+              id="menu_wrapper">
+              <div class="menu">
+                <ul>
+                  <li>
+                    <a href="https://mcs-kutc.com/">MCS公式サイト
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#2">Twitter
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#3">トップ
+                    </a>
+                  </li> -->
+                </ul>
+              </div>
+              </div>
             </li>
           </ul>
         </div>
       </nav>
+
       <!-- ヘッダーコンテンツ -->
       <div class="container">
         <div class="header-btns">
@@ -109,13 +140,14 @@
           </div>
         </section>
       </div>
+
       <!-- Q&A -->
       <div class="section" id="qa">
         <section class="container">
           <h2 class="section-title">Question and Answer</h2>
-          <div class="contents-wrapper">
+          <div class="contents-wrapper-QA">
             <dl class="qa-container">
-              <dt class="question">aaaaaaaaaa</dt>
+              <dt class="question">あああああああああああああああああああああああああああああああああああああ</dt>
               <dd class="answer">実際に来てみないとわかんないな。。。</dd>
             </dl>
             <dl class="qa-container">
@@ -142,6 +174,9 @@
         </section>
       </div>
     </main>
+    <!-- トップに戻るもの -->
+    <p id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+
     <!-- フッター -->
     <footer>
       <div class="container">
@@ -149,6 +184,15 @@
           >©2020 Media Creative Supporter</small
         >
       </div>
+      <!-- Twitter、Youtubeアイコン -->
+      <div><a href="https://twitter.com/mcs_kutc" target="_blank">
+      <i class="fab fa-twitter-square fa-3x fa-pull-right twitterblue"></i></a>
+      <a href="https://www.youtube.com/channel/UCRYoWNgkS4KA4BQfAjfxNIg">
+      <i class="fab fa-youtube fa-3x fa-pull-right youtubered"></i></a>
+      </div>
+
     </footer>
+
+
   </body>
 </html>

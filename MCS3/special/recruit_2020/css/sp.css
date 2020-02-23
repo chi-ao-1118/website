@@ -8,13 +8,15 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Noto Sans", "Noto Sans JP",
     "Noto Sans CJK JP", "Helvetica Neue", "Hiragino Kaku Gothic ProN",
     "ヒラギノ角ゴ ProN W3", "Segoe UI", メイリオ, Meiryo, sans-serif;
-  --gray: #4d4948;
+  --gray: #4d4948;/*定義*/
   --purple: #44318f;
   --red: #d70034;
   --cyan: #008cb4;
-  background: var(--gray);
-  overflow-x: hidden;
-}
+  background: var(--gray);/*varで定義されたの出力*/
+  overflow-x: hidden;/*x軸方向隠される初期値visible*/
+
+  }
+
 
 p, dt, dd {
   font-size: 1rem;
@@ -24,14 +26,14 @@ p, dt, dd {
   letter-spacing: 0.1rem;
   line-height: 1.75;
 }
-
+.twitterblue {color: #00aced}
+.youtubered {color: #c4302b}
 .container {
-  margin: 0 auto;
+  margin: 0 auto;/*上下左右*/
   width: 90vw;
 }
 
 /*ヘッダー*/
-
 header {
   position: relative;
   z-index: 1;
@@ -40,7 +42,10 @@ header {
 .header-nav {
   background: black;
   padding: 1rem;
+  position: relative;
+
 }
+
 
 .header-nav ul {
   margin: 0.5rem 0;
@@ -52,6 +57,7 @@ header {
 }
 
 .header-nav li:first-child {
+
   margin-right: auto;
 }
 
@@ -59,6 +65,33 @@ header {
   height: 100%;
   width: auto;
 }
+/* ハンバーガーメニュー */
+.ham {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  background-color: var(--gray);
+}
+
+.ham_line {
+  position: absolute;
+  left: 1rem;
+  width: 2rem;
+  height: 0.1rem;
+  background-color: black;
+}
+
+.ham_line1 {
+  top: 1rem;
+}
+.ham_line2 {
+  top: 1.8rem;
+}
+.ham_line3 {
+  top: 2.6rem;
+}
+
 
 header::before {
   display: block;
@@ -126,6 +159,8 @@ header::before {
     "Yu Minc", YuMincho, HGS明朝E, serif;
   letter-spacing: 0.03rem;
   line-height: 1.75;
+  /* position: relative;
+  top: 10%; */
 }
 
 /*メイン*/
@@ -273,7 +308,41 @@ h3 {
   content: "A.";
   margin-right: 0.5rem;
 }
+/* コピペ */
+#pageTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 
+
+
+#pageTop i {
+  padding-top: 6px
+}
+
+
+
+#pageTop a {
+  display: block;
+  z-index: 999;
+  padding: 8px 0 0 8px;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  background-color:var(--cyan);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
 /* フッター */
 
 footer {
@@ -286,4 +355,18 @@ small {
   display: block;
   font-size: 0.75rem;
   letter-spacing: 0.1rem;
+}
+
+.fabfa-twitter-square {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  margin-left: auto;
+}
+
+.contents-wrapper-QA{
+  text-align: center;
+}
+.section-title{
+  text-align: center;
 }
