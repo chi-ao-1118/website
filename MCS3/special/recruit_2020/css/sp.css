@@ -18,6 +18,8 @@ body {
   }
 
 
+
+
 p, dt, dd {
   font-size: 1rem;
   font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
@@ -102,7 +104,7 @@ header::before {
   content: "";
   width: 100%;
   height: 60vh;
-  background-image: url("../img/400x300.png");
+  background:url("../img/400x300.png");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -283,6 +285,7 @@ h3 {
 
 .qa-container {
   margin: 1.5rem 1.2rem;
+  text-align: justify;
 }
 
 .question {
@@ -308,7 +311,7 @@ h3 {
   content: "A.";
   margin-right: 0.5rem;
 }
-/* コピペ */
+/* ページトップに戻る */
 #pageTop {
   position: fixed;
   bottom: 20px;
@@ -369,4 +372,9 @@ small {
 }
 .section-title{
   text-align: center;
+}
+a{
+  color: black;
+
+  font-family: Arial, Helvetica, sans-serif;
 }

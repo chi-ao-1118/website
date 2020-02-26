@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   /* Flexboxで検索！検索！！ */
+   margin-bottom: 2rem;
 }
 
 .header-btn {
@@ -23,13 +24,12 @@
   width: auto;
   height: 100%;
 }
-/* .header-sentense{
-  margin-top: 10rem;
-} */
+
 .contents-wrapper {
   position: relative;
   margin: 2rem 0;
   min-height: 15rem;
+
 }
 
 .contents-wrapper img {
@@ -52,6 +52,8 @@
   word-break: break-all;
   margin: 0 9rem 0 5rem;
   z-index: 1;
+  white-space:pre-line;
+  width: 25rem;
 }
 
 #details .contents-wrapper img, #how-to .contents-wrapper img {
@@ -65,4 +67,11 @@
 
 #details .contents-wrapper h3, #details .contents-wrapper p {
   margin: 0 0 0 17rem;
+}
+.contents-wrapperQA{
+  margin: 0 auto;
+}
+.qa-container{
+    white-space: pre-line;
+    font-size: 1.4rem;
 }

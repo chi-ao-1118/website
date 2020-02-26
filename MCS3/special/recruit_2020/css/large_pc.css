@@ -1,0 +1,22 @@
+.contents-wrapper{
+  margin: 0 10rem;
+}
+#comment::before{
+  background: url("../img/triangle_1.svg");
+  background-size: 100% auto;
+  min-height: max-content;
+}
+#comment::after{
+ background: url("../img/triangle_2.svg");
+ background-size: 100% auto;
+ min-height: max-content;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+}
+#how-to::before,
+#how-to::after{
+  background-size: 100% auto;
+}
+
