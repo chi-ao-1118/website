@@ -14,7 +14,6 @@ body {
   --cyan: #008cb4;
   background: var(--gray);/*varで定義されたの出力*/
   overflow-x: hidden;/*x軸方向隠される初期値visible*/
-
   }
 
 
@@ -27,6 +26,7 @@ p, dt, dd {
     "Yu Minc", YuMincho, HGS明朝E, serif;
   letter-spacing: 0.1rem;
   line-height: 1.75;
+  text-indent: 1rem;
 }
 .twitterblue {color: #00aced}
 .youtubered {color: #c4302b}
@@ -104,7 +104,7 @@ header::before {
   content: "";
   width: 100%;
   height: 60vh;
-  background:url("../img/400x300.png");
+  background:url("../img/400x300.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -204,7 +204,7 @@ header::before {
   right: 0.5rem;
   top: 25%;
   background: url("../img/square_1.svg");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: -2;
 }
@@ -216,7 +216,7 @@ header::before {
   top: calc(25% + 0.5rem);
   right: 0;
   background: url("../img/square_2.svg");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -367,14 +367,36 @@ small {
   margin-left: auto;
 }
 
-.contents-wrapper-QA{
-  text-align: center;
-}
 .section-title{
   text-align: center;
 }
-a{
-  color: black;
+.contents-wrapper-QA{
+  text-align: center;
+}
+.qa-container{
+  display: inline-block;
+  text-align: justify;
+}
+/* a{
+  color: #008cb4;
+font-family: Arial, Helvetica, sans-serif;
+} */
 
-  font-family: Arial, Helvetica, sans-serif;
+.contents-wrapper a{
+  color : #F9BF33;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.contents-wrapper a:hover{
+  color: #008cb4;
+  text-decoration: none;
+}
+.answer a{
+  color: #F9BF33;
+  
+  font-weight: bold;
+}
+.answer a:hover{
+  color: #008cb4;
+  text-decoration: none;
 }
