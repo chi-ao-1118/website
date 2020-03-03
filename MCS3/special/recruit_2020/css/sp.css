@@ -1,7 +1,37 @@
 /*
   Global
 */
+/* body {
+  margin: 0;
+  padding: 0;
+}
+.bg-video-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: "2020_PV.mp4"no-repeat center center/cover;
+}
+.bg-video-wrap {
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+} */
+ /*.container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+  background-size: 3px 3px;
+  z-index: 2;
+}*/
 
+ .top img{
+  width: 100%;
+  height: auto;
+  }
 body {
   font-size: 62.5%; /* 1rem = 10px */
   color: white;
@@ -26,7 +56,6 @@ p, dt, dd {
     "Yu Minc", YuMincho, HGS明朝E, serif;
   letter-spacing: 0.1rem;
   line-height: 1.75;
-  text-indent: 1rem;
 }
 .twitterblue {color: #00aced}
 .youtubered {color: #c4302b}
@@ -104,14 +133,14 @@ header::before {
   content: "";
   width: 100%;
   height: 60vh;
-  background:url("../img/400x300.jpg");
+  background:url("./img/topphoto.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
 }
 
 .header-btns {
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 }
 
 .header-btn {
@@ -220,6 +249,36 @@ header::before {
   background-repeat: no-repeat;
   z-index: -1;
 }
+.link_btn {
+  margin: 0 auto;
+  display: block;
+  width: 80px;
+  /* position: rela; */
+  text-decoration: none;/*下線消す*/
+  background: silver;/*背景を水色に*/
+  color:white;/*文字を白に*/
+  padding:2px;/*内側の余白*/
+  /*border-radius: 20px;角を丸くする*/
+ /* font-family: 'Avenir','Arial';フォントをいい感じに*/
+}
+/*以下カーソルを当てたとき*/
+.link_btn:hover {
+  background: silver;/*背景色をシルバーに*/
+  text-decoration: none;/*下線を消す*/
+  color:white;
+
+}
+
+/*以下訪問済みのデザイン*/
+.link_btn:visited {
+  color: gray;/*文字をグレイに*/
+}
+.button a{
+  font-size: 0.8rem;
+  font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
+    "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
+    "Yu Minc", YuMincho, HGS明朝E, serif;
+}
 #details::before {
   position: absolute;
   content: " ";
@@ -245,17 +304,6 @@ header::before {
   z-index: -1;
 }
 
-h2, h3 {
-  line-height: 1.5;
-}
-
-h2 {
-  font-size: 2rem;
-  /* margin-bottom: 1rem; */
-  font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
-    "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
-    "Yu Minc", YuMincho, HGS明朝E, serif;
-}
 
 .contents-wrapper img {
   width: 90%;
@@ -268,12 +316,48 @@ h2 {
 .contents-wrapper p {
   margin: 1rem 1.2rem;
 }
+.contents-wrapper h3 {
+  width: 20rem;
+  border-top: solid 0.4rem ;
+}
 
 #how-to img {
   margin-top: 0.3rem;
 }
+h2 {
+  position: relative;
+  padding: 0.5em;
+  background: #a6d3c8;
+  color: white;
+  font-size: 2rem;
+  /* margin-bottom: 1rem; */
+  font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
+  "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
+  "Yu Minc", YuMincho, HGS明朝E, serif;
+  line-height: 1.5;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
+  "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
+  "Yu Minc", YuMincho, HGS明朝E, serif;
+}
 
+h2::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px rgb(149, 158, 155);
+}
 h3 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  /*line-height: 1.5;*/
   font-size: 1.5rem;
   /* margin-bottom: 1rem; */
   font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
@@ -281,6 +365,7 @@ h3 {
     "Yu Minc", YuMincho, HGS明朝E, serif;
   margin: 1.2rem 0.5rem;
   letter-spacing: 0.1rem;
+  line-height: 1.5;
 }
 
 .qa-container {
@@ -321,7 +406,9 @@ h3 {
 
 
 #pageTop i {
-  padding-top: 6px
+  padding-top: 6px;
+  position: absolute;
+    right: 0.7rem;
 }
 
 
@@ -338,6 +425,7 @@ h3 {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
+  position: relative;
 }
 
 
@@ -393,7 +481,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .answer a{
   color: #F9BF33;
-  
+
   font-weight: bold;
 }
 .answer a:hover{
