@@ -252,7 +252,7 @@ header::before {
 .link_btn {
   margin: 0 auto;
   display: block;
-  width: 80px;
+  width: 100px;
   /* position: rela; */
   text-decoration: none;/*下線消す*/
   background: silver;/*背景を水色に*/
@@ -318,7 +318,7 @@ header::before {
 }
 .contents-wrapper h3 {
   width: 20rem;
-  border-top: solid 0.4rem ;
+  /* border-top: solid 0.4rem ; */
 }
 
 #how-to img {
@@ -327,7 +327,7 @@ header::before {
 h2 {
   position: relative;
   padding: 0.5em;
-  background: #a6d3c8;
+  background: #3c3c3c;
   color: white;
   font-size: 2rem;
   /* margin-bottom: 1rem; */
@@ -337,9 +337,7 @@ h2 {
   line-height: 1.5;
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
-  "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
-  "Yu Minc", YuMincho, HGS明朝E, serif;
+
 }
 
 h2::before {
@@ -353,10 +351,10 @@ h2::before {
 }
 h3 {
   padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
-  color: #494949;/*文字色*/
-  background: #f4f4f4;/*背景色*/
-  border-left: solid 5px #7db4e6;/*左線*/
-  border-bottom: solid 3px #d7d7d7;/*下線*/
+  color: white;/*文字色*/
+  /* background: #f4f4f4;背景色 */
+  /* border-left: solid 5px #7db4e6;左線 */
+  /* border-bottom: solid 3px #d7d7d7;下線 */
   /*line-height: 1.5;*/
   font-size: 1.5rem;
   /* margin-bottom: 1rem; */
@@ -454,13 +452,13 @@ small {
   height: 5rem;
   margin-left: auto;
 }
-
+/*
 .section-title{
   text-align: center;
-}
-.contents-wrapper-QA{
+} */
+/* .contents-wrapper-QA{
   text-align: center;
-}
+} */
 .qa-container{
   display: inline-block;
   text-align: justify;
