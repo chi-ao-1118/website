@@ -13,3 +13,15 @@
 #details .contents-wrapper h3{
   margin: 0 0 2rem 20rem;
 } */
+.link_btn {
+  margin: 2rem 0 0 120px;
+  display: block;
+  width: 150px;
+  /* position: rela; */
+  text-decoration: none;/*下線消す*/
+  background: silver;/*背景を水色に*/
+  color: white;/*文字を白に */
+  padding:0.5rem 0 0 0.2rem;/*内側の余白*/
+  /*border-radius: 20px;角を丸くする*/
+ /* font-family: 'Avenir','Arial';フォントをいい感じに*/
+}

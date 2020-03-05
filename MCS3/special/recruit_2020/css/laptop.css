@@ -28,7 +28,7 @@ margin: 2rem 0.5rem 0 0;
 #qa .container{
   margin: 5rem 0 0 0;
 }
-
+/* 背景 */
  #comment::before{
   background-size:  1440px ;
   min-height: 10vh;
@@ -89,6 +89,7 @@ margin: 2rem 0.5rem 0 0;
   min-height: 1440px;
   right: 1rem;
 
+
 }
 .section #detail{
   width: 1440px
@@ -97,42 +98,23 @@ margin: 2rem 0.5rem 0 0;
 #details .contents-wrapper p{
   margin: 0 0 2rem 25rem;
 }
-/* .contents-wrapperQA{
-  width: 80%;
-  text-align: center;
-
- }
-
- .qa-container{
-  display: inline-block;
-  text-align: justify;
- } */
-
- Q＆A中央
- /*.contents-wrapperQA dl{
-  text-align: center;
- }
-
- .qa-container dt,dd{
-   display: inline;
-   text-align: left;
-  /* }  */
- /* .qa-container{
-   margin:1rem;
-   text-align: center;
-   display: block;
- } */
+/* Q＆A */
  .contents-wrapper-QA{
    margin: 1.6rem auto;
    text-align: center;
    display: block;
+   display: flex;
  }
  .contents-wrapper-QA .qa-container{
    text-align: left;
    display: inline-block;
  }
+ .qa_left{
+   margin-left: 5.5rem;
+ }
+
  .link_btn {
-  margin: 0 0 0 20rem;
+  margin: 2rem 0 0 20rem;
   display: block;
   width: 8rem;
   /* position: rela; */

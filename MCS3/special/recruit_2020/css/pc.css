@@ -78,7 +78,7 @@
   text-decoration: none;/*下線消す*/
   background: silver;/*背景を水色に*/
   color: white;/*文字を白に */
-  padding:5px;/*内側の余白*/
+  padding:0.5rem 0 0 0.2rem;/*内側の余白*/
   /*border-radius: 20px;角を丸くする*/
  /* font-family: 'Avenir','Arial';フォントをいい感じに*/
 }
@@ -95,7 +95,7 @@
   color: gray;/*文字をグレイに*/
 }
 .button a{
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
     "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
     "Yu Minc", YuMincho, HGS明朝E, serif;
@@ -120,6 +120,7 @@
   margin: 1.6rem auto;
   text-align: center;
   display: block;
+  display: flex;
 }
 .contents-wrapper-QA .qa-container{
   text-align: left;
